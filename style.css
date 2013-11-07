@@ -1,0 +1,63 @@
+/*
+	Area 1: buttons;	
+*/
+/*1: Button Area*/
+
+.btn{
+	padding: 7px 17px 7px 17px;
+	color: white;
+	background-color: #bdc3c7;
+	text-decoration: none;
+	-webkit-border-radius: 2;
+  	-moz-border-radius: 2;
+  	border-radius: 2px;
+}
+
+.btn:hover{
+	opacity: .9;
+}
+
+.btn:active{
+	-moz-box-shadow:    inset 0 0 10px #808080;
+   	-webkit-box-shadow: inset 0 0 10px #808080;
+   	box-shadow:         inset 0 0 10px #808080;
+}
+
+.blue{
+	background-color: #3498db;
+}
+.blue:active{
+	-moz-box-shadow:    inset 0 0 10px #13679F;
+   	-webkit-box-shadow: inset 0 0 10px #13679F;
+   	box-shadow:         inset 0 0 10px #13679F;
+}
+
+.red{
+	background-color: #e74c3c;
+}
+
+.red:active{
+	-moz-box-shadow:    inset 0 0 10px #AE382B;
+   	-webkit-box-shadow: inset 0 0 10px #AE382B;
+   	box-shadow:         inset 0 0 10px #AE382B;
+}
+
+.black{
+	background-color: #191E24;
+}
+
+.black:active{
+	-moz-box-shadow:    inset 0 0 10px #75797E;
+   	-webkit-box-shadow: inset 0 0 10px #75797E;
+   	box-shadow:         inset 0 0 10px #75797E;
+}
+
+.yellow{
+	background-color: #f1c40f;
+}
+
+.yellow:active{
+	-moz-box-shadow:    inset 0 0 10px #BA9B20;
+   	-webkit-box-shadow: inset 0 0 10px #BA9B20;
+   	box-shadow:         inset 0 0 10px #BA9B20;
+}
