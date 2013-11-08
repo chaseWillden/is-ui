@@ -1,8 +1,11 @@
 /*
 	1: buttons
 	2: Inputs
-	3: menus
+	3: typography
+	4: login
 */
+
+
 /*1: Button Area*/
 
 .btn{
@@ -91,6 +94,38 @@ input[type="text"].error{
 input[type='text'].search{
 	
 }
-/* 3: Menus */
+/* 3: Typography */
 
+/* HEADINGS */
 
+h1, h2, h3, h4, h5, h6{
+	   font-family: Verdana, Helvetica, sans-serif;
+	   margin:0;
+   }
+
+h1, h2, h3, h4, h5, h6 {
+	   font-size:18pt;
+	   letter-spacing: 1pt;
+	   color: #595959;
+	   font-variant: small-caps;
+	   font-weight:normal;
+	   padding:10px 0px 10px 0px;
+   }
+
+/* 4: Login */
+.login{
+	width: 400px;
+	min-height: 300px;
+	position: absolute;
+	background-color: #808080;
+}
+
+.login fieldset{
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.login label{
+	
+}
