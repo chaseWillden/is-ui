@@ -88,27 +88,9 @@ input[type="text"].error{
 	border: solid #E13C39 2px;
 }
 
+input[type='text'].search{
+	
+}
 /* 3: Menus */
 
-.menu{
-	list-style: none;
-}
-
-.menu li{
-	float: left;
-	display: inline-block;
-}
-
-.menu li a{
-	padding: 10px 27px 10px 27px;
-	background-color: #6B6D6E;
-	color: white;
-	text-decoration: none;
-	border-right: dotted white 1px;
-}
-
-.menu li a:hover{
-	opacity: .9;
-	padding-bottom: 11px;
-}
 
