@@ -1,0 +1,87 @@
+/*
+	Form Components
+*/
+
+.form-comp{
+	font-size: 16px;
+	border: solid 1px rgb(168, 168, 168);
+	outline: none;
+	box-shadow: 0 0 3px rgba(0,0,0,.3);
+	font-family: sans-serif;
+	min-width: 98%;
+	position: relative;
+	padding: 3px 5px 3px 10px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	margin-top: 5px;
+	margin=bottom: 5px;
+}
+
+.form-comp:hover{
+	border: solid 1px rgb(144, 144, 144);
+}
+
+.form-comp:active, .form-comp:focus{
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.42);
+	-moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.42);
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.42);
+}
+
+.no-resize{
+	resize: none;
+}
+
+textarea.sm{
+	min-height: 20px;
+	height: 20px;
+}
+
+textarea.md{
+	min-height: 60px;
+	height: 60px;
+}
+
+textarea.lg{
+	min-height: 120px;
+	height: 120px;
+}
+
+textarea.xl{
+	min-height: 200px;
+	height: 200px;
+}
+
+input[type=range].form-comp{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+    height: 1px;
+}
+
+input[type=range].form-comp::-webkit-slider-thumb{
+	-webkit-appearance: none;
+    background-color: #666;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+}
+
+input[type=range].form-comp::-moz-slider-thumb{
+	-moz-appearance: none;
+    background-color: #666;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+}
+
+input[type=range].form-comp::-webkit-slider-thumb:active{
+	box-shadow: 0 0 5px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,.4);
+}

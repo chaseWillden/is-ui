@@ -1,0 +1,401 @@
+/*
+	Alert
+*/
+
+.alert{
+	padding: 10px 20px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background-color: #FAFAFA;
+	display: block;
+	border-left: solid 5px rgb(255, 204, 0);
+	box-shadow: 0 0 11px rgba(0,0,0,.15);
+	min-height: 44px;
+	min-width: 200px;
+	max-width: 250px;
+	z-index: 10000;
+	-webkit-transition: right 1s ease;
+	-moz-transition: right 1s ease;
+	-o-transition: right 1s ease;
+	-ms-transition: right 1s ease;
+	transition: right 1s ease;
+}
+
+.alert.off{
+	right: -100%;
+}
+
+.alert .title{
+	font-size: 20px;
+	font-weight: bold;
+	border-bottom: solid 1px #ccc;
+	padding-bottom: 4px;
+	margin-bottom: 4px;
+}
+
+.alert .close{
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	color: #ccc;
+	cursor: pointer;
+}
+
+.alert .close:hover{
+	color: black;
+}
+/*
+	Button Area
+*/
+
+.btn{
+	border: solid 1px rgba(210, 210, 210, 0.69);
+	outline: none;
+	color: black;
+	background-color: #E8E8E8;
+	font-family: Verdana, sans-serif;
+	cursor: pointer;
+	margin: 2px;
+	display: inline-block;
+	text-indent: 0;
+	font-style: normal;
+}
+
+a.btn{
+	text-decoration: none;
+}
+
+/*
+	Firefox fix
+*/
+.btn::-moz-focus-inner { 
+    border: 0;
+    padding: 0;
+}
+
+.btn:hover{
+	box-shadow: 0px 2px 3px -2px #898989;
+	-moz-box-shadow: 0px 2px 3px -2px #898989;
+	-webkit-box-shadow: 0px 2px 3px -2px #898989;
+}
+
+.btn:active{
+	box-shadow: 0px 1px 3px rgba(142, 142, 142, 0.53);
+	-moz-box-shadow: 0px 1px 3px rgba(142, 142, 142, 0.53);
+	-webkit-box-shadow: 0px 1px 3px rgba(142, 142, 142, 0.53);
+}
+
+.btn-sm{
+	font-size: 12px;
+	padding: 3px 7px;
+}
+
+.btn-md{
+	font-size: 14px;
+	padding: 5px 10px;
+}
+
+.btn-default{
+	font-size: 15px;
+	padding: 8px 15px;
+}
+
+.btn-lg{
+	font-size: 16px;
+	padding: 10px 18px;
+}
+
+.btn-xl{
+	font-size: 18px;
+	padding: 13px 25px;
+}
+.btn.blue{
+	background-color: #4285f4;
+	border: 1px solid rgba(18, 113, 235, 0.69);
+	color: white;
+}
+
+.btn.red{
+	background-color: #d14836;
+	border: 1px solid rgba(182, 85, 31, 0.69);
+	color: white;
+}
+
+.btn.green{
+	background-color: #0f9d58;
+	border: 1px solid rgba(27, 167, 83, 0.69);
+	color: white;
+}
+
+.btn.orange{
+	background-color: #F1921C;
+	border: 1px solid rgba(189, 149, 24, 0.69);
+	color: white;
+}
+/*
+	Container
+*/
+
+.container{
+	position: relative;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	right: 0;
+	padding: 15px;
+}
+.hidden{
+	display: none;
+}
+
+.show{
+	display: block;
+}
+/*
+	DropDowns
+*/
+
+.dropdown{
+	margin: 0;
+	padding: 0;	
+	list-style: none;
+	min-width: 200px;
+	width: auto;
+	background-color: white;
+	box-shadow: 0 3px 10px rgba(0,0,0,.4);
+	position: absolute;
+	z-index: 10000;
+}
+
+.dropdown > li{
+	color: black;
+	display: block;
+	position: relative;
+}
+
+.dropdown > li > a{
+	text-decoration: none;
+	color: black;
+	font-size: 16px;
+	padding: 5px 15px;
+	display: block;
+	position: relative;
+}
+
+.dropdown > li > a:hover{
+	background-color: #F0F0F0;
+}
+
+.dropdown > li > a > .pull-right{
+	text-align: right;
+	display: inline-block;
+	margin-left: 25px;
+	float: right;
+}
+
+.dropdown > li.divider{
+	border-bottom: solid 1px #F0F0F0;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.dropdown li div{
+	display: inline;
+}
+
+/*
+	Second layer
+*/
+
+.dropdown > li > ul{
+	display: none;
+	position: absolute;
+	top: 0;
+	z-index: 10001;
+}
+
+.dropdown > li:hover ul{
+	display: block;
+}
+
+.dropdown > li > ul.drop-right{
+	left: 98%;
+}
+
+.dropdown > li > ul.drop-left{
+	right: 98%;
+}
+/*
+	Form Components
+*/
+
+.form-comp{
+	font-size: 16px;
+	border: solid 1px rgb(168, 168, 168);
+	outline: none;
+	box-shadow: 0 0 3px rgba(0,0,0,.3);
+	font-family: sans-serif;
+	min-width: 98%;
+	position: relative;
+	padding: 3px 5px 3px 10px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	margin-top: 5px;
+	margin=bottom: 5px;
+}
+
+.form-comp:hover{
+	border: solid 1px rgb(144, 144, 144);
+}
+
+.form-comp:active, .form-comp:focus{
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.42);
+	-moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.42);
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.42);
+}
+
+.no-resize{
+	resize: none;
+}
+
+textarea.sm{
+	min-height: 20px;
+	height: 20px;
+}
+
+textarea.md{
+	min-height: 60px;
+	height: 60px;
+}
+
+textarea.lg{
+	min-height: 120px;
+	height: 120px;
+}
+
+textarea.xl{
+	min-height: 200px;
+	height: 200px;
+}
+
+input[type=range].form-comp{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+    height: 1px;
+}
+
+input[type=range].form-comp::-webkit-slider-thumb{
+	-webkit-appearance: none;
+    background-color: #666;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+}
+
+input[type=range].form-comp::-moz-slider-thumb{
+	-moz-appearance: none;
+    background-color: #666;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+}
+
+input[type=range].form-comp::-webkit-slider-thumb:active{
+	box-shadow: 0 0 5px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,.4);
+}
+/*
+	HR Styling
+*/
+
+.hr-fade{
+	border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+html{
+	position: relative;
+}
+
+body{
+	position: relative;
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+/*
+  Tool tip
+*/
+
+[data-title]:hover:after{
+  display: block;
+  content: attr(data-title);
+  padding: 4px 8px;
+  color: white;
+  position: absolute;
+  right: 10%;
+  top: 110%;
+  background-color: black;
+  opacity: .7;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+/*
+	Typography
+*/
+
+.dim-1{
+	opacity: .1;
+}
+
+.dim-2{
+	opacity: .2;
+}
+
+.dim-3{
+	opacity: .3;
+}
+
+.dim-4{
+	opacity: .4;
+}
+
+.dim-5{
+	opacity: .5;
+}
+
+.dim-6{
+	opacity: .6;
+}
+
+.dim-7{
+	opacity: .7;
+}
+
+.dim-8{
+	opacity: .8;
+}
+
+.dim-9{
+	opacity: .9;
+}
+
+.dim:hover{
+	opacity: 1;
+}
