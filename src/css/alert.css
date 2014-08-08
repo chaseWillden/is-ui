@@ -15,15 +15,15 @@
 	min-width: 200px;
 	max-width: 250px;
 	z-index: 10000;
-	-webkit-transition: right 1s ease;
-	-moz-transition: right 1s ease;
-	-o-transition: right 1s ease;
-	-ms-transition: right 1s ease;
-	transition: right 1s ease;
+	-webkit-transition: right .5s ease;
+	-moz-transition: right .5s ease;
+	-o-transition: right .5s ease;
+	-ms-transition: right .5s ease;
+	transition: right .5s ease;
 }
 
 .alert.off{
-	right: -100%;
+	right: -320px;
 }
 
 .alert .title{
