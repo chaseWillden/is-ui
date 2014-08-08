@@ -1,30 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<title>Template</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Course Improvement</title>
 </head>
 <body>
-	<h1>Adobe Connect Groups</h1>
-	<h3>Buttons:</h3>
-	<a href='#' class='btn'>Submit</a>
-	<button class='btn'>Submit</button>
-	<a href='#' class='btn red'>Submit</a>
-	<a href='#' class='btn blue'>Submit</a>
-	<a href='#' class='btn yellow'>Submit</a>
-	<a href='#' class='btn black'>Submit</a><br><br>
-	<h3>Inputs:</h3>
-	<input type="text" placeholder="Inactive">
-	<input type="text" placeholder='Error' class='error'><br>
-	<h3>Search:</h3> <input type="text" placeholder='search' class='search'><br>
-	<h3>Login Form:</h3>
-	<form class='login'>
-		<h1>Login</h1>
-		<label for='username'>Username:</label>
-		<input type="text" id='username'>
-		<label for='password'>Password:</label>
-		<input type="text" id='password'>
-	</form>
+	<div class="container">
+		<button class="btn btn-sm">Small</button>
+		<a href='#' class="btn btn-md">Medium</a>
+		<input type="submit" class="btn btn-lg" value="Large">
+		<button class="btn btn-xl">X-Large</button>
+		<hr class="hr-fade">
+		<ul class="dropdown">
+			<li><a href=''>Option</a></li>
+			<li><a href=''>Option</a></li>
+			<li><a href=''>Option</a></li>
+		</ul>
+		<hr class="hr hr-fade">
+		<input type='text' class="form-comp" placeholder='Input'>
+		<input type='password' class="form-comp" placeholder='Password'>
+		<input type='range' class="form-comp">
+		<input type='number' class="form-comp">
+		<textarea class="form-comp sm" placeholder='Textarea sm'></textarea>
+		<textarea class="form-comp md no-resize" placeholder='Textarea md'></textarea>
+		<textarea class="form-comp lg no-resize" placeholder='Textarea lg'></textarea>
+		<textarea class="form-comp xl no-resize" placeholder='Textarea xl'></textarea>
+	</div>
 </body>
 </html>
