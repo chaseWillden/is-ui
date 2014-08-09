@@ -3,29 +3,205 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Template</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="build/css/is-ui.min.css">
+	<script type="text/javascript" src='build/include/jquery.js'></script>
+	<script type="text/javascript" src='build/js/is-ui.min.js'></script>
 </head>
 <body>
-	<div class="container">
-		<button class="btn btn-sm">Small</button>
-		<a href='#' class="btn btn-md">Medium</a>
-		<input type="submit" class="btn btn-lg" value="Large">
-		<button class="btn btn-xl">X-Large</button>
-		<hr class="hr-fade">
-		<ul class="dropdown">
-			<li><a href=''>Option</a></li>
-			<li><a href=''>Option</a></li>
-			<li><a href=''>Option</a></li>
+	<nav class='nav-top'>
+		<ul class="mobile-menu">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
 		</ul>
-		<hr class="hr hr-fade">
-		<input type='text' class="form-comp" placeholder='Input'>
-		<input type='password' class="form-comp" placeholder='Password'>
-		<input type='range' class="form-comp">
-		<input type='number' class="form-comp">
-		<textarea class="form-comp sm" placeholder='Textarea sm'></textarea>
-		<textarea class="form-comp md no-resize" placeholder='Textarea md'></textarea>
-		<textarea class="form-comp lg no-resize" placeholder='Textarea lg'></textarea>
-		<textarea class="form-comp xl no-resize" placeholder='Textarea xl'></textarea>
+		<ul class="menu-right">
+			<li>
+				<a href="#">IS-UI</a>
+			</li>
+			<li>
+				<a href="buttons.html">Buttons</a>
+			</li>
+			<li>
+				<a href="alert.html">Alerts</a>
+			</li>
+			<li>
+				<a href="dropdown.html">Dropdown</a>
+			</li>
+			<li>
+				<a href="#">Drop Down &#65516;</a>
+				<ul class="dropdown">
+					<li>
+						<a href=''><div class="dim dim-6">&#65513;</div> Link</a>
+						<ul class="dropdown drop-left">
+							<li>
+								<a href=''>Link</a>
+							</li>
+							<li>
+								<a href=''>Another Link<div class='pull-right dim-6'>Ctrl+S</div></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href=''>Another Link<div class='pull-right dim-6'>Ctrl+S</div></a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-6"></div>
+			<div class="col-4"></div>
+			<div class="col-2">
+				<nav class='nav-right fixed'>
+					<ul>
+						<li><a href='#buttonsArea'>Buttons</a></li>
+						<li><a href='#dropdownArea'>Dropdowns</a></li>
+						<li><a href=''>Forms</a></li>
+						<li><a href=''>Alerts</a></li>
+						<li><a href=''>Navigation</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="row" id="buttonsArea">
+			<div class="col-12">
+				<div class="row">
+					<div class="col-12">
+						<h1 class="center">Buttons</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<button class="btn btn-sm">.btn-sm</button>
+						<button class="btn btn-md">.btn-md</button>
+						<button class="btn btn-default">.btn-default</button>
+						<button class="btn btn-lg">.btn-lg</button>
+						<button class="btn btn-xl">.btn-xl</button>
+					</div>
+					<div class="col-6">
+						<div class="code html">
+						<!-- First line -->
+							<span class='open-tag tag-name'>button</span><span class='attr'>class=</span><span class='attr-val'>btn btn-sm</span><span class='close-tag'></span>Button<span class='open-tag close-tag tag-name'>/button</span>
+							<br>
+						<!-- Next line -->
+							<span class='open-tag tag-name'>button</span><span class='attr'>class=</span><span class='attr-val'>btn btn-md</span><span class='close-tag'></span>Button<span class='open-tag close-tag tag-name'>/button</span>
+							<br>
+							<span class='open-tag tag-name'>button</span><span class='attr'>class=</span><span class='attr-val'>btn btn-default</span><span class='close-tag'></span>Button<span class='open-tag close-tag tag-name'>/button</span>
+							<br>
+							<span class='open-tag tag-name'>button</span><span class='attr'>class=</span><span class='attr-val'>btn btn-lg</span><span class='close-tag'></span>Button<span class='open-tag close-tag tag-name'>/button</span>
+							<br>
+							<span class='open-tag tag-name'>button</span><span class='attr'>class=</span><span class='attr-val'>btn btn-xl</span><span class='close-tag'></span>Button<span class='open-tag close-tag tag-name'>/button</span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<h2>Colored Buttons</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<button class="btn btn-sm blue">.btn-sm .blue</button>
+						<button class="btn btn-md red">.btn-md .red</button>
+						<button class="btn btn-default red">.btn-default .red</button>
+						<button class="btn btn-lg green">.btn-lg .green</button>
+						<button class="btn btn-xl orange">.btn-xl .orange</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<h2>A tag</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<a class="btn btn-sm" href=''>.btn-sm</a>
+						<a class="btn btn-md" href=''>.btn-md</a>
+						<a class="btn btn-default" href=''>.btn-default</a>
+						<a class="btn btn-lg" href=''>.btn-lg</a>
+						<a class="btn btn-xl" href=''>.btn-xl</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<h2>Input type Submit</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<input type='submit' class="btn btn-sm" value=".btn-sm">
+						<input type='submit' class="btn btn-md" value=".btn-md">
+						<input type='submit' class="btn btn-default" value=".btn-default">
+						<input type='submit' class="btn btn-lg" value=".btn-lg">
+						<input type='submit' class="btn btn-xl" value=".btn-xl">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Btn Area -->
+
+		<div class="row" id="dropdownArea">
+			<div class="row">
+				<hr class="hr-fade">
+				<h1 class="center">Dropdown</h1>
+			</div>
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8">
+					<div class="btn-group">
+						<div class="btn btn-default">Dropdown</div>
+						<div class="btn btn-default arrow-down"></div>
+						<ul class="dropdown">
+							<li>
+								<a href=''>Link</a>
+							</li>
+							<li>
+								<a href=''>Another Link<div class='pull-right dim-6'>Ctrl+S</div></a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href=''>Separated Link <div class="pull-right dim dim-6">&#65515;</div></a> 
+								<ul class="dropdown drop-right">
+									<li>
+										<a href=''>Link</a>
+									</li>
+									<li>
+										<a href=''>Another Link<div class='pull-right dim-6'>Ctrl+S</div></a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href=''><div class="dim dim-6">&#65513;</div> Another Link</a>
+								<ul class="dropdown drop-left">
+									<li>
+										<a href=''>Link</a>
+									</li>
+									<li>
+										<a href=''>Another Link<div class='pull-right dim-6'>Ctrl+S</div></a>
+									</li>
+								</ul>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href='' data-title='This is the bottom'>Separated Link <div class='pull-right dim-6'>Ctrl+Q</div></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr class="hr-fade">
+		<div class="row">
+			<div class="col-12"></div>
+		</div>
+
+		<footer class='footer'>
+			
+		</footer>
+		<!-- End Drop Down -->
 	</div>
+		<!-- End Container  -->
 </body>
 </html>

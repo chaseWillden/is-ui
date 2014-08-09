@@ -1,0 +1,15 @@
+.arrow-up:before{
+	content: '\25b2';
+}
+
+.arrow-down:before{
+	content: '\25bc';
+}
+
+.arrow-left:before{
+	content: '\25C0';
+}
+
+.arrow-right:before{
+	content: '\25b6';
+}

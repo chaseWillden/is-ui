@@ -1,10 +1,12 @@
 document.onmousedown = function(e){
 	if (e.button == 2){
-		document.body.oncontextmenu = function(){
-			return false;
-		}
 		var rightClick = document.querySelectorAll('.dropdown.right-click');
 		if (rightClick.length > 0){
+
+			// Disable right click
+			document.body.oncontextmenu = function(){
+				return false;
+			}
 			// Its rightClick[0] because only the first right-click will show
 			rightClick[0].className += ' show';
 			var width = rightClick[0].offsetWidth;

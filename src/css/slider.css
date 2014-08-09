@@ -1,0 +1,11 @@
+/*
+	Slider
+
+	Author: Chase Willden;
+*/
+
+.slider{
+	position: relative;
+	width: 100%;
+	background-color: black;	
+}

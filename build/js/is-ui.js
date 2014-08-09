@@ -1,10 +1,12 @@
 document.onmousedown = function(e){
 	if (e.button == 2){
-		document.body.oncontextmenu = function(){
-			return false;
-		}
 		var rightClick = document.querySelectorAll('.dropdown.right-click');
 		if (rightClick.length > 0){
+
+			// Disable right click
+			document.body.oncontextmenu = function(){
+				return false;
+			}
 			// Its rightClick[0] because only the first right-click will show
 			rightClick[0].className += ' show';
 			var width = rightClick[0].offsetWidth;
@@ -31,30 +33,37 @@ document.onmousedown = function(e){
 	Alert removal and animation
 */
 
-if (!window.onclick){
-	window.onclick = function(e){
-		// Clear all right click items
-		var right = document.querySelectorAll('.right-click');
-		if (right.length > 0){
-			for (var i = 0; i < right.length; i++){
-				if (right[i].className.indexOf(' show') != -1){
-					right[i].className = right[i].className.replace(/ show/g, '');
-				}
+$(window).click(function(e){
+	var right = $('.right-click');
+	var target = $(e.target);
+	$('.btn-group').find('.dropdown.show').removeClass('show');
+	if (right.length > 0){
+		right.each(function(){
+			if ($(this).hasClass('show')){
+				$(this).removeClass('show');
 			}
+		})
+	}
+	if (target.hasClass('close')){
+		var ele = target;
+		$(ele).parent().addClass('off');
+		setTimeout(function(){
+			$(ele).parent().remove();
+		}, 500);
+	}
+	else if(target.hasClass('mobile-menu') || target.parent().hasClass('mobile-menu')){
+		if(target.parent().parent().hasClass('active')){
+			target.parent().parent().addClass('active');
 		}
-		if (e.target.className.indexOf('close') != -1){
-			e.target.parentElement.className += ' off';
-			setTimeout(function(){
-				e.target.parentElement.parentElement.removeChild(e.target.parentElement);
-			}, 500);
-		}
-		else if(e.target.className.indexOf('mobile-menu') != -1 || e.target.parentElement.className.indexOf('mobile-menu') != -1){
-			if (e.target.parentElement.parentElement.className.indexOf('active') == -1){
-				e.target.parentElement.parentElement.className += ' active';
-			}
-			else{
-				e.target.parentElement.parentElement.className.replace(/ active/g, '');
-			}
+		else{
+			target.parent().parent().removeClass('active');
 		}
 	}
-}
+	else if(target.hasClass('btn') && target.parent().hasClass('btn-group')){
+		var drop = target.parent().children('.dropdown');
+		console.log(drop);
+		if (drop.length > 0){
+			drop.addClass('show');
+		}
+	}
+})
