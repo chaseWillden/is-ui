@@ -73,3 +73,9 @@
 .dropdown > li > ul.drop-left{
 	right: 98%;
 }
+
+.dropdown.right-click{
+	display: none;
+	position: fixed;
+	margin-left: 0 !important;
+}

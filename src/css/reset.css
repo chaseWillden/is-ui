@@ -1,12 +1,10 @@
 html{
-	position: relative;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body{
-	position: relative;
+html{
+  height: 100%;
 }
-
-html, body{
-	margin: 0;
-	padding: 0;
+body {
+  min-height: 100%;
 }
