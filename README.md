@@ -3,6 +3,8 @@ is-ui
 
 A mobile-first front-end CSS framework as another alternative to Twitter's Bootstrap
 
+http://chasewillden.github.io/is-ui/
+
 Development
 ===========
 
