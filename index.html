@@ -58,6 +58,7 @@
 					<ul>
 						<li><a href='#buttonsArea'>Buttons</a></li>
 						<li><a href='#dropdownArea'>Dropdowns</a></li>
+						<li><a href='#rightClickArea'>Right Click</a></li>
 						<li><a href=''>Forms</a></li>
 						<li><a href=''>Alerts</a></li>
 						<li><a href=''>Navigation</a></li>
@@ -192,6 +193,67 @@
 				</div>
 			</div>
 		</div>
+		<!-- End Drop Down -->
+		<hr class="hr-fade">
+		<div class="row" id='rightClickArea'>
+			<div class="row">
+				<h1 class="center">Right Click</h1>
+			</div>
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-2">
+					<button class="btn btn-default" onclick='enableRightClick(this)'>Enable Right Click</button>
+					<ul class="dropdown" style='margin-left: 200px'>
+						<li>
+							<a href=''>Link</a>
+						</li>
+						<li>
+							<a href=''>Another Link<div class='pull-right dim-6'>Ctrl+S</div></a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a href=''>Separated Link <div class="pull-right dim dim-6">&#65515;</div></a> 
+							<ul class="dropdown drop-right">
+								<li>
+									<a href=''>Link</a>
+								</li>
+								<li>
+									<a href=''>Another Link<div class='pull-right dim-6'>Ctrl+S</div></a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href=''><div class="dim dim-6">&#65513;</div> Another Link</a>
+							<ul class="dropdown drop-left">
+								<li>
+									<a href=''>Link</a>
+								</li>
+								<li>
+									<a href=''>Another Link<div class='pull-right dim-6'>Ctrl+S</div></a>
+								</li>
+							</ul>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a href='' data-title='This is the bottom'>Separated Link <div class='pull-right dim-6'>Ctrl+Q</div></a>
+						</li>
+					</ul>
+					<script type="text/javascript">
+						function enableRightClick(ele){
+							if ($(ele).next().hasClass('right-click')){
+								$(ele).html('Enable Right Click');
+								$(ele).next().removeClass('right-click');
+							}
+							else{
+								$(ele).html('Disable Right Click');
+								$(ele).next().addClass('right-click');
+							}
+						}
+					</script>
+				</div>
+			</div>
+		</div>
+
 		<hr class="hr-fade">
 		<div class="row">
 			<div class="col-12"></div>
