@@ -425,7 +425,6 @@ th {
 }
 /*
 	Alert
-
 	Author: Chase Willden;
 */
 
@@ -488,6 +487,7 @@ th {
 }
 /*
 	Button Area
+	Author: Chase Willden;
 */
 
 .btn{
@@ -602,6 +602,11 @@ th {
 	padding-left: 5px;
 	padding-right: 5px;
 }
+/*
+	Colors
+	Author: Chase Willden;
+*/
+
 .blue{
 	background-color: #4285f4 !important;
 }
@@ -635,6 +640,7 @@ th {
 }
 /*
 	Container
+	Author: Chase Willden;
 */
 
 .container{
@@ -647,6 +653,11 @@ th {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+/*
+	Display
+	Author: Chase Willden;
+*/
+
 .hidden{
 	display: none !important;
 }
@@ -710,6 +721,7 @@ iframe{
 }
 /*
 	DropDowns
+	Author: Chase Willden;
 */
 
 .dropdown{
@@ -789,6 +801,11 @@ iframe{
 	position: fixed;
 	margin-left: 0 !important;
 }
+/*
+	Footer
+	Author: Chase Willden;
+*/
+
 .footer{
 	width: 100%;
 	height: 200px;
@@ -963,6 +980,7 @@ input[type=range].form-comp::-webkit-slider-thumb:active{
 }
 /*
 	HR Styling
+	Author: Chase Willden;
 */
 
 hr{
@@ -985,7 +1003,6 @@ br.lg{
 }
 /*
 	Navigation
-
 	Author: Chase Willden;
 */
 
@@ -1117,58 +1134,71 @@ nav.nav-top.active > ul:nth-child(2) > li > a:hover{
 
 /*
 	Navigation Right
+	Won't be visible until over 1000px
 */
 
 nav.nav-right{
-	z-index: 10000;
-}
-
-nav.nav-right ul{
-	list-style: none;
-}
-
-nav.nav-right ul ul.sub{
-	padding-left: 16px;
 	display: none;
 }
+@media (min-width: 1000px){
 
-nav.nav-right > ul > li{
-	display: block;
-}
+	nav.nav-right{
+		z-index: 10000;
+		display: block;
+	}
 
-nav.nav-right a{
-	text-decoration: none;
-	display: block;
-	color: #808080;
-	font-size: 15px;
-	border-left: solid 2px transparent;
-	transition: ease border-left-color .2s;
-	-o-transition: ease border-left-color .2s;
-	-moz-transition: ease border-left-color .2s;
-	-webkit-transition: ease border-left-color .2s;
-}
+	nav.nav-right ul{
+		list-style: none;
+	}
 
-nav.nav-right > ul > li > ul.sub > li > a{
-	padding: 3px 10px;
-}
+	nav.nav-right ul ul.sub{
+		padding-left: 16px;
+		display: none;
+	}
 
-nav.nav-right > ul > li > a{
-	padding: 3px 10px;
-}
+	nav.nav-right > ul > li{
+		display: block;
+	}
 
-nav.nav-right a:hover, nav.nav-right .active a{
-	border-left-color: orange;
-}
+	nav.nav-right a{
+		text-decoration: none;
+		display: block;
+		color: #808080;
+		font-size: 15px;
+		border-left: solid 2px transparent;
+		transition: ease border-left-color .2s;
+		-o-transition: ease border-left-color .2s;
+		-moz-transition: ease border-left-color .2s;
+		-webkit-transition: ease border-left-color .2s;
+	}
 
-nav.nav-right > ul.menu-right{
-	float: right;
-	text-align: right;
-}
+	nav.nav-right > ul > li > ul.sub > li > a{
+		padding: 3px 10px;
+	}
 
-nav.nav-right .empty, nav.nav-right .empty *, nav.nav-right .empty:hover, nav.nav-right .empty *:hover{
-	border: none;
-	background-color: none;
+	nav.nav-right > ul > li > a{
+		padding: 3px 10px;
+	}
+
+	nav.nav-right a:hover, nav.nav-right .active a{
+		border-left-color: orange;
+	}
+
+	nav.nav-right > ul.menu-right{
+		float: right;
+		text-align: right;
+	}
+
+	nav.nav-right .empty, nav.nav-right .empty *, nav.nav-right .empty:hover, nav.nav-right .empty *:hover{
+		border: none;
+		background-color: none;
+	}
 }
+/*
+	Panels and Pits
+	Author: Chase Willden;
+*/
+
 .pit{
 	box-shadow: inset 0 0 9px rgba(0,0,0,.3);
 	-moz-box-shadow: inset 0 0 9px rgba(0,0,0,.3);
@@ -1190,6 +1220,11 @@ nav.nav-right .empty, nav.nav-right .empty *, nav.nav-right .empty:hover, nav.na
 	padding-top: 10%;
 	padding-bottom: 10%;
 }
+/*
+	Reset
+	Author: Chase Willden;
+*/
+
 html{
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -1200,6 +1235,11 @@ html{
 body {
   min-height: 100%;
 }
+/*
+	Shapes
+	Author: Chase Willden;
+*/
+
 .arrow-up:before{
 	content: '\25b2';
 }
@@ -1217,7 +1257,6 @@ body {
 }
 /*
 	Slider
-
 	Author: Chase Willden;
 */
 
@@ -1226,6 +1265,11 @@ body {
 	width: 100%;
 	background-color: black;	
 }
+/*
+	Table
+	Author: Chase Willden;
+*/
+
 .table{
 	width: 100%;
 }
@@ -1253,25 +1297,27 @@ body {
 	background-color: #F0F0F0;
 }
 /*
-  Tool tip
+		Tool tip
+		Author: Chase Willden;
 */
 
 [data-title]:hover:after{
-  display: block;
-  content: attr(data-title);
-  padding: 4px 8px;
-  color: white;
-  position: absolute;
-  right: 10%;
-  top: 110%;
-  background-color: black;
-  opacity: .7;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
+		display: block;
+		content: attr(data-title);
+		padding: 4px 8px;
+		color: white;
+		position: absolute;
+		right: 10%;
+		top: 110%;
+		background-color: black;
+		opacity: .7;
+		border-radius: 3px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
 }
 /*
 	Typography
+	Author: Chase Willden;
 */
 
 .dim-1{
