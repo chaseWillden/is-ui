@@ -142,7 +142,7 @@ nav.nav-right ul{
 	list-style: none;
 }
 
-nav.nav-right ul ul{
+nav.nav-right ul ul.sub{
 	padding-left: 16px;
 	display: none;
 }
@@ -163,7 +163,7 @@ nav.nav-right a{
 	-webkit-transition: ease border-left-color .2s;
 }
 
-nav.nav-right > ul > li > ul > li > a{
+nav.nav-right > ul > li > ul.sub > li > a{
 	padding: 3px 10px;
 }
 
@@ -178,4 +178,9 @@ nav.nav-right a:hover, nav.nav-right .active a{
 nav.nav-right > ul.menu-right{
 	float: right;
 	text-align: right;
+}
+
+nav.nav-right .empty, nav.nav-right .empty *, nav.nav-right .empty:hover, nav.nav-right .empty *:hover{
+	border: none;
+	background-color: none;
 }

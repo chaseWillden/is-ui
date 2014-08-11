@@ -2,6 +2,8 @@
 	Alert removal and animation
 */
 
+var dropDownIsOpened = false;
+
 $(window).click(function(e){
 	var right = $('.right-click');
 	var target = $(e.target);
@@ -28,11 +30,14 @@ $(window).click(function(e){
 			target.parent().parent().removeClass('active');
 		}
 	}
-	else if(target.hasClass('btn') && target.parent().hasClass('btn-group')){
+	else if(target.hasClass('btn') && target.parent().hasClass('btn-group') && !dropDownIsOpened){
 		var drop = target.parent().children('.dropdown');
-		console.log(drop);
 		if (drop.length > 0){
 			drop.addClass('show');
+			dropDownIsOpened = true;
 		}
+	}
+	else{
+		dropDownIsOpened = false;
 	}
 })

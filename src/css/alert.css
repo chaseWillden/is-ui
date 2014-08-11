@@ -6,7 +6,7 @@
 
 .alert{
 	padding: 10px 20px;
-	position: absolute;
+	position: fixed;
 	background-color: #FAFAFA;
 	display: block;
 	border-left: solid 5px rgb(255, 204, 0);

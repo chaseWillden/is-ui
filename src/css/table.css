@@ -1,0 +1,26 @@
+.table{
+	width: 100%;
+}
+
+.table td, .table th{
+	padding: 5px 10px;
+}
+
+.table tr.head td, .table tr.head th{
+	background-color: #F0F0F0;
+	font-weight: bold;
+	text-align: left;
+	font-size: 17px;
+}
+
+.table.bottom-line td{
+	border-bottom: solid 1px black;
+}
+
+.table.hover tr:hover{
+	background-color: #E9EAEB;
+}
+
+.table.highlight tr:nth-child(odd){
+	background-color: #F0F0F0;
+}

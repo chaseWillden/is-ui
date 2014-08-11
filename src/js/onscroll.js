@@ -1,7 +1,8 @@
+// Scroll spy
 $(document).ready(function(){
 	var lastId;
-	var scrollMenuItems = $('.nav-right').find('a');
-	var topMenu = $('.nav-top');
+	var scrollMenuItems = $('.scrollSpy').find('a');
+	var topMenu = $('.scrollSpy');
 	var topMenuHeight = topMenu.outerHeight() + 15;
 	var scrollItems = scrollMenuItems.map(function(){
 		var item = $($(this).attr("href"));
@@ -15,19 +16,23 @@ $(document).ready(function(){
 	    	if ($(this).offset().top < fromTop)
 	       	return this;
 	   	});
-	   	if (cur.parent().css('display') === 'none'){
-	   		cur.parent().css({display: 'block'});
-	   	}
+
 	   	// Get the id of the current element
 	   	cur = cur[cur.length-1];
 	   	var id = cur && cur.length ? cur[0].id : "";
-	   
 	   	if (lastId !== id) {
 	    	lastId = id;
 	       	// Set/remove active class
-	       	scrollMenuItems
+	       	var parent = scrollMenuItems
 	        .parent().removeClass("active")
 	        .end().filter("[href=#"+id+"]").parent().addClass("active");
+
+	        if (parent.parent().hasClass('sub')){
+	        	parent.parent().addClass('show');
+	        }
+	        else{
+	        	topMenu.find('.show').removeClass('show');
+	        }
 	   	}  
 	})
 })
