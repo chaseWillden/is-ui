@@ -62,7 +62,12 @@
 }
 
 .btn-group{
-	display: inline-table;
+	display: inline-block;
+	position: relative;
+}
+
+.btn-group > .dropdown{
+	top: 100%;
 }
 
 .btn-group > div, .btn-group > a, .btn-group > input[type=submit], .btn-group > button{
@@ -82,6 +87,7 @@
 
 .btn-group .btn{
 	margin: 0;
+	float: left;
 }
 
 /*
