@@ -9,86 +9,65 @@
 	display: inline-block;
 }
 
-.col-12{
+[class*="col-"]{
+	min-height: 10px;
+	float: left;
+	display: block;
 	width: 100%;
-	min-height: 10px;
-	float: left;
-	display: inline-block;
 }
 
-.col-11{
-	width: 91.66666666%;
-	min-height: 10px;
-	float: left;
-	display: inline-block;
-}
+@media (min-width: 1000px){
+	[class*="col-"]{
+		min-height: 10px;
+		float: left;
+		display: inline-block;
+	}
 
-.col-10{
-	width: 83.33333333%;
-	min-height: 10px;
-	float: left;
-	display: inline-block;
-}
+	.col-12{
+		width: 100%;
+	}
 
-.col-9{
-	width: 75%;
-	min-height: 10px;
-	float: left;
-	display: inline-block;
-}
+	.col-11{
+		width: 91.66666666%;
+	}
 
-.col-8{
-	width: 66.66666666%;
-	min-height: 10px;
-	float: left;
-	display: inline-block;
-}
+	.col-10{
+		width: 83.33333333%;
+	}
 
-.col-7{
-	width: 58.33333333%;
-	min-height: 10px;
-	float: left;
-	display: inline-block;
-}
+	.col-9{
+		width: 75%;
+	}
 
-.col-6{
-	width: 50%;
-	min-height: 10px;
-	float: left;
-	display: inline-block;
-}
+	.col-8{
+		width: 66.66666666%;
+	}
 
-.col-5{
-	width: 41.66666666%;
-	min-height: 10px;
-	float: left;
-	display: inline-block;
-}
+	.col-7{
+		width: 58.33333333%;
+	}
 
-.col-4{
-	width: 33.33333333%;
-	min-height: 10px;
-	float: left;
-	display: inline-block;
-}
+	.col-6{
+		width: 50%;
+	}
 
-.col-3{
-	width: 25%;
-	min-height: 10px;
-	float: left;
-	display: inline-block;
-}
+	.col-5{
+		width: 41.66666666%;
+	}
 
-.col-2{
-	width: 16.66666666%;
-	min-height: 10px;
-	float: left;
-	display: inline-block;
-}
+	.col-4{
+		width: 33.33333333%;
+	}
 
-.col-1{
-	width: 8.333333333%;
-	min-height: 10px;
-	float: left;
-	display: inline-block;
+	.col-3{
+		width: 25%;
+	}
+
+	.col-2{
+		width: 16.66666666%;
+	}
+
+	.col-1{
+		width: 8.333333333%;
+	}
 }

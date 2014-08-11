@@ -802,6 +802,10 @@ iframe{
 	margin=bottom: 5px;
 }
 
+.form-comp:after{
+	color: #ccc;
+}
+
 .form-comp:hover{
 	border: solid 1px rgb(144, 144, 144);
 }
@@ -880,88 +884,67 @@ input[type=range].form-comp::-webkit-slider-thumb:active{
 	display: inline-block;
 }
 
-.col-12{
+[class*="col-"]{
+	min-height: 10px;
+	float: left;
+	display: block;
 	width: 100%;
-	min-height: 10px;
-	float: left;
-	display: inline-block;
 }
 
-.col-11{
-	width: 91.66666666%;
-	min-height: 10px;
-	float: left;
-	display: inline-block;
-}
+@media (min-width: 1000px){
+	[class*="col-"]{
+		min-height: 10px;
+		float: left;
+		display: inline-block;
+	}
 
-.col-10{
-	width: 83.33333333%;
-	min-height: 10px;
-	float: left;
-	display: inline-block;
-}
+	.col-12{
+		width: 100%;
+	}
 
-.col-9{
-	width: 75%;
-	min-height: 10px;
-	float: left;
-	display: inline-block;
-}
+	.col-11{
+		width: 91.66666666%;
+	}
 
-.col-8{
-	width: 66.66666666%;
-	min-height: 10px;
-	float: left;
-	display: inline-block;
-}
+	.col-10{
+		width: 83.33333333%;
+	}
 
-.col-7{
-	width: 58.33333333%;
-	min-height: 10px;
-	float: left;
-	display: inline-block;
-}
+	.col-9{
+		width: 75%;
+	}
 
-.col-6{
-	width: 50%;
-	min-height: 10px;
-	float: left;
-	display: inline-block;
-}
+	.col-8{
+		width: 66.66666666%;
+	}
 
-.col-5{
-	width: 41.66666666%;
-	min-height: 10px;
-	float: left;
-	display: inline-block;
-}
+	.col-7{
+		width: 58.33333333%;
+	}
 
-.col-4{
-	width: 33.33333333%;
-	min-height: 10px;
-	float: left;
-	display: inline-block;
-}
+	.col-6{
+		width: 50%;
+	}
 
-.col-3{
-	width: 25%;
-	min-height: 10px;
-	float: left;
-	display: inline-block;
-}
+	.col-5{
+		width: 41.66666666%;
+	}
 
-.col-2{
-	width: 16.66666666%;
-	min-height: 10px;
-	float: left;
-	display: inline-block;
-}
+	.col-4{
+		width: 33.33333333%;
+	}
 
-.col-1{
-	width: 8.333333333%;
-	min-height: 10px;
-	float: left;
-	display: inline-block;
+	.col-3{
+		width: 25%;
+	}
+
+	.col-2{
+		width: 16.66666666%;
+	}
+
+	.col-1{
+		width: 8.333333333%;
+	}
 }
 /*
 	HR Styling
@@ -1120,19 +1103,23 @@ nav.nav-right{
 	z-index: 10000;
 }
 
-nav.nav-right > ul{
+nav.nav-right ul{
 	list-style: none;
+}
+
+nav.nav-right ul ul{
+	padding-left: 16px;
+	display: none;
 }
 
 nav.nav-right > ul > li{
 	display: block;
 }
 
-nav.nav-right > ul > li > a{
+nav.nav-right a{
 	text-decoration: none;
 	display: block;
 	color: #808080;
-	padding: 3px 10px;
 	font-size: 15px;
 	border-left: solid 2px transparent;
 	transition: ease border-left-color .2s;
@@ -1141,7 +1128,15 @@ nav.nav-right > ul > li > a{
 	-webkit-transition: ease border-left-color .2s;
 }
 
-nav.nav-right > ul > li > a:hover{
+nav.nav-right > ul > li > ul > li > a{
+	padding: 3px 10px;
+}
+
+nav.nav-right > ul > li > a{
+	padding: 3px 10px;
+}
+
+nav.nav-right a:hover, nav.nav-right .active a{
 	border-left-color: orange;
 }
 

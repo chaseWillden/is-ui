@@ -66,10 +66,15 @@
 			<div class="col-2">
 				<nav class='nav-right fixed'>
 					<ul>
-						<li><a href='#buttonsArea'>Buttons</a></li>
+						<li>
+							<a href='#buttonsArea'>Buttons</a>
+							<ul>
+								<li><a href='#coloredBtnArea'>Colored</a></li>
+							</ul>
+						</li>
 						<li><a href='#dropdownArea'>Dropdowns</a></li>
 						<li><a href='#rightClickArea'>Right Click</a></li>
-						<li><a href=''>Forms</a></li>
+						<li><a href='#formsArea'>Forms</a></li>
 						<li><a href=''>Alerts</a></li>
 						<li><a href=''>Navigation</a></li>
 					</ul>
@@ -91,7 +96,7 @@
 						<button class="btn btn-lg">.btn-lg</button>
 						<button class="btn btn-xl">.btn-xl</button>
 					</div>
-					<div class="col-6">
+					<div class="col-4">
 						<div class="code html">
 						<!-- First line -->
 							<span class='open-tag tag-name'>button</span><span class='attr'>class=</span><span class='attr-val'>btn btn-sm</span><span class='close-tag'></span>Button<span class='open-tag close-tag tag-name'>/button</span>
@@ -107,8 +112,8 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-12">
+				<div class="row" id='coloredBtnArea'>
+					<div class="col-10">
 						<h2>Colored Buttons</h2>
 					</div>
 				</div>
@@ -122,7 +127,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-12">
+					<div class="col-10">
 						<h2>A tag</h2>
 					</div>
 				</div>
@@ -136,7 +141,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-12">
+					<div class="col-10">
 						<h2>Input type Submit</h2>
 					</div>
 				</div>
@@ -155,8 +160,10 @@
 
 		<div class="row" id="dropdownArea">
 			<div class="row">
-				<hr class="hr-fade">
-				<h1 class="center">Dropdown</h1>
+				<div class="col-10">
+					<hr class="hr-fade">
+					<h1 class="center">Dropdown</h1>
+				</div>
 			</div>
 			<div class="row">
 				<div class="col-2"></div>
@@ -204,10 +211,16 @@
 			</div>
 		</div>
 		<!-- End Drop Down -->
-		<hr class="hr-fade">
+		<div class="row">
+			<div class="col-10">
+				<hr class="hr-fade">
+			</div>
+		</div>	
 		<div class="row" id='rightClickArea'>
 			<div class="row">
-				<h1 class="center">Right Click</h1>
+				<div class="col-10">
+					<h1 class="center">Right Click</h1>
+				</div>
 			</div>
 			<div class="row">
 				<div class="col-2"></div>
@@ -264,9 +277,23 @@
 			</div>
 		</div>
 
-		<hr class="hr-fade">
 		<div class="row">
-			<div class="col-12"></div>
+			<div class="col-10">
+				<hr class="hr-fade">
+			</div>
+		</div>
+		<div class="row" id="formsArea">
+			<div class="row">
+				<div class="col-10">
+					<h1 class="center">Forms</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4">
+					<input type="text" value="Username" class="form-comp">
+					<input type="password" class="form-comp">
+				</div>
+			</div>
 		</div>
 
 		<footer class='footer'>
