@@ -49,9 +49,9 @@ module.exports = function(grunt) {
           archive: 'dist/is-ui.0.0.1.beta.zip'
         },
         files: [
-          {src: ['build/js/**.js'], dest: 'js/', expand: true},
-          {src: ['build/css/**.css'], dest: 'css/', expand: true},
-          {src: ['build/include/**'], dest: 'vendor/', expand: true}
+          {src: ['build/js/**.js'], latten: true},
+          {src: ['build/css/**.css'], flatten: true},
+          {src: ['build/include/**'], flatten: true}
         ]
       }
     }

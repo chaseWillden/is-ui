@@ -68,11 +68,10 @@
 				<div class="row">
 					<div class="col-4"></div>
 					<div class="col-2">
-						<a href='https://github.com/chaseWillden/is-ui' class="btn btn-xl blue">Fork on GitHub</a>
+						<a href='https://github.com/chaseWillden/is-ui' target="_blank" class="btn btn-xl blue">Fork on GitHub</a>
 					</div>
-					<div class="col-half"></div>
-					<div class="col-2">
-						<a class="btn btn-xl green">Download (beta)</a>
+					<div class="col-3">
+						<a class="btn btn-xl green" target="_blank" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.0.1.beta.zip'>Download v0.0.1 (beta)</a>
 					</div>
 				</div>
 			</div>
@@ -144,6 +143,13 @@
 						<button class="btn btn-lg green">.btn-lg .green</button>
 						<button class="btn btn-xl orange">.btn-xl .orange</button>
 					</div>
+					<div class="col-4">
+						<pre class="language-markup line-numbers"><code>&lt;button class="btn btn-sm blue"&gt;Button&lt;button&gt;
+&lt;button class="btn btn-md red"&gt;Button&lt;button&gt;
+&lt;button class="btn btn-default red"&gt;Button&lt;button&gt;
+&lt;button class="btn btn-lg green"&gt;Button&lt;button&gt;
+&lt;button class="btn btn-xl orange"&gt;Button&lt;button&gt;</code></pre>
+					</div>
 				</div>
 				<div class="row">
 					<div class="col-10">
@@ -157,6 +163,13 @@
 						<a class="btn btn-default" href=''>.btn-default</a>
 						<a class="btn btn-lg" href=''>.btn-lg</a>
 						<a class="btn btn-xl" href=''>.btn-xl</a>
+					</div>
+					<div class="col-4">
+						<pre class="language-markup line-numbers"><code>&lt;a href='#' class="btn btn-sm"&gt;Button&lt;a&gt;
+&lt;a href='#' class="btn btn-md"&gt;Button&lt;a&gt;
+&lt;a href='#' class="btn btn-default"&gt;Button&lt;a&gt;
+&lt;a href='#' class="btn btn-lg"&gt;Button&lt;a&gt;
+&lt;a href='#' class="btn btn-xl"&gt;Button&lt;a&gt;</code></pre>
 					</div>
 				</div>
 				<div class="row">
@@ -172,6 +185,13 @@
 						<input type='submit' class="btn btn-lg" value=".btn-lg">
 						<input type='submit' class="btn btn-xl" value=".btn-xl">
 					</div>
+					<div class="col-4">
+						<pre class="language-markup line-numbers"><code>&lt;input type='submit' class="btn btn-sm"&gt;Button&lt;a&gt;
+&lt;input type='submit' class="btn btn-md"&gt;Button&lt;a&gt;
+&lt;input type='submit' class="btn btn-default"&gt;Button&lt;a&gt;
+&lt;input type='submit' class="btn btn-lg"&gt;Button&lt;a&gt;
+&lt;input type='submit' class="btn btn-xl"&gt;Button&lt;a&gt;</code></pre>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -186,7 +206,7 @@
 			</div>
 			<div class="row">
 				<div class="col-2"></div>
-				<div class="col-8">
+				<div class="col-2">
 					<div class="btn-group">
 						<div class="btn btn-default">Dropdown</div>
 						<div class="btn btn-default arrow-down"></div>
@@ -227,6 +247,51 @@
 						</ul>
 					</div>
 				</div>
+				<!-- End drop down -->
+
+			</div>
+			<div class="row">
+				<div class="col-10">
+						<pre class="language-markup line-numbers"><code>&lt;div class=&quot;btn-group&quot;&gt;
+	&lt;div class=&quot;btn btn-default&quot;&gt;Dropdown&lt;/div&gt;
+	&lt;div class=&quot;btn btn-default arrow-down&quot;&gt;&lt;/div&gt;
+	&lt;ul class=&quot;dropdown&quot;&gt;
+		&lt;li&gt;
+			&lt;a href=''&gt;Link&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href=''&gt;Another Link&lt;div class='pull-right dim-6'&gt;Ctrl+S&lt;/div&gt;&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href=''&gt;Separated Link &lt;div class=&quot;pull-right dim dim-6&quot;&gt;&amp;#65515;&lt;/div&gt;&lt;/a&gt; 
+			&lt;ul class=&quot;dropdown drop-right&quot;&gt;
+				&lt;li&gt;
+					&lt;a href=''&gt;Link&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;a href=''&gt;Another Link&lt;div class='pull-right dim-6'&gt;Ctrl+S&lt;/div&gt;&lt;/a&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href=''&gt;&lt;div class=&quot;dim dim-6&quot;&gt;&amp;#65513;&lt;/div&gt; Another Link&lt;/a&gt;
+			&lt;ul class=&quot;dropdown drop-left&quot;&gt;
+				&lt;li&gt;
+					&lt;a href=''&gt;Link&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;a href=''&gt;Another Link&lt;div class='pull-right dim-6'&gt;Ctrl+S&lt;/div&gt;&lt;/a&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+		&lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href='' data-title='This is the bottom'&gt;Separated Link &lt;div class='pull-right dim-6'&gt;Ctrl+Q&lt;/div&gt;&lt;/a&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+					</div>
 			</div>
 		</div>
 		<!-- End Drop Down -->
@@ -293,6 +358,11 @@
 						}
 					</script>
 				</div>
+				<div class="col-6">
+						<pre class="language-markup line-numbers"><code>&lt;ul class=&quot;dropdown&quot; style='margin-left: 200px'&gt;
+	...
+&lt;/ul&gt;</code></pre>
+					</div>
 			</div>
 		</div>
 		
@@ -312,6 +382,8 @@
 				<div class="col-4">
 					<input type="text" value="Username" class="form-comp">
 					<input type="password" class="form-comp">
+					<textarea class="form-comp"></textarea>
+					<input type='submit' class="btn btn-default blue">
 				</div>
 			</div>
 		</div>
