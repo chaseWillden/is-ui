@@ -18,6 +18,10 @@
 	margin=bottom: 5px;
 }
 
+.form-comp:after{
+	color: #ccc;
+}
+
 .form-comp:hover{
 	border: solid 1px rgb(144, 144, 144);
 }

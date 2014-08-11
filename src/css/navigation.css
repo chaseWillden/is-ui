@@ -138,19 +138,23 @@ nav.nav-right{
 	z-index: 10000;
 }
 
-nav.nav-right > ul{
+nav.nav-right ul{
 	list-style: none;
+}
+
+nav.nav-right ul ul.sub{
+	padding-left: 16px;
+	display: none;
 }
 
 nav.nav-right > ul > li{
 	display: block;
 }
 
-nav.nav-right > ul > li > a{
+nav.nav-right a{
 	text-decoration: none;
 	display: block;
 	color: #808080;
-	padding: 3px 10px;
 	font-size: 15px;
 	border-left: solid 2px transparent;
 	transition: ease border-left-color .2s;
@@ -159,11 +163,24 @@ nav.nav-right > ul > li > a{
 	-webkit-transition: ease border-left-color .2s;
 }
 
-nav.nav-right > ul > li > a:hover{
+nav.nav-right > ul > li > ul.sub > li > a{
+	padding: 3px 10px;
+}
+
+nav.nav-right > ul > li > a{
+	padding: 3px 10px;
+}
+
+nav.nav-right a:hover, nav.nav-right .active a{
 	border-left-color: orange;
 }
 
 nav.nav-right > ul.menu-right{
 	float: right;
 	text-align: right;
+}
+
+nav.nav-right .empty, nav.nav-right .empty *, nav.nav-right .empty:hover, nav.nav-right .empty *:hover{
+	border: none;
+	background-color: none;
 }

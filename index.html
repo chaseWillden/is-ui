@@ -4,11 +4,22 @@
 	<meta charset="UTF-8">
 	<title>Template</title>
 	<link rel="stylesheet" type="text/css" href="build/css/is-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="prism.css">
 	<script type="text/javascript" src='build/include/jquery.js'></script>
 	<script type="text/javascript" src='build/js/is-ui.min.js'></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-53711221-1', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
 </head>
 <body>
-	<nav class='nav-top'>
+	<nav class='nav-top' id='top'>
 		<ul class="mobile-menu">
 			<li></li>
 			<li></li>
@@ -20,30 +31,27 @@
 				<a href="#">IS-UI</a>
 			</li>
 			<li>
-				<a href="buttons.html">Buttons</a>
+				<a href="buttons.html">JavaScript</a>
 			</li>
 			<li>
-				<a href="alert.html">Alerts</a>
+				<a href="alert.html">Components</a>
 			</li>
 			<li>
-				<a href="dropdown.html">Dropdown</a>
+				<a href="dropdown.html">CSS</a>
 			</li>
 			<li>
-				<a href="#">Drop Down &#65516;</a>
+				<a href='#'>Getting Started &#65516;</a>
 				<ul class="dropdown">
 					<li>
-						<a href=''><div class="dim dim-6">&#65513;</div> Link</a>
+						<a href=''><div class="dim dim-6">&#65513;</div> Download</a>
 						<ul class="dropdown drop-left">
 							<li>
-								<a href=''>Link</a>
+								<a href='https://github.com/chaseWillden/is-ui' target="_blank">GitHub</a>
 							</li>
 							<li>
-								<a href=''>Another Link<div class='pull-right dim-6'>Ctrl+S</div></a>
+								<a href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.0.1.beta.zip'>Download v0.0.1 (beta)</a>
 							</li>
 						</ul>
-					</li>
-					<li>
-						<a href=''>Another Link<div class='pull-right dim-6'>Ctrl+S</div></a>
 					</li>
 				</ul>
 			</li>
@@ -51,15 +59,45 @@
 	</nav>
 	<div class="container">
 		<div class="row">
+			<div class="col-12 pit pit-md">
+				<h1 class="center">IS-UI</h1>
+				<h3 class="center">Another mobile-first front-end CSS framework.</h3>
+				<div class="row">
+					<div class="col-4"></div>
+					<div class="col-2">
+						<a href='https://github.com/chaseWillden/is-ui' target="_blank" class="btn btn-xl blue">Fork on GitHub</a>
+					</div>
+					<div class="col-3">
+						<a class="btn btn-xl green" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.0.1.beta.zip'>Download v0.0.1 (beta)</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
 			<div class="col-6"></div>
 			<div class="col-4"></div>
 			<div class="col-2">
-				<nav class='nav-right fixed'>
+				<nav class='nav-right fixed scrollSpy'>
 					<ul>
-						<li><a href='#buttonsArea'>Buttons</a></li>
+						<li><a href='#top'>Back to Top</a>
+						<li class="empty"><a href=''>&nbsp;</a></li>
+						<li>
+							<a href='#buttonsArea'>Buttons</a>
+							<ul class="sub">
+								<li><a href='#coloredBtnArea'>Colored</a></li>
+							</ul>
+						</li>
 						<li><a href='#dropdownArea'>Dropdowns</a></li>
-						<li><a href=''>Forms</a></li>
-						<li><a href=''>Alerts</a></li>
+						<li><a href='#rightClickArea'>Right Click</a></li>
+						<li><a href='#formsArea'>Forms</a></li>
+						<li>
+							<a href='#displayArea'>Display</a>
+							<ul class="sub">
+								<li><a href='#selectArea'>Selection</a></li>
+								<li><a href='#pitArea'>Pit</a></li>
+							</ul>
+						</li>
+						<li><a href='#alertArea'>Alerts</a></li>
 						<li><a href=''>Navigation</a></li>
 					</ul>
 				</nav>
@@ -80,24 +118,17 @@
 						<button class="btn btn-lg">.btn-lg</button>
 						<button class="btn btn-xl">.btn-xl</button>
 					</div>
-					<div class="col-6">
-						<div class="code html">
-						<!-- First line -->
-							<span class='open-tag tag-name'>button</span><span class='attr'>class=</span><span class='attr-val'>btn btn-sm</span><span class='close-tag'></span>Button<span class='open-tag close-tag tag-name'>/button</span>
-							<br>
-						<!-- Next line -->
-							<span class='open-tag tag-name'>button</span><span class='attr'>class=</span><span class='attr-val'>btn btn-md</span><span class='close-tag'></span>Button<span class='open-tag close-tag tag-name'>/button</span>
-							<br>
-							<span class='open-tag tag-name'>button</span><span class='attr'>class=</span><span class='attr-val'>btn btn-default</span><span class='close-tag'></span>Button<span class='open-tag close-tag tag-name'>/button</span>
-							<br>
-							<span class='open-tag tag-name'>button</span><span class='attr'>class=</span><span class='attr-val'>btn btn-lg</span><span class='close-tag'></span>Button<span class='open-tag close-tag tag-name'>/button</span>
-							<br>
-							<span class='open-tag tag-name'>button</span><span class='attr'>class=</span><span class='attr-val'>btn btn-xl</span><span class='close-tag'></span>Button<span class='open-tag close-tag tag-name'>/button</span>
-						</div>
+					<div class="col-4">
+						<!-- I have issues wrapping the text and having it format correctly -->
+						<pre class="language-markup line-numbers"><code>&lt;button class="btn btn-sm"&gt;Button&lt;button&gt;
+&lt;button class="btn btn-md"&gt;Button&lt;button&gt;
+&lt;button class="btn btn-default"&gt;Button&lt;button&gt;
+&lt;button class="btn btn-lg"&gt;Button&lt;button&gt;
+&lt;button class="btn btn-xl"&gt;Button&lt;button&gt;</code></pre>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-12">
+				<div class="row" id='coloredBtnArea'>
+					<div class="col-10">
 						<h2>Colored Buttons</h2>
 					</div>
 				</div>
@@ -109,9 +140,16 @@
 						<button class="btn btn-lg green">.btn-lg .green</button>
 						<button class="btn btn-xl orange">.btn-xl .orange</button>
 					</div>
+					<div class="col-4">
+						<pre class="language-markup line-numbers"><code>&lt;button class="btn btn-sm blue"&gt;Button&lt;button&gt;
+&lt;button class="btn btn-md red"&gt;Button&lt;button&gt;
+&lt;button class="btn btn-default red"&gt;Button&lt;button&gt;
+&lt;button class="btn btn-lg green"&gt;Button&lt;button&gt;
+&lt;button class="btn btn-xl orange"&gt;Button&lt;button&gt;</code></pre>
+					</div>
 				</div>
 				<div class="row">
-					<div class="col-12">
+					<div class="col-10">
 						<h2>A tag</h2>
 					</div>
 				</div>
@@ -123,9 +161,16 @@
 						<a class="btn btn-lg" href=''>.btn-lg</a>
 						<a class="btn btn-xl" href=''>.btn-xl</a>
 					</div>
+					<div class="col-4">
+						<pre class="language-markup line-numbers"><code>&lt;a href='#' class="btn btn-sm"&gt;Button&lt;a&gt;
+&lt;a href='#' class="btn btn-md"&gt;Button&lt;a&gt;
+&lt;a href='#' class="btn btn-default"&gt;Button&lt;a&gt;
+&lt;a href='#' class="btn btn-lg"&gt;Button&lt;a&gt;
+&lt;a href='#' class="btn btn-xl"&gt;Button&lt;a&gt;</code></pre>
+					</div>
 				</div>
 				<div class="row">
-					<div class="col-12">
+					<div class="col-10">
 						<h2>Input type Submit</h2>
 					</div>
 				</div>
@@ -137,6 +182,13 @@
 						<input type='submit' class="btn btn-lg" value=".btn-lg">
 						<input type='submit' class="btn btn-xl" value=".btn-xl">
 					</div>
+					<div class="col-4">
+						<pre class="language-markup line-numbers"><code>&lt;input type='submit' class="btn btn-sm"&gt;Button&lt;a&gt;
+&lt;input type='submit' class="btn btn-md"&gt;Button&lt;a&gt;
+&lt;input type='submit' class="btn btn-default"&gt;Button&lt;a&gt;
+&lt;input type='submit' class="btn btn-lg"&gt;Button&lt;a&gt;
+&lt;input type='submit' class="btn btn-xl"&gt;Button&lt;a&gt;</code></pre>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -144,16 +196,18 @@
 
 		<div class="row" id="dropdownArea">
 			<div class="row">
-				<hr class="hr-fade">
-				<h1 class="center">Dropdown</h1>
+				<div class="col-10">
+					<hr class="hr-fade">
+					<h1 class="center">Dropdown Menu</h1>
+				</div>
 			</div>
 			<div class="row">
 				<div class="col-2"></div>
-				<div class="col-8">
+				<div class="col-6 pit pit-lg center">
 					<div class="btn-group">
-						<div class="btn btn-default">Dropdown</div>
-						<div class="btn btn-default arrow-down"></div>
-						<ul class="dropdown">
+						<div class="btn btn-default blue">Dropdown</div>
+						<div class="btn btn-default blue arrow-down"></div>
+						<ul class="dropdown stay-open">
 							<li>
 								<a href=''>Link</a>
 							</li>
@@ -190,11 +244,280 @@
 						</ul>
 					</div>
 				</div>
+				<!-- End drop down -->
+
+			</div>
+			<div class="row">
+				<div class="col-10">
+						<pre class="language-markup line-numbers"><code>&lt;ul class=&quot;dropdown&quot;&gt;
+		&lt;li&gt;
+			&lt;a href=''&gt;Link&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href=''&gt;Another Link&lt;div class='pull-right dim-6'&gt;Ctrl+S&lt;/div&gt;&lt;/a&gt;
+		&lt;/li&gt;
+		&lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href=''&gt;Separated Link &lt;div class=&quot;pull-right dim dim-6&quot;&gt;&amp;#65515;&lt;/div&gt;&lt;/a&gt; 
+			&lt;ul class=&quot;dropdown drop-right&quot;&gt;
+				&lt;li&gt;
+					&lt;a href=''&gt;Link&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;a href=''&gt;Another Link&lt;div class='pull-right dim-6'&gt;Ctrl+S&lt;/div&gt;&lt;/a&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href=''&gt;&lt;div class=&quot;dim dim-6&quot;&gt;&amp;#65513;&lt;/div&gt; Another Link&lt;/a&gt;
+			&lt;ul class=&quot;dropdown drop-left&quot;&gt;
+				&lt;li&gt;
+					&lt;a href=''&gt;Link&lt;/a&gt;
+				&lt;/li&gt;
+				&lt;li&gt;
+					&lt;a href=''&gt;Another Link&lt;div class='pull-right dim-6'&gt;Ctrl+S&lt;/div&gt;&lt;/a&gt;
+				&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/li&gt;
+		&lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
+		&lt;li&gt;
+			&lt;a href='' data-title='This is the bottom'&gt;Separated Link &lt;div class='pull-right dim-6'&gt;Ctrl+Q&lt;/div&gt;&lt;/a&gt;
+		&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+				</div>
 			</div>
 		</div>
-		<hr class="hr-fade">
+		<!-- End Drop Down -->
 		<div class="row">
-			<div class="col-12"></div>
+			<div class="col-10">
+				<hr class="hr-fade">
+			</div>
+		</div>	
+		<div class="row" id='rightClickArea'>
+			<div class="row">
+				<div class="col-10">
+					<h1 class="center">Right Click</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-6">
+					<div class="bar-left">
+						<p>Whereever on the HTML has the two classes combined, dropdown and right-click, that will now be the right click default</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-2">
+					<button class="btn btn-default" onclick='enableRightClick(this)'>Enable Right Click</button>
+					<ul class="dropdown" style='margin-left: 200px'>
+						<li>
+							<a href=''>Link</a>
+						</li>
+						<li>
+							<a href=''>Another Link<div class='pull-right dim-6'>Ctrl+S</div></a>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a href=''>Separated Link <div class="pull-right dim dim-6">&#65515;</div></a> 
+							<ul class="dropdown drop-right">
+								<li>
+									<a href=''>Link</a>
+								</li>
+								<li>
+									<a href=''>Another Link<div class='pull-right dim-6'>Ctrl+S</div></a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href=''><div class="dim dim-6">&#65513;</div> Another Link</a>
+							<ul class="dropdown drop-left">
+								<li>
+									<a href=''>Link</a>
+								</li>
+								<li>
+									<a href=''>Another Link<div class='pull-right dim-6'>Ctrl+S</div></a>
+								</li>
+							</ul>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a href='' data-title='This is the bottom'>Separated Link <div class='pull-right dim-6'>Ctrl+Q</div></a>
+						</li>
+					</ul>
+					<script type="text/javascript">
+						function enableRightClick(ele){
+							if ($(ele).next().hasClass('right-click')){
+								$(ele).html('Enable Right Click');
+								$(ele).next().removeClass('right-click');
+							}
+							else{
+								$(ele).html('Disable Right Click');
+								$(ele).next().addClass('right-click');
+							}
+						}
+					</script>
+				</div>
+				<div class="col-6">
+						<pre class="language-markup line-numbers"><code>&lt;ul class=&quot;dropdown&quot; style='margin-left: 200px'&gt;
+	...
+&lt;/ul&gt;</code></pre>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Forms area -->
+		<div class="row">
+			<div class="col-10">
+				<hr class="hr-fade">
+			</div>
+		</div>
+		<div class="row" id="formsArea">
+			<div class="row">
+				<div class="col-10">
+					<h1 class="center">Forms</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4">
+					<input type="text" value="Username" class="form-comp">
+					<input type="password" class="form-comp">
+					<textarea class="form-comp"></textarea>
+					<input type='submit' class="btn btn-default blue">
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-10">
+				<hr class="hr-fade">
+			</div>
+		</div>
+		<div class="row" id="displayArea">
+			<div class="row">
+				<div class="col-10">
+					<h1 class="center">Display</h1>
+				</div>
+			</div>
+			<div class="row" id='selectArea'>
+				<div class="row">
+					<h2>Selection</h2>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<table class="table bottom-line hover highlight">
+							<tr class="head">
+								<th>Class</th>
+								<th>Example</th>
+								<th>Description</th>
+							</tr>
+							<tr>
+								<td>.no-select</td>
+								<td class="no-select">Try to select this text</td>
+								<td>Turn the selection of text off inside an element</td>
+							</tr>
+							<tr>
+								<td>.select-text</td>
+								<td class="select-text">Select This</td>
+								<td>User can select only text inside of an element</td>
+							</tr>
+							<tr>
+								<td>.select-element</td>
+								<td class="select-text">Select This</td>
+								<td>User can select only the element itself</td>
+							</tr>
+							<tr>
+								<td>.select-all</td>
+								<td class="no-select">Select This <span class='select-all'>but you can select this</span></td>
+								<td>User can select only the element itself</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<!-- End selection area -->
+
+			<div class="row" id='pitArea'>
+				<div class="row">
+					<h2>Pits</h2>
+				</div>
+				<div class="row">
+					<div class="col-10 pit">
+						<h1 class="center">This is an example of a .pit</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-10 pit pit-md">
+						<h1 class="center">This is an example of a .pit .pit-md</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-10 pit pit-lg">
+						<h1 class="center">This is an example of a .pit .pit-lg</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-10">
+						<pre class="language-markup line-numbers"><code>&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-10 pit&quot;&gt;
+		&lt;h1 class=&quot;center&quot;&gt;This is an example of a .pit&lt;/h1&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-10 pit pit-md&quot;&gt;
+		&lt;h1 class=&quot;center&quot;&gt;This is an example of a .pit .pit-md&lt;/h1&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-10 pit pit-lg&quot;&gt;
+		&lt;h1 class=&quot;center&quot;&gt;This is an example of a .pit .pit-lg&lt;/h1&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+					</div>
+				</div>
+			</div>
+			<!-- End pit area -->
+
+			<div class="row" id='alertArea'>
+				<div class="row">
+					<h2>Alerts</h2>
+				</div>
+				<div class="row">
+					<div class="col-2"></div>
+					<div class="col-6">
+						<div class="bar-left">
+							<p>If this example code is placed onto the screen, the alert message will be placed into the fixed spot in the upper right corner. To make an alert (or any element) hidden, add the class .hidden.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-1"></div>
+					<div class="col-2">
+						<button class="btn btn-default" onclick='sendAlert()'>Alert</button>
+						<script>
+							var alertPos = 1;
+							function sendAlert(){
+								document.body.innerHTML += '<div class="alert"><div class="title">Example ' + alertPos + '</div><div class="close" id="alert">&times;</div>This is an example alert This is an example alert This is an example alert</div>';
+								setTimeout(function(){
+									$('#alert').click();
+								}, 2000);
+							}
+						</script>
+					</div>
+					<div class="col-1"></div>
+					<div class="col-4">
+						<pre class="language-markup line-numbers"><code>&lt;div class=&quot;alert&quot;&gt;
+	&lt;div class=&quot;title&quot;&gt;Example Title&lt;/div&gt;
+	&lt;div class=&quot;close&quot;&gt;&amp;times;&lt;/div&gt;
+	This is an example alert.
+	This is an example alert.
+	This is an example alert
+&lt;/div&gt;</code></pre>
+					</div>
+				</div>
+			</div>
+			<!-- End Alert area -->
 		</div>
 
 		<footer class='footer'>
@@ -203,5 +526,7 @@
 		<!-- End Drop Down -->
 	</div>
 		<!-- End Container  -->
+
+	<script type="text/javascript" src='prism.js'></script>
 </body>
 </html>

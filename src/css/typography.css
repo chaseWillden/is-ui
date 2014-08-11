@@ -45,3 +45,27 @@
 .center{
 	text-align: center;
 }
+
+.left{
+	text-align: left;
+}
+
+.right{
+	text-align: right;
+}
+
+[class='bar-left']{
+	padding-left: 10px;
+}
+
+.bar-left.skinny{
+	border-left: solid 1px black;
+}
+
+.bar-left{
+	border-left: solid 2px black;
+}
+
+.bar-left.thick{
+	border-left: solid 3px black;
+}
