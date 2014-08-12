@@ -13,9 +13,13 @@ Requirements
  - Node.js
  - Grunt
 
-```git clone https://github.com/chaseWillden/is=ui```
+```
+git clone https://github.com/chaseWillden/is=ui
+```
 
-```grunt```
+```
+grunt
+```
 
 Only edit the files in the src/ folder and grunt will build and do the rest
 
@@ -36,7 +40,9 @@ Once a month will be a "major" day
 
 Each command needs to be followed by:
 
-```grunt build```
+```
+grunt build
+```
 
 to build the compressed folder of the recently built IS-UI release
 
