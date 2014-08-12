@@ -21,7 +21,7 @@
 	</script>
 </head>
 <body>
-	<nav class='nav-top' id='top'>
+	<nav class='nav-top fixed' id='top'>
 		<ul class="mobile-menu">
 			<li></li>
 			<li></li>
@@ -60,16 +60,15 @@
 		</ul>
 	</nav>
 	<div class="container">
+		<div class="row row-1"></div>
 		<div class="row">
 			<div class="col-12 pit pit-md">
 				<h1 class="center">IS-UI</h1>
 				<h3 class="center">Another mobile-first front-end CSS framework.</h3>
 				<div class="row">
-					<div class="col-3"></div>
-					<div class="col-3 center">
+					<div class="col-4"></div>
+					<div class="col-4 center">
 						<a href='https://github.com/chaseWillden/is-ui' target="_blank" class="btn btn-xl blue">Fork on GitHub</a>
-					</div>
-					<div class="col-3 center">
 						<a class="btn btn-xl green" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.0.1.beta.zip'>Download v0.0.1 (beta)</a>
 					</div>
 				</div>
@@ -249,6 +248,7 @@
 				<!-- End drop down -->
 
 			</div>
+			<div class="row row-3"></div>
 			<div class="row">
 				<div class="col-10">
 						<pre class="language-markup line-numbers"><code>&lt;ul class=&quot;dropdown&quot;&gt;
@@ -496,7 +496,7 @@
 				<div class="row">
 					<div class="col-1"></div>
 					<div class="col-2">
-						<button class="btn btn-default" onclick='sendAlert()'>Alert</button>
+						<button class="btn btn-lg red" onclick='sendAlert()'>Alert</button>
 						<script>
 							var alertPos = 1;
 							function sendAlert(){
