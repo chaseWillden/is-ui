@@ -5,6 +5,9 @@
 
 .table{
 	width: 100%;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .table td, .table th{
@@ -18,14 +21,18 @@
 	font-size: 17px;
 }
 
+.table tr:first-child{
+	border-bottom: solid 2px #ccc;
+}
+
 .table.bottom-line td{
-	border-bottom: solid 1px black;
+	border-bottom: solid 1px #8F8F8F;
 }
 
 .table.hover tr:hover{
 	background-color: #E9EAEB;
 }
 
-.table.highlight tr:nth-child(odd){
+.table.highlight tr:nth-child(even){
 	background-color: #F0F0F0;
 }

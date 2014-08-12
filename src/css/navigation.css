@@ -118,6 +118,10 @@ nav.nav-top.active > ul:nth-child(2) > li > a:hover{
 		color: #4285f4;
 	}
 
+	nav.nav-top > ul.menu-right > li.active > a{
+		border-bottom: solid 3px #F1921C;
+	}
+
 	nav.nav-top > ul.menu-right a{
 		text-decoration: none;
 		color: black;
@@ -142,6 +146,7 @@ nav.nav-right{
 	nav.nav-right{
 		z-index: 10000;
 		display: block;
+		position: absolute;
 	}
 
 	nav.nav-right ul{
@@ -189,5 +194,10 @@ nav.nav-right{
 	nav.nav-right .empty, nav.nav-right .empty *, nav.nav-right .empty:hover, nav.nav-right .empty *:hover{
 		border: none;
 		background-color: none;
+	}
+
+	nav.affix-top{
+		position: fixed;
+		top: 100px;
 	}
 }
