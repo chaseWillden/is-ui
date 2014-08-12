@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-
+  var version = grunt.file.readJSON('package.json').version;
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -47,7 +47,7 @@ module.exports = function(grunt) {
       main: {
         options: {
           archive: function(){
-            return 'dist/is-ui.<%= pkg.version %>.zip';
+            return 'dist/is-ui.' + version + '.zip';
           }
         },
         files: [
@@ -61,14 +61,12 @@ module.exports = function(grunt) {
       options: {
         files: ['package.json'],
         updateConfigs: [],
-        commit: true,
-        commitMessage: 'Release v%VERSION%',
-        commitFiles: ['package.json'],
-        createTag: true,
+        commit: false,
+        createTag: false,
         tagName: 'v%VERSION%',
         tagMessage: 'Version %VERSION%',
-        push: true,
-        pushTo: 'upstream',
+        push: false,
+        pushTo: '',
         gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d'
       }
     },
@@ -85,6 +83,8 @@ module.exports = function(grunt) {
 
   // Default task(s).
   grunt.registerTask('default', ['cssmin', 'uglify', 'concat', 'watch']);
-  grunt.registerTask('build', ['cssmin', 'uglify', 'concat', 'bump', 'compress']);
-
+  grunt.registerTask('patch', ['cssmin', 'uglify', 'concat', 'bump:patch']);
+  grunt.registerTask('minor', ['cssmin', 'uglify', 'concat', 'bump:minor']);
+  grunt.registerTask('major', ['cssmin', 'uglify', 'concat', 'bump:major']);
+  grunt.registerTask('build', ['compress']);
 };
