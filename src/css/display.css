@@ -19,21 +19,15 @@
 	position: absolute;
 }
 
-.mobile-only{
-	display: none;
-}
-
-.screen-only{
-    display: inherit;
-}
-
-@media (min-width: 768px) {
+@media (min-width: 1000px) {
 	.mobile-only{
-		display: inherit;
+		display: none !important;
 	}
+}
 
+@media (max-width: 1000px) {
 	.screen-only{
-	    display: none;
+	    display: none !important;
 	}
 }
 
