@@ -1,5 +1,6 @@
 /*
 	Alert removal and animation
+	Author: Chase Willden
 */
 
 var dropDownIsOpened = false;

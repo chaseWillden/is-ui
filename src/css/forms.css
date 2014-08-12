@@ -16,6 +16,10 @@
 	-webkit-border-radius: 2px;
 	margin-top: 5px;
 	margin=bottom: 5px;
+	transition: ease all .2s;
+	-o-transition: ease all .2s;
+	-moz-transition: ease all .2s;
+	-webkit-transition: ease all .2s;
 }
 
 .form-comp:after{

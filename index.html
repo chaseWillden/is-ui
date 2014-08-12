@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Template</title>
+	<title>IS-UI</title>
 	<link rel="stylesheet" type="text/css" href="build/css/is-ui.min.css">
 	<link rel="stylesheet" type="text/css" href="prism.css">
 	<script type="text/javascript" src='build/include/jquery.js'></script>
@@ -33,17 +33,18 @@
 				<a href="#">IS-UI</a>
 			</li>
 			<li>
-				<a href="buttons.html">JavaScript</a>
+				<a href="">JavaScript</a>
+			</li>
+			<li class="active">
+				<a href="index.html">Components</a>
 			</li>
 			<li>
-				<a href="alert.html">Components</a>
-			</li>
-			<li>
-				<a href="dropdown.html">CSS</a>
+				<a href="css.html">CSS</a>
 			</li>
 			<li>
 				<a href='#'>Getting Started &#65516;</a>
 				<ul class="dropdown">
+					<li><a href='gettingStarted.html'>Basic Template</a></li>
 					<li>
 						<a href=''><div class="dim dim-6">&#65513;</div> Download</a>
 						<ul class="dropdown drop-left">
@@ -66,8 +67,7 @@
 				<h1 class="center">IS-UI</h1>
 				<h3 class="center">Another mobile-first front-end CSS framework.</h3>
 				<div class="row">
-					<div class="col-4"></div>
-					<div class="col-4 center">
+					<div class="col-12 center">
 						<a href='https://github.com/chaseWillden/is-ui' target="_blank" class="btn btn-xl blue">Fork on GitHub</a>
 						<a class="btn btn-xl green" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.0.1.beta.zip'>Download v0.0.1 (beta)</a>
 					</div>
@@ -75,10 +75,19 @@
 			</div>
 		</div>
 		<div class="row">
+			<div class="col-2"></div>
+			<div class="col-8">
+				<h2>Use</h2>
+				<div class="bar-left">
+					<p>IS-UI is intended to be simple and easy. If you have any suggestions on how to make something simpler or a featur request, please submit an <a href='https://github.com/chaseWillden/is-ui/issues'>issue on GitHub</a></p>
+				</div>
+			</div> 	
+		</div>
+		<div class="row">
 			<div class="col-6"></div>
 			<div class="col-4"></div>
 			<div class="col-2">
-				<nav class='nav-right fixed scrollSpy'>
+				<nav class='nav-right scrollSpy sticky'>
 					<ul>
 						<li><a href='#top'>Back to Top</a>
 						<li class="empty"><a href=''>&nbsp;</a></li>
@@ -86,6 +95,7 @@
 							<a href='#buttonsArea'>Buttons</a>
 							<ul class="sub">
 								<li><a href='#coloredBtnArea'>Colored</a></li>
+								<li><a href='#btnGroupArea'>Button Groups</a></li>
 							</ul>
 						</li>
 						<li><a href='#dropdownArea'>Dropdowns</a></li>
@@ -96,6 +106,7 @@
 							<ul class="sub">
 								<li><a href='#selectArea'>Selection</a></li>
 								<li><a href='#pitArea'>Pit</a></li>
+								<li><a href='#bulgeArea'>Bulge</a></li>
 							</ul>
 						</li>
 						<li><a href='#alertArea'>Alerts</a></li>
@@ -191,6 +202,33 @@
 &lt;input type='submit' class="btn btn-xl"&gt;Button&lt;a&gt;</code></pre>
 					</div>
 				</div>
+				<div class="row" id='btnGroupArea'>
+					<div class="row">
+						<div class="col-10">
+							<h1 class="center">Button Groups</h1>
+							<hr class="hr-fade">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-1"></div>
+					<div class="col-3">
+						<div class="btn-group">
+							<button class="btn btn-default">1</button>
+							<button class="btn btn-default">2</button>
+							<button class="btn btn-default">3</button>
+							<button class="btn btn-default">4</button>
+							<button class="btn btn-default">5</button>
+						</div>
+					</div>
+					<div class="col-6">
+						<pre class="language-markup line-numbers"><code>&lt;button class=&quot;btn btn-default&quot;&gt;1&lt;/button&gt;
+&lt;button class=&quot;btn btn-default&quot;&gt;2&lt;/button&gt;
+&lt;button class=&quot;btn btn-default&quot;&gt;3&lt;/button&gt;
+&lt;button class=&quot;btn btn-default&quot;&gt;4&lt;/button&gt;
+&lt;button class=&quot;btn btn-default&quot;&gt;5&lt;/button&gt;</code></pre>
+					</div>
+				</div>	
 			</div>
 		</div>
 		<!-- End Btn Area -->
@@ -349,6 +387,7 @@
 						</li>
 					</ul>
 					<script type="text/javascript">
+						var rightClickEnabled = false;
 						function enableRightClick(ele){
 							if ($(ele).next().hasClass('right-click')){
 								$(ele).html('Enable Right Click');
@@ -362,7 +401,7 @@
 					</script>
 				</div>
 				<div class="col-6">
-						<pre class="language-markup line-numbers"><code>&lt;ul class=&quot;dropdown&quot; style='margin-left: 200px'&gt;
+						<pre class="language-markup line-numbers"><code>&lt;ul class=&quot;dropdown right-click&quot; style='margin-left: 200px'&gt;
 	...
 &lt;/ul&gt;</code></pre>
 				</div>
@@ -445,17 +484,26 @@
 					<h2>Pits</h2>
 				</div>
 				<div class="row">
-					<div class="col-10 pit">
+					<div class="col-1"></div>
+					<div class="col-3 pit">
 						<h1 class="center">This is an example of a .pit</h1>
+					</div>
+					<div class="col-3 pit deep">
+						<h1 class="center">This is an example of a .pit .deep</h1>
+					</div>
+					<div class="col-3 pit shallow">
+						<h1 class="center">This is an example of a .pit .shallow</h1>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-10 pit pit-md">
+				<div class="col-1"></div>
+					<div class="col-9 pit pit-md">
 						<h1 class="center">This is an example of a .pit .pit-md</h1>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-10 pit pit-lg">
+					<div class="col-1"></div>
+					<div class="col-9 pit pit-lg">
 						<h1 class="center">This is an example of a .pit .pit-lg</h1>
 					</div>
 				</div>
@@ -480,6 +528,21 @@
 				</div>
 			</div>
 			<!-- End pit area -->
+
+			<div class="row" id="bulgeArea">
+				<div class="row">
+					<h2>Bulge</h2>
+				</div>
+				<div class="row">
+					<div class="col-1 blue bulge center">Color</div>
+					<div class="col-1"></div>
+					<div class="col-1 bulge center">No Color</div>
+					<div class="col-1"></div>
+					<div class="col-1 bulge center high">High</div>
+					<div class="col-1"></div>
+					<div class="col-1 bulge center low">Low</div>
+				</div>
+			</div>
 
 			<div class="row" id='alertArea'>
 				<div class="row">

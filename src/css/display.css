@@ -15,6 +15,10 @@
 	position: fixed !important;
 }
 
+.absolute{
+	position: absolute;
+}
+
 iframe{
 	width: 100%;
 }

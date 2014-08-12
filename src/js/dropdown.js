@@ -1,6 +1,6 @@
 document.onmousedown = function(e){
 	if (e.button == 2){
-		var rightClick = document.querySelectorAll('.dropdown.right-click');
+		var rightClick = $('.dropdown.right-click');
 		if (rightClick.length > 0){
 
 			// Disable right click
@@ -25,7 +25,10 @@ document.onmousedown = function(e){
 			else{
 				rightClick[0].style.top = e.y + 'px';
 			}
+			return false;
 		}
-		return false;
+		else{
+			document.body.oncontextmenu = null;
+		}
 	}
 }

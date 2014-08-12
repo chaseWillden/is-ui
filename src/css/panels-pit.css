@@ -15,6 +15,18 @@
 	background-color: #F0F0F0;
 }
 
+.pit.deep{
+	box-shadow: inset 0 0 23px rgba(0,0,0,.4);
+	-moz-box-shadow: inset 0 0 23px rgba(0,0,0,.4);
+	-webkit-box-shadow: inset 0 0 23px rgba(0,0,0,.4);
+}
+
+.pit.shallow{
+	box-shadow: inset 0 0 3px rgba(0,0,0,.4);
+	-moz-box-shadow: inset 0 0 3px rgba(0,0,0,.4);
+	-webkit-box-shadow: inset 0 0 3px rgba(0,0,0,.4);
+}
+
 .pit-md{
 	padding-top: 5%;
 	padding-bottom: 5%;
@@ -23,4 +35,22 @@
 .pit-lg{
 	padding-top: 10%;
 	padding-bottom: 10%;
+}
+
+.bulge{
+	box-shadow: 0 0 9px rgba(0,0,0,.3);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.3);
+}
+
+.bulge.low{
+	box-shadow: 0 0 3px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+}
+
+.bulge.high{
+	box-shadow: 0 0 11px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 0 11px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0 0 11px rgba(0,0,0,.4);
 }
