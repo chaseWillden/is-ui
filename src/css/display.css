@@ -19,6 +19,16 @@
 	position: absolute;
 }
 
+.mobile-only{
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.mobile-only{
+		display: inherit;
+	}
+}
+
 iframe{
 	width: 100%;
 }
