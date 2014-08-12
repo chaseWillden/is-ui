@@ -24,7 +24,7 @@
 }
 
 .screen-only{
-       display: inherit;
+    display: inherit;
 }
 
 @media (min-width: 768px) {
@@ -32,9 +32,9 @@
 		display: inherit;
 	}
 
-       .screen-only{
-              display: none;
-       }
+	.screen-only{
+	    display: none;
+	}
 }
 
 iframe{

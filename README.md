@@ -27,3 +27,11 @@ Todos
 =====
  - Tables
  - Pit
+
+Releases
+========
+Once every 3 days will be a "build" day where we will build IS-UI and the version number will increase
+
+To do this run the command
+
+grunt build

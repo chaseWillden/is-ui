@@ -1,0 +1,59 @@
+/*
+	Button Group Area
+	Author: Chase Willden;
+*/
+
+
+.btn-group{
+	display: inline-block;
+	position: relative;
+}
+
+.btn-group > .dropdown{
+	top: 100%;
+}
+
+.btn-group > div, .btn-group > a, .btn-group > input[type=submit], .btn-group > button{
+	display: inline-block;
+	border: solid 1px rgba(210, 210, 210, 0.69);
+	outline: none;
+	color: black;
+	background-color: #E8E8E8;
+	font-family: Verdana, sans-serif;
+	cursor: pointer;
+	display: inline-block;
+	text-indent: 0;
+	font-style: normal;
+	text-decoration: none;
+	height: 100%;
+}
+
+.btn-group .btn{
+	margin: 0;
+	float: left;
+}
+
+/*
+	Firefox fix
+*/
+.btn-group *::-moz-focus-inner { 
+    border: 0;
+    padding: 0;
+}
+
+.btn-group:hover{
+	box-shadow: 0px 2px 3px -2px #898989;
+	-moz-box-shadow: 0px 2px 3px -2px #898989;
+	-webkit-box-shadow: 0px 2px 3px -2px #898989;
+}
+
+.btn-group:active{
+	box-shadow: 0px 1px 3px rgba(142, 142, 142, 0.53);
+	-moz-box-shadow: 0px 1px 3px rgba(142, 142, 142, 0.53);
+	-webkit-box-shadow: 0px 1px 3px rgba(142, 142, 142, 0.53);
+}
+
+.btn-group .arrow-down{
+	padding-left: 5px;
+	padding-right: 5px;
+}
