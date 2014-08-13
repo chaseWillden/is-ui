@@ -1,21 +1,21 @@
 module.exports = function(grunt) {
-
+  var version = grunt.file.readJSON('package.json').version;
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     cssmin: {
       combine: {
         files: {
-          'build/css/is-ui.min.css': ['src/css/normalize.css', 'src/css/**.css']
+          'build/css/is-ui.min.css': ['src/css/normalize.css', 'src/css/**.css', 'src/css/*/**.css']
         }
       }
     },
     concat: {
-      js: {
-        src: ['src/css/normalize.css', 'src/css/**.css'],
+      css: {
+        src: ['src/css/normalize.css', 'src/css/**.css', 'src/css/*/**.css'],
         dest: 'build/css/is-ui.css'
       },
-      css: {
+      js: {
         src: ['src/js/**.js'],
         dest: 'build/js/is-ui.js'
       }
@@ -29,7 +29,7 @@ module.exports = function(grunt) {
     },
     watch: {
       css: {
-        files: 'src/css/**.css',
+        files: ['src/css/**.css', 'src/css/*/**.css'],
         tasks: ['cssmin', 'concat', 'compress'],
         options: {
           livereload: true,
@@ -46,15 +46,30 @@ module.exports = function(grunt) {
     compress: {
       main: {
         options: {
-          archive: 'dist/is-ui.0.0.1.beta.zip'
+          archive: function(){
+            return 'dist/is-ui.' + version + '.zip';
+          }
         },
         files: [
-          {src: ['build/js/**.js'], latten: true},
+          {src: ['build/js/**.js'], flatten: true},
           {src: ['build/css/**.css'], flatten: true},
           {src: ['build/include/**'], flatten: true}
         ]
       }
-    }
+    },
+    bump: {
+      options: {
+        files: ['package.json'],
+        updateConfigs: [],
+        commit: false,
+        createTag: false,
+        tagName: 'v%VERSION%',
+        tagMessage: 'Version %VERSION%',
+        push: false,
+        pushTo: '',
+        gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d'
+      }
+    },
   });
 
   grunt.loadNpmTasks('grunt-contrib-cssmin');
@@ -62,8 +77,14 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compress');
+  grunt.loadNpmTasks('grunt-bump');
+
+  // npm install grunt-bump --save-dev
 
   // Default task(s).
-  grunt.registerTask('default', ['cssmin', 'uglify', 'concat', 'compress', 'watch']);
-
+  grunt.registerTask('default', ['cssmin', 'uglify', 'concat', 'watch']);
+  grunt.registerTask('patch', ['cssmin', 'uglify', 'concat', 'bump:patch']);
+  grunt.registerTask('minor', ['cssmin', 'uglify', 'concat', 'bump:minor']);
+  grunt.registerTask('major', ['cssmin', 'uglify', 'concat', 'bump:major']);
+  grunt.registerTask('build', ['compress']);
 };

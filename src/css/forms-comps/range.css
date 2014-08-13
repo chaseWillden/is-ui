@@ -1,0 +1,38 @@
+/*
+    Form Components
+    Author: Chase Willden;
+*/
+
+input[type=range].form-comp{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+    height: 1px;
+}
+
+input[type=range].form-comp::-webkit-slider-thumb{
+	-webkit-appearance: none;
+    background-color: #666;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+}
+
+input[type=range].form-comp::-moz-slider-thumb{
+	-moz-appearance: none;
+    background-color: #666;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+}
+
+input[type=range].form-comp::-webkit-slider-thumb:active{
+	box-shadow: 0 0 5px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,.4);
+}

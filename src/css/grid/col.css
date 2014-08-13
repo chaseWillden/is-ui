@@ -1,0 +1,104 @@
+/*
+	Columns
+	Author: Chase Willden;
+*/
+
+[class*="col-"]{
+	min-height: 10px;
+	float: left;
+	display: block;
+}
+
+.col-12{
+	width: 100%;
+}
+
+.col-11{
+	width: 91.66666666%;
+}
+
+.col-10{
+	width: 83.33333333%;
+}
+
+.col-9{
+	width: 75%;
+}
+
+.col-8{
+	width: 66.66666666%;
+}
+
+.col-7{
+	width: 58.33333333%;
+}
+
+.col-6{
+	width: 50%;
+}
+
+.col-5{
+	width: 41.66666666%;
+}
+
+.col-4{
+	width: 33.33333333%;
+}
+
+.col-3{
+	width: 25%;
+}
+
+.col-2{
+	width: 16.66666666%;
+}
+
+.col-1{
+	width: 8.333333333%;
+}
+
+.col-half{
+	width: 4.166666666%;
+}
+
+/*
+	Phones
+*/
+
+@media (max-width: 768px){
+	[class*='col-'].xs{
+		display: inline-block;
+		width: 100%;
+	}
+}
+
+/*
+	Tablets
+*/
+@media (max-width: 992px){
+	[class*='col-'].sm{
+		display: inline-block;
+		width: 100%;
+	}
+}
+
+/*
+	Everything else
+*/
+
+@media (max-width: 992px){
+	[class*='col-']:not([class*='xs']):not([class*='sm']):not([class*='md']){
+		display: inline-block;
+		width: 100%;
+	}
+}
+
+/*
+	Medium Desktop Computers
+*/
+@media (max-width: 1200px){
+	[class*='col-'].md{
+		display: inline-block;
+		width: 100%;
+	}
+}

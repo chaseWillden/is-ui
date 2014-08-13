@@ -19,6 +19,18 @@
 	position: absolute;
 }
 
+@media (min-width: 1000px) {
+	.mobile-only{
+		display: none !important;
+	}
+}
+
+@media (max-width: 1000px) {
+	.screen-only{
+	    display: none !important;
+	}
+}
+
 iframe{
 	width: 100%;
 }
