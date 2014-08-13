@@ -1,0 +1,38 @@
+/*
+	Form Components
+	Author: Chase Willden;
+*/
+
+.form-comp{
+	font-size: 16px;
+	border: solid 1px rgb(168, 168, 168);
+	outline: none;
+	box-shadow: 0 0 3px rgba(0,0,0,.3);
+	font-family: sans-serif;
+	min-width: 98%;
+	position: relative;
+	padding: 3px 5px 3px 10px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	margin-top: 5px;
+	margin=bottom: 5px;
+	transition: ease all .2s;
+	-o-transition: ease all .2s;
+	-moz-transition: ease all .2s;
+	-webkit-transition: ease all .2s;
+}
+
+.form-comp:after{
+	color: #ccc;
+}
+
+.form-comp:hover{
+	border: solid 1px rgb(144, 144, 144);
+}
+
+.form-comp:active, .form-comp:focus{
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.42);
+	-moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.42);
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.42);
+}

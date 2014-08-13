@@ -485,47 +485,6 @@ th {
 		right: 10px;
 	}
 }
-.code{
-	width: 100%;
-	background-color: #ccc;
-	padding: 10px;
-	box-shadow: 0 0 3px rgba(0,0,0,.15);
-	-moz-box-shadow: 0 0 3px rgba(0,0,0,.15);
-	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.15);
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
-}
-
-.code.html .tag-name{
-	color: blue;
-}
-
-.code.html .open-tag:before{
-	content: '<';
-	color: black;
-}
-
-.code.html .close-tag:after{
-	content: '>';
-	color: black;
-}
-
-.code.html .attr{
-	color: #1D6A85;
-}
-
-.code.html .attr-val{
-	color: #d14836;
-}
-
-.code.html .attr-val:before{
-	content: '"';
-}
-.code.html .attr-val:after{
-	content: '"';
-}
 /*
 	Colors
 	Author: Chase Willden;
@@ -540,6 +499,10 @@ th {
 	background-color: #4285f4 !important;
 	border: 1px solid rgba(18, 113, 235, 0.69);
 	color: white;
+}
+
+.grey{
+	background-color: #ccc;
 }
 
 .red{
@@ -750,141 +713,6 @@ iframe{
 .footer{
 	width: 100%;
 	height: 200px;
-}
-/*
-	Form Components
-*/
-
-.form-comp{
-	font-size: 16px;
-	border: solid 1px rgb(168, 168, 168);
-	outline: none;
-	box-shadow: 0 0 3px rgba(0,0,0,.3);
-	font-family: sans-serif;
-	min-width: 98%;
-	position: relative;
-	padding: 3px 5px 3px 10px;
-	border-radius: 2px;
-	-moz-border-radius: 2px;
-	-webkit-border-radius: 2px;
-	margin-top: 5px;
-	margin=bottom: 5px;
-	transition: ease all .2s;
-	-o-transition: ease all .2s;
-	-moz-transition: ease all .2s;
-	-webkit-transition: ease all .2s;
-}
-
-.form-comp:after{
-	color: #ccc;
-}
-
-.form-comp:hover{
-	border: solid 1px rgb(144, 144, 144);
-}
-
-.form-comp:active, .form-comp:focus{
-	box-shadow: 0 0 6px rgba(0, 0, 0, 0.42);
-	-moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.42);
-	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.42);
-}
-
-.no-resize{
-	resize: none;
-}
-
-textarea.sm{
-	min-height: 20px;
-	height: 20px;
-}
-
-textarea.md{
-	min-height: 60px;
-	height: 60px;
-}
-
-textarea.lg{
-	min-height: 120px;
-	height: 120px;
-}
-
-textarea.xl{
-	min-height: 200px;
-	height: 200px;
-}
-
-input[type=range].form-comp{
-	-webkit-appearance: none;
-	-moz-appearance: none;
-    height: 1px;
-}
-
-input[type=range].form-comp::-webkit-slider-thumb{
-	-webkit-appearance: none;
-    background-color: #666;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    box-shadow: 0 0 5px rgba(0,0,0,.1);
-}
-
-input[type=range].form-comp::-moz-slider-thumb{
-	-moz-appearance: none;
-    background-color: #666;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-    box-shadow: 0 0 5px rgba(0,0,0,.1);
-}
-
-input[type=range].form-comp::-webkit-slider-thumb:active{
-	box-shadow: 0 0 5px rgba(0,0,0,.4);
-	-moz-box-shadow: 0 0 5px rgba(0,0,0,.4);
-	-webkit-box-shadow: 0 0 5px rgba(0,0,0,.4);
-}
-/*
-	HR Styling
-	Author: Chase Willden;
-*/
-
-hr{
-	width: 100%;
-	position: relative;
-}
-
-.hr-fade{
-	border: 0;
-    height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
-}
-
-br.lg{
-	width: 100%;
-	height: 40px;
-}
-/*
-	HR Styling
-*/
-
-hr{
-	width: 100%;
-	position: relative;
-}
-
-.hr-fade{
-	border: 0;
-    height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
 }
 /*
 	Navigation
@@ -1447,6 +1275,111 @@ body {
 	padding-right: 5px;
 }
 /*
+	Form Components
+	Author: Chase Willden;
+*/
+
+.form-comp{
+	font-size: 16px;
+	border: solid 1px rgb(168, 168, 168);
+	outline: none;
+	box-shadow: 0 0 3px rgba(0,0,0,.3);
+	font-family: sans-serif;
+	min-width: 98%;
+	position: relative;
+	padding: 3px 5px 3px 10px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	margin-top: 5px;
+	margin=bottom: 5px;
+	transition: ease all .2s;
+	-o-transition: ease all .2s;
+	-moz-transition: ease all .2s;
+	-webkit-transition: ease all .2s;
+}
+
+.form-comp:after{
+	color: #ccc;
+}
+
+.form-comp:hover{
+	border: solid 1px rgb(144, 144, 144);
+}
+
+.form-comp:active, .form-comp:focus{
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.42);
+	-moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.42);
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.42);
+}
+/*
+    Form Components
+    Author: Chase Willden;
+*/
+
+input[type=range].form-comp{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+    height: 1px;
+}
+
+input[type=range].form-comp::-webkit-slider-thumb{
+	-webkit-appearance: none;
+    background-color: #666;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+}
+
+input[type=range].form-comp::-moz-slider-thumb{
+	-moz-appearance: none;
+    background-color: #666;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0,0,0,.1);
+}
+
+input[type=range].form-comp::-webkit-slider-thumb:active{
+	box-shadow: 0 0 5px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,.4);
+}
+/*
+	Form Components
+	Author: Chase Willden;
+*/
+
+.no-resize{
+	resize: none;
+}
+
+textarea.sm{
+	min-height: 20px;
+	height: 20px;
+}
+
+textarea.md{
+	min-height: 60px;
+	height: 60px;
+}
+
+textarea.lg{
+	min-height: 120px;
+	height: 120px;
+}
+
+textarea.xl{
+	min-height: 200px;
+	height: 200px;
+}
+
+/*
 	Columns
 	Author: Chase Willden;
 */
@@ -1455,7 +1388,58 @@ body {
 	min-height: 10px;
 	float: left;
 	display: block;
+}
+
+.col-12{
 	width: 100%;
+}
+
+.col-11{
+	width: 91.66666666%;
+}
+
+.col-10{
+	width: 83.33333333%;
+}
+
+.col-9{
+	width: 75%;
+}
+
+.col-8{
+	width: 66.66666666%;
+}
+
+.col-7{
+	width: 58.33333333%;
+}
+
+.col-6{
+	width: 50%;
+}
+
+.col-5{
+	width: 41.66666666%;
+}
+
+.col-4{
+	width: 33.33333333%;
+}
+
+.col-3{
+	width: 25%;
+}
+
+.col-2{
+	width: 16.66666666%;
+}
+
+.col-1{
+	width: 8.333333333%;
+}
+
+.col-half{
+	width: 4.166666666%;
 }
 
 /*
@@ -1465,91 +1449,38 @@ body {
 @media (max-width: 768px){
 	[class*='col-'].xs{
 		display: inline-block;
+		width: 100%;
 	}
 }
 
 /*
 	Tablets
 */
-@media (min-width: 768px) and (max-width: 992px){
+@media (max-width: 992px){
 	[class*='col-'].sm{
 		display: inline-block;
+		width: 100%;
+	}
+}
+
+/*
+	Everything else
+*/
+
+@media (max-width: 992px){
+	[class*='col-']:not([class*='xs']):not([class*='sm']):not([class*='md']){
+		display: inline-block;
+		width: 100%;
 	}
 }
 
 /*
 	Medium Desktop Computers
 */
-@media (min-width: 992px) and (max-width: 1200px){
+@media (max-width: 1200px){
 	[class*='col-'].md{
 		display: inline-block;
-	}
-}
-
-/*
-	Large Desktop Computers
-*/
-@media (min-width: 1200px){
-	[class*='col-'].lg{
-		display: inline-block;
-	}
-}
-
-@media (min-width: 1000px){
-	[class*="col-"]{
-		display: inline-block;
-	}
-
-	.col-12{
 		width: 100%;
-	}
-
-	.col-11{
-		width: 91.66666666%;
-	}
-
-	.col-10{
-		width: 83.33333333%;
-	}
-
-	.col-9{
-		width: 75%;
-	}
-
-	.col-8{
-		width: 66.66666666%;
-	}
-
-	.col-7{
-		width: 58.33333333%;
-	}
-
-	.col-6{
-		width: 50%;
-	}
-
-	.col-5{
-		width: 41.66666666%;
-	}
-
-	.col-4{
-		width: 33.33333333%;
-	}
-
-	.col-3{
-		width: 25%;
-	}
-
-	.col-2{
-		width: 16.66666666%;
-	}
-
-	.col-1{
-		width: 8.333333333%;
-	}
-
-	.col-half{
-		width: 4.166666666%;
 	}
 }
 /*
@@ -1614,4 +1545,31 @@ body {
 
 .row-half{
 	min-height: 4.166666666%;
+}
+/*
+	HR Styling
+	Author: Chase Willden;
+*/
+
+br.lg{
+	width: 100%;
+	height: 40px;
+}
+/*
+	HR Styling
+	Author: Chase Willden;
+*/
+
+hr{
+	width: 100%;
+	position: relative;
+}
+
+.hr-fade{
+	border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
 }

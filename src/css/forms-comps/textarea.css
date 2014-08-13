@@ -1,0 +1,28 @@
+/*
+	Form Components
+	Author: Chase Willden;
+*/
+
+.no-resize{
+	resize: none;
+}
+
+textarea.sm{
+	min-height: 20px;
+	height: 20px;
+}
+
+textarea.md{
+	min-height: 60px;
+	height: 60px;
+}
+
+textarea.lg{
+	min-height: 120px;
+	height: 120px;
+}
+
+textarea.xl{
+	min-height: 200px;
+	height: 200px;
+}
