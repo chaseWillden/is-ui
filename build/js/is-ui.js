@@ -38,8 +38,20 @@ document.onmousedown = function(e){
 */
 
 var dropDownIsOpened = false;
-
+var touchClickRunning = false;
 $(window).click(function(e){
+	touchClickRunning = true;
+	touchClick(e);
+	touchClickRunning = false;
+});
+
+$(window).on('touchstart', function(e){
+	touchClickRunning = true;
+	touchClick(e);
+	touchClickRunning = false;
+});
+
+function touchClick(e){
 	var right = $('.right-click');
 	var target = $(e.target);
 	$('.btn-group').find('.dropdown.show').removeClass('show');
@@ -72,10 +84,32 @@ $(window).click(function(e){
 			dropDownIsOpened = true;
 		}
 	}
+	if(target.hasClass('mobile-menu') || target.parent().hasClass('mobile-menu')){
+		if (target.parent().next().prop('tagName').toLowerCase() === 'ul'){
+			if (target.parent().next().css('left') == '0px'){
+				target.parent().next().animate({left: '-100%'});
+				$('.mobile-menu').animate({'left': '10px'})
+			}
+			else{
+				target.parent().next().animate({left: 0});
+				$('.mobile-menu').animate({'left': '250px'})
+			}
+		}
+		else{
+			if (target.parent().parent().next().css('left') == '0px'){
+				target.parent().parent().next().animate({left: '-100%'});
+				$('.mobile-menu').animate({'left': '10px'})
+			}
+			else{
+				target.parent().parent().next().animate({left: 0});
+				$('.mobile-menu').animate({'left': '250px'})
+			}
+		}
+	}
 	else{
 		dropDownIsOpened = false;
 	}
-})
+}
 // Scroll spy
 $(document).ready(function(){
 	var lastId;
