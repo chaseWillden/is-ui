@@ -4,15 +4,6 @@
 */
 
 /* Mobile Version First */
-ul.mobile-menu > li:first-child{
-	border: none;
-}
-
-ul.mobile-menu > li{
-	width: 30px;
-	height: 6px;
-	border-top: solid 1px #666;
-}
 nav.nav-top{
 	position: relative;
 	top: 0;
@@ -27,6 +18,11 @@ nav.nav-top{
 	bottom: inherit;
 	width: auto;
 }
+
+nav.nav-top ul:nth-child(2).opened{
+	left: 0;
+}
+
 nav.nav-top > ul:nth-child(2){
 	position: fixed;
 	top: 0;
@@ -38,6 +34,10 @@ nav.nav-top > ul:nth-child(2){
 	padding-top: 40px;
 	list-style: none;
 	padding-left: 0;
+	transition: ease all .5s;
+	-o-transition: ease all .5s;
+	-moz-transition: ease all .5s;
+	-webkit-transition: ease all .5s;
 }
 
 nav.nav-top > ul > li > a{
@@ -52,22 +52,21 @@ nav.nav-top > ul > li > a{
 nav.nav-top > ul.mobile-menu{
 	list-style: none;
 	display: block;
-	width: 30px;
-	height: 27px;
-	border: solid 1px #666;
 	padding: 0;
-	border-radius: 4px;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
 	position: absolute;
-	top: 10px;
-	left: 10px;
+	top: 2px;
+	left: 2px;
 	margin: 0;
-	box-shadow: 0 0 6px rgba(0,0,0,.3);
-	-moz-box-shadow: 0 0 6px rgba(0,0,0,.3);
-	-webkit-box-shadow: 0 0 6px rgba(0,0,0,.3);
 	cursor: pointer;
 	z-index: 10000;
+	transition: ease all .5s;
+	-o-transition: ease all .5s;
+	-moz-transition: ease all .5s;
+	-webkit-transition: ease all .5s;
+}
+
+nav.nav-top > ul.mobile-menu.opened{
+	left: 202px;
 }
 
 nav.nav-top.active{

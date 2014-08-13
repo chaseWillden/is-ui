@@ -86,23 +86,27 @@ function touchClick(e){
 	}
 	if(target.hasClass('mobile-menu') || target.parent().hasClass('mobile-menu')){
 		if (target.parent().next().prop('tagName').toLowerCase() === 'ul'){
-			if (target.parent().next().css('left') == '0px'){
-				target.parent().next().animate({left: '-100%'});
-				$('.mobile-menu').animate({'left': '10px'})
+			if (target.parent().next().hasClass('opened')){
+				target.parent().next().removeClass('opened');
+				$('.mobile-menu').removeClass('opened');
+				$('.mobile-menu *').html('>');
 			}
 			else{
-				target.parent().next().animate({left: 0});
-				$('.mobile-menu').animate({'left': '250px'})
+				target.parent().next().addClass('opened');
+				$('.mobile-menu').addClass('opened');
+				$('.mobile-menu *').html('<');
 			}
 		}
 		else{
-			if (target.parent().parent().next().css('left') == '0px'){
-				target.parent().parent().next().animate({left: '-100%'});
-				$('.mobile-menu').animate({'left': '10px'})
+			if (target.parent().parent().next().hasClass('opened')){
+				target.parent().parent().next().removeClass('opened');
+				$('.mobile-menu').removeClass('opened');
+				$('.mobile-menu *').html('>');
 			}
 			else{
-				target.parent().parent().next().animate({left: 0});
-				$('.mobile-menu').animate({'left': '250px'})
+				target.parent().parent().next().addClass('opened');
+				$('.mobile-menu').addClass('opened');
+				$('.mobile-menu *').html('<');
 			}
 		}
 	}
