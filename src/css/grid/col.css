@@ -87,7 +87,7 @@
 */
 
 @media (max-width: 992px){
-	[class*='col-']:not([class*='sm']):not([class*='md']):not([class*='lg']){
+	[class*='col-']:not([class*='sm']){
 		display: inline-block;
 		width: 100%;
 	}

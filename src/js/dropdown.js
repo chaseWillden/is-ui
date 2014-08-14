@@ -4,27 +4,42 @@ document.onmousedown = function(e){
 		if (rightClick.length > 0){
 
 			// Disable right click
-			document.body.oncontextmenu = function(){
+			document.body.oncontextmenu = document.oncontextmenu = function(){
 				return false;
 			}
-			// Its rightClick[0] because only the first right-click will show
-			rightClick[0].className += ' show';
-			var width = rightClick[0].offsetWidth;
-			var height = rightClick[0].offsetHeight;
+			if (document.addEventListener) {
+		        document.addEventListener('contextmenu', function(e) {
+		        	// Its rightClick[0] because only the first right-click will show
+					rightClick[0].className += ' show';
+					var width = rightClick[0].offsetWidth;
+					var height = rightClick[0].offsetHeight;
 
-			// Make sure menu shows on screen
-			if (window.innerWidth > (e.x + width)){
-				rightClick[0].style.left = e.x + 'px';
-			}
-			else{
-				rightClick[0].style.left = (e.x - width) + 'px';
-			}
-			if (window.innerHeight < (e.y + height)){
-				rightClick[0].style.top = (e.y - height) + 'px';
-			}
-			else{
-				rightClick[0].style.top = e.y + 'px';
-			}
+					// Make sure menu shows on screen
+					console.log($(e));
+					if (!e.y){
+						e.y = e.clientY;
+					}
+					if (!e.x){
+						e.x = e.clientX;
+					}
+					if (window.innerWidth > (e.x + width)){
+						rightClick[0].style.left = e.x + 'px';
+					}
+					else{
+						rightClick[0].style.left = (e.x - width) + 'px';
+					}
+					if (window.innerHeight < (e.y + height)){
+						rightClick[0].style.top = (e.y - height) + 'px';
+					}
+					else{
+						rightClick[0].style.top = e.y + 'px';
+					}
+		        }, false);
+		    } else {
+		        document.attachEvent('oncontextmenu', function() {
+		            window.event.returnValue = false;
+		        });
+		    }
 			return false;
 		}
 		else{

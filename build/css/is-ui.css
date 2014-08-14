@@ -1097,7 +1097,7 @@ body {
 	-moz-border-radius: 2px;
 	-webkit-border-radius: 2px;
 	margin-top: 5px;
-	margin=bottom: 5px;
+	margin-bottom: 5px;
 	transition: ease all .2s;
 	-o-transition: ease all .2s;
 	-moz-transition: ease all .2s;
@@ -1273,7 +1273,7 @@ textarea.xl{
 */
 
 @media (max-width: 992px){
-	[class*='col-']:not([class*='sm']):not([class*='md']):not([class*='lg']){
+	[class*='col-']:not([class*='sm']){
 		display: inline-block;
 		width: 100%;
 	}
@@ -1389,32 +1389,38 @@ hr{
 	top: 60px;
 	background-color: white;
 	z-index: 10001;
-	width: 60%;
+	width: 95%;
 	padding: 12px;
 	min-height: 30%;
-	left: 20%;
+	left: 2.5%;
 	box-shadow: 0 0 9px rgba(0,0,0,.5);
 	-moz-box-shadow: 0 0 9px rgba(0,0,0,.5);
 	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.5);
 }
 
-.modal.md{
-	width: 70%;
-	left: 15%;
+@media (min-width: 992px){
+	.modal{
+		width: 60%;
+		left: 20%;
+	}
+	.modal.md{
+		width: 70%;
+		left: 15%;
+	}
+
+	.modal.lg{
+		width: 80%;
+		left: 10%;
+	}
+
+	.modal.xl{
+		left: 10px;
+		right: 10px;
+		width: auto;
+	}
 }
 
-.modal.lg{
-	width: 80%;
-	left: 10%;
-}
-
-.modal.xl{
-	left: 10px;
-	right: 10px;
-	width: auto;
-}
-
-.modal *{
+.modal *, .modal{
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -1480,7 +1486,7 @@ nav.nav-top ul:nth-child(2).opened{
 nav.nav-top > ul:nth-child(2){
 	position: fixed;
 	top: 0;
-	left: -100%;
+	left: -101%;
 	bottom: 0;
 	width: 200px;
 	margin: 0;
@@ -1580,6 +1586,7 @@ nav.nav-top.active > ul:nth-child(2) > li > a:hover{
 	nav.nav-top > ul.menu-right > li > a{
 		padding: 13px 25px 11px 25px;
 		border-bottom: solid 3px transparent;
+		border-top: solid 1px transparent;
 		transition: ease border-bottom .3s;
 		-o-transition: ease border-bottom .3s;
 		-moz-transition: ease border-bottom .3s;

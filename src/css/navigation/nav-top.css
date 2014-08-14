@@ -26,7 +26,7 @@ nav.nav-top ul:nth-child(2).opened{
 nav.nav-top > ul:nth-child(2){
 	position: fixed;
 	top: 0;
-	left: -100%;
+	left: -101%;
 	bottom: 0;
 	width: 200px;
 	margin: 0;
@@ -126,6 +126,7 @@ nav.nav-top.active > ul:nth-child(2) > li > a:hover{
 	nav.nav-top > ul.menu-right > li > a{
 		padding: 13px 25px 11px 25px;
 		border-bottom: solid 3px transparent;
+		border-top: solid 1px transparent;
 		transition: ease border-bottom .3s;
 		-o-transition: ease border-bottom .3s;
 		-moz-transition: ease border-bottom .3s;
