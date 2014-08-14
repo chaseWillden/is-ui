@@ -55,6 +55,10 @@ function touchClick(e){
 	var right = $('.right-click');
 	var target = $(e.target);
 	$('.btn-group').find('.dropdown.show').removeClass('show');
+	if ($(target).attr('modal')){
+		var ele = $($(target).attr('modal'));
+		ele.fadeToggle();
+	}
 	if (right.length > 0){
 		right.each(function(){
 			if ($(this).hasClass('show')){
@@ -64,10 +68,15 @@ function touchClick(e){
 	}
 	if (target.hasClass('close')){
 		var ele = target;
-		$(ele).parent().addClass('off');
-		setTimeout(function(){
-			$(ele).parent().remove();
-		}, 500);
+		if ($(ele).parent().parent().hasClass('modal')){
+			$(ele).parent().parent().fadeOut();
+		}
+		else{
+			$(ele).parent().addClass('off');
+			setTimeout(function(){
+				$(ele).parent().remove();
+			}, 500);
+		}
 	}
 	else if(target.hasClass('mobile-menu') || target.parent().hasClass('mobile-menu')){
 		if(target.parent().parent().hasClass('active')){

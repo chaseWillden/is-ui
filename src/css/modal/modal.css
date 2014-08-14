@@ -1,0 +1,74 @@
+/*
+	Modal
+	Author: Chase Willden;
+*/
+
+.modal{
+	position: fixed;
+	display: none;
+	top: 60px;
+	background-color: white;
+	z-index: 10001;
+	width: 60%;
+	padding: 12px;
+	min-height: 30%;
+	left: 20%;
+	box-shadow: 0 0 9px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.5);
+}
+
+.modal.md{
+	width: 70%;
+	left: 15%;
+}
+
+.modal.lg{
+	width: 80%;
+	left: 10%;
+}
+
+.modal.xl{
+	left: 10px;
+	right: 10px;
+	width: auto;
+}
+
+.modal *{
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.modal .close:not([class*='btn']){
+	cursor: pointer;
+	color: #ccc;
+	position: absolute;
+	top: 3px;
+	right: 5px;
+}
+
+.modal .close:hover{
+	color: black;
+}
+
+.modal > .head{
+	width: 100%;
+	padding: 3px 0;
+	border-bottom: solid 1px #ccc;
+	font-weight: bold;
+}
+
+.modal > .body{
+	padding-top: 10px;
+}
+
+.modal > .footer{
+	position: relative;
+}
+
+.modal > .footer .btn-group{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}

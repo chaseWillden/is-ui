@@ -66,7 +66,7 @@
 */
 
 @media (max-width: 768px){
-	[class*='col-'].xs{
+	[class*='col-'].sm{
 		display: inline-block;
 		width: 100%;
 	}
@@ -76,7 +76,7 @@
 	Tablets
 */
 @media (max-width: 992px){
-	[class*='col-'].sm{
+	[class*='col-'].md{
 		display: inline-block;
 		width: 100%;
 	}
@@ -87,7 +87,7 @@
 */
 
 @media (max-width: 992px){
-	[class*='col-']:not([class*='xs']):not([class*='sm']):not([class*='md']){
+	[class*='col-']:not([class*='sm']):not([class*='md']):not([class*='lg']){
 		display: inline-block;
 		width: 100%;
 	}
@@ -97,7 +97,7 @@
 	Medium Desktop Computers
 */
 @media (max-width: 1200px){
-	[class*='col-'].md{
+	[class*='col-'].lg{
 		display: inline-block;
 		width: 100%;
 	}
