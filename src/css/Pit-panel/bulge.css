@@ -1,0 +1,21 @@
+/*
+	Bulge
+	Author: Chase Willden;
+*/
+.bulge{
+	box-shadow: 0 0 9px rgba(0,0,0,.3);
+	-moz-box-shadow: 0 0 9px rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.3);
+}
+
+.bulge.low{
+	box-shadow: 0 0 3px rgba(0,0,0,.2);
+	-moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+}
+
+.bulge.high{
+	box-shadow: 0 0 11px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 0 11px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0 0 11px rgba(0,0,0,.4);
+}

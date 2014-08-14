@@ -26,10 +26,10 @@
 		</ul>
 		<ul class="menu-right">
 			<li>
-				<a href="#">IS-UI</a>
+				<a href="gettingStarted.html">IS-UI</a>
 			</li>
 			<li>
-				<a href="#">JavaScript</a>
+				<a href="javascript.html">JavaScript</a>
 			</li>
 			<li>
 				<a href="index.html">Components</a>
@@ -59,13 +59,13 @@
 	<div class="container">
 		<div class="row row-1"></div>
 		<div class="row">
-			<div class="col-12 pit pit-md">
+			<div class="col-12 pit md">
 				<h1 class="center">IS-UI</h1>
 				<h3 class="center">Another mobile-first front-end CSS framework.</h3>
 				<div class="row">
 					<div class="col-12 center">
 						<a href='https://github.com/chaseWillden/is-ui' target="_blank" class="btn btn-xl blue">Fork on GitHub</a>
-						<a class="btn btn-xl green screen-only" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.0.1.beta.zip'>Download v0.0.1 (beta)</a>
+						<a class="btn btn-xl green screen-only" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.0.4.zip'>Download v0.0.4 (beta)</a>
 					</div>
 				</div>
 			</div>
@@ -77,6 +77,43 @@
 				<div class="bar-left">
 					<p>IS-UI is another mobile-first front-end CSS framework. The sole purpose of this is literally to be another alternative, to be another solution. With night you have day. With water you have land. With rice you have beans. All are good, neither are evil, both are useful. Let this be another resource for developing the web even furthur.</p>
 				</div>
+			</div> 	
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col-8">
+				<h2>Sizing Concept</h2>
+				<div class="bar-left">
+					<p>Each built in Element with IS-UI has a minumum of 5 different sizing options. Small, Medium, Default, Large, and X-Large. Each of these should be placed into the same element that you want resized. For Example: </p>
+				</div>
+			</div> 	
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col-8">
+				<pre class="language-markup line-numbers"><code>&lt;div class=&quot;col-1 sm&quot;&gt;Small&lt;/div&gt;
+&lt;div class=&quot;col-1 md&quot;&gt;Medium&lt;/div&gt;
+&lt;div class=&quot;col-1&quot;&gt;Default&lt;/div&gt;
+&lt;div class=&quot;col-1 lg&quot;&gt;Large&lt;/div&gt;
+&lt;div class=&quot;col-1 xl&quot;&gt;X-Large&lt;/div&gt;</code></pre>
+			</div> 	
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col-8">
+				<div class="bar-left">
+					<p>Or another example is the modal, these could be resized differently. See modal in <a href="javascript.html">JavaScript</a> for more information on modals</p>
+				</div>
+			</div> 	
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col-8">
+				<pre class="language-markup line-numbers"><code>&lt;div class=&quot;modal sm&quot;&gt;Small&lt;/div&gt;
+&lt;div class=&quot;modal md&quot;&gt;Medium&lt;/div&gt;
+&lt;div class=&quot;modal&quot;&gt;Default&lt;/div&gt;
+&lt;div class=&quot;modal lg&quot;&gt;Large&lt;/div&gt;
+&lt;div class=&quot;modal xl&quot;&gt;X-Large&lt;/div&gt;</code></pre>
 			</div> 	
 		</div>
 		<div class="row">
@@ -113,9 +150,9 @@
 						<li>
 							<a href='#gridArea'>Grid</a>
 							<ul class="sub">
-								<li><a href='#xsGridArea'>X-Small</a></li>
 								<li><a href='#smGridArea'>Small</a></li>
 								<li><a href='#mdGridArea'>Medium</a></li>
+								<li><a href='#lgGridArea'>Large</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -434,7 +471,16 @@
 					<div class="col-6">
 						<pre class="language-markup line-numbers"><code>&lt;textarea class=&quot;form-comp lg&quot;&gt;Large&lt;/textarea&gt;</code></pre>
 					</div>
-				</div>	
+				</div>
+				<div class="row">
+					<div class="col-3">
+						<textarea class="form-comp xl">X-Large</textarea>
+					</div>
+					<div class="col-1"></div>
+					<div class="col-6">
+						<pre class="language-markup line-numbers"><code>&lt;textarea class=&quot;form-comp xl&quot;&gt;X-Large&lt;/textarea&gt;</code></pre>
+					</div>
+				</div>		
 				<div class="row">
 					<div class="col-3">
 						<textarea class="form-comp no-resize">No Resize</textarea>
@@ -527,24 +573,11 @@
 			<div class="row">
 				<div class="col-12 grey center">.col-12</div>
 			</div>
-			<div class="row" id='xsGridArea'>
-				<div class="col-10">
-					<h2>XS Grid</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-2 grey center xs">.col-2</div>
-				<div class="col-2 grey center xs">.col-2</div>
-				<div class="col-2 grey center xs">.col-2</div>
-				<div class="col-2 grey center xs">.col-2</div>
-				<div class="col-2 grey center xs">.col-2</div>
-				<div class="col-2 grey center xs">.col-2</div>	
-			</div>	
 			<div class="row" id='smGridArea'>
 				<div class="col-10">
 					<h2>Small Grid</h2>
 				</div>
-			</div>
+			</div>	
 			<div class="row">
 				<div class="col-2 grey center sm">.col-2</div>
 				<div class="col-2 grey center sm">.col-2</div>
@@ -552,8 +585,8 @@
 				<div class="col-2 grey center sm">.col-2</div>
 				<div class="col-2 grey center sm">.col-2</div>
 				<div class="col-2 grey center sm">.col-2</div>	
-			</div>
-			<div class="row" id='lgGridArea'>
+			</div>	
+			<div class="row" id='mdGridArea'>
 				<div class="col-10">
 					<h2>Medium Grid</h2>
 				</div>
@@ -563,8 +596,21 @@
 				<div class="col-2 grey center md">.col-2</div>
 				<div class="col-2 grey center md">.col-2</div>
 				<div class="col-2 grey center md">.col-2</div>
-				<div class="col-2 grey center md">.col-2</div>
 				<div class="col-2 grey center md">.col-2</div>	
+				<div class="col-2 grey center md">.col-2</div>
+			</div>
+			<div class="row" id='lgGridArea'>
+				<div class="col-10">
+					<h2>Large Grid</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-2 grey center lg">.col-2</div>
+				<div class="col-2 grey center lg">.col-2</div>
+				<div class="col-2 grey center lg">.col-2</div>
+				<div class="col-2 grey center lg">.col-2</div>
+				<div class="col-2 grey center lg">.col-2</div>
+				<div class="col-2 grey center lg">.col-2</div>	
 			</div>
 		</div>
 
