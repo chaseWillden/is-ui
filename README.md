@@ -1,7 +1,7 @@
 is-ui
 =====
 
-A mobile-first front-end CSS framework as another alternative to Twitter's Bootstrap
+IS-UI is another mobile-first front-end CSS framework. The sole purpose of this is literally to be another alternative, to be another solution. With night you have day. With water you have land. With rice you have beans. All are good, neither are evil, both are useful. Let this be another resource for developing the web even furthur.
 
 http://chasewillden.github.io/is-ui/
 
@@ -23,15 +23,6 @@ grunt
 
 Only edit the files in the src/ folder and grunt will build and do the rest
 
-Bugs
-----
- - Drodown sub text appears on new line
-
-Todos
-=====
- - Tables
- - Pit
-
 Releases
 ========
 Once every 3 days will be a "patch" day where we will build IS-UI and the version number will increase
@@ -49,5 +40,16 @@ to build the compressed folder of the recently built IS-UI release
 To do this run the command
 
 Patch: ```grunt patch```
+
 Minor: ```grunt minor```
+
 Major: ```grunt major```
+
+Bugs
+----
+ - Drodown sub text appears on new line
+ - Right click event off on IE 11
+
+Todos
+=====
+ - Mobile Menu 2nd layer and 3rd layer menus
