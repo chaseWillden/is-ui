@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Getting Started</title>
 	<meta name='viewport' content='width=device-width, initial-scale=1.0;'>
-	<link rel="stylesheet" type="text/css" href="build/css/is-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="build/css/is-ui.css">
 	<link rel="stylesheet" type="text/css" href="prism.css">
 	<script type="text/javascript" src='build/include/jquery.js'></script>
 	<script type="text/javascript" src='build/js/is-ui.min.js'></script>
@@ -48,7 +48,7 @@
 								<a href='https://github.com/chaseWillden/is-ui' target="_blank">GitHub</a>
 							</li>
 							<li>
-								<a href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.0.4.zip'>Download v0.0.4 (beta)</a>
+								<a href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.0.5.zip'>Download v0.0.5 (beta)</a>
 							</li>
 						</ul>
 					</li>
@@ -65,56 +65,10 @@
 				<div class="row">
 					<div class="col-12 center">
 						<a href='https://github.com/chaseWillden/is-ui' target="_blank" class="btn btn-xl blue">Fork on GitHub</a>
-						<a class="btn btn-xl green screen-only" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.0.4.zip'>Download v0.0.4 (beta)</a>
+						<a class="btn btn-xl green screen-only" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.0.5.zip'>Download v0.0.5 (beta)</a>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-2"></div>
-			<div class="col-8">
-				<h2>Vision</h2>
-				<div class="bar-left">
-					<p>IS-UI is another mobile-first front-end CSS framework. The sole purpose of this is literally to be another alternative, to be another solution. With night you have day. With water you have land. With rice you have beans. All are good, neither are evil, both are useful. Let this be another resource for developing the web even furthur.</p>
-				</div>
-			</div> 	
-		</div>
-		<div class="row">
-			<div class="col-2"></div>
-			<div class="col-8">
-				<h2>Sizing Concept</h2>
-				<div class="bar-left">
-					<p>Each built in Element with IS-UI has a minumum of 5 different sizing options. Small, Medium, Default, Large, and X-Large. Each of these should be placed into the same element that you want resized. For Example: </p>
-				</div>
-			</div> 	
-		</div>
-		<div class="row">
-			<div class="col-2"></div>
-			<div class="col-8">
-				<pre class="language-markup line-numbers"><code>&lt;div class=&quot;col-1 sm&quot;&gt;Small&lt;/div&gt;
-&lt;div class=&quot;col-1 md&quot;&gt;Medium&lt;/div&gt;
-&lt;div class=&quot;col-1&quot;&gt;Default&lt;/div&gt;
-&lt;div class=&quot;col-1 lg&quot;&gt;Large&lt;/div&gt;
-&lt;div class=&quot;col-1 xl&quot;&gt;X-Large&lt;/div&gt;</code></pre>
-			</div> 	
-		</div>
-		<div class="row">
-			<div class="col-2"></div>
-			<div class="col-8">
-				<div class="bar-left">
-					<p>Or another example is the modal, these could be resized differently. See modal in <a href="javascript.html">JavaScript</a> for more information on modals</p>
-				</div>
-			</div> 	
-		</div>
-		<div class="row">
-			<div class="col-2"></div>
-			<div class="col-8">
-				<pre class="language-markup line-numbers"><code>&lt;div class=&quot;modal sm&quot;&gt;Small&lt;/div&gt;
-&lt;div class=&quot;modal md&quot;&gt;Medium&lt;/div&gt;
-&lt;div class=&quot;modal&quot;&gt;Default&lt;/div&gt;
-&lt;div class=&quot;modal lg&quot;&gt;Large&lt;/div&gt;
-&lt;div class=&quot;modal xl&quot;&gt;X-Large&lt;/div&gt;</code></pre>
-			</div> 	
 		</div>
 		<div class="row">
 			<div class="col-6"></div>
@@ -124,6 +78,13 @@
 					<ul>
 						<li><a href='#top'>Back to Top</a>
 						<li class="empty"><a href=''>&nbsp;</a></li>
+						<li>
+							<a href="#concepts">Concepts</a>
+							<ul class="sub">
+								<li><a href="#sizingConcept">Sizing</a></li>
+								<li><a href='#colorConcept'>Colors</a></li>
+							</ul>
+						</li>
 						<li>
 							<a href='#tableArea'>Tables</a>
 							<ul class="sub">
@@ -157,6 +118,100 @@
 						</li>
 					</ul>
 				</nav>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col-8">
+				<h2>Vision</h2>
+				<div class="bar-left">
+					<p>IS-UI is another mobile-first front-end CSS framework. The sole purpose of this is literally to be another alternative, to be another solution. With night you have day. With water you have land. With rice you have beans. All are good, neither are evil, both are useful. Let this be another resource for developing the web even furthur.</p>
+				</div>
+			</div> 	
+		</div>
+		<div class="row" id="concepts">
+			<div class="row" id="sizingConcept">
+				<div class="col-2"></div>
+				<div class="col-8">
+					<h2>Sizing Concept</h2>
+					<div class="bar-left">
+						<p>Each built in Element with IS-UI has a minumum of 5 different sizing options. Small, Medium, Default, Large, and X-Large. Each of these should be placed into the same element that you want resized. For Example: </p>
+					</div>
+				</div> 	
+			</div>
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8">
+					<pre class="language-markup line-numbers"><code>&lt;div class=&quot;col-1 sm&quot;&gt;Small&lt;/div&gt;
+	&lt;div class=&quot;col-1 md&quot;&gt;Medium&lt;/div&gt;
+	&lt;div class=&quot;col-1&quot;&gt;Default&lt;/div&gt;
+	&lt;div class=&quot;col-1 lg&quot;&gt;Large&lt;/div&gt;
+	&lt;div class=&quot;col-1 xl&quot;&gt;X-Large&lt;/div&gt;</code></pre>
+				</div> 	
+			</div>
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8">
+					<div class="bar-left">
+						<p>Or another example is the modal, these could be resized differently. See modal in <a href="javascript.html">JavaScript</a> for more information on modals</p>
+					</div>
+				</div> 	
+			</div>
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8">
+					<pre class="language-markup line-numbers"><code>&lt;div class=&quot;modal sm&quot;&gt;Small&lt;/div&gt;
+	&lt;div class=&quot;modal md&quot;&gt;Medium&lt;/div&gt;
+	&lt;div class=&quot;modal&quot;&gt;Default&lt;/div&gt;
+	&lt;div class=&quot;modal lg&quot;&gt;Large&lt;/div&gt;
+	&lt;div class=&quot;modal xl&quot;&gt;X-Large&lt;/div&gt;</code></pre>
+				</div> 	
+			</div>
+			<div class="row" id="colorConcept">
+				<div class="col-2"></div>
+				<div class="col-8">
+					<h2>Color Concept</h2>
+					<div class="bar-left">
+						<p>Colors are a large part of web design and UX/UI work, escpecially more so today. To help assist in color picking and to make it as simple as possible, we pre chose colors for you. Using a framework and not being able to customize would be hard to work with, so in response to that, just add the class name of the color into the class and we'll re-color everything how they should be which allows for maximum color customization.</p>
+					</div>
+				</div> 	
+			</div>
+			<div class="row">
+				<div class="col-1"></div>
+				<div class="col-1"><button class="btn btn-default">Default</button></div>
+				<div class="col-1"><button class="btn btn-default grey">Grey</button></div>
+				<div class="col-1"><button class="btn btn-default blue">Blue</button></div>
+				<div class="col-1"><button class="btn btn-default red">Red</button></div>
+				<div class="col-1"><button class="btn btn-default green">Green</button></div>
+				<div class="col-1"><button class="btn btn-default orange">Orange</button></div>
+				<div class="col-1"><button class="btn btn-default pink">Pink</button></div>
+				<div class="col-1"><button class="btn btn-default peach">Peach</button></div>
+				<div class="col-1"><button class="btn btn-default white">White</button></div>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<input type="text" class="form-comp blue">
+				</div>
+				<div class="col-2">
+					<input type="text" class="form-comp grey">
+				</div>
+				<div class="col-2">
+					<input type="text" class="form-comp red">
+				</div>
+				<div class="col-2">
+					<input type="text" class="form-comp green">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					<input type="text" class="form-comp orange">
+				</div>
+				<div class="col-2">
+					<input type="text" class="form-comp pink">
+				</div>
+				<div class="col-2">
+					<input type="text" class="form-comp peach">
+				</div>
 			</div>
 		</div>
 		<div class="row" id="tableArea">

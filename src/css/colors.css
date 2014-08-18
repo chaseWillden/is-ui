@@ -4,13 +4,7 @@
 */
 
 .blue{
-	background-color: #4285f4 !important;
-	color: white;
-}
-
-.btn.blue{
-	background-color: #4285f4 !important;
-	border: 1px solid rgba(18, 113, 235, 0.69);
+	background-color: #4285f4;
 	color: white;
 }
 
@@ -20,22 +14,4 @@
 
 .red{
 	background-color: #d14836;
-}
-
-.btn.red{
-	background-color: #d14836;
-	border: 1px solid rgba(182, 85, 31, 0.69);
-	color: white;
-}
-
-.btn.green{
-	background-color: #0f9d58;
-	border: 1px solid rgba(27, 167, 83, 0.69);
-	color: white;
-}
-
-.btn.orange{
-	background-color: #F1921C;
-	border: 1px solid rgba(189, 149, 24, 0.69);
-	color: white;
 }
