@@ -1,0 +1,24 @@
+/*
+	Font Sizing and text sizing
+	Author: Chase Willden;
+*/
+
+.thin{
+	font-weight: 100;
+}
+
+.font-sm{
+	font-size: 12px;
+}
+
+.font-md{
+	font-size: 16px;
+}
+
+.font-lg{
+	font-size: 20px;
+}
+
+.font-xl{
+	font-size: 26px;
+}

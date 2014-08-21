@@ -62,3 +62,7 @@
 	-moz-box-shadow: 0 0 6px rgba(225, 119, 105, 0.52);
 	-webkit-box-shadow: 0 0 6px rgba(225, 119, 105, 0.52);
 }
+
+.form.white{
+	background-color: white;
+}

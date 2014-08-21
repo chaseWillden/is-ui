@@ -424,85 +424,6 @@ th {
   padding: 0;
 }
 /*
-	Alert
-	Author: Chase Willden;
-*/
-
-.alert{
-	padding: 10px 20px;
-	position: fixed;
-	background-color: #FAFAFA;
-	display: block;
-	border-left: solid 5px rgb(255, 204, 0);
-	box-shadow: 0 0 11px rgba(0,0,0,.15);
-	z-index: 10000;
-	font-size: 15px;
-	-webkit-transition: right .5s ease;
-	-moz-transition: right .5s ease;
-	-o-transition: right .5s ease;
-	-ms-transition: right .5s ease;
-	transition: right .5s ease;
-
-	/* Inherently mobile Version */
-	min-height: 44px;
-	min-width: 200px;
-	max-width: 250px;
-	top: 10px;
-	right: 10px;
-}
-
-.alert.off{
-	right: -320px;
-}
-
-.alert .title{
-	font-size: 20px;
-	font-weight: bold;
-	border-bottom: solid 1px #ccc;
-	padding-bottom: 4px;
-	margin-bottom: 4px;
-}
-
-.alert .close{
-	position: absolute;
-	top: 3px;
-	right: 3px;
-	color: #ccc;
-	cursor: pointer;
-}
-
-.alert .close:hover{
-	color: black;
-}
-
-@media only screen and (min-device-width: 480px){
-	/* Bigger than mobile */
-	.alert{
-		min-height: 44px;
-		min-width: 200px;
-		max-width: 250px;
-		top: 10px;
-		right: 10px;
-	}
-}
-/*
-	Colors
-	Author: Chase Willden;
-*/
-
-.blue{
-	background-color: #4285f4;
-	color: white;
-}
-
-.grey{
-	background-color: #ccc;
-}
-
-.red{
-	background-color: #d14836;
-}
-/*
 	Container
 	Author: Chase Willden;
 */
@@ -513,14 +434,18 @@ th {
 	height: 100%;	
 	padding: 15px;
 	z-index: 1;
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 }
 /*
 	Display
 	Author: Chase Willden;
 */
+
+*{
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
 
 .hidden{
 	display: none !important;
@@ -774,25 +699,6 @@ body {
 	background-color: #F0F0F0;
 }
 /*
-		Tool tip
-		Author: Chase Willden;
-*/
-
-[data-title]:hover:after{
-		display: block;
-		content: attr(data-title);
-		padding: 4px 8px;
-		color: white;
-		position: absolute;
-		right: 10%;
-		top: 110%;
-		background-color: black;
-		opacity: .7;
-		border-radius: 3px;
-		-moz-border-radius: 3px;
-		-webkit-border-radius: 3px;
-}
-/*
 	Typography
 	Author: Chase Willden;
 */
@@ -934,6 +840,19 @@ body {
 	padding-bottom: 15%;
 }
 /*
+	Button Circle
+	Author: Chase Willden;
+*/
+
+.btn-circle{
+	display: inline-block;
+}
+
+.btn-circle .btn{
+	float: left;
+	margin: 0;
+}
+/*
 	Colors
 	Author: Chase Willden;
 */
@@ -978,11 +897,21 @@ body {
 	border: solid 1px #E17769;
 	color: white;
 }
-
+		
 .btn.white{
 	background-color: rgb(246, 246, 246);
 	border: solid 1px #ccc;
 	color: black;
+}
+/*
+	Button Stacks
+	Author: Chase Willden;
+*/
+
+.btn-stack .btn{
+	margin: 0;
+	width: 100%;
+	text-align: center;
 }
 /*
 	Button Area
@@ -1023,27 +952,27 @@ body {
 	-webkit-box-shadow: 0px 1px 3px rgba(142, 142, 142, 0.53);
 }
 
-.btn-sm{
+.btn-sm, .btn.sm{
 	font-size: 12px;
 	padding: 3px 7px;
 }
 
-.btn-md{
+.btn-md, .btn.md{
 	font-size: 14px;
 	padding: 5px 10px;
 }
 
-.btn-default{
+.btn{
 	font-size: 15px;
 	padding: 8px 15px;
 }
 
-.btn-lg{
+.btn-lg, .btn.lg{
 	font-size: 16px;
 	padding: 10px 18px;
 }
 
-.btn-xl{
+.btn-xl, .btn.xl{
 	font-size: 18px;
 	padding: 13px 25px;
 }
@@ -1170,10 +1099,18 @@ body {
 	-moz-box-shadow: 0 0 6px rgba(225, 119, 105, 0.52);
 	-webkit-box-shadow: 0 0 6px rgba(225, 119, 105, 0.52);
 }
+
+.form.white{
+	background-color: white;
+}
 /*
 	Form Components
 	Author: Chase Willden;
 */
+
+.form{
+	padding: 12px;
+}
 
 .form-comp{
 	font-size: 16px;
@@ -1214,6 +1151,18 @@ body {
 	box-shadow: 0 0 6px rgba(0, 0, 0, 0.42);
 	-moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.42);
 	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.42);
+}
+
+.form-comp.sm{
+	height: 23px;
+}
+
+.form-comp.md{
+	height: 26px;
+}
+
+.form-comp.lg{
+	height: 34px;
 }
 /*
     Form Components
@@ -1387,6 +1336,14 @@ textarea.xl{
 	}
 }
 /*
+	Grid Colors
+	Author: Chase Willden;
+*/
+
+.grey[class*='col-']{
+	background-color: #ccc !important;
+}
+/*
 	Row
 	Author: Chase Willden;
 */
@@ -1450,6 +1407,68 @@ textarea.xl{
 	min-height: 4.166666666%;
 }
 /*
+	Alert
+	Author: Chase Willden;
+*/
+
+.alert{
+	padding: 10px 20px;
+	position: fixed;
+	background-color: #FAFAFA;
+	display: block;
+	border-left: solid 5px rgb(255, 204, 0);
+	box-shadow: 0 0 11px rgba(0,0,0,.15);
+	z-index: 10000;
+	font-size: 15px;
+	-webkit-transition: right .5s ease;
+	-moz-transition: right .5s ease;
+	-o-transition: right .5s ease;
+	-ms-transition: right .5s ease;
+	transition: right .5s ease;
+
+	/* Inherently mobile Version */
+	min-height: 44px;
+	min-width: 200px;
+	max-width: 250px;
+	top: 10px;
+	right: 10px;
+}
+
+.alert.off{
+	right: -320px;
+}
+
+.alert .title{
+	font-size: 20px;
+	font-weight: bold;
+	border-bottom: solid 1px #ccc;
+	padding-bottom: 4px;
+	margin-bottom: 4px;
+}
+
+.alert .close{
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	color: #ccc;
+	cursor: pointer;
+}
+
+.alert .close:hover{
+	color: black;
+}
+
+@media only screen and (min-device-width: 480px){
+	/* Bigger than mobile */
+	.alert{
+		min-height: 44px;
+		min-width: 200px;
+		max-width: 250px;
+		top: 10px;
+		right: 10px;
+	}
+}
+/*
 	HR Styling
 	Author: Chase Willden;
 */
@@ -1475,6 +1494,50 @@ hr{
     background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
     background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
     background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+}
+
+hr.empty{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+}
+
+hr.sm{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+hr.md{
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+hr.lg{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+/*
+		Tool tip
+		Author: Chase Willden;
+*/
+
+[data-title]:hover:after{
+	display: block;
+	content: attr(data-title);
+	padding: 4px 8px;
+	color: white;
+	position: absolute;
+	left: 0;
+	top: 110%;
+	background-color: black;
+	opacity: .7;
+	min-width: 20px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
 }
 /*
 	Modal
@@ -1783,4 +1846,40 @@ nav.nav-right{
 		position: fixed;
 		top: 100px;
 	}
+}
+/*
+	Typography Coloring
+	Author: Chase Willden;
+*/
+
+a{
+	color: rgb(21, 129, 232);
+}
+
+a:active{
+	color: rgb(56, 125, 191);
+}
+/*
+	Font Sizing and text sizing
+	Author: Chase Willden;
+*/
+
+.thin{
+	font-weight: 100;
+}
+
+.font-sm{
+	font-size: 12px;
+}
+
+.font-md{
+	font-size: 16px;
+}
+
+.font-lg{
+	font-size: 20px;
+}
+
+.font-xl{
+	font-size: 26px;
 }

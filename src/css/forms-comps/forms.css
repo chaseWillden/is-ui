@@ -3,6 +3,10 @@
 	Author: Chase Willden;
 */
 
+.form{
+	padding: 12px;
+}
+
 .form-comp{
 	font-size: 16px;
 	background-color: white;
@@ -42,4 +46,16 @@
 	box-shadow: 0 0 6px rgba(0, 0, 0, 0.42);
 	-moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.42);
 	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.42);
+}
+
+.form-comp.sm{
+	height: 23px;
+}
+
+.form-comp.md{
+	height: 26px;
+}
+
+.form-comp.lg{
+	height: 34px;
 }

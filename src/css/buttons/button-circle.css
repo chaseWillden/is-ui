@@ -1,0 +1,13 @@
+/*
+	Button Circle
+	Author: Chase Willden;
+*/
+
+.btn-circle{
+	display: inline-block;
+}
+
+.btn-circle .btn{
+	float: left;
+	margin: 0;
+}

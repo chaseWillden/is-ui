@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Getting Started</title>
-	<meta name='viewport' content='width=device-width, initial-scale=1.0;'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link rel="stylesheet" type="text/css" href="build/css/is-ui.css">
 	<link rel="stylesheet" type="text/css" href="prism.css">
 	<script type="text/javascript" src='build/include/jquery.js'></script>
@@ -48,7 +48,7 @@
 								<a href='https://github.com/chaseWillden/is-ui' target="_blank">GitHub</a>
 							</li>
 							<li>
-								<a href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.0.5.zip'>Download v0.0.5 (beta)</a>
+								<a href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.0.6.zip'>Download v0.0.6 (beta)</a>
 							</li>
 						</ul>
 					</li>
@@ -65,7 +65,7 @@
 				<div class="row">
 					<div class="col-12 center">
 						<a href='https://github.com/chaseWillden/is-ui' target="_blank" class="btn btn-xl blue">Fork on GitHub</a>
-						<a class="btn btn-xl green screen-only" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.0.5.zip'>Download v0.0.5 (beta)</a>
+						<a class="btn btn-xl green screen-only" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.0.6.zip'>Download v0.0.6 (beta)</a>
 					</div>
 				</div>
 			</div>
@@ -105,6 +105,7 @@
 							<a href='#formArea'>Forms</a>
 							<ul class="sub">
 								<li><a href='#ComponentsFormArea'>Components</a></li>
+								<li><a href='#loginFormArea'>Login Form</a></li>
 								<li><a href='#textareaFormArea'>Textarea</a></li>
 							</ul>
 						</li>
@@ -177,6 +178,21 @@
 				</div> 	
 			</div>
 			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-6">
+					<pre class="language-markup line-numbers"><code>&lt;button class=&quot;btn btn-default&quot;&gt;Default&lt;/button&gt; 
+&lt;button class=&quot;btn btn-default grey&quot;&gt;Grey&lt;/button&gt; 
+&lt;button class=&quot;btn btn-default blue&quot;&gt;Blue&lt;/button&gt; 
+&lt;button class=&quot;btn btn-default red&quot;&gt;Red&lt;/button&gt; 
+&lt;button class=&quot;btn btn-default green&quot;&gt;Green&lt;/button&gt; 
+&lt;button class=&quot;btn btn-default orange&quot;&gt;Orange&lt;/button&gt; 
+&lt;button class=&quot;btn btn-default pink&quot;&gt;Pink&lt;/button&gt; 
+&lt;button class=&quot;btn btn-default peach&quot;&gt;Peach&lt;/button&gt; 
+&lt;button class=&quot;btn btn-default white&quot;&gt;White&lt;/button&gt;</code></pre>
+				</div>
+				<div class="col-2"></div>
+			</div>
+			<div class="row">
 				<div class="col-1"></div>
 				<div class="col-1"><button class="btn btn-default">Default</button></div>
 				<div class="col-1"><button class="btn btn-default grey">Grey</button></div>
@@ -187,6 +203,20 @@
 				<div class="col-1"><button class="btn btn-default pink">Pink</button></div>
 				<div class="col-1"><button class="btn btn-default peach">Peach</button></div>
 				<div class="col-1"><button class="btn btn-default white">White</button></div>
+			</div>
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-6">
+					<pre class="language-markup line-numbers"><code>&lt;input type=&quot;text&quot; class=&quot;form-comp blue&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-comp grey&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-comp red&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-comp green&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-comp orange&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-comp pink&quot;&gt;
+&lt;input type=&quot;text&quot; class=&quot;form-comp peach&quot;&gt;
+&lt;textarea class=&quot;form-comp orange&quot;&gt;&lt;/textarea&gt;</code></pre>
+				</div>
+				<div class="col-2"></div>
 			</div>
 			<div class="row">
 				<div class="col-2">
@@ -211,6 +241,9 @@
 				</div>
 				<div class="col-2">
 					<input type="text" class="form-comp peach">
+				</div>
+				<div class="col-2">
+					<textarea class="form-comp orange"></textarea>
 				</div>
 			</div>
 		</div>
@@ -485,6 +518,57 @@
 				</div>
 				<div class="col-3"></div>
 			</div>
+			<div class="row">
+				<div class="col-10">
+					<h2>Login Form Example</h2>
+				</div>
+			</div>
+			<div class="row" id="loginFormArea">
+				<div class="col-3"></div>
+				<div class="col-4 pit md">
+					<div class="row">
+						<div class="col-2"></div>
+						<div class="col-8">
+							<form class="bulge form low white">
+								<h1 class="title center thin">Login</h1>
+								<input type="text" class="form-comp lg" placeholder="Username">
+								<input type="password" class="form-comp lg" placeholder="Password">
+								<hr class="empty sm">
+								<input type="submit" value="Login" class="btn btn-default blue">
+								<button class="btn btn-default white">Cancel</button>
+							</form>
+							<br>
+							<div class="row">
+								<div class="col-2"></div>
+								<div class="col-10">
+									<a href="">Forgot Password</a> | <a href="">Register</a>
+								</div>								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-3"></div>
+			</div>
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8">
+					<pre class="language-markup line-numbers"><code>&lt;form class=&quot;bulge form low white&quot;&gt;
+	&lt;h1 class=&quot;title center thin&quot;&gt;Login&lt;/h1&gt;
+	&lt;input type=&quot;text&quot; class=&quot;form-comp lg&quot; placeholder=&quot;Username&quot;&gt;
+	&lt;input type=&quot;password&quot; class=&quot;form-comp lg&quot; placeholder=&quot;Password&quot;&gt;
+	&lt;hr class=&quot;empty sm&quot;&gt;
+	&lt;input type=&quot;submit&quot; value=&quot;Login&quot; class=&quot;btn btn-default blue&quot;&gt;
+	&lt;button class=&quot;btn btn-default white&quot;&gt;Cancel&lt;/button&gt;
+&lt;/form&gt;
+&lt;br&gt;
+&lt;div class=&quot;row&quot;&gt;
+	&lt;div class=&quot;col-2&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;col-10&quot;&gt;
+		&lt;a href=&quot;&quot;&gt;Forgot Password&lt;/a&gt; | &lt;a href=&quot;&quot;&gt;Register&lt;/a&gt;
+	&lt;/div&gt;								
+&lt;/div&gt;</code></pre>
+				</div>
+			</div>	
 			<div class="row">
 				<div class="col-10">
 					<h2>Textareas</h2>
