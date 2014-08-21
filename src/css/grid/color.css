@@ -1,0 +1,8 @@
+/*
+	Grid Colors
+	Author: Chase Willden;
+*/
+
+.grey[class*='col-']{
+	background-color: #ccc !important;
+}

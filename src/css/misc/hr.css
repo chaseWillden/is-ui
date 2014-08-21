@@ -16,3 +16,27 @@ hr{
     background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
     background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
 }
+
+hr.empty{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: none;
+}
+
+hr.sm{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+hr.md{
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+hr.lg{
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
