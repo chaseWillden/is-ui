@@ -122,21 +122,17 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-5">
-						<button class="btn btn-sm">.btn-sm</button>
-						<button class="btn btn-md">.btn-md</button>
-						<button class="btn btn-default">.btn-default</button>
-						<button class="btn btn-lg">.btn-lg</button>
-						<button class="btn btn-xl">.btn-xl</button>
-					</div>
-					<div class="col-5">
-						<!-- I have issues wrapping the text and having it format correctly -->
-						<pre class="language-markup line-numbers"><code>&lt;button class="btn btn-sm"&gt;Button&lt;button&gt;
-&lt;button class="btn btn-md"&gt;Button&lt;button&gt;
-&lt;button class="btn btn-default"&gt;Button&lt;button&gt;
-&lt;button class="btn btn-lg"&gt;Button&lt;button&gt;
-&lt;button class="btn btn-xl"&gt;Button&lt;button&gt;</code></pre>
-					</div>
+					<div class="col-5" id="btnCode_base">
+	<button class="btn btn-sm">.btn-sm</button>
+	<button class="btn btn-md">.btn-md</button>
+	<button class="btn btn-default">.btn-default</button>
+	<button class="btn btn-lg">.btn-lg</button>
+	<button class="btn btn-xl">.btn-xl</button>
+</div>
+					<div class="col-5" id="btnCode"></div>
+					<script>
+						createCode('btnCode');
+					</script>
 				</div>
 				<div class="row" id='coloredBtnArea'>
 					<div class="col-10">
@@ -144,20 +140,17 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-5">
-						<button class="btn btn-sm blue">.btn-sm .blue</button>
-						<button class="btn btn-md red">.btn-md .red</button>
-						<button class="btn btn-default red">.btn-default .red</button>
-						<button class="btn btn-lg green">.btn-lg .green</button>
-						<button class="btn btn-xl orange">.btn-xl .orange</button>
-					</div>
-					<div class="col-5">
-						<pre class="language-markup line-numbers"><code>&lt;button class="btn btn-sm blue"&gt;Button&lt;button&gt;
-&lt;button class="btn btn-md red"&gt;Button&lt;button&gt;
-&lt;button class="btn btn-default red"&gt;Button&lt;button&gt;
-&lt;button class="btn btn-lg green"&gt;Button&lt;button&gt;
-&lt;button class="btn btn-xl orange"&gt;Button&lt;button&gt;</code></pre>
-					</div>
+					<div class="col-5" id="btnCode1_base">
+	<button class="btn btn-sm blue">.btn-sm .blue</button>
+	<button class="btn btn-md red">.btn-md .red</button>
+	<button class="btn btn-default red">.btn-default .red</button>
+	<button class="btn btn-lg green">.btn-lg .green</button>
+	<button class="btn btn-xl orange">.btn-xl .orange</button>
+</div>
+					<div class="col-5" id="btnCode1"></div>
+					<script>
+						createCode('btnCode1');
+					</script>
 				</div>
 				<div class="row">
 					<div class="col-10">
@@ -165,20 +158,17 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-5">
-						<a class="btn btn-sm" href=''>.btn-sm</a>
-						<a class="btn btn-md" href=''>.btn-md</a>
-						<a class="btn btn-default" href=''>.btn-default</a>
-						<a class="btn btn-lg" href=''>.btn-lg</a>
-						<a class="btn btn-xl" href=''>.btn-xl</a>
-					</div>
-					<div class="col-5">
-						<pre class="language-markup line-numbers"><code>&lt;a href='#' class="btn btn-sm"&gt;Button&lt;a&gt;
-&lt;a href='#' class="btn btn-md"&gt;Button&lt;a&gt;
-&lt;a href='#' class="btn btn-default"&gt;Button&lt;a&gt;
-&lt;a href='#' class="btn btn-lg"&gt;Button&lt;a&gt;
-&lt;a href='#' class="btn btn-xl"&gt;Button&lt;a&gt;</code></pre>
-					</div>
+					<div class="col-5" id="btnCode2_base">
+	<a class="btn btn-sm" href=''>.btn-sm</a>
+	<a class="btn btn-md" href=''>.btn-md</a>
+	<a class="btn btn-default" href=''>.btn-default</a>
+	<a class="btn btn-lg" href=''>.btn-lg</a>
+	<a class="btn btn-xl" href=''>.btn-xl</a>
+</div>
+					<div class="col-5" id="btnCode2"></div>
+					<script>
+						createCode('btnCode2');
+					</script>
 				</div>
 				<div class="row">
 					<div class="col-10">
@@ -186,20 +176,17 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-5">
-						<input type='submit' class="btn btn-sm" value=".btn-sm">
-						<input type='submit' class="btn btn-md" value=".btn-md">
-						<input type='submit' class="btn btn-default" value=".btn-default">
-						<input type='submit' class="btn btn-lg" value=".btn-lg">
-						<input type='submit' class="btn btn-xl" value=".btn-xl">
-					</div>
-					<div class="col-5">
-						<pre class="language-markup line-numbers"><code>&lt;input type='submit' class="btn btn-sm"&gt;Button&lt;a&gt;
-&lt;input type='submit' class="btn btn-md"&gt;Button&lt;a&gt;
-&lt;input type='submit' class="btn btn-default"&gt;Button&lt;a&gt;
-&lt;input type='submit' class="btn btn-lg"&gt;Button&lt;a&gt;
-&lt;input type='submit' class="btn btn-xl"&gt;Button&lt;a&gt;</code></pre>
-					</div>
+					<div class="col-5" id='btnCode3_base'>
+	<input type='submit' class="btn btn-sm" value=".btn-sm">
+	<input type='submit' class="btn btn-md" value=".btn-md">
+	<input type='submit' class="btn btn-default" value=".btn-default">
+	<input type='submit' class="btn btn-lg" value=".btn-lg">
+	<input type='submit' class="btn btn-xl" value=".btn-xl">
+</div>
+					<div class="col-5" id="btnCode3"></div>
+					<script>
+						createCode('btnCode3');
+					</script>
 				</div>
 				<div class="row" id='btnGroupArea'>
 					<div class="row">
@@ -212,23 +199,18 @@
 				<div class="row">
 					<div class="col-1"></div>
 					<div class="col-4">
-						<div class="btn-group">
-							<button class="btn btn-default">1</button>
-							<button class="btn btn-default">2</button>
-							<button class="btn btn-default">3</button>
-							<button class="btn btn-default">4</button>
-							<button class="btn btn-default">5</button>
-						</div>
+						<div class="btn-group" id="btnGroupCode_base">
+	<button class="btn btn-default">1</button>
+	<button class="btn btn-default">2</button>
+	<button class="btn btn-default">3</button>
+	<button class="btn btn-default">4</button>
+	<button class="btn btn-default">5</button>
+</div>
 					</div>
-					<div class="col-5">
-						<pre class="language-markup line-numbers"><code>&lt;div class=&quot;btn-group&quot;&gt;
-	&lt;button class=&quot;btn btn-default&quot;&gt;1&lt;/button&gt;
-	&lt;button class=&quot;btn btn-default&quot;&gt;2&lt;/button&gt;
-	&lt;button class=&quot;btn btn-default&quot;&gt;3&lt;/button&gt;
-	&lt;button class=&quot;btn btn-default&quot;&gt;4&lt;/button&gt;
-	&lt;button class=&quot;btn btn-default&quot;&gt;5&lt;/button&gt;
-&lt;/div&gt;</code></pre>
-					</div>
+					<div class="col-5" id="btnGroupCode"></div>
+					<script>
+						createCode('btnGroupCode');
+					</script>
 				</div>
 				<div class="row" id="btnStackArea">
 					<div class="row">
@@ -258,22 +240,18 @@
 					</div>
 					<div class="col-half"></div>
 					<div class="col-half">
-						<div class="btn-stack">
-							<div class="btn btn-default">1</div>
-							<div class="btn btn-default">2</div>
-							<div class="btn btn-default">3</div>
-							<div class="btn btn-default">4</div>
-						</div>
+						<div class="btn-stack" id="btnStackCode_base">
+	<div class="btn btn-default">1</div>
+	<div class="btn btn-default">2</div>
+	<div class="btn btn-default">3</div>
+	<div class="btn btn-default">4</div>
+</div>
 					</div>
 					<div class="col-half"></div>
-					<div class="col-6">
-						<pre class="language-markup line-numbers"><code>&lt;div class=&quot;btn-stack&quot;&gt;
-	&lt;button class=&quot;btn btn-default&quot;&gt;1&lt;/button&gt;
-	&lt;button class=&quot;btn btn-default&quot;&gt;2&lt;/button&gt;
-	&lt;button class=&quot;btn btn-default&quot;&gt;3&lt;/button&gt;
-	&lt;button class=&quot;btn btn-default&quot;&gt;4&lt;/button&gt;
-&lt;/div&gt;</code></pre>
-					</div>
+					<div class="col-6" id="btnStackCode"></div>
+					<script>
+						createCode('btnStackCode');
+					</script>
 				</div>
 			</div>
 		</div>
@@ -288,9 +266,14 @@
 			</div>
 			<div class="row">
 				<div class="col-2"></div>
-				<div class="col-2">
-					<div class="btn btn-default" data-title='Tooltip'>Hover</div>
+				<div class="col-1">
+					<div class="btn btn-default" data-title='Tooltip' id="toolTipCode_base">Hover</div>
 				</div>
+				<div class="col-1"></div>
+				<div class="col-6" id="toolTipCode"></div>
+				<script>
+					createCode('toolTipCode');
+				</script>
 			</div>
 		</div>
 
@@ -304,88 +287,55 @@
 			<div class="row">
 				<div class="col-2"></div>
 				<div class="col-6 pit lg center">
-					<div class="btn-group">
-						<div class="btn btn-default blue">Dropdown</div>
-						<div class="btn btn-default blue arrow-down"></div>
-						<ul class="dropdown stay-open">
-							<li>
-								<a href=''>Link</a>
-							</li>
-							<li>
-								<a href=''>Another Link<div class='pull-right dim-6'>Ctrl+S</div></a>
-							</li>
-							<li class="divider"></li>
-							<li>
-								<a href=''>Separated Link <div class="pull-right dim dim-6">&#65515;</div></a> 
-								<ul class="dropdown drop-right">
-									<li>
-										<a href=''>Link</a>
-									</li>
-									<li>
-										<a href=''>Another Link<div class='pull-right dim-6'>Ctrl+S</div></a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href=''><div class="dim dim-6">&#65513;</div> Another Link</a>
-								<ul class="dropdown drop-left">
-									<li>
-										<a href=''>Link</a>
-									</li>
-									<li>
-										<a href=''>Another Link<div class='pull-right dim-6'>Ctrl+S</div></a>
-									</li>
-								</ul>
-							</li>
-							<li class="divider"></li>
-							<li>
-								<a href='' data-title='This is the bottom'>Separated Link <div class='pull-right dim-6'>Ctrl+Q</div></a>
-							</li>
-						</ul>
-					</div>
+					<div class="btn-group" id="dropDownCode_base">
+	<div class="btn btn-default blue">Dropdown</div>
+	<div class="btn btn-default blue arrow-down"></div>
+	<ul class="dropdown stay-open">
+		<li>
+			<a href=''>Link</a>
+		</li>
+		<li>
+			<a href=''>Another Link<div class='pull-right dim-6'>Ctrl+S</div></a>
+		</li>
+		<li class="divider"></li>
+		<li>
+			<a href=''>Separated Link <div class="pull-right dim dim-6">&#65515;</div></a> 
+			<ul class="dropdown drop-right">
+				<li>
+					<a href=''>Link</a>
+				</li>
+				<li>
+					<a href=''>Another Link<div class='pull-right dim-6'>Ctrl+S</div></a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href=''><div class="dim dim-6">&#65513;</div> Another Link</a>
+			<ul class="dropdown drop-left">
+				<li>
+					<a href=''>Link</a>
+				</li>
+				<li>
+					<a href=''>Another Link<div class='pull-right dim-6'>Ctrl+S</div></a>
+				</li>
+			</ul>
+		</li>
+		<li class="divider"></li>
+		<li>
+			<a href='' data-title='This is the bottom'>Separated Link <div class='pull-right dim-6'>Ctrl+Q</div></a>
+		</li>
+	</ul>
+</div>
 				</div>
 				<!-- End drop down -->
 
 			</div>
 			<div class="row row-3"></div>
 			<div class="row">
-				<div class="col-10">
-						<pre class="language-markup line-numbers"><code>&lt;ul class=&quot;dropdown&quot;&gt;
-		&lt;li&gt;
-			&lt;a href=''&gt;Link&lt;/a&gt;
-		&lt;/li&gt;
-		&lt;li&gt;
-			&lt;a href=''&gt;Another Link&lt;div class='pull-right dim-6'&gt;Ctrl+S&lt;/div&gt;&lt;/a&gt;
-		&lt;/li&gt;
-		&lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
-		&lt;li&gt;
-			&lt;a href=''&gt;Separated Link &lt;div class=&quot;pull-right dim dim-6&quot;&gt;&amp;#65515;&lt;/div&gt;&lt;/a&gt; 
-			&lt;ul class=&quot;dropdown drop-right&quot;&gt;
-				&lt;li&gt;
-					&lt;a href=''&gt;Link&lt;/a&gt;
-				&lt;/li&gt;
-				&lt;li&gt;
-					&lt;a href=''&gt;Another Link&lt;div class='pull-right dim-6'&gt;Ctrl+S&lt;/div&gt;&lt;/a&gt;
-				&lt;/li&gt;
-			&lt;/ul&gt;
-		&lt;/li&gt;
-		&lt;li&gt;
-			&lt;a href=''&gt;&lt;div class=&quot;dim dim-6&quot;&gt;&amp;#65513;&lt;/div&gt; Another Link&lt;/a&gt;
-			&lt;ul class=&quot;dropdown drop-left&quot;&gt;
-				&lt;li&gt;
-					&lt;a href=''&gt;Link&lt;/a&gt;
-				&lt;/li&gt;
-				&lt;li&gt;
-					&lt;a href=''&gt;Another Link&lt;div class='pull-right dim-6'&gt;Ctrl+S&lt;/div&gt;&lt;/a&gt;
-				&lt;/li&gt;
-			&lt;/ul&gt;
-		&lt;/li&gt;
-		&lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;
-		&lt;li&gt;
-			&lt;a href='' data-title='This is the bottom'&gt;Separated Link &lt;div class='pull-right dim-6'&gt;Ctrl+Q&lt;/div&gt;&lt;/a&gt;
-		&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
-				</div>
+				<div class="col-10" id="dropDownCode"></div>
+				<script>
+					createCode('dropDownCode');
+				</script>
 			</div>
 		</div>
 		<!-- End Drop Down -->
@@ -461,7 +411,7 @@
 						}
 					</script>
 				</div>
-				<div class="col-6">
+				<div class="col-6" id="">
 						<pre class="language-markup line-numbers"><code>&lt;ul class=&quot;dropdown right-click&quot; style='margin-left: 200px'&gt;
 	...
 &lt;/ul&gt;</code></pre>
@@ -524,9 +474,9 @@
 				</div>
 				<div class="row">
 					<div class="col-1"></div>
-					<div class="col-3 pit">
-						<h1 class="center">This is an example of a .pit &nbsp;&nbsp;&nbsp;</h1>
-					</div>
+					<div class="col-3 pit" id="pitCode_base">
+	<h1 class="center">This is an example of a .pit &nbsp;&nbsp;&nbsp;</h1>
+</div>
 					<div class="col-3 pit deep">
 						<h1 class="center">This is an example of a .pit .deep</h1>
 					</div>
@@ -559,33 +509,10 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-10">
-						<pre class="language-markup line-numbers"><code>&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col-10 pit&quot;&gt;
-		&lt;h1 class=&quot;center&quot;&gt;This is an example of a .pit&lt;/h1&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col-10 pit sm&quot;&gt;
-		&lt;h1 class=&quot;center&quot;&gt;This is an example of a .pit .sm&lt;/h1&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col-10 pit md&quot;&gt;
-		&lt;h1 class=&quot;center&quot;&gt;This is an example of a .pit .md&lt;/h1&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col-10 pit lg&quot;&gt;
-		&lt;h1 class=&quot;center&quot;&gt;This is an example of a .pit .lg&lt;/h1&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col-10 pit .xl&quot;&gt;
-		&lt;h1 class=&quot;center&quot;&gt;This is an example of a .pit .xl&lt;/h1&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-					</div>
+					<div class="col-10" id="pitCode"></div>
+					<script>
+						createCode('pitCode');
+					</script>
 				</div>
 			</div>
 			<!-- End pit area -->
@@ -597,7 +524,7 @@
 				<div class="row">
 					<div class="col-1 blue bulge center">Color</div>
 					<div class="col-1"></div>
-					<div class="col-1 bulge center">No Color</div>
+					<div class="col-1 bulge center" id="bulgeCode_base">No Color</div>
 					<div class="col-1"></div>
 					<div class="col-1 bulge center high">High</div>
 					<div class="col-1"></div>
@@ -605,11 +532,10 @@
 				</div>
 				<div class="row">
 					<div class="col-2"></div>
-					<div class="col-6">
-						<pre class="language-markup line-numbers"><code>&lt;div class="bulge"&gt;
-...
-&lt;/div&gt;</code></pre>
-					</div>
+					<div class="col-6" id="bulgeCode"></div>
+					<script>
+						createCode('bulgeCode');
+					</script>
 				</div>
 			</div>
 
@@ -627,8 +553,13 @@
 				</div>
 				<div class="row">
 					<div class="col-1"></div>
-					<div class="col-2">
+					<div class="col-1">
 						<button class="btn btn-lg red" onclick='sendAlert()'>Alert</button>
+						<div class="alert hidden" id="alertCode_base">
+	<div class="title">Example</div>
+	<div class="close" id="alert">&times;</div>
+	This is an example alert This is an example alert This is an example alert
+</div>
 						<script>
 							var alertPos = 1;
 							function sendAlert(){
@@ -639,15 +570,10 @@
 							}
 						</script>
 					</div>
-					<div class="col-5">
-						<pre class="language-markup line-numbers"><code>&lt;div class=&quot;alert&quot;&gt;
-	&lt;div class=&quot;title&quot;&gt;Example Title&lt;/div&gt;
-	&lt;div class=&quot;close&quot;&gt;&amp;times;&lt;/div&gt;
-	This is an example alert.
-	This is an example alert.
-	This is an example alert
-&lt;/div&gt;</code></pre>
-					</div>
+					<div class="col-8" id="alertCode"></div>
+					<script>
+						createCode('alertCode');
+					</script>
 				</div>
 			</div>
 			<!-- End Alert area -->

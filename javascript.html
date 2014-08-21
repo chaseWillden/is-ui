@@ -162,6 +162,38 @@
 					</div>
 				</div>
 			</div>
+			<div class="hidden">
+				<div id="modalCode_base">
+	<!-- Button to init modal -->
+	<button class="btn btn-default blue" modal='#modal'>Modal</button>
+	<div class="modal" id="modal">
+		<div class="head">
+			<div class="close">&times;</div>
+			Modal Title
+		</div>
+		<div class="body">
+			This is the body
+		</div>
+		<div class="footer">
+
+			<!-- Buttons to close and accept modal -->
+			<div class="btn-group">
+				<div class="btn btn-default" modal='#modal'>Close</div>
+				<div class="btn btn-default blue" modal='#modal'>Ok</div>
+			</div>
+		</div>
+		<!-- End Footer -->
+	</div>
+	<!-- End Modal -->
+</div>
+			</div>
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8" id="modalCode"></div>
+				<script>
+					createCode('modalCode');
+				</script>
+			</div>
 		</div>
 
 		<footer class='footer'>
