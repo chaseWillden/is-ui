@@ -48,7 +48,7 @@
 								<a href='https://github.com/chaseWillden/is-ui' target="_blank">GitHub</a>
 							</li>
 							<li>
-								<a href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.0.6.zip'>Download v0.0.6 (beta)</a>
+								<a href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.1.0.zip'>Download v0.1.0 (beta)</a>
 							</li>
 						</ul>
 					</li>
@@ -65,7 +65,7 @@
 				<div class="row">
 					<div class="col-12 center">
 						<a href='https://github.com/chaseWillden/is-ui' target="_blank" class="btn btn-xl blue">Fork on GitHub</a>
-						<a class="btn btn-xl green screen-only" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.0.6.zip'>Download v0.0.6 (beta)</a>
+						<a class="btn btn-xl green screen-only" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.1.0.zip'>Download v0.1.0 (beta)</a>
 					</div>
 				</div>
 			</div>
@@ -104,7 +104,7 @@
 						<li>
 							<a href='#formArea'>Forms</a>
 							<ul class="sub">
-								<li><a href='#ComponentsFormArea'>Components</a></li>
+								<li><a href='#ComponentsFormArea'>Form Components</a></li>
 								<li><a href='#loginFormArea'>Login Form</a></li>
 								<li><a href='#textareaFormArea'>Textarea</a></li>
 							</ul>
@@ -115,6 +115,14 @@
 								<li><a href='#smGridArea'>Small</a></li>
 								<li><a href='#mdGridArea'>Medium</a></li>
 								<li><a href='#lgGridArea'>Large</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#pictureArea">Pictures</a>
+							<ul class="sub">
+								<li><a href="#standardPictureArea">Standard</a>
+								<li><a href='#pictureDescriptionArea'>Picture Description</a></li>
+								<li><a href='#pictureLightboxArea'>Lightbox</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -206,7 +214,7 @@
 			</script> 
 			<div class="row">
 				<div class="col-2"></div>
-				<div class="col-6" id="colorCode1"></div>
+				<div class="col-8" id="colorCode1"></div>
 				<div class="col-2"></div>
 			</div>
 			<div class="row" id="colorCode1_base">
@@ -501,17 +509,30 @@
 			</div>
 			<div class="row">
 				<div class="col-10">
-					<h2>Components</h2>
+					<h2>Form Components</h2>
 				</div>
 			</div>
 			<div class="row" id="ComponentsFormArea">
+				<div class="col-4"></div>
 				<div class="col-3">
-					<input type="text" class="form-comp">
-					<input type="password" class="form-comp">
-					<textarea class="form-comp"></textarea>
-					<input type='submit' class="btn btn-default blue right">
+					<fieldset name='Example Form' id='formCompCode_base'>
+	<label>Text</label>
+	<input type="text" class="form-comp">
+	<label>Password</label>
+	<input type="password" class="form-comp">
+	<label>Textarea</label>
+	<textarea class="form-comp"></textarea>
+	<input type='submit' class="btn btn-default blue right">
+</fieldset>
 				</div>
 				<div class="col-3"></div>
+			</div>
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8" id="formCompCode"></div>
+				<script>
+					createCode('formCompCode');
+				</script>
 			</div>
 			<div class="row">
 				<div class="col-10">
@@ -637,108 +658,246 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-1 grey center">.col-1</div>
-				<div class="col-1 grey center">.col-1</div>
-				<div class="col-1 grey center">.col-1</div>
-				<div class="col-1 grey center">.col-1</div>
-				<div class="col-1 grey center">.col-1</div>
-				<div class="col-1 grey center">.col-1</div>
-				<div class="col-1 grey center">.col-1</div>
-				<div class="col-1 grey center">.col-1</div>
-				<div class="col-1 grey center">.col-1</div>
-				<div class="col-1 grey center">.col-1</div>
-				<div class="col-1 grey center">.col-1</div>
-				<div class="col-1 grey center">.col-1</div>
-			</div>
-			<div class="row">
-				<div class="col-2 grey center">.col-2</div>
-				<div class="col-2 grey center">.col-2</div>
-				<div class="col-2 grey center">.col-2</div>
-				<div class="col-2 grey center">.col-2</div>
-				<div class="col-2 grey center">.col-2</div>
-				<div class="col-2 grey center">.col-2</div>
-			</div>
-			<div class="row">
-				<div class="col-3 grey center">.col-3</div>
-				<div class="col-3 grey center">.col-3</div>
-				<div class="col-3 grey center">.col-3</div>
-				<div class="col-3 grey center">.col-3</div>
-			</div>
-			<div class="row">
-				<div class="col-4 grey center">.col-4</div>
-				<div class="col-4 grey center">.col-4</div>
-				<div class="col-4 grey center">.col-4</div>
-			</div>	
-			<div class="row">
-				<div class="col-5 grey center">.col-5</div>
-				<div class="col-5 grey center">.col-5</div>
-				<div class="col-2 grey center">.col-2</div>
-			</div>
-			<div class="row">
-				<div class="col-6 grey center">.col-6</div>
-				<div class="col-6 grey center">.col-6</div>
-			</div>
-			<div class="row">
-				<div class="col-7 grey center">.col-7</div>
-				<div class="col-5 grey center">.col-5</div>
-			</div>
-			<div class="row">
-				<div class="col-8 grey center">.col-8</div>
-				<div class="col-4 grey center">.col-4</div>
-			</div>
-			<div class="row">
-				<div class="col-9 grey center">.col-9</div>
-				<div class="col-3 grey center">.col-3</div>
-			</div>
-			<div class="row">
-				<div class="col-10 grey center">.col-10</div>
-				<div class="col-2 grey center">.col-2</div>
-			</div>
-			<div class="row">
-				<div class="col-11 grey center">.col-11</div>
-				<div class="col-1 grey center">.col-1</div>
-			</div>
-			<div class="row">
-				<div class="col-12 grey center">.col-12</div>
-			</div>
-			<div class="row" id='smGridArea'>
 				<div class="col-10">
-					<h2>Small Grid</h2>
+					<div class="row">
+						<div class="col-1 grey center">.col-1</div>
+						<div class="col-1 grey center">.col-1</div>
+						<div class="col-1 grey center">.col-1</div>
+						<div class="col-1 grey center">.col-1</div>
+						<div class="col-1 grey center">.col-1</div>
+						<div class="col-1 grey center">.col-1</div>
+						<div class="col-1 grey center">.col-1</div>
+						<div class="col-1 grey center">.col-1</div>
+						<div class="col-1 grey center">.col-1</div>
+						<div class="col-1 grey center">.col-1</div>
+						<div class="col-1 grey center">.col-1</div>
+						<div class="col-1 grey center">.col-1</div>
+					</div>
+					<div class="row">
+						<div class="col-2 grey center">.col-2</div>
+						<div class="col-2 grey center">.col-2</div>
+						<div class="col-2 grey center">.col-2</div>
+						<div class="col-2 grey center">.col-2</div>
+						<div class="col-2 grey center">.col-2</div>
+						<div class="col-2 grey center">.col-2</div>
+					</div>
+					<div class="row">
+						<div class="col-3 grey center">.col-3</div>
+						<div class="col-3 grey center">.col-3</div>
+						<div class="col-3 grey center">.col-3</div>
+						<div class="col-3 grey center">.col-3</div>
+					</div>
+					<div class="row">
+						<div class="col-4 grey center">.col-4</div>
+						<div class="col-4 grey center">.col-4</div>
+						<div class="col-4 grey center">.col-4</div>
+					</div>	
+					<div class="row">
+						<div class="col-5 grey center">.col-5</div>
+						<div class="col-5 grey center">.col-5</div>
+						<div class="col-2 grey center">.col-2</div>
+					</div>
+					<div class="row">
+						<div class="col-6 grey center">.col-6</div>
+						<div class="col-6 grey center">.col-6</div>
+					</div>
+					<div class="row">
+						<div class="col-7 grey center">.col-7</div>
+						<div class="col-5 grey center">.col-5</div>
+					</div>
+					<div class="row">
+						<div class="col-8 grey center">.col-8</div>
+						<div class="col-4 grey center">.col-4</div>
+					</div>
+					<div class="row">
+						<div class="col-9 grey center">.col-9</div>
+						<div class="col-3 grey center">.col-3</div>
+					</div>
+					<div class="row">
+						<div class="col-10 grey center">.col-10</div>
+						<div class="col-2 grey center">.col-2</div>
+					</div>
+					<div class="row">
+						<div class="col-11 grey center">.col-11</div>
+						<div class="col-1 grey center">.col-1</div>
+					</div>
+					<div class="row">
+						<div class="col-12 grey center">.col-12</div>
+					</div>
+					<div class="row" id='smGridArea'>
+						<div class="col-10">
+							<h2>Small Grid</h2>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="col-2 grey center sm">.col-2</div>
+						<div class="col-2 grey center sm">.col-2</div>
+						<div class="col-2 grey center sm">.col-2</div>
+						<div class="col-2 grey center sm">.col-2</div>
+						<div class="col-2 grey center sm">.col-2</div>
+						<div class="col-2 grey center sm">.col-2</div>	
+					</div>	
+					<div class="row" id='mdGridArea'>
+						<div class="col-10">
+							<h2>Medium Grid</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-2 grey center md">.col-2</div>
+						<div class="col-2 grey center md">.col-2</div>
+						<div class="col-2 grey center md">.col-2</div>
+						<div class="col-2 grey center md">.col-2</div>
+						<div class="col-2 grey center md">.col-2</div>	
+						<div class="col-2 grey center md">.col-2</div>
+					</div>
+					<div class="row" id='lgGridArea'>
+						<div class="col-10">
+							<h2>Large Grid</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-2 grey center lg">.col-2</div>
+						<div class="col-2 grey center lg">.col-2</div>
+						<div class="col-2 grey center lg">.col-2</div>
+						<div class="col-2 grey center lg">.col-2</div>
+						<div class="col-2 grey center lg">.col-2</div>
+						<div class="col-2 grey center lg">.col-2</div>	
+					</div>
 				</div>
-			</div>	
+			</div>
+		</div>
+
+		<div class="row" id="pictureArea">
 			<div class="row">
-				<div class="col-2 grey center sm">.col-2</div>
-				<div class="col-2 grey center sm">.col-2</div>
-				<div class="col-2 grey center sm">.col-2</div>
-				<div class="col-2 grey center sm">.col-2</div>
-				<div class="col-2 grey center sm">.col-2</div>
-				<div class="col-2 grey center sm">.col-2</div>	
-			</div>	
-			<div class="row" id='mdGridArea'>
 				<div class="col-10">
-					<h2>Medium Grid</h2>
+					<h1 class="center">Pictures</h1>
+					<hr class="hr-fade">
+				</div>
+			</div>
+			<div class="row" id="standardPictureArea">
+				<div class="col-2"></div>
+				<div class="col-8">
+					<h2>Standard</h2>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-2 grey center md">.col-2</div>
-				<div class="col-2 grey center md">.col-2</div>
-				<div class="col-2 grey center md">.col-2</div>
-				<div class="col-2 grey center md">.col-2</div>
-				<div class="col-2 grey center md">.col-2</div>	
-				<div class="col-2 grey center md">.col-2</div>
-			</div>
-			<div class="row" id='lgGridArea'>
-				<div class="col-10">
-					<h2>Large Grid</h2>
+				<div class="col-2"></div>
+				<div class="col-8">
+					<div class="col-2" id="thumbnailCode_base">
+	<a href="" class="thumbnail">
+		<img src="http://placehold.it/200x200">
+	</a>
+</div>
+					<div class="col-half"></div>
+					<div class="col-2">
+						<a href="" class="thumbnail">
+							<img src="http://placehold.it/200x200">
+						</a>
+					</div>
+					<div class="col-half"></div>
+					<div class="col-2">
+						<a href="" class="thumbnail">
+							<img src="http://placehold.it/200x200">
+						</a>
+					</div>
+					<div class="col-half"></div>
+					<div class="col-2">
+						<a href="" class="thumbnail">
+							<img src="http://placehold.it/200x200">
+						</a>
+					</div>
+					<div class="col-half"></div>
+					<div class="col-2">
+						<a href="" class="thumbnail">
+							<img src="http://placehold.it/200x200">
+						</a>
+					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-2 grey center lg">.col-2</div>
-				<div class="col-2 grey center lg">.col-2</div>
-				<div class="col-2 grey center lg">.col-2</div>
-				<div class="col-2 grey center lg">.col-2</div>
-				<div class="col-2 grey center lg">.col-2</div>
-				<div class="col-2 grey center lg">.col-2</div>	
+				<div class="col-2"></div>
+				<div class="col-8" id="thumbnailCode"></div>
+				<script>
+					createCode('thumbnailCode')
+				</script>
+			</div>
+			<div class="row" id="pictureDescriptionArea">
+				<div class="col-2"></div>
+				<div class="col-8">
+					<h2>Picture Description</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8">
+					<div class="col-1"></div>
+					<div class="col-3" id="thumbnailDescriptionCode_base">
+	<a href="" class="thumbnail">
+		<img src="http://placehold.it/200x200">
+		<div class="description">This is text concerning this image</div>
+	</a>
+</div>
+					<div class="col-half"></div>
+					<div class="col-3">
+						<a href="" class="thumbnail">
+							<img src="http://placehold.it/200x200">
+							<div class="description">This is text concerning this image</div>
+						</a>
+					</div>
+					<div class="col-half"></div>
+					<div class="col-3">
+						<a href="" class="thumbnail">
+							<img src="http://placehold.it/200x200">
+							<div class="description">This is text concerning this image</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8" id="thumbnailDescriptionCode"></div>
+				<script>
+					createCode('thumbnailDescriptionCode')
+				</script>
+			</div>
+			<div class="row" id="pictureLightboxArea">
+				<div class="col-2"></div>
+				<div class="col-8">
+					<h2>Lightbox</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8">
+					<div class="col-1"></div>
+					<div class="col-3" id="lightboxCode_base">
+	<a href="#pictureLightboxArea" class="thumbnail" lightbox='lightbox1'>
+		<img src="http://placehold.it/200x200">
+		<div class="description">This is text concerning this image</div>
+	</a>
+</div>
+					<div class="col-half"></div>
+					<div class="col-3">
+						<a href="#pictureLightboxArea" class="thumbnail" lightbox='lightbox1'>
+							<img src="http://placehold.it/200x200">
+							<div class="description">This is text concerning this image</div>
+						</a>
+					</div>
+					<div class="col-half"></div>
+					<div class="col-3">
+						<a href="#pictureLightboxArea" class="thumbnail" lightbox='lightbox1'>
+							<img src="http://placehold.it/200x200">
+							<div class="description">This is text concerning this image</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8" id="lightboxCode"></div>
+				<script>
+					createCode('lightboxCode')
+				</script>
 			</div>
 		</div>
 
