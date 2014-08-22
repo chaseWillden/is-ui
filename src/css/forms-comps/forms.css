@@ -7,6 +7,10 @@
 	padding: 12px;
 }
 
+.form .btn{
+	margin: 0;
+}
+
 .form-comp{
 	font-size: 16px;
 	background-color: white;
@@ -29,9 +33,6 @@
 	-o-transition: ease all .2s;
 	-moz-transition: ease all .2s;
 	-webkit-transition: ease all .2s;
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 }
 
 .form-comp:after{
@@ -58,4 +59,28 @@
 
 .form-comp.lg{
 	height: 34px;
+}
+
+label{
+	font-weight: bold;
+	color: #494949;
+	display: inline-block;
+	width: 100%;
+}
+
+fieldset:before{
+	content: attr(name);
+	color: black;
+	position: absolute;
+	top: -10px;
+	right: 14px;
+	background-color: white;
+	padding: 0 9px;
+}
+
+fieldset{
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 10px;
 }

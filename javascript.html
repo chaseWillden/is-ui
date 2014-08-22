@@ -48,7 +48,7 @@
 								<a href='https://github.com/chaseWillden/is-ui' target="_blank">GitHub</a>
 							</li>
 							<li>
-								<a href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.0.6.zip'>Download v0.0.6 (beta)</a>
+								<a href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.1.0.zip'>Download v0.1.0 (beta)</a>
 							</li>
 						</ul>
 					</li>
@@ -65,7 +65,7 @@
 				<div class="row">
 					<div class="col-12 center">
 						<a href='https://github.com/chaseWillden/is-ui' target="_blank" class="btn btn-xl blue">Fork on GitHub</a>
-						<a class="btn btn-xl green screen-only" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.0.6.zip'>Download v0.0.6 (beta)</a>
+						<a class="btn btn-xl green screen-only" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.1.0.zip'>Download v0.1.0 (beta)</a>
 					</div>
 				</div>
 			</div>
@@ -161,6 +161,38 @@
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="hidden">
+				<div id="modalCode_base">
+	<!-- Button to init modal -->
+	<button class="btn btn-default blue" modal='#modal'>Modal</button>
+	<div class="modal" id="modal">
+		<div class="head">
+			<div class="close">&times;</div>
+			Modal Title
+		</div>
+		<div class="body">
+			This is the body
+		</div>
+		<div class="footer">
+
+			<!-- Buttons to close and accept modal -->
+			<div class="btn-group">
+				<div class="btn btn-default" modal='#modal'>Close</div>
+				<div class="btn btn-default blue" modal='#modal'>Ok</div>
+			</div>
+		</div>
+		<!-- End Footer -->
+	</div>
+	<!-- End Modal -->
+</div>
+			</div>
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8" id="modalCode"></div>
+				<script>
+					createCode('modalCode');
+				</script>
 			</div>
 		</div>
 

@@ -1,0 +1,58 @@
+/*
+	Lightbox
+	Author: Chase Willden;
+*/
+
+#lightbox-bg{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.75);
+	z-index: 1000;
+	display: none;
+}
+
+.lightbox-mode{
+	width: 27% !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	margin-top: 5% !important;
+	background-color: white !important;
+}
+
+.lightbox-right:before, .lightbox-left:before{
+	color: rgb(186, 186, 186);
+	font-size: 33px;
+	font-weight: 100;
+	padding-left: 8px;
+}
+
+.lightbox-right:before{
+	content: '>';
+}
+
+.lightbox-left:before{
+	content: '<';
+}
+
+.lightbox-right, .lightbox-left{
+	position: absolute;
+	top: 40%;
+	width: 33px;
+	height: 40px;
+	background-color: rgba(41, 40, 40, 0.78);
+}
+
+.lightbox-left{
+	left: 3px;
+}
+
+.lightbox-right{
+	right: 3px;
+}
+
+.lightbox-left:hover, .lightbox-right:hover{
+	background-color: rgba(41, 40, 40, 1);
+}

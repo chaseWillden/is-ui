@@ -21,10 +21,8 @@ function touchClick(e){
 	var right = $('.right-click');
 	var target = $(e.target);
 	$('.btn-group').find('.dropdown.show').removeClass('show');
-	if ($(target).attr('modal')){
-		var ele = $($(target).attr('modal'));
-		ele.fadeToggle();
-	}
+	modalInit(target);
+	lightboxInit(target);
 	if (right.length > 0){
 		right.each(function(){
 			if ($(this).hasClass('show')){

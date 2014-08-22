@@ -48,7 +48,7 @@
 								<a href='https://github.com/chaseWillden/is-ui' target="_blank">GitHub</a>
 							</li>
 							<li>
-								<a href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.0.6.zip'>Download v0.0.6 (beta)</a>
+								<a href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.1.0.zip'>Download v0.1.0 (beta)</a>
 							</li>
 						</ul>
 					</li>
@@ -65,7 +65,7 @@
 				<div class="row">
 					<div class="col-12 center">
 						<a href='https://github.com/chaseWillden/is-ui' target="_blank" class="btn btn-xl blue">Fork on GitHub</a>
-						<a class="btn btn-xl green screen-only" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.0.6.zip'>Download v0.0.6 (beta)</a>
+						<a class="btn btn-xl green screen-only" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.1.0.zip'>Download v0.1.0 (beta)</a>
 					</div>
 				</div>
 			</div>
@@ -104,7 +104,7 @@
 						<li>
 							<a href='#formArea'>Forms</a>
 							<ul class="sub">
-								<li><a href='#ComponentsFormArea'>Components</a></li>
+								<li><a href='#ComponentsFormArea'>Form Components</a></li>
 								<li><a href='#loginFormArea'>Login Form</a></li>
 								<li><a href='#textareaFormArea'>Textarea</a></li>
 							</ul>
@@ -115,6 +115,14 @@
 								<li><a href='#smGridArea'>Small</a></li>
 								<li><a href='#mdGridArea'>Medium</a></li>
 								<li><a href='#lgGridArea'>Large</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#pictureArea">Pictures</a>
+							<ul class="sub">
+								<li><a href="#standardPictureArea">Standard</a>
+								<li><a href='#pictureDescriptionArea'>Picture Description</a></li>
+								<li><a href='#pictureLightboxArea'>Lightbox</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -140,15 +148,20 @@
 					</div>
 				</div> 	
 			</div>
+			<div class="hidden">
+				<div class="row" id="sizingCode_base">
+	<div class="col-1 sm">Small</div>
+	<div class="col-1">Default</div>
+	<div class="col-1 lg">Large</div>
+	<div class="col-1 xl">X-Large</div>
+</div>
+			</div>
 			<div class="row">
 				<div class="col-2"></div>
-				<div class="col-8">
-					<pre class="language-markup line-numbers"><code>&lt;div class=&quot;col-1 sm&quot;&gt;Small&lt;/div&gt;
-	&lt;div class=&quot;col-1 md&quot;&gt;Medium&lt;/div&gt;
-	&lt;div class=&quot;col-1&quot;&gt;Default&lt;/div&gt;
-	&lt;div class=&quot;col-1 lg&quot;&gt;Large&lt;/div&gt;
-	&lt;div class=&quot;col-1 xl&quot;&gt;X-Large&lt;/div&gt;</code></pre>
-				</div> 	
+				<div class="col-8" id="sizingCode"></div>
+				<script>
+					createCode('sizingCode');
+				</script>
 			</div>
 			<div class="row">
 				<div class="col-2"></div>
@@ -158,15 +171,18 @@
 					</div>
 				</div> 	
 			</div>
+			<div class="row" id="sizingCode2_base">
+	<div class="modal md">Medium</div>
+	<div class="modal">Default</div>
+	<div class="modal lg">Large</div>
+	<div class="modal xl">X-Large</div>
+</div>
 			<div class="row">
 				<div class="col-2"></div>
-				<div class="col-8">
-					<pre class="language-markup line-numbers"><code>&lt;div class=&quot;modal sm&quot;&gt;Small&lt;/div&gt;
-	&lt;div class=&quot;modal md&quot;&gt;Medium&lt;/div&gt;
-	&lt;div class=&quot;modal&quot;&gt;Default&lt;/div&gt;
-	&lt;div class=&quot;modal lg&quot;&gt;Large&lt;/div&gt;
-	&lt;div class=&quot;modal xl&quot;&gt;X-Large&lt;/div&gt;</code></pre>
-				</div> 	
+				<div class="col-8" id="sizingCode2"></div>
+				<script>
+					createCode('sizingCode2');
+				</script> 	
 			</div>
 			<div class="row" id="colorConcept">
 				<div class="col-2"></div>
@@ -179,74 +195,62 @@
 			</div>
 			<div class="row">
 				<div class="col-2"></div>
-				<div class="col-6">
-					<pre class="language-markup line-numbers"><code>&lt;button class=&quot;btn btn-default&quot;&gt;Default&lt;/button&gt; 
-&lt;button class=&quot;btn btn-default grey&quot;&gt;Grey&lt;/button&gt; 
-&lt;button class=&quot;btn btn-default blue&quot;&gt;Blue&lt;/button&gt; 
-&lt;button class=&quot;btn btn-default red&quot;&gt;Red&lt;/button&gt; 
-&lt;button class=&quot;btn btn-default green&quot;&gt;Green&lt;/button&gt; 
-&lt;button class=&quot;btn btn-default orange&quot;&gt;Orange&lt;/button&gt; 
-&lt;button class=&quot;btn btn-default pink&quot;&gt;Pink&lt;/button&gt; 
-&lt;button class=&quot;btn btn-default peach&quot;&gt;Peach&lt;/button&gt; 
-&lt;button class=&quot;btn btn-default white&quot;&gt;White&lt;/button&gt;</code></pre>
-				</div>
-				<div class="col-2"></div>
+				<div class="col-8" id="btnColorCode1"></div>
 			</div>
-			<div class="row">
-				<div class="col-1"></div>
-				<div class="col-1"><button class="btn btn-default">Default</button></div>
-				<div class="col-1"><button class="btn btn-default grey">Grey</button></div>
-				<div class="col-1"><button class="btn btn-default blue">Blue</button></div>
-				<div class="col-1"><button class="btn btn-default red">Red</button></div>
-				<div class="col-1"><button class="btn btn-default green">Green</button></div>
-				<div class="col-1"><button class="btn btn-default orange">Orange</button></div>
-				<div class="col-1"><button class="btn btn-default pink">Pink</button></div>
-				<div class="col-1"><button class="btn btn-default peach">Peach</button></div>
-				<div class="col-1"><button class="btn btn-default white">White</button></div>
-			</div>
+			<div class="row" id="btnColorCode1_base">
+	<div class="col-1"></div>
+	<div class="col-1"><button class="btn btn-default">Default</button></div>
+	<div class="col-1"><button class="btn btn-default grey">Grey</button></div>
+	<div class="col-1"><button class="btn btn-default blue">Blue</button></div>
+	<div class="col-1"><button class="btn btn-default red">Red</button></div>
+	<div class="col-1"><button class="btn btn-default green">Green</button></div>
+	<div class="col-1"><button class="btn btn-default orange">Orange</button></div>
+	<div class="col-1"><button class="btn btn-default pink">Pink</button></div>
+	<div class="col-1"><button class="btn btn-default peach">Peach</button></div>
+	<div class="col-1"><button class="btn btn-default white">White</button></div>
+</div>
+			<script>
+				createCode('btnColorCode1');
+			</script> 
 			<div class="row">
 				<div class="col-2"></div>
-				<div class="col-6">
-					<pre class="language-markup line-numbers"><code>&lt;input type=&quot;text&quot; class=&quot;form-comp blue&quot;&gt;
-&lt;input type=&quot;text&quot; class=&quot;form-comp grey&quot;&gt;
-&lt;input type=&quot;text&quot; class=&quot;form-comp red&quot;&gt;
-&lt;input type=&quot;text&quot; class=&quot;form-comp green&quot;&gt;
-&lt;input type=&quot;text&quot; class=&quot;form-comp orange&quot;&gt;
-&lt;input type=&quot;text&quot; class=&quot;form-comp pink&quot;&gt;
-&lt;input type=&quot;text&quot; class=&quot;form-comp peach&quot;&gt;
-&lt;textarea class=&quot;form-comp orange&quot;&gt;&lt;/textarea&gt;</code></pre>
-				</div>
+				<div class="col-8" id="colorCode1"></div>
 				<div class="col-2"></div>
 			</div>
-			<div class="row">
-				<div class="col-2">
-					<input type="text" class="form-comp blue">
-				</div>
-				<div class="col-2">
-					<input type="text" class="form-comp grey">
-				</div>
-				<div class="col-2">
-					<input type="text" class="form-comp red">
-				</div>
-				<div class="col-2">
-					<input type="text" class="form-comp green">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-2">
-					<input type="text" class="form-comp orange">
-				</div>
-				<div class="col-2">
-					<input type="text" class="form-comp pink">
-				</div>
-				<div class="col-2">
-					<input type="text" class="form-comp peach">
-				</div>
-				<div class="col-2">
-					<textarea class="form-comp orange"></textarea>
-				</div>
-			</div>
+			<div class="row" id="colorCode1_base">
+	<div class="row">
+		<div class="col-2">
+			<input type="text" class="form-comp blue">
 		</div>
+		<div class="col-2">
+			<input type="text" class="form-comp grey">
+		</div>
+		<div class="col-2">
+			<input type="text" class="form-comp red">
+		</div>
+		<div class="col-2">
+			<input type="text" class="form-comp green">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-2">
+			<input type="text" class="form-comp orange">
+		</div>
+		<div class="col-2">
+			<input type="text" class="form-comp pink">
+		</div>
+		<div class="col-2">
+			<input type="text" class="form-comp peach">
+		</div>
+		<div class="col-2">
+			<textarea class="form-comp orange"></textarea>
+		</div>
+	</div>
+</div>
+		</div>
+		<script>
+			createCode('colorCode1');
+		</script>
 		<div class="row" id="tableArea">
 			<div class="row">
 				<div class="col-10">
@@ -416,21 +420,20 @@
 				<hr class="hr-fade">
 			</div>
 			<div class="row">
-					<div class="col-6">
-						<button class="btn btn-sm">.btn-sm</button>
-						<button class="btn btn-md">.btn-md</button>
-						<button class="btn btn-default">.btn-default</button>
-						<button class="btn btn-lg">.btn-lg</button>
-						<button class="btn btn-xl">.btn-xl</button>
-					</div>
-					<div class="col-4">
-						<!-- I have issues wrapping the text and having it format correctly -->
-						<pre class="language-markup line-numbers"><code>&lt;button class="btn btn-sm"&gt;Button&lt;button&gt;
-&lt;button class="btn btn-md"&gt;Button&lt;button&gt;
-&lt;button class="btn btn-default"&gt;Button&lt;button&gt;
-&lt;button class="btn btn-lg"&gt;Button&lt;button&gt;
-&lt;button class="btn btn-xl"&gt;Button&lt;button&gt;</code></pre>
-					</div>
+					<div class="col-6" id="btnCode1_base">
+	<button class="btn btn-sm">.btn-sm</button>
+	<button class="btn btn-md">.btn-md</button>
+	<button class="btn btn-default">.btn-default</button>
+	<button class="btn btn-lg">.btn-lg</button>
+	<button class="btn btn-xl">.btn-xl</button>
+</div>
+				</div>
+				<div class="row">
+					<div class="col-2"></div>
+					<div class="col-6" id="btnCode1"></div>
+					<script>
+						createCode('btnCode1');
+					</script>
 				</div>
 				<div class="row" id='coloredBtnArea'>
 					<div class="col-10">
@@ -438,20 +441,20 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-6">
-						<button class="btn btn-sm blue">.btn-sm .blue</button>
-						<button class="btn btn-md red">.btn-md .red</button>
-						<button class="btn btn-default red">.btn-default .red</button>
-						<button class="btn btn-lg green">.btn-lg .green</button>
-						<button class="btn btn-xl orange">.btn-xl .orange</button>
-					</div>
-					<div class="col-4">
-						<pre class="language-markup line-numbers"><code>&lt;button class="btn btn-sm blue"&gt;Button&lt;button&gt;
-&lt;button class="btn btn-md red"&gt;Button&lt;button&gt;
-&lt;button class="btn btn-default red"&gt;Button&lt;button&gt;
-&lt;button class="btn btn-lg green"&gt;Button&lt;button&gt;
-&lt;button class="btn btn-xl orange"&gt;Button&lt;button&gt;</code></pre>
-					</div>
+					<div class="col-6" id="btnCode2_base">
+	<button class="btn btn-sm blue">.btn-sm .blue</button>
+	<button class="btn btn-md red">.btn-md .red</button>
+	<button class="btn btn-default red">.btn-default .red</button>
+	<button class="btn btn-lg green">.btn-lg .green</button>
+	<button class="btn btn-xl orange">.btn-xl .orange</button>
+</div>
+				</div>
+				<div class="row">
+					<div class="col-2"></div>
+					<div class="col-6" id="btnCode2"></div>
+					<script>
+						createCode('btnCode2');
+					</script>
 				</div>
 				<div class="row">
 					<div class="col-10">
@@ -459,20 +462,20 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-6">
-						<a class="btn btn-sm" href=''>.btn-sm</a>
-						<a class="btn btn-md" href=''>.btn-md</a>
-						<a class="btn btn-default" href=''>.btn-default</a>
-						<a class="btn btn-lg" href=''>.btn-lg</a>
-						<a class="btn btn-xl" href=''>.btn-xl</a>
-					</div>
-					<div class="col-4">
-						<pre class="language-markup line-numbers"><code>&lt;a href='#' class="btn btn-sm"&gt;Button&lt;a&gt;
-&lt;a href='#' class="btn btn-md"&gt;Button&lt;a&gt;
-&lt;a href='#' class="btn btn-default"&gt;Button&lt;a&gt;
-&lt;a href='#' class="btn btn-lg"&gt;Button&lt;a&gt;
-&lt;a href='#' class="btn btn-xl"&gt;Button&lt;a&gt;</code></pre>
-					</div>
+					<div class="col-6" id="btnCode3_base">
+	<a class="btn btn-sm" href=''>.btn-sm</a>
+	<a class="btn btn-md" href=''>.btn-md</a>
+	<a class="btn btn-default" href=''>.btn-default</a>
+	<a class="btn btn-lg" href=''>.btn-lg</a>
+	<a class="btn btn-xl" href=''>.btn-xl</a>
+</div>
+				</div>
+				<div class="row">
+					<div class="col-2"></div>
+					<div class="col-6" id="btnCode3"></div>
+					<script>
+						createCode('btnCode3');
+					</script>
 				</div>
 				<div class="row">
 					<div class="col-10">
@@ -480,20 +483,20 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-6">
-						<input type='submit' class="btn btn-sm" value=".btn-sm">
-						<input type='submit' class="btn btn-md" value=".btn-md">
-						<input type='submit' class="btn btn-default" value=".btn-default">
-						<input type='submit' class="btn btn-lg" value=".btn-lg">
-						<input type='submit' class="btn btn-xl" value=".btn-xl">
-					</div>
-					<div class="col-4">
-						<pre class="language-markup line-numbers"><code>&lt;input type='submit' class="btn btn-sm"&gt;Button&lt;a&gt;
-&lt;input type='submit' class="btn btn-md"&gt;Button&lt;a&gt;
-&lt;input type='submit' class="btn btn-default"&gt;Button&lt;a&gt;
-&lt;input type='submit' class="btn btn-lg"&gt;Button&lt;a&gt;
-&lt;input type='submit' class="btn btn-xl"&gt;Button&lt;a&gt;</code></pre>
-					</div>
+					<div class="col-6" id="btnCode4_base">
+	<input type='submit' class="btn btn-sm" value=".btn-sm">
+	<input type='submit' class="btn btn-md" value=".btn-md">
+	<input type='submit' class="btn btn-default" value=".btn-default">
+	<input type='submit' class="btn btn-lg" value=".btn-lg">
+	<input type='submit' class="btn btn-xl" value=".btn-xl">
+</div>
+				</div>
+				<div class="row">
+					<div class="col-2"></div>
+					<div class="col-6" id="btnCode4"></div>
+					<script>
+						createCode('btnCode4');
+					</script>
 				</div>
 		</div>
 
@@ -506,17 +509,30 @@
 			</div>
 			<div class="row">
 				<div class="col-10">
-					<h2>Components</h2>
+					<h2>Form Components</h2>
 				</div>
 			</div>
 			<div class="row" id="ComponentsFormArea">
+				<div class="col-4"></div>
 				<div class="col-3">
-					<input type="text" class="form-comp">
-					<input type="password" class="form-comp">
-					<textarea class="form-comp"></textarea>
-					<input type='submit' class="btn btn-default blue right">
+					<fieldset name='Example Form' id='formCompCode_base'>
+	<label>Text</label>
+	<input type="text" class="form-comp">
+	<label>Password</label>
+	<input type="password" class="form-comp">
+	<label>Textarea</label>
+	<textarea class="form-comp"></textarea>
+	<input type='submit' class="btn btn-default blue right">
+</fieldset>
 				</div>
 				<div class="col-3"></div>
+			</div>
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8" id="formCompCode"></div>
+				<script>
+					createCode('formCompCode');
+				</script>
 			</div>
 			<div class="row">
 				<div class="col-10">
@@ -525,50 +541,38 @@
 			</div>
 			<div class="row" id="loginFormArea">
 				<div class="col-3"></div>
-				<div class="col-4 pit md">
-					<div class="row">
-						<div class="col-2"></div>
-						<div class="col-8">
-							<form class="bulge form low white">
-								<h1 class="title center thin">Login</h1>
-								<input type="text" class="form-comp lg" placeholder="Username">
-								<input type="password" class="form-comp lg" placeholder="Password">
-								<hr class="empty sm">
-								<input type="submit" value="Login" class="btn btn-default blue">
-								<button class="btn btn-default white">Cancel</button>
-							</form>
-							<br>
-							<div class="row">
-								<div class="col-2"></div>
-								<div class="col-10">
-									<a href="">Forgot Password</a> | <a href="">Register</a>
-								</div>								
-							</div>
-						</div>
-					</div>
-				</div>
+				<div class="col-4 pit md" id="example1_base">
+	<div class="row">
+		<div class="col-2"></div>
+		<div class="col-8">
+			<form class="bulge form low white">
+				<h1 class="title center thin">Login</h1>
+				<input type="text" class="form-comp lg" placeholder="Username">
+				<input type="password" class="form-comp lg" placeholder="Password">
+				<hr class="empty sm">
+				<input type="submit" value="Login" class="btn btn-default blue stretch">
+			</form>
+			<br>
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-10">
+					<a href="">Forgot Password</a> | <a href="">Register</a>
+				</div>								
+			</div>
+		</div>
+	</div>
+</div>
 				<div class="col-3"></div>
 			</div>
 			<div class="row">
 				<div class="col-2"></div>
-				<div class="col-8">
-					<pre class="language-markup line-numbers"><code>&lt;form class=&quot;bulge form low white&quot;&gt;
-	&lt;h1 class=&quot;title center thin&quot;&gt;Login&lt;/h1&gt;
-	&lt;input type=&quot;text&quot; class=&quot;form-comp lg&quot; placeholder=&quot;Username&quot;&gt;
-	&lt;input type=&quot;password&quot; class=&quot;form-comp lg&quot; placeholder=&quot;Password&quot;&gt;
-	&lt;hr class=&quot;empty sm&quot;&gt;
-	&lt;input type=&quot;submit&quot; value=&quot;Login&quot; class=&quot;btn btn-default blue&quot;&gt;
-	&lt;button class=&quot;btn btn-default white&quot;&gt;Cancel&lt;/button&gt;
-&lt;/form&gt;
-&lt;br&gt;
-&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;col-2&quot;&gt;&lt;/div&gt;
-	&lt;div class=&quot;col-10&quot;&gt;
-		&lt;a href=&quot;&quot;&gt;Forgot Password&lt;/a&gt; | &lt;a href=&quot;&quot;&gt;Register&lt;/a&gt;
-	&lt;/div&gt;								
-&lt;/div&gt;</code></pre>
+				<div class="col-8" id="example1">
+					
 				</div>
-			</div>	
+			</div>
+			<script>
+				$('#example1').html(code('example1_base'));
+			</script>
 			<div class="row">
 				<div class="col-10">
 					<h2>Textareas</h2>
@@ -577,57 +581,63 @@
 			<div class="row" id="textareaFormArea">
 				<div class="row">
 					<div class="col-3">
-						<textarea class="form-comp sm">Small</textarea>
+						<textarea class="form-comp sm" id='textarea1_base'>Small</textarea>
 					</div>
 					<div class="col-1"></div>
-					<div class="col-6">
-						<pre class="language-markup line-numbers"><code>&lt;textarea class=&quot;form-comp sm&quot;&gt;Small&lt;/textarea&gt;</code></pre>
-					</div>
+					<div class="col-6" id="textarea1"></div>
+					<script>
+						createCode('textarea1');
+					</script>
 				</div>	
 				<div class="row">
 					<div class="col-3">
-						<textarea class="form-comp">Default</textarea>
+						<textarea class="form-comp" id="textarea2_base">Default</textarea>
 					</div>
 					<div class="col-1"></div>
-					<div class="col-6">
-						<pre class="language-markup line-numbers"><code>&lt;textarea class=&quot;form-comp&quot;&gt;Default&lt;/textarea&gt;</code></pre>
-					</div>
+					<div class="col-6" id="textarea2"></div>
+					<script>
+						createCode('textarea2');
+					</script>
 				</div>	
 				<div class="row">
 					<div class="col-3">
-						<textarea class="form-comp md">Medium</textarea>
+						<textarea class="form-comp md" id='textarea3_base'>Medium</textarea>
 					</div>
 					<div class="col-1"></div>
-					<div class="col-6">
-						<pre class="language-markup line-numbers"><code>&lt;textarea class=&quot;form-comp md&quot;&gt;Medium&lt;/textarea&gt;</code></pre>
-					</div>
+					<div class="col-6" id="textarea3"></div>
+					<script>
+						createCode('textarea3');
+					</script>
 				</div>	
 				<div class="row">
 					<div class="col-3">
-						<textarea class="form-comp lg">Large</textarea>
+						<textarea class="form-comp lg" id="textarea4_base">Large</textarea>
 					</div>
 					<div class="col-1"></div>
-					<div class="col-6">
-						<pre class="language-markup line-numbers"><code>&lt;textarea class=&quot;form-comp lg&quot;&gt;Large&lt;/textarea&gt;</code></pre>
-					</div>
+					<div class="col-6" id="textarea4"></div>
+					<script>
+						createCode('textarea4');
+					</script>
 				</div>
 				<div class="row">
 					<div class="col-3">
-						<textarea class="form-comp xl">X-Large</textarea>
+						<textarea class="form-comp xl" id="textarea5_base">X-Large</textarea>
 					</div>
 					<div class="col-1"></div>
-					<div class="col-6">
-						<pre class="language-markup line-numbers"><code>&lt;textarea class=&quot;form-comp xl&quot;&gt;X-Large&lt;/textarea&gt;</code></pre>
-					</div>
+					<div class="col-6" id="textarea5"></div>
+					<script>
+						createCode('textarea5');
+					</script>
 				</div>		
 				<div class="row">
 					<div class="col-3">
-						<textarea class="form-comp no-resize">No Resize</textarea>
+						<textarea class="form-comp no-resize" id="textarea6_base">No Resize</textarea>
 					</div>
 					<div class="col-1"></div>
-					<div class="col-6">
-						<pre class="language-markup line-numbers"><code>&lt;textarea class=&quot;form-comp no-resize&quot;&gt;No Resize&lt;/textarea&gt;</code></pre>
-					</div>
+					<div class="col-6" id="textarea6"></div>
+					<script>
+						createCode('textarea6');
+					</script>
 				</div>	
 			</div>
 		</div>
@@ -648,108 +658,246 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-1 grey center">.col-1</div>
-				<div class="col-1 grey center">.col-1</div>
-				<div class="col-1 grey center">.col-1</div>
-				<div class="col-1 grey center">.col-1</div>
-				<div class="col-1 grey center">.col-1</div>
-				<div class="col-1 grey center">.col-1</div>
-				<div class="col-1 grey center">.col-1</div>
-				<div class="col-1 grey center">.col-1</div>
-				<div class="col-1 grey center">.col-1</div>
-				<div class="col-1 grey center">.col-1</div>
-				<div class="col-1 grey center">.col-1</div>
-				<div class="col-1 grey center">.col-1</div>
-			</div>
-			<div class="row">
-				<div class="col-2 grey center">.col-2</div>
-				<div class="col-2 grey center">.col-2</div>
-				<div class="col-2 grey center">.col-2</div>
-				<div class="col-2 grey center">.col-2</div>
-				<div class="col-2 grey center">.col-2</div>
-				<div class="col-2 grey center">.col-2</div>
-			</div>
-			<div class="row">
-				<div class="col-3 grey center">.col-3</div>
-				<div class="col-3 grey center">.col-3</div>
-				<div class="col-3 grey center">.col-3</div>
-				<div class="col-3 grey center">.col-3</div>
-			</div>
-			<div class="row">
-				<div class="col-4 grey center">.col-4</div>
-				<div class="col-4 grey center">.col-4</div>
-				<div class="col-4 grey center">.col-4</div>
-			</div>	
-			<div class="row">
-				<div class="col-5 grey center">.col-5</div>
-				<div class="col-5 grey center">.col-5</div>
-				<div class="col-2 grey center">.col-2</div>
-			</div>
-			<div class="row">
-				<div class="col-6 grey center">.col-6</div>
-				<div class="col-6 grey center">.col-6</div>
-			</div>
-			<div class="row">
-				<div class="col-7 grey center">.col-7</div>
-				<div class="col-5 grey center">.col-5</div>
-			</div>
-			<div class="row">
-				<div class="col-8 grey center">.col-8</div>
-				<div class="col-4 grey center">.col-4</div>
-			</div>
-			<div class="row">
-				<div class="col-9 grey center">.col-9</div>
-				<div class="col-3 grey center">.col-3</div>
-			</div>
-			<div class="row">
-				<div class="col-10 grey center">.col-10</div>
-				<div class="col-2 grey center">.col-2</div>
-			</div>
-			<div class="row">
-				<div class="col-11 grey center">.col-11</div>
-				<div class="col-1 grey center">.col-1</div>
-			</div>
-			<div class="row">
-				<div class="col-12 grey center">.col-12</div>
-			</div>
-			<div class="row" id='smGridArea'>
 				<div class="col-10">
-					<h2>Small Grid</h2>
+					<div class="row">
+						<div class="col-1 grey center">.col-1</div>
+						<div class="col-1 grey center">.col-1</div>
+						<div class="col-1 grey center">.col-1</div>
+						<div class="col-1 grey center">.col-1</div>
+						<div class="col-1 grey center">.col-1</div>
+						<div class="col-1 grey center">.col-1</div>
+						<div class="col-1 grey center">.col-1</div>
+						<div class="col-1 grey center">.col-1</div>
+						<div class="col-1 grey center">.col-1</div>
+						<div class="col-1 grey center">.col-1</div>
+						<div class="col-1 grey center">.col-1</div>
+						<div class="col-1 grey center">.col-1</div>
+					</div>
+					<div class="row">
+						<div class="col-2 grey center">.col-2</div>
+						<div class="col-2 grey center">.col-2</div>
+						<div class="col-2 grey center">.col-2</div>
+						<div class="col-2 grey center">.col-2</div>
+						<div class="col-2 grey center">.col-2</div>
+						<div class="col-2 grey center">.col-2</div>
+					</div>
+					<div class="row">
+						<div class="col-3 grey center">.col-3</div>
+						<div class="col-3 grey center">.col-3</div>
+						<div class="col-3 grey center">.col-3</div>
+						<div class="col-3 grey center">.col-3</div>
+					</div>
+					<div class="row">
+						<div class="col-4 grey center">.col-4</div>
+						<div class="col-4 grey center">.col-4</div>
+						<div class="col-4 grey center">.col-4</div>
+					</div>	
+					<div class="row">
+						<div class="col-5 grey center">.col-5</div>
+						<div class="col-5 grey center">.col-5</div>
+						<div class="col-2 grey center">.col-2</div>
+					</div>
+					<div class="row">
+						<div class="col-6 grey center">.col-6</div>
+						<div class="col-6 grey center">.col-6</div>
+					</div>
+					<div class="row">
+						<div class="col-7 grey center">.col-7</div>
+						<div class="col-5 grey center">.col-5</div>
+					</div>
+					<div class="row">
+						<div class="col-8 grey center">.col-8</div>
+						<div class="col-4 grey center">.col-4</div>
+					</div>
+					<div class="row">
+						<div class="col-9 grey center">.col-9</div>
+						<div class="col-3 grey center">.col-3</div>
+					</div>
+					<div class="row">
+						<div class="col-10 grey center">.col-10</div>
+						<div class="col-2 grey center">.col-2</div>
+					</div>
+					<div class="row">
+						<div class="col-11 grey center">.col-11</div>
+						<div class="col-1 grey center">.col-1</div>
+					</div>
+					<div class="row">
+						<div class="col-12 grey center">.col-12</div>
+					</div>
+					<div class="row" id='smGridArea'>
+						<div class="col-10">
+							<h2>Small Grid</h2>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="col-2 grey center sm">.col-2</div>
+						<div class="col-2 grey center sm">.col-2</div>
+						<div class="col-2 grey center sm">.col-2</div>
+						<div class="col-2 grey center sm">.col-2</div>
+						<div class="col-2 grey center sm">.col-2</div>
+						<div class="col-2 grey center sm">.col-2</div>	
+					</div>	
+					<div class="row" id='mdGridArea'>
+						<div class="col-10">
+							<h2>Medium Grid</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-2 grey center md">.col-2</div>
+						<div class="col-2 grey center md">.col-2</div>
+						<div class="col-2 grey center md">.col-2</div>
+						<div class="col-2 grey center md">.col-2</div>
+						<div class="col-2 grey center md">.col-2</div>	
+						<div class="col-2 grey center md">.col-2</div>
+					</div>
+					<div class="row" id='lgGridArea'>
+						<div class="col-10">
+							<h2>Large Grid</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-2 grey center lg">.col-2</div>
+						<div class="col-2 grey center lg">.col-2</div>
+						<div class="col-2 grey center lg">.col-2</div>
+						<div class="col-2 grey center lg">.col-2</div>
+						<div class="col-2 grey center lg">.col-2</div>
+						<div class="col-2 grey center lg">.col-2</div>	
+					</div>
 				</div>
-			</div>	
+			</div>
+		</div>
+
+		<div class="row" id="pictureArea">
 			<div class="row">
-				<div class="col-2 grey center sm">.col-2</div>
-				<div class="col-2 grey center sm">.col-2</div>
-				<div class="col-2 grey center sm">.col-2</div>
-				<div class="col-2 grey center sm">.col-2</div>
-				<div class="col-2 grey center sm">.col-2</div>
-				<div class="col-2 grey center sm">.col-2</div>	
-			</div>	
-			<div class="row" id='mdGridArea'>
 				<div class="col-10">
-					<h2>Medium Grid</h2>
+					<h1 class="center">Pictures</h1>
+					<hr class="hr-fade">
+				</div>
+			</div>
+			<div class="row" id="standardPictureArea">
+				<div class="col-2"></div>
+				<div class="col-8">
+					<h2>Standard</h2>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-2 grey center md">.col-2</div>
-				<div class="col-2 grey center md">.col-2</div>
-				<div class="col-2 grey center md">.col-2</div>
-				<div class="col-2 grey center md">.col-2</div>
-				<div class="col-2 grey center md">.col-2</div>	
-				<div class="col-2 grey center md">.col-2</div>
-			</div>
-			<div class="row" id='lgGridArea'>
-				<div class="col-10">
-					<h2>Large Grid</h2>
+				<div class="col-2"></div>
+				<div class="col-8">
+					<div class="col-2" id="thumbnailCode_base">
+	<a href="" class="thumbnail">
+		<img src="http://placehold.it/200x200">
+	</a>
+</div>
+					<div class="col-half"></div>
+					<div class="col-2">
+						<a href="" class="thumbnail">
+							<img src="http://placehold.it/200x200">
+						</a>
+					</div>
+					<div class="col-half"></div>
+					<div class="col-2">
+						<a href="" class="thumbnail">
+							<img src="http://placehold.it/200x200">
+						</a>
+					</div>
+					<div class="col-half"></div>
+					<div class="col-2">
+						<a href="" class="thumbnail">
+							<img src="http://placehold.it/200x200">
+						</a>
+					</div>
+					<div class="col-half"></div>
+					<div class="col-2">
+						<a href="" class="thumbnail">
+							<img src="http://placehold.it/200x200">
+						</a>
+					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-2 grey center lg">.col-2</div>
-				<div class="col-2 grey center lg">.col-2</div>
-				<div class="col-2 grey center lg">.col-2</div>
-				<div class="col-2 grey center lg">.col-2</div>
-				<div class="col-2 grey center lg">.col-2</div>
-				<div class="col-2 grey center lg">.col-2</div>	
+				<div class="col-2"></div>
+				<div class="col-8" id="thumbnailCode"></div>
+				<script>
+					createCode('thumbnailCode')
+				</script>
+			</div>
+			<div class="row" id="pictureDescriptionArea">
+				<div class="col-2"></div>
+				<div class="col-8">
+					<h2>Picture Description</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8">
+					<div class="col-1"></div>
+					<div class="col-3" id="thumbnailDescriptionCode_base">
+	<a href="" class="thumbnail">
+		<img src="http://placehold.it/200x200">
+		<div class="description">This is text concerning this image</div>
+	</a>
+</div>
+					<div class="col-half"></div>
+					<div class="col-3">
+						<a href="" class="thumbnail">
+							<img src="http://placehold.it/200x200">
+							<div class="description">This is text concerning this image</div>
+						</a>
+					</div>
+					<div class="col-half"></div>
+					<div class="col-3">
+						<a href="" class="thumbnail">
+							<img src="http://placehold.it/200x200">
+							<div class="description">This is text concerning this image</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8" id="thumbnailDescriptionCode"></div>
+				<script>
+					createCode('thumbnailDescriptionCode')
+				</script>
+			</div>
+			<div class="row" id="pictureLightboxArea">
+				<div class="col-2"></div>
+				<div class="col-8">
+					<h2>Lightbox</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8">
+					<div class="col-1"></div>
+					<div class="col-3" id="lightboxCode_base">
+	<a href="#pictureLightboxArea" class="thumbnail" lightbox='lightbox1'>
+		<img src="http://placehold.it/200x200">
+		<div class="description">This is text concerning this image</div>
+	</a>
+</div>
+					<div class="col-half"></div>
+					<div class="col-3">
+						<a href="#pictureLightboxArea" class="thumbnail" lightbox='lightbox1'>
+							<img src="http://placehold.it/200x200">
+							<div class="description">This is text concerning this image</div>
+						</a>
+					</div>
+					<div class="col-half"></div>
+					<div class="col-3">
+						<a href="#pictureLightboxArea" class="thumbnail" lightbox='lightbox1'>
+							<img src="http://placehold.it/200x200">
+							<div class="description">This is text concerning this image</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8" id="lightboxCode"></div>
+				<script>
+					createCode('lightboxCode')
+				</script>
 			</div>
 		</div>
 

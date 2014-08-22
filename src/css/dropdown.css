@@ -16,13 +16,13 @@
 	z-index: 10000;
 }
 
-.dropdown > li{
+.dropdown li{
 	color: black;
 	display: block;
 	position: relative;
 }
 
-.dropdown > li > a{
+.dropdown li a{
 	text-decoration: none;
 	color: black;
 	font-size: 16px;
@@ -31,11 +31,11 @@
 	position: relative;
 }
 
-.dropdown > li > a:hover{
+.dropdown li a:hover{
 	background-color: #F0F0F0;
 }
 
-.dropdown > li > a > .pull-right{
+.dropdown li a .pull-right{
 	text-align: right;
 	display: inline-block;
 	margin-left: 25px;
@@ -56,22 +56,22 @@
 	Second layer
 */
 
-.dropdown > li > ul{
+.dropdown li ul{
 	display: none;
 	position: absolute;
 	top: 0;
 	z-index: 10001;
 }
 
-.dropdown > li:hover ul{
+.dropdown > li:hover > ul{
 	display: block;
 }
 
-.dropdown > li > ul.drop-right{
+.dropdown ul.drop-right{
 	left: 98%;
 }
 
-.dropdown > li > ul.drop-left{
+.dropdown ul.drop-left{
 	right: 98%;
 }
 
