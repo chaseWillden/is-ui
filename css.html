@@ -198,16 +198,18 @@
 				<div class="col-8" id="btnColorCode1"></div>
 			</div>
 			<div class="row" id="btnColorCode1_base">
-	<div class="col-1"></div>
-	<div class="col-1"><button class="btn btn-default">Default</button></div>
-	<div class="col-1"><button class="btn btn-default grey">Grey</button></div>
-	<div class="col-1"><button class="btn btn-default blue">Blue</button></div>
-	<div class="col-1"><button class="btn btn-default red">Red</button></div>
-	<div class="col-1"><button class="btn btn-default green">Green</button></div>
-	<div class="col-1"><button class="btn btn-default orange">Orange</button></div>
-	<div class="col-1"><button class="btn btn-default pink">Pink</button></div>
-	<div class="col-1"><button class="btn btn-default peach">Peach</button></div>
-	<div class="col-1"><button class="btn btn-default white">White</button></div>
+	<div class="col-2"></div>
+	<div class="col-8">
+		<button class="btn btn-default">Default</button>
+		<button class="btn btn-default grey">Grey</button>
+		<button class="btn btn-default blue">Blue</button>
+		<button class="btn btn-default red">Red</button>
+		<button class="btn btn-default green">Green</button>
+		<button class="btn btn-default orange">Orange</button>
+		<button class="btn btn-default pink">Pink</button>
+		<button class="btn btn-default peach">Peach</button>
+		<button class="btn btn-default white">White</button>
+	</div>
 </div>
 			<script>
 				createCode('btnColorCode1');
@@ -219,6 +221,7 @@
 			</div>
 			<div class="row" id="colorCode1_base">
 	<div class="row">
+		<div class="col-2"></div>
 		<div class="col-2">
 			<input type="text" class="form-comp blue">
 		</div>
@@ -233,6 +236,7 @@
 		</div>
 	</div>
 	<div class="row">
+		<div class="col-2"></div>
 		<div class="col-2">
 			<input type="text" class="form-comp orange">
 		</div>
@@ -253,20 +257,20 @@
 		</script>
 		<div class="row" id="tableArea">
 			<div class="row">
-				<div class="col-10">
+				<div class="col-2"></div>
+				<div class="col-8">
 					<h1 class="center">Tables</h1>
 					<hr class="hr-fade">
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-5">
+				<div class="col-2"></div>
+				<div class="col-8">
 					<div class="row" id='basicTableArea'>
-						<div class="col-10">
-							<h2>Basic Table</h2>
-						</div>	
+						<h2>Basic Table</h2>
 					</div>
 					<div class="row">
-						<table class="table">
+						<table class="table" id="table1Code_base">
 							<tr>
 								<th>Table Heading 1</th>
 								<th>Table Heading 2</th>
@@ -285,9 +289,7 @@
 						</table>
 					</div>
 					<div class="row" id='shadedHeaderTableArea'>
-						<div class="col-10">
-							<h2>Shaded header Table</h2>
-						</div>	
+						<h2>Shaded header Table</h2>	
 					</div>
 					<div class="row">
 						<table class="table">
@@ -309,9 +311,7 @@
 						</table>
 					</div>
 					<div class="row" id='bottomLineTableArea'>
-						<div class="col-10">
-							<h2>Bottom Line Table</h2>
-						</div>	
+						<h2>Bottom Line Table</h2>	
 					</div>
 					<div class="row">
 						<table class="table bottom-line">
@@ -333,9 +333,7 @@
 						</table>	
 					</div>
 					<div class="row" id='hoverTableArea'>
-						<div class="col-10">
-							<h2>Hover Table Rows</h2>
-						</div>	
+						<h2>Hover Table Rows</h2>
 					</div>
 					<div class="row">
 						<table class="table hover">
@@ -357,9 +355,7 @@
 						</table>
 					</div>
 					<div class="row" id='highlightTableArea'>
-						<div class="col-10">
-							<h2>Highlight Table Rows</h2>
-						</div>	
+						<h2>Highlight Table Rows</h2>	
 					</div>
 					<div class="row">
 						<table class="table highlight">
@@ -382,45 +378,17 @@
 					</div>
 				</div>
 				<!-- End table display column -->
-
-				<div class="col-5">
-					<h2>&nbsp;</h2>
-					<pre class="language-markup line-numbers"><code>&lt;table class=&quot;table&quot;&gt;
-...
-&lt;/table&gt;</code></pre>
-
-					<h2>&nbsp;</h2>
-					<pre class="language-markup line-numbers"><code>&lt;table class=&quot;table&quot;&gt;
-	&lt;tr class=&quot;head&quot;&gt;
-	...
-	&lt;/tr&gt;
-&lt;/table&gt;</code></pre>
-
-					<h2>&nbsp;</h2>
-					<pre class="language-markup line-numbers"><code>&lt;table class=&quot;table bottom-line&quot;&gt;
-...
-&lt;/table&gt;</code></pre>
-
-					<h2>&nbsp;</h2>
-					<pre class="language-markup line-numbers"><code>&lt;table class=&quot;table hover&quot;&gt;
-...
-&lt;/table&gt;</code></pre>
-
-					<h2>&nbsp;</h2>
-					<pre class="language-markup line-numbers"><code>&lt;table class=&quot;table highlight&quot;&gt;
-...
-&lt;/table&gt;</code></pre>
-				</div>
 			</div>
 		</div>
 
 		<div class="row" id='buttonArea'>
-			<div class="col-10">
+			<div class="col-2"></div>
+			<div class="col-8">
 				<h1 class="center">Buttons</h1>
 				<hr class="hr-fade">
 			</div>
 			<div class="row">
-					<div class="col-6" id="btnCode1_base">
+				<div class="offset-2 col-6" id="btnCode1_base">
 	<button class="btn btn-sm">.btn-sm</button>
 	<button class="btn btn-md">.btn-md</button>
 	<button class="btn btn-default">.btn-default</button>
@@ -429,19 +397,18 @@
 </div>
 				</div>
 				<div class="row">
-					<div class="col-2"></div>
-					<div class="col-6" id="btnCode1"></div>
+					<div class="offset-2 col-6" id="btnCode1"></div>
 					<script>
 						createCode('btnCode1');
 					</script>
 				</div>
 				<div class="row" id='coloredBtnArea'>
-					<div class="col-10">
+					<div class="offset-2 col-8">
 						<h2>Colored Buttons</h2>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-6" id="btnCode2_base">
+					<div class="offset-2 col-6" id="btnCode2_base">
 	<button class="btn btn-sm blue">.btn-sm .blue</button>
 	<button class="btn btn-md red">.btn-md .red</button>
 	<button class="btn btn-default red">.btn-default .red</button>
@@ -450,19 +417,18 @@
 </div>
 				</div>
 				<div class="row">
-					<div class="col-2"></div>
-					<div class="col-6" id="btnCode2"></div>
+					<div class="offset-2 col-6" id="btnCode2"></div>
 					<script>
 						createCode('btnCode2');
 					</script>
 				</div>
 				<div class="row">
-					<div class="col-10">
+					<div class="offset-2 col-8">
 						<h2>A tag</h2>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-6" id="btnCode3_base">
+					<div class="offset-2 col-6" id="btnCode3_base">
 	<a class="btn btn-sm" href=''>.btn-sm</a>
 	<a class="btn btn-md" href=''>.btn-md</a>
 	<a class="btn btn-default" href=''>.btn-default</a>
@@ -471,19 +437,18 @@
 </div>
 				</div>
 				<div class="row">
-					<div class="col-2"></div>
-					<div class="col-6" id="btnCode3"></div>
+					<div class="offset-2 col-6" id="btnCode3"></div>
 					<script>
 						createCode('btnCode3');
 					</script>
 				</div>
 				<div class="row">
-					<div class="col-10">
+					<div class="offset-2 col-8">
 						<h2>Input type Submit</h2>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-6" id="btnCode4_base">
+					<div class="offset-2 col-6" id="btnCode4_base">
 	<input type='submit' class="btn btn-sm" value=".btn-sm">
 	<input type='submit' class="btn btn-md" value=".btn-md">
 	<input type='submit' class="btn btn-default" value=".btn-default">
@@ -492,8 +457,7 @@
 </div>
 				</div>
 				<div class="row">
-					<div class="col-2"></div>
-					<div class="col-6" id="btnCode4"></div>
+					<div class="offset-2 col-6" id="btnCode4"></div>
 					<script>
 						createCode('btnCode4');
 					</script>
@@ -502,13 +466,15 @@
 
 		<div class="row" id='formArea'>
 			<div class="row">
-				<div class="col-10">
+				<div class="col-2"></div>
+				<div class="col-8">
 					<h1 class="center">Forms</h1>
 					<hr class="hr-fade">
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-10">
+				<div class="col-2"></div>
+				<div class="col-8">
 					<h2>Form Components</h2>
 				</div>
 			</div>
@@ -535,7 +501,8 @@
 				</script>
 			</div>
 			<div class="row">
-				<div class="col-10">
+				<div class="col-2"></div>
+				<div class="col-8">
 					<h2>Login Form Example</h2>
 				</div>
 			</div>
@@ -574,67 +541,68 @@
 				$('#example1').html(code('example1_base'));
 			</script>
 			<div class="row">
-				<div class="col-10">
+				<div class="col-2"></div>
+				<div class="col-8">
 					<h2>Textareas</h2>
 				</div>
 			</div>
 			<div class="row" id="textareaFormArea">
 				<div class="row">
-					<div class="col-3">
+					<div class="offset-2 col-2">
 						<textarea class="form-comp sm" id='textarea1_base'>Small</textarea>
 					</div>
 					<div class="col-1"></div>
-					<div class="col-6" id="textarea1"></div>
+					<div class="col-5" id="textarea1"></div>
 					<script>
 						createCode('textarea1');
 					</script>
 				</div>	
 				<div class="row">
-					<div class="col-3">
+					<div class="offset-2 col-2">
 						<textarea class="form-comp" id="textarea2_base">Default</textarea>
 					</div>
 					<div class="col-1"></div>
-					<div class="col-6" id="textarea2"></div>
+					<div class="col-5" id="textarea2"></div>
 					<script>
 						createCode('textarea2');
 					</script>
 				</div>	
 				<div class="row">
-					<div class="col-3">
+					<div class="offset-2 col-2">
 						<textarea class="form-comp md" id='textarea3_base'>Medium</textarea>
 					</div>
 					<div class="col-1"></div>
-					<div class="col-6" id="textarea3"></div>
+					<div class="col-5" id="textarea3"></div>
 					<script>
 						createCode('textarea3');
 					</script>
 				</div>	
 				<div class="row">
-					<div class="col-3">
+					<div class="offset-2 col-2">
 						<textarea class="form-comp lg" id="textarea4_base">Large</textarea>
 					</div>
 					<div class="col-1"></div>
-					<div class="col-6" id="textarea4"></div>
+					<div class="col-5" id="textarea4"></div>
 					<script>
 						createCode('textarea4');
 					</script>
 				</div>
 				<div class="row">
-					<div class="col-3">
+					<div class="offset-2 col-2">
 						<textarea class="form-comp xl" id="textarea5_base">X-Large</textarea>
 					</div>
 					<div class="col-1"></div>
-					<div class="col-6" id="textarea5"></div>
+					<div class="col-5" id="textarea5"></div>
 					<script>
 						createCode('textarea5');
 					</script>
 				</div>		
 				<div class="row">
-					<div class="col-3">
+					<div class="offset-2 col-2">
 						<textarea class="form-comp no-resize" id="textarea6_base">No Resize</textarea>
 					</div>
 					<div class="col-1"></div>
-					<div class="col-6" id="textarea6"></div>
+					<div class="col-5" id="textarea6"></div>
 					<script>
 						createCode('textarea6');
 					</script>
@@ -644,7 +612,8 @@
 
 		<div class="row" id='gridArea'>
 			<div class="row">
-				<div class="col-10">
+				<div class="col-2"></div>
+				<div class="col-8">
 					<h1 class="center">Grid System</h1>
 					<hr class="hr-fade">
 				</div>

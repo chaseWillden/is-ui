@@ -92,7 +92,6 @@
 						<li>
 							<a href='#buttonsArea'>Buttons</a>
 							<ul class="sub">
-								<li><a href='#coloredBtnArea'>Colored</a></li>
 								<li><a href='#btnGroupArea'>Button Groups</a></li>
 								<li><a href="#btnStackArea">Button Stacks</a></li>
 							</ul>
@@ -117,88 +116,21 @@
 		<div class="row" id="buttonsArea">
 			<div class="col-12">
 				<div class="row">
-					<div class="col-12">
+					<div class="offset-2 col-8">
 						<h1 class="center">Buttons</h1>
+						<hr class="hr-fade">
 					</div>
-				</div>
-				<div class="row">
-					<div class="col-5" id="btnCode_base">
-	<button class="btn btn-sm">.btn-sm</button>
-	<button class="btn btn-md">.btn-md</button>
-	<button class="btn btn-default">.btn-default</button>
-	<button class="btn btn-lg">.btn-lg</button>
-	<button class="btn btn-xl">.btn-xl</button>
-</div>
-					<div class="col-5" id="btnCode"></div>
-					<script>
-						createCode('btnCode');
-					</script>
-				</div>
-				<div class="row" id='coloredBtnArea'>
-					<div class="col-10">
-						<h2>Colored Buttons</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-5" id="btnCode1_base">
-	<button class="btn btn-sm blue">.btn-sm .blue</button>
-	<button class="btn btn-md red">.btn-md .red</button>
-	<button class="btn btn-default red">.btn-default .red</button>
-	<button class="btn btn-lg green">.btn-lg .green</button>
-	<button class="btn btn-xl orange">.btn-xl .orange</button>
-</div>
-					<div class="col-5" id="btnCode1"></div>
-					<script>
-						createCode('btnCode1');
-					</script>
-				</div>
-				<div class="row">
-					<div class="col-10">
-						<h2>A tag</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-5" id="btnCode2_base">
-	<a class="btn btn-sm" href=''>.btn-sm</a>
-	<a class="btn btn-md" href=''>.btn-md</a>
-	<a class="btn btn-default" href=''>.btn-default</a>
-	<a class="btn btn-lg" href=''>.btn-lg</a>
-	<a class="btn btn-xl" href=''>.btn-xl</a>
-</div>
-					<div class="col-5" id="btnCode2"></div>
-					<script>
-						createCode('btnCode2');
-					</script>
-				</div>
-				<div class="row">
-					<div class="col-10">
-						<h2>Input type Submit</h2>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-5" id='btnCode3_base'>
-	<input type='submit' class="btn btn-sm" value=".btn-sm">
-	<input type='submit' class="btn btn-md" value=".btn-md">
-	<input type='submit' class="btn btn-default" value=".btn-default">
-	<input type='submit' class="btn btn-lg" value=".btn-lg">
-	<input type='submit' class="btn btn-xl" value=".btn-xl">
-</div>
-					<div class="col-5" id="btnCode3"></div>
-					<script>
-						createCode('btnCode3');
-					</script>
 				</div>
 				<div class="row" id='btnGroupArea'>
 					<div class="row">
-						<div class="col-10">
-							<h1 class="center">Button Groups</h1>
-							<hr class="hr-fade">
+						<div class="col-2"></div>
+						<div class="col-8">
+							<h2>Button Groups</h2>
 						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-1"></div>
-					<div class="col-4">
+					<div class="offset-2 col-3">
 						<div class="btn-group" id="btnGroupCode_base">
 	<button class="btn btn-default">1</button>
 	<button class="btn btn-default">2</button>
@@ -214,23 +146,21 @@
 				</div>
 				<div class="row" id="btnStackArea">
 					<div class="row">
-						<div class="col-10">
-							<h1 class="center">Button Stacks</h1>
-							<hr class="hr-fade">
+						<div class="col-2"></div>
+						<div class="col-8">
+							<h2>Button Stacks</h2>
 						</div>
 					</div>
 				</div> 	
 				<div class="row">
-					<div class="col-2"></div>
-					<div class="col-8">
+					<div class="offset-2 col-8">
 						<div class="bar-left">
 							<p>Button stacks will keep the width of the container that it's placed into. For this example, the container size is col-half which makes these buttons small.</p>
 						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-1"></div>
-					<div class="col-1">
+					<div class="offset-2 col-1">
 						<div class="btn-stack">
 							<div class="btn btn-default">1</div>
 							<div class="btn btn-default">2</div>
@@ -247,8 +177,8 @@
 	<div class="btn btn-default">4</div>
 </div>
 					</div>
-					<div class="col-half"></div>
-					<div class="col-6" id="btnStackCode"></div>
+					<div class="col-1"></div>
+					<div class="col-5" id="btnStackCode"></div>
 					<script>
 						createCode('btnStackCode');
 					</script>
@@ -259,9 +189,10 @@
 		
 		<div class="row" id="toolTipArea">
 			<div class="row">
-				<div class="col-10">
-					<hr class="hr-fade">
+				<div class="col-2"></div>
+				<div class="col-8">					
 					<h1 class="center">Tooltip</h1>
+					<hr class="hr-fade">
 				</div>
 			</div>
 			<div class="row">
@@ -279,9 +210,10 @@
 
 		<div class="row" id="dropdownArea">
 			<div class="row">
-				<div class="col-10">
-					<hr class="hr-fade">
+				<div class="col-2"></div>
+				<div class="col-8">
 					<h1 class="center">Dropdown Menu</h1>
+					<hr class="hr-fade">
 				</div>
 			</div>
 			<div class="row">
@@ -332,22 +264,20 @@
 			</div>
 			<div class="row row-3"></div>
 			<div class="row">
-				<div class="col-10" id="dropDownCode"></div>
+				<div class="col-2"></div>
+				<div class="col-8" id="dropDownCode"></div>
 				<script>
 					createCode('dropDownCode');
 				</script>
 			</div>
 		</div>
 		<!-- End Drop Down -->
-		<div class="row">
-			<div class="col-10">
-				<hr class="hr-fade">
-			</div>
-		</div>	
 		<div class="row" id='rightClickArea'>
 			<div class="row">
-				<div class="col-10">
+				<div class="col-2"></div>
+				<div class="col-8">
 					<h1 class="center">Right Click</h1>
+					<hr class="hr-fade">
 				</div>
 			</div>
 			<div class="row">
@@ -419,24 +349,22 @@
 			</div>
 		</div>
 		
-		<div class="row">
-			<div class="col-10">
-				<hr class="hr-fade">
-			</div>
-		</div>
 		<div class="row" id="displayArea">
 			<div class="row">
-				<div class="col-10">
+				<div class="col-2"></div>
+				<div class="col-8">
 					<h1 class="center">Display</h1>
+					<hr class="hr-fade">
 				</div>
 			</div>
 			<div class="row" id='selectArea'>
 				<div class="row">
-					<h2>Selection</h2>
+					<div class="offset-2 col-8">
+						<h2>Selection</h2>
+					</div>
 				</div>
 				<div class="row">
-					<div class="col-2"></div>
-					<div class="col-6">
+					<div class="offset-2 col-6">
 						<table class="table bottom-line hover highlight">
 							<tr class="head">
 								<th>Class</th>
@@ -471,46 +399,43 @@
 
 			<div class="row" id='pitArea'>
 				<div class="row">
-					<h2>Pits</h2>
+					<div class="offset-2 col-8">
+						<h2>Pits</h2>
+					</div>
 				</div>
 				<div class="row">
-					<div class="col-1"></div>
-					<div class="col-3 pit" id="pitCode_base">
-	<h1 class="center">This is an example of a .pit &nbsp;&nbsp;&nbsp;</h1>
+					<div class="offset-2 col-2 pit" id="pitCode_base">
+	<h1 class="center">.pit</h1>
 </div>
 					<div class="col-3 pit deep">
-						<h1 class="center">This is an example of a .pit .deep</h1>
+						<h1 class="center">.pit .deep</h1>
 					</div>
 					<div class="col-3 pit shallow">
-						<h1 class="center">This is an example of a .pit .shallow</h1>
+						<h1 class="center">.pit .shallow</h1>
 					</div>
 				</div>
 				<div class="row">
-				<div class="col-1"></div>
-					<div class="col-9 pit sm">
-						<h1 class="center">This is an example of a .pit .sm</h1>
+					<div class="offset-2 col-8 pit sm">
+						<h1 class="center">.pit .sm</h1>
 					</div>
 				</div>
 				<div class="row">
-				<div class="col-1"></div>
-					<div class="col-9 pit md">
-						<h1 class="center">This is an example of a .pit .md</h1>
+					<div class="offset-2 col-8 pit md">
+						<h1 class="center">.pit .md</h1>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-1"></div>
-					<div class="col-9 pit lg">
-						<h1 class="center">This is an example of a .pit .lg</h1>
+					<div class="offset-2 col-8 pit lg">
+						<h1 class="center">.pit .lg</h1>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-1"></div>
-					<div class="col-9 pit xl">
-						<h1 class="center">This is an example of a .pit .xl</h1>
+					<div class="offset-2 col-8 pit xl">
+						<h1 class="center">.pit .xl</h1>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-10" id="pitCode"></div>
+					<div class="offset-2 col-8" id="pitCode"></div>
 					<script>
 						createCode('pitCode');
 					</script>
@@ -520,10 +445,12 @@
 
 			<div class="row" id="bulgeArea">
 				<div class="row">
-					<h2>Bulge</h2>
+					<div class="offset-2 col-8">
+						<h2>Bulge</h2>
+					</div>
 				</div>
 				<div class="row">
-					<div class="col-1 blue bulge center">Color</div>
+					<div class="offset-2 col-1 blue bulge center">Color</div>
 					<div class="col-1"></div>
 					<div class="col-1 bulge center" id="bulgeCode_base">No Color</div>
 					<div class="col-1"></div>
@@ -532,8 +459,7 @@
 					<div class="col-1 bulge center low">Low</div>
 				</div>
 				<div class="row">
-					<div class="col-2"></div>
-					<div class="col-6" id="bulgeCode"></div>
+					<div class="offset-2 col-6" id="bulgeCode"></div>
 					<script>
 						createCode('bulgeCode');
 					</script>
@@ -542,19 +468,19 @@
 
 			<div class="row" id='alertArea'>
 				<div class="row">
-					<h2>Alerts</h2>
+					<div class="offset-2 col-8">
+						<h2>Alerts</h2>
+					</div>
 				</div>
 				<div class="row">
-					<div class="col-2"></div>
-					<div class="col-6">
+					<div class="offset-2 col-6">
 						<div class="bar-left">
 							<p>If this example code is placed onto the screen, the alert message will be placed into the fixed spot in the upper right corner. To make an alert (or any element) hidden, add the class .hidden.</p>
 						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-1"></div>
-					<div class="col-1">
+					<div class="offset-2 col-1">
 						<button class="btn btn-lg red" onclick='sendAlert()'>Alert</button>
 						<div class="alert hidden" id="alertCode_base">
 	<div class="title">Example</div>
@@ -571,7 +497,7 @@
 							}
 						</script>
 					</div>
-					<div class="col-8" id="alertCode"></div>
+					<div class="col-7" id="alertCode"></div>
 					<script>
 						createCode('alertCode');
 					</script>
@@ -581,14 +507,13 @@
 
 			<div class="row" id="navigationArea">
 				<div class="row">
-					<div class="col-10">
+					<div class="offset-2 col-8">
 						<h1 class="center">Navigation</h1>
 						<hr class="hr-fade">
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-2"></div>
-					<div class="col-8 pit md">
+					<div class="offset-2 col-8 pit md">
 						<nav class='nav-top' id='navCode_base'>
 
 	<!-- Mobile Menu Area, Remove if you don't want a mobile menu -->
@@ -656,8 +581,7 @@
 				<!-- End Nav Example -->
 				
 				<div class="row">
-					<div class="col-1"></div>
-					<div class="col-9" id="navCode"></div>
+					<div class="offset-2 col-8" id="navCode"></div>
 					<script>
 						createCode('navCode');
 					</script>

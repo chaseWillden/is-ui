@@ -109,7 +109,7 @@ $(window).click(function(e){
 	touchClickRunning = false;
 });
 
-$(window).on('touchstart', function(e){
+$(window).on('tap', function(e){
 	touchClickRunning = true;
 	touchClick(e);
 	touchClickRunning = false;
