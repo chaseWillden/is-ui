@@ -98,7 +98,8 @@ function lightboxInit(target){
 }
 function mobileClickInit(target){
 	if (mobilecheck()){
-		alert('yup');
+		//
+		
 	}
 }
 function modalInit(target){
