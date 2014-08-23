@@ -84,9 +84,14 @@ iframe{
 
 .center[class*='col-']{
 	text-align: center;
+}
+
+.center[class*='col-']:not([class*='offset-']){
 	margin-left: auto;
 	margin-right: auto;
 }
+
+
 
 .center[class*='col-'] *{
 	text-align: left;
