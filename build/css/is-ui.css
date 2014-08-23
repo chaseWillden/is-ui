@@ -521,9 +521,14 @@ iframe{
 
 .center[class*='col-']{
 	text-align: center;
+}
+
+.center[class*='col-']:not([class*='offset-']){
 	margin-left: auto;
 	margin-right: auto;
 }
+
+
 
 .center[class*='col-'] *{
 	text-align: left;
@@ -1327,55 +1332,55 @@ textarea.xl{
 	Basically an empty column
 */
 .offset-12{
-	margin-left: 100% !important;
+	margin-left: 100%;
 }
 
 .offset-11{
-	margin-left: 91.66666666% !important;
+	margin-left: 91.66666666%;
 }
 
 .offset-10{
-	margin-left: 83.33333333% !important;
+	margin-left: 83.33333333%;
 }
 
 .offset-9{
-	margin-left: 75% !important;
+	margin-left: 75%;
 }
 
 .offset-8{
-	margin-left: 66.66666666% !important;
+	margin-left: 66.66666666%;
 }
 
 .offset-7{
-	margin-left: 58.33333333% !important;
+	margin-left: 58.33333333%;
 }
 
 .offset-6{
-	margin-left: 50% !important;
+	margin-left: 50%;
 }
 
 .offset-5{
-	margin-left: 41.66666666% !important;
+	margin-left: 41.66666666%;
 }
 
 .offset-4{
-	margin-left: 33.33333333% !important;
+	margin-left: 33.33333333%;
 }
 
 .offset-3{
-	margin-left: 25% !important;
+	margin-left: 25%;
 }
 
 .offset-2{
-	margin-left: 16.66666666% !important;
+	margin-left: 16.66666666%;
 }
 
 .offset-1{
-	margin-left: 8.333333333% !important;
+	margin-left: 8.333333333%;
 }
 
 .offset-half{
-	margin-left: 4.166666666% !important;
+	margin-left: 4.166666666%;
 }
 
 /*
@@ -1387,6 +1392,9 @@ textarea.xl{
 		display: inline-block;
 		width: 100%;
 	}
+	[class*='offset-'].sm{
+		margin-left: 0;
+	}
 }
 
 /*
@@ -1396,6 +1404,9 @@ textarea.xl{
 	[class*='col-'].md{
 		display: inline-block;
 		width: 100%;
+	}
+	[class*='offset-'].md{
+		margin-left: 0;
 	}
 }
 
@@ -1408,6 +1419,10 @@ textarea.xl{
 		display: inline-block;
 		width: 100%;
 	}
+
+	[class*='offset-']:not([class*='sm']){
+		margin-left: 0;
+	}
 }
 
 /*
@@ -1417,6 +1432,10 @@ textarea.xl{
 	[class*='col-'].lg{
 		display: inline-block;
 		width: 100%;
+	}
+
+	[class*='offset-'].lg{
+		margin-left: 0;
 	}
 }
 /*
