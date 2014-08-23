@@ -534,88 +534,6 @@ iframe{
 	text-align: left;
 }
 /*
-	DropDowns
-	Author: Chase Willden;
-*/
-
-.dropdown{
-	display: none;
-	margin: 0;
-	padding: 0;	
-	list-style: none;
-	min-width: 200px;
-	width: auto;
-	background-color: white;
-	box-shadow: 0 3px 10px rgba(0,0,0,.4);
-	position: absolute;
-	z-index: 10000;
-}
-
-.dropdown li{
-	color: black;
-	display: block;
-	position: relative;
-}
-
-.dropdown li a{
-	text-decoration: none;
-	color: black;
-	font-size: 16px;
-	padding: 5px 15px;
-	display: block;
-	position: relative;
-}
-
-.dropdown li a:hover{
-	background-color: #F0F0F0;
-}
-
-.dropdown li a .pull-right{
-	text-align: right;
-	display: inline-block;
-	margin-left: 25px;
-	float: right;
-}
-
-.dropdown > li.divider{
-	border-bottom: solid 1px #F0F0F0;
-	margin-top: 5px;
-	margin-bottom: 5px;
-}
-
-.dropdown li div{
-	display: inline;
-}
-
-/*
-	Second layer
-*/
-
-.dropdown li ul{
-	display: none;
-	position: absolute;
-	top: 0;
-	z-index: 10001;
-}
-
-.dropdown > li:hover > ul{
-	display: block;
-}
-
-.dropdown ul.drop-right{
-	left: 98%;
-}
-
-.dropdown ul.drop-left{
-	right: 98%;
-}
-
-.dropdown.right-click{
-	display: none;
-	position: fixed;
-	margin-left: 0 !important;
-}
-/*
 	Footer
 	Author: Chase Willden;
 */
@@ -1043,6 +961,116 @@ body {
 .btn-group .arrow-down{
 	padding-left: 5px;
 	padding-right: 5px;
+}
+/*
+	DropDowns
+	Author: Chase Willden;
+*/
+
+.dropdown{
+	display: none;
+	margin: 0;
+	padding: 0;	
+	list-style: none;
+	min-width: 200px;
+	width: auto;
+	background-color: white;
+	box-shadow: 0 3px 10px rgba(0,0,0,.4);
+	position: absolute;
+	z-index: 10000;
+}
+
+@media(max-width: 768px){
+	nav .dropdown{
+		background-color: #2E2E2E;
+	}
+
+	nav .dropdown li a{
+		border-top: solid 1px #464646;
+		border-bottom: solid 1px #464646; 
+		color: white;
+	}
+
+	nav .dropdown li a:hover{
+		background-color: transparent;
+	}
+}
+
+.dropdown li{
+	color: black;
+	display: block;
+	position: relative;
+}
+
+.dropdown li a{
+	text-decoration: none;
+	color: black;
+	font-size: 16px;
+	padding: 5px 15px;
+	display: block;
+	position: relative;
+}
+
+.dropdown li a:hover{
+	background-color: #F0F0F0;
+}
+
+.dropdown li a .pull-right{
+	text-align: right;
+	display: inline-block;
+	margin-left: 25px;
+	float: right;
+}
+
+.dropdown > li.divider{
+	border-bottom: solid 1px #F0F0F0;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.dropdown li div{
+	display: inline;
+}
+
+/*
+	Second layer
+*/
+
+.dropdown li ul{
+	display: none;
+	position: absolute;
+	top: 0;
+	z-index: 10001;
+}
+
+.dropdown li:hover > ul{
+	display: block;
+}
+
+.dropdown ul.drop-right{
+	left: 98%;
+}
+
+.dropdown ul.drop-left{
+	right: 98%;
+}
+
+.dropdown.right-click{
+	display: none;
+	position: fixed;
+	margin-left: 0 !important;
+}
+
+@media (max-width: 768px){
+	nav .dropdown li ul[class*=drop-]{
+		top: 100%;
+		left: 0;
+		right: 0;
+	}
+
+	nav .dropdown li:hover > ul{
+		display: none;
+	}
 }
 /*
 	Form Colors

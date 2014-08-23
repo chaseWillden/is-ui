@@ -16,6 +16,22 @@
 	z-index: 10000;
 }
 
+@media(max-width: 768px){
+	nav .dropdown{
+		background-color: #2E2E2E;
+	}
+
+	nav .dropdown li a{
+		border-top: solid 1px #464646;
+		border-bottom: solid 1px #464646; 
+		color: white;
+	}
+
+	nav .dropdown li a:hover{
+		background-color: transparent;
+	}
+}
+
 .dropdown li{
 	color: black;
 	display: block;
@@ -50,33 +66,4 @@
 
 .dropdown li div{
 	display: inline;
-}
-
-/*
-	Second layer
-*/
-
-.dropdown li ul{
-	display: none;
-	position: absolute;
-	top: 0;
-	z-index: 10001;
-}
-
-.dropdown > li:hover > ul{
-	display: block;
-}
-
-.dropdown ul.drop-right{
-	left: 98%;
-}
-
-.dropdown ul.drop-left{
-	right: 98%;
-}
-
-.dropdown.right-click{
-	display: none;
-	position: fixed;
-	margin-left: 0 !important;
 }
