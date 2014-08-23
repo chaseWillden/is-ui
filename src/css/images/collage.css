@@ -5,6 +5,18 @@
 
 .collage{
 	display: inline-block;
+	border: solid 1px #ACACAC;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	transition: ease border-color .2s;
+	-o-transition: ease border-color .2s;
+	-moz-transition: ease border-color .2s;
+	-webkit-transition: ease border-color .2s;
+}
+
+.collage:hover{
+	border-color: #808080;
 }
 
 .collage img{

@@ -1,3 +1,21 @@
+function closeInit(target){
+	if (target.hasClass('close')){
+		if ($(target).parent().parent().hasClass('modal')){
+			$(target).parent().parent().fadeOut();
+		}
+		else{
+			if (target.parent().hasClass('alert')){
+				$(target).parent().addClass('off');
+				setTimeout(function(){
+					$(target).parent().remove();
+				}, 500);
+			}
+			else{
+				target.parent().fadeOut();
+			}			
+		}
+	}
+}
 document.onmousedown = function(e){
 	if (e.button == 2){
 		var rightClick = $('.dropdown.right-click');
@@ -144,19 +162,8 @@ function touchClick(e){
 			}
 		})
 	}
-	if (target.hasClass('close')){
-		var ele = target;
-		if ($(ele).parent().parent().hasClass('modal')){
-			$(ele).parent().parent().fadeOut();
-		}
-		else{
-			$(ele).parent().addClass('off');
-			setTimeout(function(){
-				$(ele).parent().remove();
-			}, 500);
-		}
-	}
-	else if(target.hasClass('mobile-menu') || target.parent().hasClass('mobile-menu')){
+	closeInit(target);
+	if(target.hasClass('mobile-menu') || target.parent().hasClass('mobile-menu')){
 		if(target.parent().parent().hasClass('active')){
 			target.parent().parent().addClass('active');
 		}

@@ -46,18 +46,6 @@
     box-sizing: border-box;
 }
 
-.modal .close:not([class*='btn']){
-	cursor: pointer;
-	color: #ccc;
-	position: absolute;
-	top: 3px;
-	right: 5px;
-}
-
-.modal .close:hover{
-	color: black;
-}
-
 .modal > .head{
 	width: 100%;
 	padding: 3px 0;
