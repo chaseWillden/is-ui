@@ -7,6 +7,7 @@
 	min-height: 10px;
 	float: left;
 	display: block;
+	height: 100%;
 }
 
 .col-12{
@@ -121,11 +122,11 @@
 */
 
 @media (max-width: 768px){
-	[class*='col-'].sm{
+	[class*='col-'].sm:not([class*='mobile-off']){
 		display: inline-block;
 		width: 100%;
 	}
-	[class*='offset-'].sm{
+	[class*='offset-'].sm:not([class*='mobile-off']){
 		margin-left: 0;
 	}
 }
@@ -134,11 +135,11 @@
 	Tablets
 */
 @media (max-width: 992px){
-	[class*='col-'].md{
+	[class*='col-'].md:not([class*='mobile-off']){
 		display: inline-block;
 		width: 100%;
 	}
-	[class*='offset-'].md{
+	[class*='offset-'].md:not([class*='mobile-off']){
 		margin-left: 0;
 	}
 }
@@ -148,12 +149,12 @@
 */
 
 @media (max-width: 992px){
-	[class*='col-']:not([class*='sm']){
+	[class*='col-']:not([class*='sm']):not([class*='mobile-off']){
 		display: inline-block;
 		width: 100%;
 	}
 
-	[class*='offset-']:not([class*='sm']){
+	[class*='offset-']:not([class*='sm']):not([class*='mobile-off']){
 		margin-left: 0;
 	}
 }
@@ -162,12 +163,12 @@
 	Medium Desktop Computers
 */
 @media (max-width: 1200px){
-	[class*='col-'].lg{
+	[class*='col-'].lg:not([class*='mobile-off']){
 		display: inline-block;
 		width: 100%;
 	}
 
-	[class*='offset-'].lg{
+	[class*='offset-'].lg:not([class*='mobile-off']){
 		margin-left: 0;
 	}
 }

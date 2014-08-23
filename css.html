@@ -115,6 +115,7 @@
 								<li><a href='#smGridArea'>Small</a></li>
 								<li><a href='#mdGridArea'>Medium</a></li>
 								<li><a href='#lgGridArea'>Large</a></li>
+								<li><a href="#noMobileArea">No Mobile</a></li>
 							</ul>
 						</li>
 						<li>
@@ -123,6 +124,7 @@
 								<li><a href="#standardPictureArea">Standard</a>
 								<li><a href='#pictureDescriptionArea'>Picture Description</a></li>
 								<li><a href='#pictureLightboxArea'>Lightbox</a></li>
+								<li><a href="#pictureCollageArea">Collage</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -732,6 +734,19 @@
 						<div class="col-2 grey center lg">.col-2</div>
 						<div class="col-2 grey center lg">.col-2</div>	
 					</div>
+					<div class="row" id='noMobileArea'>
+						<div class="col-10">
+							<h2>No Mobile Grid</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-2 grey center mobile-off">.mobile-off</div>
+						<div class="col-2 grey center mobile-off">.mobile-off</div>
+						<div class="col-2 grey center mobile-off">.mobile-off</div>
+						<div class="col-2 grey center mobile-off">.mobile-off</div>
+						<div class="col-2 grey center mobile-off">.mobile-off</div>
+						<div class="col-2 grey center mobile-off">.mobile-off</div>	
+					</div>
 				</div>
 			</div>
 		</div>
@@ -752,31 +767,31 @@
 			<div class="row">
 				<div class="col-2"></div>
 				<div class="col-8">
-					<div class="col-2" id="thumbnailCode_base">
+					<div class="col-2 sm" id="thumbnailCode_base">
 	<a href="" class="thumbnail">
 		<img src="http://placehold.it/200x200">
 	</a>
 </div>
-					<div class="col-half"></div>
-					<div class="col-2">
+					<div class="col-half sm"></div>
+					<div class="col-2 sm">
 						<a href="" class="thumbnail">
 							<img src="http://placehold.it/200x200">
 						</a>
 					</div>
-					<div class="col-half"></div>
-					<div class="col-2">
+					<div class="col-half sm"></div>
+					<div class="col-2 sm">
 						<a href="" class="thumbnail">
 							<img src="http://placehold.it/200x200">
 						</a>
 					</div>
-					<div class="col-half"></div>
-					<div class="col-2">
+					<div class="col-half sm"></div>
+					<div class="col-2 sm">
 						<a href="" class="thumbnail">
 							<img src="http://placehold.it/200x200">
 						</a>
 					</div>
-					<div class="col-half"></div>
-					<div class="col-2">
+					<div class="col-half sm"></div>
+					<div class="col-2 sm">
 						<a href="" class="thumbnail">
 							<img src="http://placehold.it/200x200">
 						</a>
@@ -799,22 +814,22 @@
 			<div class="row">
 				<div class="col-2"></div>
 				<div class="col-8">
-					<div class="col-1"></div>
-					<div class="col-3" id="thumbnailDescriptionCode_base">
+					<div class="col-1 sm"></div>
+					<div class="col-3 sm" id="thumbnailDescriptionCode_base">
 	<a href="" class="thumbnail">
 		<img src="http://placehold.it/200x200">
 		<div class="description">This is text concerning this image</div>
 	</a>
 </div>
-					<div class="col-half"></div>
-					<div class="col-3">
+					<div class="col-half sm"></div>
+					<div class="col-3 sm">
 						<a href="" class="thumbnail">
 							<img src="http://placehold.it/200x200">
 							<div class="description">This is text concerning this image</div>
 						</a>
 					</div>
-					<div class="col-half"></div>
-					<div class="col-3">
+					<div class="col-half sm"></div>
+					<div class="col-3 sm">
 						<a href="" class="thumbnail">
 							<img src="http://placehold.it/200x200">
 							<div class="description">This is text concerning this image</div>
@@ -838,22 +853,22 @@
 			<div class="row">
 				<div class="col-2"></div>
 				<div class="col-8">
-					<div class="col-1"></div>
-					<div class="col-3" id="lightboxCode_base">
+					<div class="col-1 sm"></div>
+					<div class="col-3 sm" id="lightboxCode_base">
 	<a href="#pictureLightboxArea" class="thumbnail" lightbox='lightbox1'>
 		<img src="http://placehold.it/200x200">
 		<div class="description">This is text concerning this image</div>
 	</a>
 </div>
-					<div class="col-half"></div>
-					<div class="col-3">
+					<div class="col-half sm"></div>
+					<div class="col-3 sm">
 						<a href="#pictureLightboxArea" class="thumbnail" lightbox='lightbox1'>
 							<img src="http://placehold.it/200x200">
 							<div class="description">This is text concerning this image</div>
 						</a>
 					</div>
-					<div class="col-half"></div>
-					<div class="col-3">
+					<div class="col-half sm"></div>
+					<div class="col-3 sm">
 						<a href="#pictureLightboxArea" class="thumbnail" lightbox='lightbox1'>
 							<img src="http://placehold.it/200x200">
 							<div class="description">This is text concerning this image</div>
@@ -867,6 +882,39 @@
 				<script>
 					createCode('lightboxCode')
 				</script>
+			</div>
+			<div class="row" id="pictureCollageArea">
+				<div class="row">
+					<div class="col-8 offset-2">
+						<h2>Picture Collage</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-2 offset-2">
+						<div class="collage four">
+							<img src="http://placehold.it/200x200">
+							<img src="http://placehold.it/200x200">
+							<img src="http://placehold.it/200x200">
+							<img src="http://placehold.it/200x200">
+						</div>
+					</div>
+					<div class="col-2 offset-1">
+						<div class="collage four">
+							<img src="http://placehold.it/100x200">
+							<img src="http://placehold.it/100x200">
+							<img src="http://placehold.it/300x200">
+							<img src="http://placehold.it/300x200">
+						</div>
+					</div>
+					<div class="col-2 offset-1">
+						<div class="collage four">
+							<img src="http://placehold.it/250x200">
+							<img src="http://placehold.it/140x230">
+							<img src="http://placehold.it/300x200">
+							<img src="http://placehold.it/300x200">
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
