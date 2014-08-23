@@ -23,6 +23,7 @@ function touchClick(e){
 	$('.btn-group').find('.dropdown.show').removeClass('show');
 	modalInit(target);
 	lightboxInit(target);
+	mobileClickInit(target);
 	if (right.length > 0){
 		right.each(function(){
 			if ($(this).hasClass('show')){
