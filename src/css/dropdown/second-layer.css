@@ -1,0 +1,40 @@
+/*
+	Second layer
+*/
+
+.dropdown li ul{
+	display: none;
+	position: absolute;
+	top: 0;
+	z-index: 10001;
+}
+
+.dropdown li:hover > ul{
+	display: block;
+}
+
+.dropdown ul.drop-right{
+	left: 98%;
+}
+
+.dropdown ul.drop-left{
+	right: 98%;
+}
+
+.dropdown.right-click{
+	display: none;
+	position: fixed;
+	margin-left: 0 !important;
+}
+
+@media (max-width: 768px){
+	nav .dropdown li ul[class*=drop-]{
+		top: 100%;
+		left: 0;
+		right: 0;
+	}
+
+	nav .dropdown li:hover > ul{
+		display: none;
+	}
+}
