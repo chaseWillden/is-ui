@@ -50,7 +50,7 @@
 								<a href='https://github.com/chaseWillden/is-ui' target="_blank">GitHub</a>
 							</li>
 							<li>
-								<a href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.1.1.zip'>Download v0.1.1 (beta)</a>
+								<a href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.1.2.zip'>Download v0.1.2 (beta)</a>
 							</li>
 						</ul>
 					</li>
@@ -67,7 +67,7 @@
 				<div class="row">
 					<div class="col-12 center">
 						<a href='https://github.com/chaseWillden/is-ui' target="_blank" class="btn btn-xl blue">Fork on GitHub</a>
-						<a class="btn btn-xl green screen-only" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.1.1.zip'>Download v0.1.1 (beta)</a>
+						<a class="btn btn-xl green screen-only" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.1.2.zip'>Download v0.1.2 (beta)</a>
 					</div>
 				</div>
 			</div>
@@ -109,6 +109,7 @@
 						</li>
 						<li><a href='#alertArea'>Alerts</a></li>
 						<li><a href='#navigationArea'>Navigation</a></li>
+						<li><a href="#panelArea">Panels</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -364,7 +365,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="offset-2 col-6">
+					<div class="offset-2 col-8">
 						<table class="table bottom-line hover highlight">
 							<tr class="head">
 								<th>Class</th>
@@ -484,13 +485,13 @@
 						<button class="btn btn-lg red" onclick='sendAlert()'>Alert</button>
 						<div class="alert hidden" id="alertCode_base">
 	<div class="title">Example</div>
-	<div class="close" id="alert">&times;</div>
-	This is an example alert This is an example alert This is an example alert
+	<div class="close" id="alert"></div>
+	This is an example alert This is an example alert This is an example
 </div>
 						<script>
 							var alertPos = 1;
 							function sendAlert(){
-								document.body.innerHTML += '<div class="alert"><div class="title">Example ' + alertPos + '</div><div class="close" id="alert">&times;</div>This is an example alert This is an example alert This is an example alert</div>';
+								document.body.innerHTML += '<div class="alert"><div class="title">Example ' + alertPos + '</div><div class="close"></div>This is an example alert This is an example alert This is an example alert</div>';
 								setTimeout(function(){
 									$('#alert').click();
 								}, 2000);
@@ -585,6 +586,15 @@
 					<script>
 						createCode('navCode');
 					</script>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" id="panelArea">
+			<div class="row">
+				<div class="col-8 offset-2">
+					<h1 class="center">Panels</h1>
+					<hr class="hr-fade">
 				</div>
 			</div>
 		</div>

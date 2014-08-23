@@ -1,0 +1,40 @@
+/*
+	Bar Left
+	Author: Chase Willden;
+*/
+
+[class*='bar-left']{
+	padding-left: 10px;
+}
+
+.bar-left.skinny{
+	border-left: solid 1px black;
+}
+
+.bar-left{
+	border-left: solid 2px black;
+}
+
+.bar-left.thick{
+	border-left: solid 3px black;
+}
+
+.bar-left.sm, .bulge.sm{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.bar-left.md, .bulge.md{
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.bar-left.lg, .bulge.lg{
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+.bar-left.xl, .bulge.xl{
+	padding-top: 18%;
+	padding-bottom: 18%;
+}

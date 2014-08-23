@@ -6,13 +6,13 @@ module.exports = function(grunt) {
     cssmin: {
       combine: {
         files: {
-          'build/css/is-ui.min.css': ['src/css/normalize.css', 'src/css/**.css', 'src/css/*/**.css']
+          'build/css/is-ui.min.css': ['src/vendor/normalize.css', 'src/css/**.css', 'src/css/*/**.css']
         }
       }
     },
     concat: {
       css: {
-        src: ['src/css/normalize.css', 'src/css/**.css', 'src/css/*/**.css'],
+        src: ['src/vendor/normalize.css', 'src/css/**.css', 'src/css/*/**.css'],
         dest: 'build/css/is-ui.css'
       },
       js: {

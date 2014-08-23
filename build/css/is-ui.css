@@ -424,116 +424,6 @@ th {
   padding: 0;
 }
 /*
-	Container
-	Author: Chase Willden;
-*/
-
-.container{
-	position: absolute;
-	width: 100%;
-	height: 100%;	
-	padding: 15px;
-	z-index: 1;
-}
-/*
-	Display
-	Author: Chase Willden;
-*/
-
-*{
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    position: relative;
-}
-
-.hidden{
-	display: none !important;
-}
-
-.stretch{
-	width: 100%;
-}
-
-.show, .stay-open{
-	display: block !important;
-}
-
-.fixed{
-	position: fixed !important;
-}
-
-.absolute{
-	position: absolute;
-}
-
-@media (min-width: 1000px) {
-	.mobile-only{
-		display: none !important;
-	}
-}
-
-@media (max-width: 1000px) {
-	.screen-only{
-	    display: none !important;
-	}
-}
-
-iframe{
-	width: 100%;
-}
-
-.no-select{
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-
-.select-text{
-	-webkit-touch-callout: text;
-	-webkit-user-select: text;
-	-khtml-user-select: text;
-	-moz-user-select: text;
-	-ms-user-select: text;
-	user-select: text;
-}
-
-.select-all{
-	-webkit-touch-callout: all;
-	-webkit-user-select: all;
-	-khtml-user-select: all;
-	-moz-user-select: all;
-	-ms-user-select: all;
-	user-select: all;
-}
-
-.select-element{
-	-webkit-touch-callout: element;
-	-webkit-user-select: element;
-	-khtml-user-select: element;
-	-moz-user-select: element;
-	-ms-user-select: element;
-	user-select: element;
-}
-
-.center[class*='col-']{
-	text-align: center;
-}
-
-.center[class*='col-']:not([class*='offset-']){
-	margin-left: auto;
-	margin-right: auto;
-}
-
-
-
-.center[class*='col-'] *{
-	text-align: left;
-}
-/*
 	Footer
 	Author: Chase Willden;
 */
@@ -626,80 +516,9 @@ body {
 	background-color: #F0F0F0;
 }
 /*
-	Typography
-	Author: Chase Willden;
-*/
-
-.dim-1{
-	opacity: .1;
-}
-
-.dim-2{
-	opacity: .2;
-}
-
-.dim-3{
-	opacity: .3;
-}
-
-.dim-4{
-	opacity: .4;
-}
-
-.dim-5{
-	opacity: .5;
-}
-
-.dim-6{
-	opacity: .6;
-}
-
-.dim-7{
-	opacity: .7;
-}
-
-.dim-8{
-	opacity: .8;
-}
-
-.dim-9{
-	opacity: .9;
-}
-
-.dim:hover{
-	opacity: 1;
-}
-
-.center{
-	text-align: center;
-}
-
-.left{
-	text-align: left;
-}
-
-.right{
-	text-align: right;
-}
-
-[class='bar-left']{
-	padding-left: 10px;
-}
-
-.bar-left.skinny{
-	border-left: solid 1px black;
-}
-
-.bar-left{
-	border-left: solid 2px black;
-}
-
-.bar-left.thick{
-	border-left: solid 3px black;
-}
-/*
 	Bulge
 	Author: Chase Willden;
+	I put bulge sizing with bar-left sizing
 */
 .bulge{
 	box-shadow: 0 0 9px rgba(0,0,0,.3);
@@ -961,6 +780,329 @@ body {
 .btn-group .arrow-down{
 	padding-left: 5px;
 	padding-right: 5px;
+}
+/*
+	Display
+	Author: Chase Willden;
+*/
+
+*{
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.container{
+	position: absolute;
+	width: 100%;
+	height: 100%;	
+	padding: 15px;
+	z-index: 1;
+}
+
+.close:before{
+	content: '×';
+	cursor: pointer;
+	color: #ccc;
+}
+
+.close:hover:before{
+	color: black;
+}
+
+.close{
+	position: absolute;
+	top: 3px;
+	right: 5px;
+}
+
+.hidden{
+	display: none !important;
+}
+
+.stretch{
+	width: 100%;
+}
+
+.show, .stay-open{
+	display: block !important;
+}
+
+.fixed{
+	position: fixed !important;
+}
+
+.absolute{
+	position: absolute;
+}
+
+@media (min-width: 1000px) {
+	.mobile-only{
+		display: none !important;
+	}
+}
+
+@media (max-width: 1000px) {
+	.screen-only{
+	    display: none !important;
+	}
+}
+
+iframe{
+	width: 100%;
+}
+/*
+	Padding
+	Author: Chase Willden;
+*/
+
+.padding-12.top{
+	padding-top: 12%;
+}
+
+.padding-11.top{
+	padding-top: 11%;
+}
+
+.padding-10.top{
+	padding-top: 10%;
+}
+
+.padding-9.top{
+	padding-top: 9%;
+}
+
+.padding-8.top{
+	padding-top: 8%;
+}
+
+.padding-7.top{
+	padding-top: 7%;
+}
+
+.padding-6.top{
+	padding-top: 6%;
+}
+
+.padding-5.top{
+	padding-top: 5%;
+}
+
+.padding-4.top{
+	padding-top: 4%;
+}
+
+.padding-3.top{
+	padding-top: 3%;
+}
+
+.padding-2.top{
+	padding-top: 2%;
+}
+
+.padding-1.top{
+	padding-top: 1%;
+}
+
+.padding-half.top{
+	padding-top: .5%;
+}
+
+.padding-12.right{
+	padding-right: 12%;
+}
+
+.padding-11.right{
+	padding-right: 11%;
+}
+
+.padding-10.right{
+	padding-right: 10%;
+}
+
+.padding-9.right{
+	padding-right: 9%;
+}
+
+.padding-8.right{
+	padding-right: 8%;
+}
+
+.padding-7.right{
+	padding-right: 7%;
+}
+
+.padding-6.right{
+	padding-right: 6%;
+}
+
+.padding-5.right{
+	padding-right: 5%;
+}
+
+.padding-4.right{
+	padding-right: 4%;
+}
+
+.padding-3.right{
+	padding-right: 3%;
+}
+
+.padding-2.right{
+	padding-right: 2%;
+}
+
+.padding-1.right{
+	padding-right: 1%;
+}
+
+.padding-half.right{
+	padding-right: .5%;
+}
+
+.padding-12.bottom{
+	padding-bottom: 12%;
+}
+
+.padding-11.bottom{
+	padding-bottom: 11%;
+}
+
+.padding-10.bottom{
+	padding-bottom: 10%;
+}
+
+.padding-9.bottom{
+	padding-bottom: 9%;
+}
+
+.padding-8.bottom{
+	padding-bottom: 8%;
+}
+
+.padding-7.bottom{
+	padding-bottom: 7%;
+}
+
+.padding-6.bottom{
+	padding-bottom: 6%;
+}
+
+.padding-5.bottom{
+	padding-bottom: 5%;
+}
+
+.padding-4.bottom{
+	padding-bottom: 4%;
+}
+
+.padding-3.bottom{
+	padding-bottom: 3%;
+}
+
+.padding-2.bottom{
+	padding-bottom: 2%;
+}
+
+.padding-1.bottom{
+	padding-bottom: 1%;
+}
+
+.padding-half.bottom{
+	padding-bottom: .5%;
+}
+
+.padding-12.left{
+	padding-left: 12%;
+}
+
+.padding-11.left{
+	padding-left: 11%;
+}
+
+.padding-10.left{
+	padding-left: 10%;
+}
+
+.padding-9.left{
+	padding-left: 9%;
+}
+
+.padding-8.left{
+	padding-left: 8%;
+}
+
+.padding-7.left{
+	padding-left: 7%;
+}
+
+.padding-6.left{
+	padding-left: 6%;
+}
+
+.padding-5.left{
+	padding-left: 5%;
+}
+
+.padding-4.left{
+	padding-left: 4%;
+}
+
+.padding-3.left{
+	padding-left: 3%;
+}
+
+.padding-2.left{
+	padding-left: 2%;
+}
+
+.padding-1.left{
+	padding-left: 1%;
+}
+
+.padding-half.left{
+	padding-left: .5%;
+}
+/*
+	Select
+	Author: Chase Willden;
+*/
+
+.no-select{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.select-text{
+	-webkit-touch-callout: text;
+	-webkit-user-select: text;
+	-khtml-user-select: text;
+	-moz-user-select: text;
+	-ms-user-select: text;
+	user-select: text;
+}
+
+.select-all{
+	-webkit-touch-callout: all;
+	-webkit-user-select: all;
+	-khtml-user-select: all;
+	-moz-user-select: all;
+	-ms-user-select: all;
+	user-select: all;
+}
+
+.select-element{
+	-webkit-touch-callout: element;
+	-webkit-user-select: element;
+	-khtml-user-select: element;
+	-moz-user-select: element;
+	-ms-user-select: element;
+	user-select: element;
 }
 /*
 	DropDowns
@@ -1302,6 +1444,20 @@ textarea.xl{
 	min-height: 10px;
 	float: left;
 	display: block;
+	height: 100%;
+}
+
+.center[class*='col-']{
+	text-align: center;
+}
+
+.center[class*='col-']:not([class*='offset-']){
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.center[class*='col-'] *{
+	text-align: left;
 }
 
 .col-12{
@@ -1416,11 +1572,11 @@ textarea.xl{
 */
 
 @media (max-width: 768px){
-	[class*='col-'].sm{
+	[class*='col-'].sm:not([class*='mobile-off']){
 		display: inline-block;
 		width: 100%;
 	}
-	[class*='offset-'].sm{
+	[class*='offset-'].sm:not([class*='mobile-off']){
 		margin-left: 0;
 	}
 }
@@ -1429,11 +1585,11 @@ textarea.xl{
 	Tablets
 */
 @media (max-width: 992px){
-	[class*='col-'].md{
+	[class*='col-'].md:not([class*='mobile-off']){
 		display: inline-block;
 		width: 100%;
 	}
-	[class*='offset-'].md{
+	[class*='offset-'].md:not([class*='mobile-off']){
 		margin-left: 0;
 	}
 }
@@ -1443,12 +1599,12 @@ textarea.xl{
 */
 
 @media (max-width: 992px){
-	[class*='col-']:not([class*='sm']){
+	[class*='col-']:not([class*='sm']):not([class*='mobile-off']){
 		display: inline-block;
 		width: 100%;
 	}
 
-	[class*='offset-']:not([class*='sm']){
+	[class*='offset-']:not([class*='sm']):not([class*='mobile-off']){
 		margin-left: 0;
 	}
 }
@@ -1457,12 +1613,12 @@ textarea.xl{
 	Medium Desktop Computers
 */
 @media (max-width: 1200px){
-	[class*='col-'].lg{
+	[class*='col-'].lg:not([class*='mobile-off']){
 		display: inline-block;
 		width: 100%;
 	}
 
-	[class*='offset-'].lg{
+	[class*='offset-'].lg:not([class*='mobile-off']){
 		margin-left: 0;
 	}
 }
@@ -1538,6 +1694,46 @@ textarea.xl{
 	min-height: 4.166666666%;
 }
 /*
+	Collage
+	Author: Chase Willden;
+*/
+
+.collage{
+	display: inline-block;
+	border: solid 1px #ACACAC;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	transition: ease border-color .2s;
+	-o-transition: ease border-color .2s;
+	-moz-transition: ease border-color .2s;
+	-webkit-transition: ease border-color .2s;
+}
+
+.collage:hover{
+	border-color: #808080;
+}
+
+.collage img{
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	overflow: hidden;
+	width: 50%;
+	height: 100%;
+	max-height: 100%;
+	border: solid 3px white;
+}
+
+.collage.four img:first-child, .collage.four img:nth-child(3){
+	float: left;
+}
+
+.collage.four img:nth-child(2), .collage.four img:nth-child(4){	
+	float: right;
+}
+
+/*
 	Lightbox
 	Author: Chase Willden;
 */
@@ -1559,6 +1755,12 @@ textarea.xl{
 	margin-right: auto !important;
 	margin-top: 5% !important;
 	background-color: white !important;
+}
+
+@media (max-width: 768px){
+	.lightbox-mode{
+		width: 50% !important;
+	}
 }
 
 .lightbox-right:before, .lightbox-left:before{
@@ -1670,14 +1872,6 @@ textarea.xl{
 	border-bottom: solid 1px #ccc;
 	padding-bottom: 4px;
 	margin-bottom: 4px;
-}
-
-.alert .close{
-	position: absolute;
-	top: 3px;
-	right: 3px;
-	color: #ccc;
-	cursor: pointer;
 }
 
 .alert .close:hover{
@@ -1811,18 +2005,6 @@ hr.lg{
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-}
-
-.modal .close:not([class*='btn']){
-	cursor: pointer;
-	color: #ccc;
-	position: absolute;
-	top: 3px;
-	right: 5px;
-}
-
-.modal .close:hover{
-	color: black;
 }
 
 .modal > .head{
@@ -2074,6 +2256,98 @@ nav.nav-right{
 	}
 }
 /*
+	Alignment
+	Author: Chase Willden;
+*/
+
+.center{
+	text-align: center;
+}
+
+.left{
+	text-align: left;
+}
+
+.right{
+	text-align: right;
+}
+/*
+	Bar Left Colors
+	Author: Chase Willden;
+*/
+
+.bar-left.blue{
+	border-left-color: rgba(18, 113, 235, 0.69);
+}
+
+.bar-left.grey{
+	border-left-color: rgba(210, 210, 210, 0.69);
+}
+
+.bar-left.red{
+	border-left-color: rgba(182, 85, 31, 0.69);
+}
+
+.bar-left.green{
+	border-left-color: rgba(27, 167, 83, 0.69);
+}
+
+.bar-left.orange{
+	border-left-color: rgba(189, 149, 24, 0.69);
+}
+
+.bar-left.pink{
+	border-left-color: rgb(242, 44, 110);
+}
+
+.bar-left.peach{
+	border-left-color: #E17769;
+}
+		
+.bar-left.white{
+	border-left-color: #fff;
+}
+/*
+	Bar Left
+	Author: Chase Willden;
+*/
+
+[class*='bar-left']{
+	padding-left: 10px;
+}
+
+.bar-left.skinny{
+	border-left: solid 1px black;
+}
+
+.bar-left{
+	border-left: solid 2px black;
+}
+
+.bar-left.thick{
+	border-left: solid 3px black;
+}
+
+.bar-left.sm, .bulge.sm{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.bar-left.md, .bulge.md{
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.bar-left.lg, .bulge.lg{
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+.bar-left.xl, .bulge.xl{
+	padding-top: 18%;
+	padding-bottom: 18%;
+}
+/*
 	Typography Coloring
 	Author: Chase Willden;
 */
@@ -2084,6 +2358,45 @@ a{
 
 a:active{
 	color: rgb(56, 125, 191);
+}
+.dim-1{
+	opacity: .1;
+}
+
+.dim-2{
+	opacity: .2;
+}
+
+.dim-3{
+	opacity: .3;
+}
+
+.dim-4{
+	opacity: .4;
+}
+
+.dim-5{
+	opacity: .5;
+}
+
+.dim-6{
+	opacity: .6;
+}
+
+.dim-7{
+	opacity: .7;
+}
+
+.dim-8{
+	opacity: .8;
+}
+
+.dim-9{
+	opacity: .9;
+}
+
+.dim:hover{
+	opacity: 1;
 }
 /*
 	Font Sizing and text sizing

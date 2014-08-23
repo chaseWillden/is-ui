@@ -1,0 +1,36 @@
+/*
+	Bar Left Colors
+	Author: Chase Willden;
+*/
+
+.bar-left.blue{
+	border-left-color: rgba(18, 113, 235, 0.69);
+}
+
+.bar-left.grey{
+	border-left-color: rgba(210, 210, 210, 0.69);
+}
+
+.bar-left.red{
+	border-left-color: rgba(182, 85, 31, 0.69);
+}
+
+.bar-left.green{
+	border-left-color: rgba(27, 167, 83, 0.69);
+}
+
+.bar-left.orange{
+	border-left-color: rgba(189, 149, 24, 0.69);
+}
+
+.bar-left.pink{
+	border-left-color: rgb(242, 44, 110);
+}
+
+.bar-left.peach{
+	border-left-color: #E17769;
+}
+		
+.bar-left.white{
+	border-left-color: #fff;
+}

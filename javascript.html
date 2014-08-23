@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Getting Started</title>
-	<meta name='viewport' content='width=device-width, initial-scale=1.0;'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link rel="stylesheet" type="text/css" href="build/css/is-ui.min.css">
 	<link rel="stylesheet" type="text/css" href="prism.css">
 	<script type="text/javascript" src='build/include/jquery.js'></script>
@@ -48,7 +48,7 @@
 								<a href='https://github.com/chaseWillden/is-ui' target="_blank">GitHub</a>
 							</li>
 							<li>
-								<a href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.1.1.zip'>Download v0.1.1 (beta)</a>
+								<a href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.1.2.zip'>Download v0.1.2 (beta)</a>
 							</li>
 						</ul>
 					</li>
@@ -65,7 +65,7 @@
 				<div class="row">
 					<div class="col-12 center">
 						<a href='https://github.com/chaseWillden/is-ui' target="_blank" class="btn btn-xl blue">Fork on GitHub</a>
-						<a class="btn btn-xl green screen-only" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.1.1.zip'>Download v0.1.1 (beta)</a>
+						<a class="btn btn-xl green screen-only" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.1.2.zip'>Download v0.1.2 (beta)</a>
 					</div>
 				</div>
 			</div>
@@ -80,6 +80,7 @@
 						<li class="empty"><a href=''>&nbsp;</a></li>
 						<li>
 							<a href='#modalArea'>Modals</a>
+							<a href="#closeArea">Close</a>
 						</li>
 					</ul>
 				</nav>
@@ -102,7 +103,7 @@
 					<button class="btn btn-default blue" modal='#modal4'>Modal XL</button>
 					<div class="modal" id="modal">
 						<div class="head">
-							<div class="close">&times;</div>
+							<div class="close"></div>
 							Modal Title
 						</div>
 						<div class="body">
@@ -117,7 +118,7 @@
 					</div>	
 					<div class="modal md" id="modal2">
 						<div class="head">
-							<div class="close">&times;</div>
+							<div class="close"></div>
 							Modal Title
 						</div>
 						<div class="body">
@@ -132,7 +133,7 @@
 					</div>	
 					<div class="modal lg" id="modal3">
 						<div class="head">
-							<div class="close">&times;</div>
+							<div class="close"></div>
 							Modal Title
 						</div>
 						<div class="body">
@@ -147,7 +148,7 @@
 					</div>
 					<div class="modal xl" id="modal4">
 						<div class="head">
-							<div class="close">&times;</div>
+							<div class="close"></div>
 							Modal Title
 						</div>
 						<div class="body">
@@ -168,7 +169,7 @@
 	<button class="btn btn-default blue" modal='#modal'>Modal</button>
 	<div class="modal" id="modal">
 		<div class="head">
-			<div class="close">&times;</div>
+			<div class="close"></div>
 			Modal Title
 		</div>
 		<div class="body">
@@ -194,6 +195,29 @@
 					createCode('modalCode');
 				</script>
 			</div>
+		</div>
+
+		<div class="row" id="closeArea">
+			<div class="row">
+				<div class="col-8 offset-2">
+					<h1 class="center">Close</h1>
+					<hr class="hr-fade">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-4 offset-4">
+					<div class="bulge xl padding-4 left" id="closeCode_base">
+	<div class="close"></div>
+	Add a close div to any element, the parent object will close
+</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-8 offset-2" id="closeCode"></div>
+				<script type="text/javascript">
+					createCode('closeCode');
+				</script>
+			</div>	
 		</div>
 
 		<footer class='footer'>

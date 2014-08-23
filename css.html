@@ -48,7 +48,7 @@
 								<a href='https://github.com/chaseWillden/is-ui' target="_blank">GitHub</a>
 							</li>
 							<li>
-								<a href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.1.1.zip'>Download v0.1.1 (beta)</a>
+								<a href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.1.2.zip'>Download v0.1.2 (beta)</a>
 							</li>
 						</ul>
 					</li>
@@ -65,15 +65,13 @@
 				<div class="row">
 					<div class="col-12 center">
 						<a href='https://github.com/chaseWillden/is-ui' target="_blank" class="btn btn-xl blue">Fork on GitHub</a>
-						<a class="btn btn-xl green screen-only" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.1.1.zip'>Download v0.1.1 (beta)</a>
+						<a class="btn btn-xl green screen-only" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.1.2.zip'>Download v0.1.2 (beta)</a>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-6"></div>
-			<div class="col-4"></div>
-			<div class="col-2">
+			<div class="col-2 offset-10">
 				<nav class='nav-right scrollSpy sticky'>
 					<ul>
 						<li><a href='#top'>Back to Top</a>
@@ -115,6 +113,7 @@
 								<li><a href='#smGridArea'>Small</a></li>
 								<li><a href='#mdGridArea'>Medium</a></li>
 								<li><a href='#lgGridArea'>Large</a></li>
+								<li><a href="#noMobileArea">No Mobile</a></li>
 							</ul>
 						</li>
 						<li>
@@ -123,6 +122,13 @@
 								<li><a href="#standardPictureArea">Standard</a>
 								<li><a href='#pictureDescriptionArea'>Picture Description</a></li>
 								<li><a href='#pictureLightboxArea'>Lightbox</a></li>
+								<li><a href="#pictureCollageArea">Collage</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#typographyArea">Typography</a>
+							<ul class="sub">
+								<li><a href="#barLeftArea">Bar Left</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -130,8 +136,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-2"></div>
-			<div class="col-8">
+			<div class="col-8 offset-2">
 				<h2>Vision</h2>
 				<div class="bar-left">
 					<p>IS-UI is another mobile-first front-end CSS framework. The sole purpose of this is literally to be another alternative, to be another solution. With night you have day. With water you have land. With rice you have beans. All are good, neither are evil, both are useful. Let this be another resource for developing the web even furthur.</p>
@@ -140,8 +145,7 @@
 		</div>
 		<div class="row" id="concepts">
 			<div class="row" id="sizingConcept">
-				<div class="col-2"></div>
-				<div class="col-8">
+				<div class="col-8 offset-2">
 					<h2>Sizing Concept</h2>
 					<div class="bar-left">
 						<p>Each built in Element with IS-UI has a minumum of 5 different sizing options. Small, Medium, Default, Large, and X-Large. Each of these should be placed into the same element that you want resized. For Example: </p>
@@ -157,15 +161,13 @@
 </div>
 			</div>
 			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-8" id="sizingCode"></div>
+				<div class="col-8 offset-2" id="sizingCode"></div>
 				<script>
 					createCode('sizingCode');
 				</script>
 			</div>
 			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-8">
+				<div class="col-8 offset-2">
 					<div class="bar-left">
 						<p>Or another example is the modal, these could be resized differently. See modal in <a href="javascript.html">JavaScript</a> for more information on modals</p>
 					</div>
@@ -178,15 +180,13 @@
 	<div class="modal xl">X-Large</div>
 </div>
 			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-8" id="sizingCode2"></div>
+				<div class="col-8 offset-2" id="sizingCode2"></div>
 				<script>
 					createCode('sizingCode2');
 				</script> 	
 			</div>
 			<div class="row" id="colorConcept">
-				<div class="col-2"></div>
-				<div class="col-8">
+				<div class="col-8 offset-2">
 					<h2>Color Concept</h2>
 					<div class="bar-left">
 						<p>Colors are a large part of web design and UX/UI work, escpecially more so today. To help assist in color picking and to make it as simple as possible, we pre chose colors for you. Using a framework and not being able to customize would be hard to work with, so in response to that, just add the class name of the color into the class and we'll re-color everything how they should be which allows for maximum color customization.</p>
@@ -194,8 +194,7 @@
 				</div> 	
 			</div>
 			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-8" id="btnColorCode1"></div>
+				<div class="col-8 offset-2" id="btnColorCode1"></div>
 			</div>
 			<div class="row" id="btnColorCode1_base">
 	<div class="col-2"></div>
@@ -215,14 +214,11 @@
 				createCode('btnColorCode1');
 			</script> 
 			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-8" id="colorCode1"></div>
-				<div class="col-2"></div>
+				<div class="col-8 offset-2" id="colorCode1"></div>
 			</div>
 			<div class="row" id="colorCode1_base">
 	<div class="row">
-		<div class="col-2"></div>
-		<div class="col-2">
+		<div class="col-2 offset-2">
 			<input type="text" class="form-comp blue">
 		</div>
 		<div class="col-2">
@@ -236,8 +232,7 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-2"></div>
-		<div class="col-2">
+		<div class="col-2 offset-2">
 			<input type="text" class="form-comp orange">
 		</div>
 		<div class="col-2">
@@ -257,15 +252,13 @@
 		</script>
 		<div class="row" id="tableArea">
 			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-8">
+				<div class="col-8 offset-2">
 					<h1 class="center">Tables</h1>
 					<hr class="hr-fade">
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-8">
+				<div class="col-8 offset-2">
 					<div class="row" id='basicTableArea'>
 						<h2>Basic Table</h2>
 					</div>
@@ -382,8 +375,7 @@
 		</div>
 
 		<div class="row" id='buttonArea'>
-			<div class="col-2"></div>
-			<div class="col-8">
+			<div class="col-8 offset-2">
 				<h1 class="center">Buttons</h1>
 				<hr class="hr-fade">
 			</div>
@@ -466,21 +458,18 @@
 
 		<div class="row" id='formArea'>
 			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-8">
+				<div class="col-8 offset-2">
 					<h1 class="center">Forms</h1>
 					<hr class="hr-fade">
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-8">
+				<div class="col-8 offset-2">
 					<h2>Form Components</h2>
 				</div>
 			</div>
 			<div class="row" id="ComponentsFormArea">
-				<div class="col-4"></div>
-				<div class="col-3">
+				<div class="col-3 offset-4">
 					<fieldset name='Example Form' id='formCompCode_base'>
 	<label>Text</label>
 	<input type="text" class="form-comp">
@@ -494,24 +483,20 @@
 				<div class="col-3"></div>
 			</div>
 			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-8" id="formCompCode"></div>
+				<div class="col-8 offset-2" id="formCompCode"></div>
 				<script>
 					createCode('formCompCode');
 				</script>
 			</div>
 			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-8">
+				<div class="col-8 offset-2">
 					<h2>Login Form Example</h2>
 				</div>
 			</div>
 			<div class="row" id="loginFormArea">
-				<div class="col-3"></div>
-				<div class="col-4 pit md" id="example1_base">
+				<div class="col-4 pit md  offset-3" id="example1_base">
 	<div class="row">
-		<div class="col-2"></div>
-		<div class="col-8">
+		<div class="col-8 offset-2">
 			<form class="bulge form low white">
 				<h1 class="title center thin">Login</h1>
 				<input type="text" class="form-comp lg" placeholder="Username">
@@ -521,8 +506,7 @@
 			</form>
 			<br>
 			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-10">
+				<div class="col-10 offset-2">
 					<a href="">Forgot Password</a> | <a href="">Register</a>
 				</div>								
 			</div>
@@ -532,8 +516,7 @@
 				<div class="col-3"></div>
 			</div>
 			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-8" id="example1">
+				<div class="col-8 offset-2" id="example1">
 					
 				</div>
 			</div>
@@ -541,8 +524,7 @@
 				$('#example1').html(code('example1_base'));
 			</script>
 			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-8">
+				<div class="col-8 offset-2">
 					<h2>Textareas</h2>
 				</div>
 			</div>
@@ -551,8 +533,7 @@
 					<div class="offset-2 col-2">
 						<textarea class="form-comp sm" id='textarea1_base'>Small</textarea>
 					</div>
-					<div class="col-1"></div>
-					<div class="col-5" id="textarea1"></div>
+					<div class="col-5 offset-1" id="textarea1"></div>
 					<script>
 						createCode('textarea1');
 					</script>
@@ -561,8 +542,7 @@
 					<div class="offset-2 col-2">
 						<textarea class="form-comp" id="textarea2_base">Default</textarea>
 					</div>
-					<div class="col-1"></div>
-					<div class="col-5" id="textarea2"></div>
+					<div class="col-5 offset-1" id="textarea2"></div>
 					<script>
 						createCode('textarea2');
 					</script>
@@ -571,8 +551,7 @@
 					<div class="offset-2 col-2">
 						<textarea class="form-comp md" id='textarea3_base'>Medium</textarea>
 					</div>
-					<div class="col-1"></div>
-					<div class="col-5" id="textarea3"></div>
+					<div class="col-5 offset-1" id="textarea3"></div>
 					<script>
 						createCode('textarea3');
 					</script>
@@ -581,8 +560,7 @@
 					<div class="offset-2 col-2">
 						<textarea class="form-comp lg" id="textarea4_base">Large</textarea>
 					</div>
-					<div class="col-1"></div>
-					<div class="col-5" id="textarea4"></div>
+					<div class="col-5 offset-1" id="textarea4"></div>
 					<script>
 						createCode('textarea4');
 					</script>
@@ -591,8 +569,7 @@
 					<div class="offset-2 col-2">
 						<textarea class="form-comp xl" id="textarea5_base">X-Large</textarea>
 					</div>
-					<div class="col-1"></div>
-					<div class="col-5" id="textarea5"></div>
+					<div class="col-5 offset-1" id="textarea5"></div>
 					<script>
 						createCode('textarea5');
 					</script>
@@ -601,8 +578,7 @@
 					<div class="offset-2 col-2">
 						<textarea class="form-comp no-resize" id="textarea6_base">No Resize</textarea>
 					</div>
-					<div class="col-1"></div>
-					<div class="col-5" id="textarea6"></div>
+					<div class="col-5 offset-2" id="textarea6"></div>
 					<script>
 						createCode('textarea6');
 					</script>
@@ -612,15 +588,13 @@
 
 		<div class="row" id='gridArea'>
 			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-8">
+				<div class="col-8 offset-2">
 					<h1 class="center">Grid System</h1>
 					<hr class="hr-fade">
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-7">
+				<div class="col-8  offset-2">
 					<div class="bar-left">
 						<p>The grid system is very easy and organized. Simply put, there is a row and inside of this row are columns. There is a total of 12 columns wide and any number combinations between. Each column could have multiple rows creating a nice grid layout with essentially a bunch of table cells.</p>
 					</div>
@@ -732,51 +706,62 @@
 						<div class="col-2 grey center lg">.col-2</div>
 						<div class="col-2 grey center lg">.col-2</div>	
 					</div>
+					<div class="row" id='noMobileArea'>
+						<div class="col-10">
+							<h2>No Mobile Grid</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-2 grey center mobile-off">.mobile-off</div>
+						<div class="col-2 grey center mobile-off">.mobile-off</div>
+						<div class="col-2 grey center mobile-off">.mobile-off</div>
+						<div class="col-2 grey center mobile-off">.mobile-off</div>
+						<div class="col-2 grey center mobile-off">.mobile-off</div>
+						<div class="col-2 grey center mobile-off">.mobile-off</div>	
+					</div>
 				</div>
 			</div>
 		</div>
 
 		<div class="row" id="pictureArea">
 			<div class="row">
-				<div class="col-10">
+				<div class="col-8 offset-2">
 					<h1 class="center">Pictures</h1>
 					<hr class="hr-fade">
 				</div>
 			</div>
 			<div class="row" id="standardPictureArea">
-				<div class="col-2"></div>
-				<div class="col-8">
+				<div class="col-8 offset-2">
 					<h2>Standard</h2>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-8">
-					<div class="col-2" id="thumbnailCode_base">
+				<div class="col-8 offset-2">
+					<div class="col-2 sm" id="thumbnailCode_base">
 	<a href="" class="thumbnail">
 		<img src="http://placehold.it/200x200">
 	</a>
 </div>
-					<div class="col-half"></div>
-					<div class="col-2">
+					<div class="col-half sm"></div>
+					<div class="col-2 sm">
 						<a href="" class="thumbnail">
 							<img src="http://placehold.it/200x200">
 						</a>
 					</div>
-					<div class="col-half"></div>
-					<div class="col-2">
+					<div class="col-half sm"></div>
+					<div class="col-2 sm">
 						<a href="" class="thumbnail">
 							<img src="http://placehold.it/200x200">
 						</a>
 					</div>
-					<div class="col-half"></div>
-					<div class="col-2">
+					<div class="col-half sm"></div>
+					<div class="col-2 sm">
 						<a href="" class="thumbnail">
 							<img src="http://placehold.it/200x200">
 						</a>
 					</div>
-					<div class="col-half"></div>
-					<div class="col-2">
+					<div class="col-half sm"></div>
+					<div class="col-2 sm">
 						<a href="" class="thumbnail">
 							<img src="http://placehold.it/200x200">
 						</a>
@@ -784,37 +769,34 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-8" id="thumbnailCode"></div>
+				<div class="col-8 offset-2" id="thumbnailCode"></div>
 				<script>
 					createCode('thumbnailCode')
 				</script>
 			</div>
 			<div class="row" id="pictureDescriptionArea">
-				<div class="col-2"></div>
-				<div class="col-8">
+				<div class="col-8 offset-2">
 					<h2>Picture Description</h2>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-8">
-					<div class="col-1"></div>
-					<div class="col-3" id="thumbnailDescriptionCode_base">
+				<div class="col-8 offset-2">
+					<div class="col-1 sm"></div>
+					<div class="col-3 sm" id="thumbnailDescriptionCode_base">
 	<a href="" class="thumbnail">
 		<img src="http://placehold.it/200x200">
 		<div class="description">This is text concerning this image</div>
 	</a>
 </div>
-					<div class="col-half"></div>
-					<div class="col-3">
+					<div class="col-half sm"></div>
+					<div class="col-3 sm">
 						<a href="" class="thumbnail">
 							<img src="http://placehold.it/200x200">
 							<div class="description">This is text concerning this image</div>
 						</a>
 					</div>
-					<div class="col-half"></div>
-					<div class="col-3">
+					<div class="col-half sm"></div>
+					<div class="col-3 sm">
 						<a href="" class="thumbnail">
 							<img src="http://placehold.it/200x200">
 							<div class="description">This is text concerning this image</div>
@@ -823,37 +805,34 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-8" id="thumbnailDescriptionCode"></div>
+				<div class="col-8 offset-2" id="thumbnailDescriptionCode"></div>
 				<script>
 					createCode('thumbnailDescriptionCode')
 				</script>
 			</div>
 			<div class="row" id="pictureLightboxArea">
-				<div class="col-2"></div>
-				<div class="col-8">
+				<div class="col-8 offset-2">
 					<h2>Lightbox</h2>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-8">
-					<div class="col-1"></div>
-					<div class="col-3" id="lightboxCode_base">
+				<div class="col-8 offset-2">
+					<div class="col-1 sm"></div>
+					<div class="col-3 sm" id="lightboxCode_base">
 	<a href="#pictureLightboxArea" class="thumbnail" lightbox='lightbox1'>
 		<img src="http://placehold.it/200x200">
 		<div class="description">This is text concerning this image</div>
 	</a>
 </div>
-					<div class="col-half"></div>
-					<div class="col-3">
+					<div class="col-half sm"></div>
+					<div class="col-3 sm">
 						<a href="#pictureLightboxArea" class="thumbnail" lightbox='lightbox1'>
 							<img src="http://placehold.it/200x200">
 							<div class="description">This is text concerning this image</div>
 						</a>
 					</div>
-					<div class="col-half"></div>
-					<div class="col-3">
+					<div class="col-half sm"></div>
+					<div class="col-3 sm">
 						<a href="#pictureLightboxArea" class="thumbnail" lightbox='lightbox1'>
 							<img src="http://placehold.it/200x200">
 							<div class="description">This is text concerning this image</div>
@@ -862,11 +841,177 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-2"></div>
-				<div class="col-8" id="lightboxCode"></div>
+				<div class="col-8 offset-2" id="lightboxCode"></div>
 				<script>
 					createCode('lightboxCode')
 				</script>
+			</div>
+			<div class="row" id="pictureCollageArea">
+				<div class="row">
+					<div class="col-8 offset-2">
+						<h2>Picture Collage</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-8 offset-2">
+						<p class="bar-left">
+							Depending on the picture size, the collage will resize differently. When displayed as mobile, the collage will still hold its shape.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-2 offset-2">
+						<div class="collage four" id="pictureCollageCode_base">
+	<img src="http://placehold.it/200x200">
+	<img src="http://placehold.it/200x200">
+	<img src="http://placehold.it/200x200">
+	<img src="http://placehold.it/200x200">
+</div>
+					</div>
+					<div class="col-2 offset-1">
+						<div class="collage four">
+							<img src="http://placehold.it/100x200">
+							<img src="http://placehold.it/100x200">
+							<img src="http://placehold.it/300x200">
+							<img src="http://placehold.it/300x200">
+						</div>
+					</div>
+					<div class="col-2 offset-1">
+						<div class="collage four">
+							<img src="http://placehold.it/250x200">
+							<img src="http://placehold.it/140x230">
+							<img src="http://placehold.it/300x200">
+							<img src="http://placehold.it/300x200">
+						</div>
+					</div>
+				</div>
+				<!-- End row -->
+
+				<div class="row">
+					<div class="col-8 offset-2" id="pictureCollageCode"></div>
+					<script type="text/javascript">
+						createCode('pictureCollageCode');
+					</script>
+				</div>
+			</div>
+		</div>
+
+		<div class="row" id="typographyArea">
+			<div class="row">
+				<div class="col-8 offset-2">
+					<h1 class="center">Typography</h1>
+					<hr class="hr-fade">
+				</div>
+			</div>
+
+			<div class="row" id="barLeftArea">
+				<div class="col-8 offset-2">
+					<h2>Bar Left</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-3 offset-2">
+					<p class="bar-left">
+						This is an example of a bar left.
+					</p>
+					<p class="bar-left skinny">
+						This is an example of a bar left.
+					</p>
+					<p class="bar-left thick">
+						This is an example of a bar left.
+					</p>
+				</div>
+				<div class="col-2">
+					<div class="bulge">
+						<p class="bar-left">
+							This is a bar-left with a bulge
+						</p>
+					</div>
+					<div class="bulge low">
+						<p class="bar-left">
+							This is a bar-left with a bulge
+						</p>
+					</div>
+					<div class="bulge high">
+						<p class="bar-left">
+							This is a bar-left with a bulge
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-8 offset-2">
+					<h3>Sizing</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-2 offset-2">
+					<p class="bar-left sm">
+						This is a sm
+					</p>
+				</div>
+				<div class="col-2">
+					<p class="bar-left md">
+						This is md
+					</p>
+				</div>
+				<div class="col-2">
+					<p class="bar-left lg">
+						This is lg
+					</p>
+				</div>
+				<div class="col-2">
+					<p class="bar-left xl">
+						This is lg
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-8 offset-2">
+					<h3>Color</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-2 offset-2">
+					<p class="bar-left blue">
+						This is a blue
+					</p>
+					<div class="bulge low">
+						<p class="bar-left orange">
+							This is a orange
+						</p>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="bulge low">
+						<p class="bar-left pink">
+							This is a pink
+						</p>
+					</div>	
+					<p class="bar-left grey">
+						This is grey
+					</p>
+				</div>
+				<div class="col-2">
+					<p class="bar-left red">
+						This is red
+					</p>
+					<div class="bulge low">
+						<p class="bar-left peach">
+							This is a peach
+						</p>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="bulge low">
+						<p class="bar-left white">
+							This is a white
+						</p>
+					</div>
+					<p class="bar-left green">
+						This is green
+					</p>
+				</div>
 			</div>
 		</div>
 

@@ -1,50 +1,7 @@
 /*
-	Display
+	Select
 	Author: Chase Willden;
 */
-
-*{
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    position: relative;
-}
-
-.hidden{
-	display: none !important;
-}
-
-.stretch{
-	width: 100%;
-}
-
-.show, .stay-open{
-	display: block !important;
-}
-
-.fixed{
-	position: fixed !important;
-}
-
-.absolute{
-	position: absolute;
-}
-
-@media (min-width: 1000px) {
-	.mobile-only{
-		display: none !important;
-	}
-}
-
-@media (max-width: 1000px) {
-	.screen-only{
-	    display: none !important;
-	}
-}
-
-iframe{
-	width: 100%;
-}
 
 .no-select{
 	-webkit-touch-callout: none;
@@ -80,19 +37,4 @@ iframe{
 	-moz-user-select: element;
 	-ms-user-select: element;
 	user-select: element;
-}
-
-.center[class*='col-']{
-	text-align: center;
-}
-
-.center[class*='col-']:not([class*='offset-']){
-	margin-left: auto;
-	margin-right: auto;
-}
-
-
-
-.center[class*='col-'] *{
-	text-align: left;
 }

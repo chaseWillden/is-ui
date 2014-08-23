@@ -22,6 +22,12 @@
 	background-color: white !important;
 }
 
+@media (max-width: 768px){
+	.lightbox-mode{
+		width: 50% !important;
+	}
+}
+
 .lightbox-right:before, .lightbox-left:before{
 	color: rgb(186, 186, 186);
 	font-size: 33px;

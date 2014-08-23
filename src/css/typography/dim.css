@@ -1,0 +1,39 @@
+.dim-1{
+	opacity: .1;
+}
+
+.dim-2{
+	opacity: .2;
+}
+
+.dim-3{
+	opacity: .3;
+}
+
+.dim-4{
+	opacity: .4;
+}
+
+.dim-5{
+	opacity: .5;
+}
+
+.dim-6{
+	opacity: .6;
+}
+
+.dim-7{
+	opacity: .7;
+}
+
+.dim-8{
+	opacity: .8;
+}
+
+.dim-9{
+	opacity: .9;
+}
+
+.dim:hover{
+	opacity: 1;
+}
