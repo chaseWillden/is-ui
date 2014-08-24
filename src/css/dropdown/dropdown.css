@@ -58,7 +58,7 @@
 	float: right;
 }
 
-.dropdown > li.divider{
+.dropdown > .divider{
 	border-bottom: solid 1px #F0F0F0;
 	margin-top: 5px;
 	margin-bottom: 5px;

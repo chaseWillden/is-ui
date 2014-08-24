@@ -24,6 +24,7 @@ function touchClick(e){
 	modalInit(target);
 	lightboxInit(target);
 	mobileClickInit(target);
+	collapseInit(target);
 	if (right.length > 0){
 		right.each(function(){
 			if ($(this).hasClass('show')){
