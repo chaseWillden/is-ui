@@ -105,6 +105,7 @@
 								<li><a href='#ComponentsFormArea'>Form Components</a></li>
 								<li><a href='#loginFormArea'>Login Form</a></li>
 								<li><a href='#textareaFormArea'>Textarea</a></li>
+								<li><a href="#singleFormArea">Single Form</a></li>
 							</ul>
 						</li>
 						<li>
@@ -579,11 +580,58 @@
 					<div class="offset-2 col-2">
 						<textarea class="form-comp no-resize" id="textarea6_base">No Resize</textarea>
 					</div>
-					<div class="col-5 offset-2" id="textarea6"></div>
+					<div class="col-5 offset-1" id="textarea6"></div>
 					<script>
 						createCode('textarea6');
 					</script>
 				</div>	
+			</div>
+			<div class="row" id="singleFormArea">
+				<div class="row">
+					<div class="col-8 offset-2">
+						<h2>Single Form</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4 offset-4">
+						<div class="single-form" id="singleFormCode_base">
+	<div class="group">
+		<label>First name</label>
+		<input type="text" class="form-comp" placeholder='Press enter to continue'>
+	</div>
+	<div class="group">
+		<label>Last name</label>
+		<input type="text" class="form-comp">
+	</div>
+	<div class="group">
+		<label>Email</label>
+		<input type="email" class="form-comp">
+	</div>
+	<div class="group">
+		<label>Password</label>
+		<input type="password" class="form-comp">
+	</div>
+	<div class="group">
+		<label>Subscribe? </label>
+		<input type="checkbox" class="form-comp">
+	</div>
+	<div class="final">
+		<h2 class="center" final-load='functionNameHere()'>Thank You</h2>
+		<script>
+			function functionNameHere(){
+				alert('Complete');
+			}
+		</script>
+	</div>
+</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-8 offset-2" id="singleFormCode"></div>
+					<script>
+						createCode('singleFormCode');
+					</script>
+				</div>
 			</div>
 		</div>
 
