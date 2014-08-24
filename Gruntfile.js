@@ -69,7 +69,7 @@ module.exports = function(grunt) {
         pushTo: '',
         gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d'
       }
-    },
+    }
   });
 
   grunt.loadNpmTasks('grunt-contrib-cssmin');

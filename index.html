@@ -50,7 +50,7 @@
 								<a href='https://github.com/chaseWillden/is-ui' target="_blank">GitHub</a>
 							</li>
 							<li>
-								<a href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.1.2.zip'>Download v0.1.2 (beta)</a>
+								<a href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.2.0.zip'>Download v0.2.0 (beta)</a>
 							</li>
 						</ul>
 					</li>
@@ -67,7 +67,7 @@
 				<div class="row">
 					<div class="col-12 center">
 						<a href='https://github.com/chaseWillden/is-ui' target="_blank" class="btn btn-xl blue">Fork on GitHub</a>
-						<a class="btn btn-xl green screen-only" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.1.2.zip'>Download v0.1.2 (beta)</a>
+						<a class="btn btn-xl green screen-only" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.2.0.zip'>Download v0.2.0 (beta)</a>
 					</div>
 				</div>
 			</div>
@@ -109,7 +109,13 @@
 						</li>
 						<li><a href='#alertArea'>Alerts</a></li>
 						<li><a href='#navigationArea'>Navigation</a></li>
-						<li><a href="#panelArea">Panels</a></li>
+						<li>
+							<a href="#panelArea">Panels</a>
+							<ul class="sub">
+								<li><a href="#collapsablePanelArea">Collapsable</a></li>
+								<li><a href="#coloredPanelArea">Colored Panels</a></li>
+							</ul>
+						</li>
 					</ul>
 				</nav>
 			</div>
@@ -595,6 +601,148 @@
 				<div class="col-8 offset-2">
 					<h1 class="center">Panels</h1>
 					<hr class="hr-fade">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-8 offset-2">
+					<div class="panel" id="panelCode_base">
+	<div class="head">
+		This is the Panel's heading
+	</div>
+	<div class="body">
+		Content goes inside of the panel body
+	</div>
+</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-8 offset-2" id="panelCode"></div>
+				<script>
+					createCode('panelCode');
+				</script>
+			</div>	
+			<div class="row">
+				<div class="col-8 offset-2">
+					<p class="bar-left">
+						Add the class .collapse to the head of a panel to collapse the panel body on click.
+					</p>
+				</div>
+			</div>	
+			<div class="row" id="collapsablePanelArea">
+				<div class="col-8 offset-2">
+					<h2>Collapsable</h2>
+				</div>	
+			</div>
+			<div class="row">
+				<div class="col-8 offset-2">
+					<div class="panel" id="panelCollapseCode_base">
+	<div class="head collapse">
+		This is the Panel's heading
+	</div>
+	<div class="body">
+		<ul>
+			<li>This is a list item</li>
+			<li>This is a list item</li>
+			<li>This is a list item</li>
+			<li>This is a list item</li>
+		</ul>
+	</div>
+</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-8 offset-2" id="panelCollapseCode"></div>
+				<script>
+					createCode('panelCollapseCode');
+				</script>
+			</div>	
+			<div class="row" id="coloredPanelArea">
+				<div class="col-8 offset-2">
+					<h2>Colored Panels</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-2 offset-2">
+					<div class="panel blue" id="panelCollapseCode_base">
+						<div class="head collapse">
+							Heading
+						</div>
+						<div class="body">
+							Add blue to the class='panel'
+						</div>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="panel green" id="panelCollapseCode_base">
+						<div class="head collapse">
+							Heading
+						</div>
+						<div class="body">
+							Add green to the class='panel'
+						</div>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="panel orange" id="panelCollapseCode_base">
+						<div class="head collapse">
+							Heading
+						</div>
+						<div class="body">
+							Add orange to the class='panel'
+						</div>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="panel grey" id="panelCollapseCode_base">
+						<div class="head collapse">
+							Heading
+						</div>
+						<div class="body">
+							Add grey to the class='panel'
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-2 offset-2">
+					<div class="panel red" id="panelCollapseCode_base">
+						<div class="head collapse">
+							Heading
+						</div>
+						<div class="body">
+							Add red to the class='panel'
+						</div>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="panel pink" id="panelCollapseCode_base">
+						<div class="head collapse">
+							Heading
+						</div>
+						<div class="body">
+							Add pink to the class='panel'
+						</div>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="panel peach" id="panelCollapseCode_base">
+						<div class="head collapse">
+							Heading
+						</div>
+						<div class="body">
+							Add peach to the class='panel'
+						</div>
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="panel white" id="panelCollapseCode_base">
+						<div class="head collapse">
+							Heading
+						</div>
+						<div class="body">
+							Add white to the class='panel'
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -16,6 +16,13 @@ function closeInit(target){
 		}
 	}
 }
+function collapseInit(target){
+	if (target.hasClass('collapse')){
+		if (target.parent().hasClass('panel')){
+			target.next().slideToggle();
+		}
+	}
+}
 document.onmousedown = function(e){
 	if (e.button == 2){
 		var rightClick = $('.dropdown.right-click');
@@ -155,6 +162,7 @@ function touchClick(e){
 	modalInit(target);
 	lightboxInit(target);
 	mobileClickInit(target);
+	collapseInit(target);
 	if (right.length > 0){
 		right.each(function(){
 			if ($(this).hasClass('show')){

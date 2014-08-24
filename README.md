@@ -3,6 +3,10 @@ is-ui
 
 IS-UI is another mobile-first front-end CSS framework. The sole purpose of this is literally to be another alternative, to be another solution. With night you have day. With water you have land. With rice you have beans. All are good, neither are evil, both are useful. Let this be another resource for developing the web even furthur.
 
+
+Example / Docs
+==============
+
 http://chasewillden.github.io/is-ui/
 
 Development
@@ -52,4 +56,3 @@ Bugs
 
 Todos
 =====
- - Mobile Menu 2nd layer and 3rd layer menus

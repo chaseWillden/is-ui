@@ -48,7 +48,7 @@
 								<a href='https://github.com/chaseWillden/is-ui' target="_blank">GitHub</a>
 							</li>
 							<li>
-								<a href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.1.2.zip'>Download v0.1.2 (beta)</a>
+								<a href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.2.0.zip'>Download v0.2.0 (beta)</a>
 							</li>
 						</ul>
 					</li>
@@ -65,7 +65,7 @@
 				<div class="row">
 					<div class="col-12 center">
 						<a href='https://github.com/chaseWillden/is-ui' target="_blank" class="btn btn-xl blue">Fork on GitHub</a>
-						<a class="btn btn-xl green screen-only" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.1.2.zip'>Download v0.1.2 (beta)</a>
+						<a class="btn btn-xl green screen-only" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.2.0.zip'>Download v0.2.0 (beta)</a>
 					</div>
 				</div>
 			</div>
@@ -123,6 +123,7 @@
 								<li><a href='#pictureDescriptionArea'>Picture Description</a></li>
 								<li><a href='#pictureLightboxArea'>Lightbox</a></li>
 								<li><a href="#pictureCollageArea">Collage</a></li>
+								<li><a href="#pictureGridArea">Grid</a></li>
 							</ul>
 						</li>
 						<li>
@@ -891,6 +892,50 @@
 					<div class="col-8 offset-2" id="pictureCollageCode"></div>
 					<script type="text/javascript">
 						createCode('pictureCollageCode');
+					</script>
+				</div>
+
+				<div class="row" id="pictureGridArea">
+					<div class="col-8 offset-2">
+						<h2>Picture Grid</h2>
+					</div>
+				</div>
+				<div class="row" id="pictureGridCode_base">
+	<div class="col-2 offset-2">
+		<a href="#pictureLightboxArea" class="thumbnail" lightbox='lightbox1'>
+			<img src="http://placehold.it/200x200">
+			<div class="description">This is text concerning this image</div>
+		</a>
+		<a href="#pictureLightboxArea" class="thumbnail" lightbox='lightbox1'>
+			<img src="http://placehold.it/200x200">
+			<div class="description">This is text concerning this image</div>
+		</a>
+	</div>
+	<div class="col-2 offset-half">
+		<a href="#pictureLightboxArea" class="thumbnail" lightbox='lightbox1'>
+			<img src="http://placehold.it/300x200">
+			<div class="description">This is text concerning this image</div>
+		</a>
+		<a href="#pictureLightboxArea" class="thumbnail" lightbox='lightbox1'>
+			<img src="http://placehold.it/200x200">
+			<div class="description">This is text concerning this image</div>
+		</a>
+	</div>
+	<div class="col-2 offset-half">
+		<a href="#pictureLightboxArea" class="thumbnail" lightbox='lightbox1'>
+			<img src="http://placehold.it/150x200">
+			<div class="description">This is text concerning this image</div>
+		</a>
+		<a href="#pictureLightboxArea" class="thumbnail" lightbox='lightbox1'>
+			<img src="http://placehold.it/200x200">
+			<div class="description">This is text concerning this image</div>
+		</a>
+	</div>
+</div>
+				<div class="row">
+					<div class="col-8 offset-2" id="pictureGridCode"></div>
+					<script>
+						createCode('pictureGridCode');
 					</script>
 				</div>
 			</div>

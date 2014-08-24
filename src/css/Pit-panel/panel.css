@@ -1,0 +1,32 @@
+/*
+	Panels
+	Author: Chase Willden;
+*/
+
+.panel{
+	border: solid 1px rgb(187, 187, 187);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.panel *{
+	width: 100%;
+	min-height: 15px;
+}
+
+.panel .head{
+	background-color: #F0EFEF;
+	border-bottom: solid 1px #CECECE;
+	font-size: 17px;
+	padding: 5px 15px;
+}
+
+.panel .body{
+	min-height: 15px;
+	padding: 15px;
+}
+
+.panel .head.collapse{
+	cursor: pointer;
+}

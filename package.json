@@ -1,6 +1,6 @@
 {
   "name": "is-ui",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "A mobile-first front-end CSS framework as another alternative to Twitter's Bootstrap",
   "main": "grunt.js",
   "scripts": {
@@ -27,6 +27,7 @@
     "grunt-bump": "0.0.15",
     "grunt-contrib-compress": "^0.10.0",
     "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-csslint": "^0.2.0",
     "grunt-contrib-cssmin": "^0.10.0",
     "grunt-contrib-uglify": "^0.5.1",
     "grunt-contrib-watch": "^0.6.1"

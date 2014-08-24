@@ -13,11 +13,11 @@
 	display: block;
 }
 
-.dropdown ul.drop-right{
+.dropdown .drop-right{
 	left: 98%;
 }
 
-.dropdown ul.drop-left{
+.dropdown .drop-left{
 	right: 98%;
 }
 
