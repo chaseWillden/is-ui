@@ -1,0 +1,71 @@
+.dim-1{
+	opacity: .1;
+}
+
+*:hover .hover.dim-1{
+	opacity: .1;
+}
+
+.dim-2{
+	opacity: .2;
+}
+
+*:hover .hover.dim-2{
+	opacity: .2;
+}
+
+.dim-3{
+	opacity: .3;
+}
+
+*:hover .hover.dim-3{
+	opacity: .3;
+}
+
+.dim-4{
+	opacity: .4;
+}
+
+*:hover .hover.dim-4{
+	opacity: .4;
+}
+
+.dim-5{
+	opacity: .5;
+}
+
+*:hover .hover.dim-5{
+	opacity: .5;
+}
+
+.dim-6{
+	opacity: .6;
+}
+
+*:hover .hover.dim-6{
+	opacity: .6;
+}
+
+.dim-7{
+	opacity: .7;
+}
+
+*:hover .hover.dim-7{
+	opacity: .7;
+}
+
+.dim-8{
+	opacity: .8;
+}
+
+*:hover .hover.dim-8{
+	opacity: .8;
+}
+
+.dim-9{
+	opacity: .9;
+}
+
+*:hover .hover.dim-9{
+	opacity: .9;
+}

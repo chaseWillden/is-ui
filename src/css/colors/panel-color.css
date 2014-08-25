@@ -1,0 +1,116 @@
+/*
+	Panel-color
+	Author: Chase Willden;
+*/
+
+.panel.blue{
+	border: 1px solid rgba(18, 113, 235, 0.69);
+}
+
+.panel.blue .body{
+	background-color: white;
+	color: black;
+}
+
+.panel.blue .head{
+	background-color: #4285f4;
+	color: white;
+}
+
+.panel.grey{
+	border: solid 1px rgba(210, 210, 210, 0.69);
+}
+
+.panel.grey .head{
+	color: black;
+	background-color: #ccc;
+}
+
+.panel.grey .body{
+	background-color: white;
+	color: black;
+}
+
+.panel.red{	
+	border: 1px solid rgba(182, 85, 31, 0.69);	
+}
+
+.panel.red .head{
+	color: white;
+	background-color: #d14836;
+}
+
+.panel.red .body{
+	background-color: white;
+	color: black;
+}
+
+.panel.green{
+	border: 1px solid rgba(27, 167, 83, 0.69);
+}
+
+.panel.green .head{
+	color: white;
+	background-color: #0f9d58;
+}
+
+.panel.green .body{
+	background-color: white;
+	color: black;
+}
+
+.panel.orange{
+	border: 1px solid rgba(189, 149, 24, 0.69);
+}
+
+.panel.orange .head{
+	background-color: #f6921e;
+	color: white;
+}
+
+.panel.orange .body{
+	background-color: white;
+	color: black;
+}
+
+.panel.pink{
+	border: 1px solid rgb(242, 44, 110);
+}
+
+.panel.pink .head{
+	background-color: #C71350;
+	color: white;
+}
+
+.panel.pink .body{
+	background-color: white;
+	color: black;
+}
+
+.panel.peach{
+	border: solid 1px #E17769;
+}
+
+.panel.peach .head{
+	color: white;
+	background-color: #D14836;
+}
+
+.panel.peach .body{
+	background-color: white;
+	color: black;
+}
+		
+.panel.white{
+	border: solid 1px #ccc;
+}
+
+.panel.white .head{
+	background-color: rgb(246, 246, 246);
+	color: black;
+}
+
+.panel.white .body{
+	background-color: white;
+	color: black;
+}

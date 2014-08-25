@@ -8,6 +8,7 @@
 	float: left;
 	display: block;
 	height: 100%;
+	padding: 10px;
 }
 
 .center[class*='col-']{
@@ -17,10 +18,6 @@
 .center[class*='col-']:not([class*='offset-']){
 	margin-left: auto;
 	margin-right: auto;
-}
-
-.center[class*='col-'] *{
-	text-align: left;
 }
 
 .col-12{

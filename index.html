@@ -105,6 +105,7 @@
 								<li><a href='#selectArea'>Selection</a></li>
 								<li><a href='#pitArea'>Pit</a></li>
 								<li><a href='#bulgeArea'>Bulge</a></li>
+								<li><a href="#displayFillArea">Fill</a></li>
 							</ul>
 						</li>
 						<li><a href='#alertArea'>Alerts</a></li>
@@ -149,6 +150,21 @@
 					<div class="col-5" id="btnGroupCode"></div>
 					<script>
 						createCode('btnGroupCode');
+					</script>
+				</div>
+				<div class="row">
+					<div class="offset-2 col-3">
+						<div class="btn-group round" id="btnGroupCode2_base">
+	<button class="btn btn-default">1</button>
+	<button class="btn btn-default">2</button>
+	<button class="btn btn-default">3</button>
+	<button class="btn btn-default">4</button>
+	<button class="btn btn-default">5</button>
+</div>
+					</div>
+					<div class="col-5" id="btnGroupCode2"></div>
+					<script>
+						createCode('btnGroupCode2');
 					</script>
 				</div>
 				<div class="row" id="btnStackArea">
@@ -469,6 +485,32 @@
 					<div class="offset-2 col-6" id="bulgeCode"></div>
 					<script>
 						createCode('bulgeCode');
+					</script>
+				</div>
+			</div>
+
+			<div class="row" id="displayFillArea">
+				<div class="row">
+					<div class="col-8 offset-2">
+						<h2>Fill <small class='dim-4'>with hover</small></h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6 offset-3 pit lg" id="fillArea_base">
+	<div class="hover blue fill fade">
+		<div class="row">
+			<div class="col-8 center offset-2">
+				<button class="btn red">Call to Action</button>
+				<h1>This is some text</h1>
+			</div>
+		</div>
+	</div>
+</div>
+				</div>
+				<div class="row">
+					<div class="col-8 offset-2" id="fillArea"></div>
+					<script>
+						createCode('fillArea');
 					</script>
 				</div>
 			</div>

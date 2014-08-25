@@ -3,7 +3,7 @@
 	Author: Chase Willden;
 */
 
-*{
+*, :after, :before{
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -13,14 +13,13 @@
 .container{
 	position: absolute;
 	width: 100%;
-	height: 100%;	
+	height: auto;	
 	padding: 15px;
 	z-index: 1;
 }
 
 .close:before{
 	content: '×';
-	cursor: pointer;
 	color: #ccc;
 }
 
@@ -30,8 +29,10 @@
 
 .close{
 	position: absolute;
-	top: 3px;
-	right: 5px;
+	top: -3px;
+	right: -10px;
+	padding: 3px 10px;
+	cursor: pointer;
 }
 
 .hidden{
@@ -40,6 +41,14 @@
 
 .stretch{
 	width: 100%;
+}
+
+.fill{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 
 .show, .stay-open{

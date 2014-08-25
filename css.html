@@ -97,6 +97,7 @@
 							<a href='#buttonArea'>Buttons</a>
 							<ul class="sub">
 								<li><a href='#coloredBtnArea'>Colored</a></li>
+								<li><a href="#roundBtnArea">Round</a></li>
 							</ul>
 						</li>
 						<li>
@@ -106,6 +107,7 @@
 								<li><a href='#loginFormArea'>Login Form</a></li>
 								<li><a href='#textareaFormArea'>Textarea</a></li>
 								<li><a href="#singleFormArea">Single Form</a></li>
+								<li><a href="#inputGroupArea">Input Groups</a></li>
 							</ul>
 						</li>
 						<li>
@@ -125,6 +127,7 @@
 								<li><a href='#pictureLightboxArea'>Lightbox</a></li>
 								<li><a href="#pictureCollageArea">Collage</a></li>
 								<li><a href="#pictureGridArea">Grid</a></li>
+								<li><a href='#pictureHoverArea'>Hover</a></li>
 							</ul>
 						</li>
 						<li>
@@ -210,13 +213,32 @@
 		<button class="btn btn-default pink">Pink</button>
 		<button class="btn btn-default peach">Peach</button>
 		<button class="btn btn-default white">White</button>
+		<button class="btn btn-default black">Black</button>
 	</div>
 </div>
+			<div class="row">
+				<div class="col-8 offset-2" id="colorCode1"></div>
+			</div>
 			<script>
 				createCode('btnColorCode1');
 			</script> 
 			<div class="row">
-				<div class="col-8 offset-2" id="colorCode1"></div>
+				<div class="col-8 offset-2" id="rowColorCode_base">
+	<div class="row blue"></div>
+	<div class="row grey"></div>
+	<div class="row red"></div>
+	<div class="row green"></div>
+	<div class="row orange"></div>
+	<div class="row pink"></div>
+	<div class="row peach"></div>
+	<div class="row white"></div>
+</div>
+			</div>
+			<div class="row">
+				<div class="col-8 offset-2" id="rowColorCode"></div>
+				<script>
+					createCode('rowColorCode');
+				</script>
 			</div>
 			<div class="row" id="colorCode1_base">
 	<div class="row">
@@ -456,6 +478,24 @@
 						createCode('btnCode4');
 					</script>
 				</div>
+				<div class="row" id="roundBtnArea">
+					<div class="row">
+						<div class="col-8 offset-2">
+							<h2>Rounded Buttons</h2>
+							<p class="bar-left">Not every circumstance is a square button going to be used. Here's another option</p>
+						</div>
+					</div>	
+					<div class="row">
+						<div class="col-2 offset-2">
+							<button class="btn round" id="roundBtnCode_base">Button</button>
+							<button class="btn round black" id="roundBtnCode_base">A Black Button</button>
+						</div>
+						<div class="col-5 offset-half" id="roundBtnCode"></div>
+						<script>
+							createCode('roundBtnCode');
+						</script>
+					</div>
+				</div>
 		</div>
 
 		<div class="row" id='formArea'>
@@ -633,6 +673,23 @@
 					</script>
 				</div>
 			</div>
+
+			<div class="row" id="inputGroupArea">
+				<div class="row">
+					<div class="col-8 offset-2">
+						<h2>Input Groups</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4 offset-4">
+						In Progress
+						<!-- <div class="form-group">
+							<input type="text" class="form-comp">
+							<button class="btn">></button>
+						</div> -->
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<div class="row" id='gridArea'>
@@ -646,6 +703,13 @@
 				<div class="col-8  offset-2">
 					<div class="bar-left">
 						<p>The grid system is very easy and organized. Simply put, there is a row and inside of this row are columns. There is a total of 12 columns wide and any number combinations between. Each column could have multiple rows creating a nice grid layout with essentially a bunch of table cells.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-8  offset-2">
+					<div class="bar-left">
+						<p>Each Column is padded by 10px arround each edge.</p>
 					</div>
 				</div>
 			</div>
@@ -986,6 +1050,35 @@
 						createCode('pictureGridCode');
 					</script>
 				</div>
+			</div>
+			<div class="row" id="pictureHoverArea">
+				<div class="row">
+					<div class="col-8 offset-2">
+						<h2>Hover Effects</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-2 offset-2" id="pictureHoverCode_base">
+	<a href="#pictureHoverArea" class="thumbnail">
+		<img src="http://placehold.it/200x200">
+		<div class="description">This is text concerning this image</div>
+		<div class="fill hover black dim-6 fade">
+			<h2 class='center'>Hover Text</h2>
+			<div class="row">
+				<div class="col-4 offset-3 center">
+					<button class="btn red">Button</button>
+				</div>
+			</div>
+		</div>
+	</a>
+</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-8 offset-2" id="pictureHoverCode"></div>
+				<script>
+					createCode('pictureHoverCode');
+				</script>
 			</div>
 		</div>
 

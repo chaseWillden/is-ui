@@ -43,13 +43,14 @@
     padding: 0;
 }
 
-.btn-group:hover{
-	-moz-box-shadow: 0 2px 3px -2px #898989;
-	-webkit-box-shadow: 0 2px 3px -2px #898989;
-	box-shadow: 0 2px 3px -2px #898989;	
+.btn-group .btn:hover, .btn-stack .btn:hover{
+	-moz-box-shadow: 0 0 3px #898989;
+	-webkit-box-shadow: 0 0 3px #898989;
+	box-shadow: 0 0 3px #898989;	
+	z-index: 10;
 }
 
-.btn-group:active{
+.btn-group:active, .btn-stack:active{
 	-moz-box-shadow: 0 1px 3px rgba(142, 142, 142, 0.53);
 	-webkit-box-shadow: 0 1px 3px rgba(142, 142, 142, 0.53);
 	box-shadow: 0 1px 3px rgba(142, 142, 142, 0.53);	
@@ -58,4 +59,11 @@
 .btn-group .arrow-down{
 	padding-left: 5px;
 	padding-right: 5px;
+}
+
+.btn-group.round, .btn-stack.round{
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	overflow: hidden;
 }

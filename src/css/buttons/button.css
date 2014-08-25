@@ -32,6 +32,7 @@
 	-moz-box-shadow: 0 2px 3px -2px #898989;
 	-webkit-box-shadow: 0 2px 3px -2px #898989;
 	box-shadow: 0 2px 3px -2px #898989;
+	border-color: rgba(168, 168, 168, 0.69);
 }
 
 .btn:active{
@@ -63,4 +64,10 @@
 .btn-xl, .btn.xl{
 	font-size: 18px;
 	padding: 13px 25px;
+}
+
+.btn.round{
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
 }
