@@ -15,6 +15,7 @@
 .panel.blue .head{
 	background-color: #4285f4;
 	color: white;
+	border-bottom: none;
 }
 
 .panel.grey{
@@ -38,6 +39,7 @@
 .panel.red .head{
 	color: white;
 	background-color: #d14836;
+	border-bottom: none;
 }
 
 .panel.red .body{
@@ -52,6 +54,7 @@
 .panel.green .head{
 	color: white;
 	background-color: #0f9d58;
+	border-bottom: none;
 }
 
 .panel.green .body{
@@ -66,6 +69,7 @@
 .panel.orange .head{
 	background-color: #f6921e;
 	color: white;
+	border-bottom: none;
 }
 
 .panel.orange .body{
@@ -80,6 +84,7 @@
 .panel.pink .head{
 	background-color: #C71350;
 	color: white;
+	border-bottom: none;
 }
 
 .panel.pink .body{
@@ -94,6 +99,7 @@
 .panel.peach .head{
 	color: white;
 	background-color: #D14836;
+	border-bottom: none;
 }
 
 .panel.peach .body{

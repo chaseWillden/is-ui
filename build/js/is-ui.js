@@ -71,6 +71,16 @@ document.onmousedown = function(e){
 			document.body.oncontextmenu = null;
 		}
 	}
+	else{
+		var target = $(e.target);
+		if (target.hasClass('.btn')){
+			var dropdown = target.parent().find('.dropdown');
+			if (dropdown[0]){
+				$(dropdown[0]).toggleClass('stay-open').attr('closeClickAnywhere', '');
+			}
+		}
+		
+	}
 }
 function escapeHTML(html) {
     return html.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
@@ -159,6 +169,7 @@ function touchClick(e){
 	var right = $('.right-click');
 	var target = $(e.target);
 	$('.btn-group').find('.dropdown.show').removeClass('show');
+	$('[closeClickAnywhere]').removeClass('opened').removeClass('stay-open').removeAttr('closeClickAnywhere');
 	modalInit(target);
 	lightboxInit(target);
 	mobileClickInit(target);

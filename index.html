@@ -50,7 +50,7 @@
 								<a href='https://github.com/chaseWillden/is-ui' target="_blank">GitHub</a>
 							</li>
 							<li>
-								<a href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.2.0.zip'>Download v0.2.0 (beta)</a>
+								<a href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.2.1.zip'>Download v0.2.1 (beta)</a>
 							</li>
 						</ul>
 					</li>
@@ -67,7 +67,7 @@
 				<div class="row">
 					<div class="col-12 center">
 						<a href='https://github.com/chaseWillden/is-ui' target="_blank" class="btn btn-xl blue">Fork on GitHub</a>
-						<a class="btn btn-xl green screen-only" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.2.0.zip'>Download v0.2.0 (beta)</a>
+						<a class="btn btn-xl green screen-only" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.2.1.zip'>Download v0.2.1 (beta)</a>
 					</div>
 				</div>
 			</div>
@@ -109,7 +109,12 @@
 							</ul>
 						</li>
 						<li><a href='#alertArea'>Alerts</a></li>
-						<li><a href='#navigationArea'>Navigation</a></li>
+						<li><a href='#navigationArea'>Navigation</a>
+							<ul class="sub">
+								<li><a href="#basicNavigation">Basic</a></li>
+								<li><a href="#adminNavigation">Admin</a></li>
+							</ul>
+						</li>
 						<li>
 							<a href="#panelArea">Panels</a>
 							<ul class="sub">
@@ -191,8 +196,7 @@
 							<div class="btn btn-default">4</div>
 						</div>
 					</div>
-					<div class="col-half"></div>
-					<div class="col-half">
+					<div class="col-1">
 						<div class="btn-stack" id="btnStackCode_base">
 	<div class="btn btn-default">1</div>
 	<div class="btn btn-default">2</div>
@@ -292,6 +296,49 @@
 				<script>
 					createCode('dropDownCode');
 				</script>
+			</div>
+			<div class="row">
+				<div class="col-3 offset-2">
+					<div class="btn-group" id="dropDownCode_base">
+						<div class="btn btn-default blue">Dropdown</div>
+						<div class="btn btn-default blue arrow-down"></div>
+						<ul class="dropdown">
+							<li>
+								<a href=''>Link</a>
+							</li>
+							<li>
+								<a href=''>Another Link<div class='pull-right dim-6'>Ctrl+S</div></a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href=''>Separated Link <div class="pull-right dim dim-6">&#65515;</div></a> 
+								<ul class="dropdown drop-right">
+									<li>
+										<a href=''>Link</a>
+									</li>
+									<li>
+										<a href=''>Another Link<div class='pull-right dim-6'>Ctrl+S</div></a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href=''><div class="dim dim-6">&#65513;</div> Another Link</a>
+								<ul class="dropdown drop-left">
+									<li>
+										<a href=''>Link</a>
+									</li>
+									<li>
+										<a href=''>Another Link<div class='pull-right dim-6'>Ctrl+S</div></a>
+									</li>
+								</ul>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href='' data-title='This is the bottom'>Separated Link <div class='pull-right dim-6'>Ctrl+Q</div></a>
+							</li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 		<!-- End Drop Down -->
@@ -559,9 +606,10 @@
 					<div class="offset-2 col-8">
 						<h1 class="center">Navigation</h1>
 						<hr class="hr-fade">
+						<h2>Basic</h2>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row" id="basicNavigation">
 					<div class="offset-2 col-8 pit md">
 						<nav class='nav-top' id='navCode_base'>
 
@@ -635,6 +683,89 @@
 						createCode('navCode');
 					</script>
 				</div>
+
+				<div class="row" id="adminNavigation">
+					<div class="col-8 offset-2">
+						<h2>Admin</h2>
+					</div>
+				</div>	
+				<div class="row">
+					<div class="offset-2 col-8 pit md">
+						<div class="hidden">
+							<nav class='nav-top admin' id='navCode2_base'>
+	...
+</nav>
+						</div>
+						<nav class='nav-top admin'>
+
+							<!-- Mobile Menu Area, Remove if you don't want a mobile menu -->
+							<ul class="mobile-menu">
+								<button class="btn btn-default no-select">></button>
+							</ul>
+							<ul class="menu-right">
+								<li>
+									<a href="">Menu Item</a>
+								</li>
+								<li>
+									<a href="">Menu Item</a>
+								</li>
+								<li class="active">
+									<a href="">Menu Item</a>
+								</li>
+								<li>
+									<a href='#'>Drop Down &#65516;</a>
+									<ul class="dropdown">
+										<li><a href=''>Menu Item</a></li>
+										<li>
+											<!-- Add Dimmed arrow left -->
+											<a href=''><div class="dim dim-6">&#65513;</div> Sub Menu</a>
+											<!-- Sub Menu -->
+											<ul class="dropdown drop-left">
+												<li>
+													<a href=''>Menu Item</a>
+												</li>
+												<li>
+													<a href=''>Sub Menu <div class="pull-right dim dim-6">&#65515;</div></a>
+
+													<!-- Sub Menu -->
+													<ul class="dropdown drop-right">
+														<li>
+															<a href=''>Sub Menu <div class="pull-right dim dim-6">&#65515;</div></a>
+
+															<!-- Sub Menu -->
+															<ul class="dropdown drop-right">
+																<li>
+																	<a href=''>Menu Item</a>
+																</li>
+																<li>
+																	<a href=''>Menu Item</a>
+																</li>
+															</ul>
+															<!-- End Sub Menu -->
+														</li>
+														<li>
+															<a href=''>Sub Sub Menu</a>
+														</li>
+													</ul>
+													<!-- End Sub Menu -->
+												</li>
+											</ul>
+											<!-- End Sub Menu -->
+										</li>
+									</ul>
+									<!-- End Sub Menu -->
+								</li>
+							</ul>
+							<!-- End Navigation -->
+						</nav>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-8 offset-2" id="navCode2"></div>
+				<script>
+					createCode('navCode2');
+				</script>
 			</div>
 		</div>
 
