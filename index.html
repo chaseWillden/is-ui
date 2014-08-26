@@ -579,25 +579,31 @@
 				</div>
 				<div class="row">
 					<div class="offset-2 col-1">
-						<button class="btn btn-lg red" onclick='sendAlert()'>Alert</button>
+						<button class="btn btn-lg red" onclick='genAlert()'>Alert Default</button>
+						<button class="btn btn-lg red" onclick='genAlert()'>Alert Top</button>
 						<div class="alert hidden" id="alertCode_base">
 	<div class="title">Example</div>
 	<div class="close" id="alert"></div>
 	This is an example alert This is an example alert This is an example
 </div>
-						<script>
-							var alertPos = 1;
-							function sendAlert(){
-								document.body.innerHTML += '<div class="alert"><div class="title">Example ' + alertPos + '</div><div class="close"></div>This is an example alert This is an example alert This is an example alert</div>';
-								setTimeout(function(){
-									$('#alert').click();
-								}, 2000);
-							}
-						</script>
+<div class="alert top hidden" id="alertCode_base">
+	<div class="title">Example</div>
+	<div class="close" id="alert"></div>
+	This is an example alert This is an example alert This is an example
+</div>
 					</div>
 					<div class="col-7" id="alertCode"></div>
 					<script>
 						createCode('alertCode');
+
+						function genAlert(){
+							if (!$('div.alert.hidden').hasClass('top')){
+								$('div.alert.hidden').removeClass('hidden');
+							}
+							else{
+								$('div.alert.hidden.top').removeClass('hidden');
+							}
+						}
 					</script>
 				</div>
 			</div>
