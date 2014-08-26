@@ -1,0 +1,14 @@
+/*
+	Hover 
+	Author: Chase Willden;
+*/
+
+.hover{
+	visibility: hidden;
+	opacity: 0;
+}
+
+*:hover > .hover{
+	visibility: visible;
+	opacity: 1;
+}

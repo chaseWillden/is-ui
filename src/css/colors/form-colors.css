@@ -1,0 +1,68 @@
+/*
+	Form Colors
+	Author: Chase Willden;
+*/
+
+.form-comp.blue{
+	border-color: rgba(18, 113, 235, 0.69);
+}
+
+.form-comp.blue:active, .form-comp.blue:focus{
+	-moz-box-shadow: 0 0 6px rgba(18, 113, 235, 0.69);
+	-webkit-box-shadow: 0 0 6px rgba(18, 113, 235, 0.69);
+	box-shadow: 0 0 6px rgba(18, 113, 235, 0.69);
+}
+
+.form-comp.red{
+	border-color: rgba(182, 85, 31, 0.69);
+}
+
+.form-comp.red:active, .form-comp.red:focus{
+	-moz-box-shadow: 0 0 6px rgba(235, 18, 18, 0.37);
+	-webkit-box-shadow: 0 0 6px rgba(235, 18, 18, 0.37);
+	box-shadow: 0 0 6px rgba(235, 18, 18, 0.37);
+}
+
+.form-comp.green{
+	border-color: rgba(27, 167, 83, 0.69);
+}
+
+.form-comp.green:active, .form-comp.green:focus{
+	-moz-box-shadow: 0 0 6px rgba(0, 213, 2, 0.42);
+	-webkit-box-shadow: 0 0 6px rgba(0, 213, 2, 0.42);
+	box-shadow: 0 0 6px rgba(0, 213, 2, 0.42);
+}
+
+.form-comp.orange{
+	border-color: rgba(189, 149, 24, 0.69);
+}
+
+.form-comp.orange:active, .form-comp.orange:focus{
+	-moz-box-shadow: 0 0 6px rgba(226, 165, 29, 0.42);
+	-webkit-box-shadow: 0 0 6px rgba(226, 165, 29, 0.42);
+	box-shadow: 0 0 6px rgba(226, 165, 29, 0.42);
+}
+
+.form-comp.pink{
+	border-color: rgb(215, 80, 125);
+}
+
+.form-comp.pink:active, .form-comp.pink:focus{
+	-moz-box-shadow: 0 0 6px rgba(226, 29, 217, 0.42);
+	-webkit-box-shadow: 0 0 6px rgba(226, 29, 217, 0.42);
+	box-shadow: 0 0 6px rgba(226, 29, 217, 0.42);
+}
+
+.form-comp.peach{
+	border: solid 1px #E17769;
+}
+
+.form-comp.peach:active, .form-comp.peach:focus{
+	-moz-box-shadow: 0 0 6px rgba(225, 119, 105, 0.52);
+	-webkit-box-shadow: 0 0 6px rgba(225, 119, 105, 0.52);
+	box-shadow: 0 0 6px rgba(225, 119, 105, 0.52);
+}
+
+.form.white{
+	background-color: white;
+}

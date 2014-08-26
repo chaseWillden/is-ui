@@ -19,7 +19,7 @@ function closeInit(target){
 function collapseInit(target){
 	if (target.hasClass('collapse')){
 		if (target.parent().hasClass('panel')){
-			target.next().slideToggle();
+			target.next().fadeToggle();
 		}
 	}
 }
@@ -70,6 +70,16 @@ document.onmousedown = function(e){
 		else{
 			document.body.oncontextmenu = null;
 		}
+	}
+	else{
+		var target = $(e.target);
+		if (target.hasClass('.btn')){
+			var dropdown = target.parent().find('.dropdown');
+			if (dropdown[0]){
+				$(dropdown[0]).toggleClass('stay-open').attr('closeClickAnywhere', '');
+			}
+		}
+		
 	}
 }
 function escapeHTML(html) {
@@ -159,6 +169,7 @@ function touchClick(e){
 	var right = $('.right-click');
 	var target = $(e.target);
 	$('.btn-group').find('.dropdown.show').removeClass('show');
+	$('[closeClickAnywhere]').removeClass('opened').removeClass('stay-open').removeAttr('closeClickAnywhere');
 	modalInit(target);
 	lightboxInit(target);
 	mobileClickInit(target);
@@ -216,6 +227,12 @@ function touchClick(e){
 		dropDownIsOpened = false;
 	}
 }
+document.onkeypress = function(e){
+	if (e.keyCode === 13){
+		var target = $(e.target);
+		singleFormInit(target);
+	}
+}
 // Scroll spy
 $(document).ready(function(){
 	var lastId;
@@ -261,3 +278,21 @@ $(document).ready(function(){
 	   	}
 	});
 })
+function singleFormInit(target){
+	var parent = target.parent();
+	if (parent.parent().hasClass('single-form')){
+		parent.fadeOut({
+			complete: function(){
+				if (parent.next().hasClass('group')){
+					parent.next().fadeIn();
+					parent.next().find('.form-comp').focus();
+				}
+				else if (parent.next().hasClass('final')){
+					parent.next().fadeIn();
+					var func = parent.next().find('[final-load]').attr('final-load');
+					eval(func);
+				}
+			}
+		});
+	}
+}

@@ -1,0 +1,22 @@
+/*
+	Form Groups
+	Author: Chase Willden;
+*/
+
+.form-group{
+	position: relative;
+	display: table;
+	border-collapse: separate;
+}
+
+.form-group > .form-comp, .form-group > .btn{
+	display: table-cell;
+}
+
+.form-group > .btn{
+	float: left;
+}
+
+.form-group > .form-comp{
+	float: left;
+}

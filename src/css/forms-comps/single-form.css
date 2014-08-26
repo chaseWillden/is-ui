@@ -1,0 +1,12 @@
+/*
+	Single Form
+	Author: Chase Willden;
+*/
+
+.single-form .group, .single-form .final{
+	display: none;
+}
+
+.single-form .group:first-child{
+	display: block;
+}

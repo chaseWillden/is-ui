@@ -46,4 +46,14 @@ document.onmousedown = function(e){
 			document.body.oncontextmenu = null;
 		}
 	}
+	else{
+		var target = $(e.target);
+		if (target.hasClass('.btn')){
+			var dropdown = target.parent().find('.dropdown');
+			if (dropdown[0]){
+				$(dropdown[0]).toggleClass('stay-open').attr('closeClickAnywhere', '');
+			}
+		}
+		
+	}
 }

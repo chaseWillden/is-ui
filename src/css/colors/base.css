@@ -1,0 +1,93 @@
+/*
+	Colors
+	Author: Chase Willden;
+*/
+.btn.blue, .row.blue, [class*='col'].blue, .blue{
+	background-color: #4285f4;
+	border: 1px solid rgba(18, 113, 235, 0.69);
+	color: white;
+}
+
+.btn.blue:hover{
+	border-color: rgba(8, 77, 165, 0.69);
+}
+
+.btn.grey, .row.grey, [class*='col'].grey, .grey{
+	background-color: #ccc;
+	border: solid 1px rgba(210, 210, 210, 0.69);
+	color: black;
+}
+
+.btn.grey:hover{
+	border-color: rgba(168, 168, 168, 1);
+}
+
+.btn.red, .row.red, [class*='col'].red, .red{
+	background-color: #d14836;
+	border: 1px solid rgba(182, 85, 31, 0.69);
+	color: white;
+}
+
+.btn.red:hover{
+	border-color: rgba(109, 34, 20, 0.69);
+}
+
+.btn.green, .row.green, [class*='col'].green, .green{
+	background-color: #0f9d58;
+	border: 1px solid rgba(27, 167, 83, 0.69);
+	color: white;
+}
+
+.btn.green:hover{
+	border-color: rgba(20, 82, 45, 0.69);
+}
+
+.btn.orange, .row.orange, [class*='col'].orange, .orange{
+	background-color: #f6921e;
+	border: 1px solid rgba(189, 149, 24, 0.69);
+	color: white;
+}
+
+.btn.orange:hover{
+	border-color: rgba(167, 124, 34, 0.69);
+}
+
+.btn.pink, .row.pink, [class*='col'].pink, .pink{
+	background-color: #C71350;
+	border: 1px solid rgb(242, 44, 110);
+	color: white;
+}
+
+.btn.pink:hover{
+	border-color: rgb(129, 26, 61);
+}
+
+.btn.peach, .row.peach, [class*='col'].peach, .peach{
+	background-color: #D14836;
+	border: solid 1px #E17769;
+	color: white;
+}
+
+.btn.peach:hover{
+	border-color: #963427;
+}
+		
+.btn.white, .row.white, [class*='col'].white, .white{
+	background-color: rgb(246, 246, 246);
+	border: solid 1px #ccc;
+	color: black;
+}
+
+.btn.white:hover{
+	border-color: #B6AFAF;
+}
+
+.btn.black, .row.black, [class*='col'].black, .black{
+	background-color: #292929;
+	border: solid 1px #292929;
+	color: white;
+}
+
+.btn.black:hover{
+	border-color: #777373;
+}

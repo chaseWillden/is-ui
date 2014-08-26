@@ -21,6 +21,7 @@ function touchClick(e){
 	var right = $('.right-click');
 	var target = $(e.target);
 	$('.btn-group').find('.dropdown.show').removeClass('show');
+	$('[closeClickAnywhere]').removeClass('opened').removeClass('stay-open').removeAttr('closeClickAnywhere');
 	modalInit(target);
 	lightboxInit(target);
 	mobileClickInit(target);

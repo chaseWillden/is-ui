@@ -1,0 +1,18 @@
+/*
+	Animations
+	Author: Chase Willden;
+*/
+
+.fade-color{
+	-webkit-transition: ease background-color .35s, ease border-color .35s, ease color .35s;
+	-moz-transition: ease background-color .35s, ease border-color .35s, ease color .35s;
+	-o-transition: ease background-color .35s, ease border-color .35s, ease color .35s;
+	transition: ease background-color .35s, ease border-color .35s, ease color .35s;
+}
+
+.fade{
+	-webkit-transition: ease opacity .35s;
+	-moz-transition: ease opacity .35s;
+	-o-transition: ease opacity .35s;
+	transition: ease opacity .35s;
+}
