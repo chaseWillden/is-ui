@@ -1706,6 +1706,22 @@ fieldset{
 	border-radius: 5px;
 	padding: 10px;
 }
+
+::-webkit-input-placeholder {
+   color: #9E9C9C;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #9E9C9C;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #9E9C9C;  
+}
+
+:-ms-input-placeholder {  
+   color: #9E9C9C;  
+}
 /*
     Form Components
     Author: Chase Willden;
@@ -2833,4 +2849,8 @@ a:active{
 
 .font-xl{
 	font-size: 26px;
+}
+
+a{
+	font-size: 15px;
 }

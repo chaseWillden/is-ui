@@ -35,7 +35,8 @@ $(document).ready(function(){
 	        	topMenu.find('.show').removeClass('show');
 	        }
 	   	} 
-	   	if (window.scrollY > (stickyTop - 100)){
+	   	var y = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+	   	if (y > (stickyTop - 100)){
 	   		sticky.addClass('affix-top');
 	   	} 
 	   	else{
