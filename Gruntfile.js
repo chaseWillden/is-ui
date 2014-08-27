@@ -32,14 +32,14 @@ module.exports = function(grunt) {
         files: ['src/css/**.css', 'src/css/*/**.css'],
         tasks: ['cssmin', 'concat', 'compress'],
         options: {
-          livereload: true,
+          livereload: 5050,
         },
       },
       js: {
         files: 'src/js/**.js',
         tasks: ['uglify', 'concat', 'compress'],
         options: {
-          livereload: true
+          livereload: 5050
         }
       }
     },

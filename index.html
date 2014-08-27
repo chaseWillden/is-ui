@@ -578,30 +578,30 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="offset-2 col-1">
-						<button class="btn btn-lg red" onclick='genAlert()'>Alert Default</button>
-						<button class="btn btn-lg red" onclick='genAlert()'>Alert Top</button>
+					<div class="offset-2 col-2">
+						<button class="btn btn-lg red" onclick='genAlert(true)'>Alert Default</button>
+						<button class="btn btn-lg red" onclick='genAlert()' id="a1">Alert Bottom</button>
 						<div class="alert hidden" id="alertCode_base">
 	<div class="title">Example</div>
 	<div class="close" id="alert"></div>
 	This is an example alert This is an example alert This is an example
 </div>
-<div class="alert top hidden" id="alertCode_base">
+<div class="alert bottom hidden" id="alertCode_base">
 	<div class="title">Example</div>
 	<div class="close" id="alert"></div>
 	This is an example alert This is an example alert This is an example
 </div>
 					</div>
-					<div class="col-7" id="alertCode"></div>
+					<div class="col-6" id="alertCode"></div>
 					<script>
 						createCode('alertCode');
 
-						function genAlert(){
-							if (!$('div.alert.hidden').hasClass('top')){
-								$('div.alert.hidden').removeClass('hidden');
+						function genAlert(one){
+							if (one){
+								$('#a1').next().clone().appendTo(document.body).removeClass('hidden');
 							}
 							else{
-								$('div.alert.hidden.top').removeClass('hidden');
+								$('#a1').next().next().clone().appendTo(document.body).removeClass('hidden');
 							}
 						}
 					</script>

@@ -1,0 +1,12 @@
+/*
+	Typography Coloring
+	Author: Chase Willden;
+*/
+
+a, .link{
+	color: rgb(21, 129, 232);
+}
+
+a:active, .link:active{
+	color: rgb(56, 125, 191);
+}

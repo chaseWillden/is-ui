@@ -43,4 +43,6 @@ $(document).ready(function(){
 	   		sticky.removeClass('affix-top');
 	   	}
 	});
+
+	getAllHoveredElements();
 })

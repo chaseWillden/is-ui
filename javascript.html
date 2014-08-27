@@ -84,6 +84,7 @@
 							<a href='#modalArea'>Modals</a>
 							<a href="#closeArea">Close</a>
 						</li>
+						<li><a href='#hoverArea'>Hover</a>
 					</ul>
 				</nav>
 			</div>
@@ -236,6 +237,35 @@
 					createCode('closeCode');
 				</script>
 			</div>	
+		</div>
+
+		<div class="row" id="hoverArea">
+			<div class="row">
+				<div class="col-8 offset-2">
+					<h1 class="center">Hover</h1>
+					<hr class="hr-fade">
+				</div>
+			</div>	
+			<div class="row">
+				<div class="col-8 offset-2">
+					<div class="row">
+						<div class="col-4">
+							<div class="btn blue" hover='link' id="hoverBtnCode_base">Hover to Add Class</div>
+						</div>
+						<div class="col-8" id="hoverBtnCode"></div>
+					</div>
+					<div class="row">
+						<div class="col-4">
+							<div class="btn blue" hover-replace='btn, pit lg' id="hoverReplaceBtnCode_base">Hover to Replace Class</div>
+						</div>
+						<div class="col-8" id="hoverReplaceBtnCode"></div>
+						<script>
+							createCode('hoverBtnCode');
+							createCode('hoverReplaceBtnCode');
+						</script>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<footer class='footer'>
