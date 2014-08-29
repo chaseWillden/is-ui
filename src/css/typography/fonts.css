@@ -1,0 +1,33 @@
+/*
+	Fonts
+	Author and Designer: Chase Willden;
+*/
+
+@font-face {
+    font-family: is-ui;
+    src: url(../fonts/is-ui.woff);
+}
+
+[class*='icon-']{
+	font-family: is-ui;
+}
+
+.icon-notification:before{
+	content: "\e600";
+}
+
+.icon-return:before{
+	content: "\e601";
+}
+
+.icon-profile:before{
+	content: '\e602';
+}
+
+.icon-dots:before{
+	content: '\e604'
+}
+
+.icon-add:before{
+	content: '\e606';
+}
