@@ -1,0 +1,36 @@
+.btn{
+	border: solid 1px rgba(210, 210, 210, 0.69);
+	color: black;
+	background-color: #E8E8E8;
+	font-family: Verdana, sans-serif;
+	cursor: pointer;
+	margin: 2px;
+	display: inline-block;
+	text-indent: 0;
+	font-style: normal;
+	text-decoration: none;
+
+	&.block{
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+		display: block;
+		margin: 3px 0;
+	}
+
+	&:focus{
+		outline: none;
+	}
+
+	&::-moz-focus-inner{
+		border: 0;
+    	padding: 0;
+	}
+
+	&:hover{
+		-moz-box-shadow: 0 2px 3px -2px #898989;
+		-webkit-box-shadow: 0 2px 3px -2px #898989;
+		box-shadow: 0 2px 3px -2px #898989;
+		border-color: rgba(168, 168, 168, 0.69);
+	}
+}

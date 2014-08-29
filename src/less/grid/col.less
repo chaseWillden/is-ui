@@ -1,0 +1,125 @@
+[class*=col-]{
+	min-height: 10px;
+	float: left;
+	display: block;
+	height: 100%;
+	padding: 10px;
+
+
+	&.center{
+		text-align: center;
+	}
+
+	&:not([class*='offset-']){
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.col-half{
+	width: (100% / 12 / 2);
+}
+
+.generate-columns(12);
+
+.generate-columns(@n, @i: 1) when (@i =< @n) {
+
+  .col-@{i} {
+    width: (@i * 100% / @n);
+  }
+
+  .generate-columns(@n, (@i + 1));
+}
+
+/*
+	Basically an empty column
+*/
+
+.offset-half{
+	margin-left: (100% / 12 / 2);
+}
+
+.generate-offset(12);
+
+.generate-offset(@n, @i: 1) when (@i =< @n) {
+
+  .offset-@{i} {
+    margin-left: (@i * 100% / @n);
+  }
+
+  .generate-offset(@n, (@i + 1));
+}
+
+@big: 		~"only screen and (min-width: 1200px)";
+@desktop:   ~"only screen and (min-width: 993px) and (max-width: 1199px)";
+@tablet:    ~"only screen and (min-width: 768px) and (max-width: 992px)";
+@phone: 	~"only screen and (max-width: 768px)";
+
+@media @phone {
+  	[class*='col-']{
+  		&.sm:not([class*='mobile-off']){
+  			display: inline-block;
+		width: 100%;
+  		}
+  	}
+	[class*='offset-']{
+		&.sm:not([class*='mobile-off']){
+			margin-left: 0;
+		}
+	}
+}
+
+@media @tablet {
+  	[class*='col-']{
+	  	&.md:not([class*='mobile-off']){
+			display: inline-block;
+			width: 100%;
+		}
+  	}
+	[class*='offset-']{
+		&.md:not([class*='mobile-off']){
+			margin-left: 0;
+		}
+	}
+}
+
+@media @desktop {
+  	[class*='col-']{
+	  	&.md:not([class*='mobile-off']){
+			display: inline-block;
+			width: 100%;
+		}
+  	}
+	[class*='offset-']{
+		&.md:not([class*='mobile-off']){
+			margin-left: 0;
+		}
+	}
+	[class*='col-']{
+		&:not([class*='sm']):not([class*='mobile-off']){
+			display: inline-block;
+			width: 100%;
+		}
+	}
+
+	[class*='offset-']{
+		&:not([class*='sm']):not([class*='mobile-off']){
+			margin-left: 0;
+		}
+	}
+}
+
+@media @big{
+	[class*='col-']{
+		&.lg:not([class*='mobile-off']){
+			display: inline-block;
+			width: 100%;
+		}
+	}
+
+	[class*='offset-']{
+		&.lg:not([class*='mobile-off']){
+			margin-left: 0;
+		}
+	}
+}

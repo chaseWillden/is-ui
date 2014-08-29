@@ -41,6 +41,13 @@ module.exports = function(grunt) {
         options: {
           livereload: 5050
         }
+      },
+      less: {
+        files: 'src/less/**/**.less',
+        tasks: ['less'],
+        options: {
+          livereload: 5050
+        }
       }
     },
     compress: {
@@ -69,6 +76,45 @@ module.exports = function(grunt) {
         pushTo: '',
         gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d'
       }
+    },
+    csslint: {
+      options: {
+        formatters: [
+          {id: 'csslint-xml', dest: 'report/csslint.xml'}
+        ]
+      },
+      strict: {
+        options: {
+          import: 2
+        },
+        src: ['src/**/*.css']
+      },
+      lax: {
+        options: {
+          import: false
+        },
+        src: ['src/**/*.css']
+      }
+    },
+    less: {
+      development: {
+        files: {
+          "build/less/is-ui.css": "src/less/**/*.less"
+        }
+      },
+      production: {
+        options: {
+          paths: ["assets/css"],
+          cleancss: false,
+          // modifyVars: {
+          //   imgPath: '"http://mycdn.com/path/to/images"',
+          //   bgColor: 'red'
+          // }
+        },
+        files: {
+          "build/less/is-ui.css": "src/less/**/*.less"
+        }
+      }
     }
   });
 
@@ -77,6 +123,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compress');
+  grunt.loadNpmTasks('grunt-contrib-csslint');
+  grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-bump');
 
   // npm install grunt-bump --save-dev
@@ -87,4 +135,6 @@ module.exports = function(grunt) {
   grunt.registerTask('minor', ['cssmin', 'uglify', 'concat', 'bump:minor']);
   grunt.registerTask('major', ['cssmin', 'uglify', 'concat', 'bump:major']);
   grunt.registerTask('build', ['compress']);
+  grunt.registerTask('lint', ['csslint']);
+  grunt.registerTask('l', ['less', 'watch:less']);
 };

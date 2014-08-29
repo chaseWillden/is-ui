@@ -9,13 +9,13 @@
 	border: solid 1px #ACACAC;
 	display: block;
 	margin-bottom: 10px;
-	transition: ease border-color .2s;
 	-o-transition: ease border-color .2s;
 	-moz-transition: ease border-color .2s;
 	-webkit-transition: ease border-color .2s;
-	border-radius: 4px;
+	transition: ease border-color .2s;
 	-moz-border-radius: 4px;
 	-webkit-border-radius: 4px;
+	border-radius: 4px;
 	text-decoration: none;
 }
 

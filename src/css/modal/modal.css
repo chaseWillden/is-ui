@@ -15,9 +15,9 @@
 	max-height: 90%;
 	overflow-y: auto;
 	left: 2.5%;
-	box-shadow: 0 0 9px rgba(0,0,0,.5);
 	-moz-box-shadow: 0 0 9px rgba(0,0,0,.5);
 	-webkit-box-shadow: 0 0 9px rgba(0,0,0,.5);
+	box-shadow: 0 0 9px rgba(0,0,0,.5);
 }
 
 @media (min-width: 992px){
@@ -46,17 +46,11 @@
 	}
 }
 
-.modal *, .modal{
-	-webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 .modal > .head{
 	width: 100%;
 	padding: 3px 0;
 	border-bottom: solid 1px #ccc;
-	font-weight: bold;\
+	font-weight: bold;
 }
 
 .modal > .body{
