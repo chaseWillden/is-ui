@@ -95,6 +95,31 @@ function code(id){
 function createCode(id){
 	$('#' + id).html(code(id + '_base'));
 }
+$("#someDiv").bind("DOMSubtreeModified", function() {
+    getAllHoveredElements();
+});
+
+function getAllHoveredElements(){
+	$('[hover]').hover(function(){
+		$(this).addClass($(this).attr('hover'));
+	}, function(){
+		$(this).removeClass($(this).attr('hover'));
+	});
+
+	$('[hover-replace]').hover(function(){
+		var attr = $(this).attr('hover-replace');
+		var find = attr.split(',')[0];
+		var replace = attr.split(',')[1];
+		$(this).removeClass(find);
+		$(this).addClass(replace);
+	}, function(){
+		var attr = $(this).attr('hover-replace');
+		var replace = attr.split(',')[0];
+		var find = attr.split(',')[1];
+		$(this).removeClass(find);
+		$(this).addClass(replace);
+	})
+}
 // Script from http://detectmobilebrowsers.com/
 
 window.mobilecheck = function() {
@@ -143,7 +168,11 @@ function mobileClickInit(target){
 function modalInit(target){
 	if ($(target).attr('modal')){
 		var ele = $($(target).attr('modal'));
-		ele.fadeToggle();
+		ele.fadeToggle(function(){
+			if ($(this).is(':visible')){
+				$(this).find('.form-comp:first-child').focus();
+			}
+		});
 	}
 }
 /*
@@ -174,6 +203,7 @@ function touchClick(e){
 	lightboxInit(target);
 	mobileClickInit(target);
 	collapseInit(target);
+	tableCheckboxInit(target);
 	if (right.length > 0){
 		right.each(function(){
 			if ($(this).hasClass('show')){
@@ -270,13 +300,16 @@ $(document).ready(function(){
 	        	topMenu.find('.show').removeClass('show');
 	        }
 	   	} 
-	   	if (window.scrollY > (stickyTop - 100)){
+	   	var y = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+	   	if (y > (stickyTop - 100)){
 	   		sticky.addClass('affix-top');
 	   	} 
 	   	else{
 	   		sticky.removeClass('affix-top');
 	   	}
 	});
+
+	getAllHoveredElements();
 })
 function singleFormInit(target){
 	var parent = target.parent();
@@ -294,5 +327,22 @@ function singleFormInit(target){
 				}
 			}
 		});
+	}
+}
+function tableCheckboxInit(target){
+	if (target.attr('type') == 'checkbox' && target.parents('.table').length > 0){
+		var checked = target.prop('checked');
+		var parent = target.parents('.table');
+		var checkbox = parent.find('tr:first-child').find('input[type=checkbox]');
+		checkbox.each(function(i){
+			if (this == target[0]){
+				var idx = $(this).parent().cellIndex;
+				parent.find('tr td input[type=checkbox]').each(function(){
+					if ($(this).parent().cellIndex == idx){
+						$(this).prop('checked', checked);
+					}
+				});
+			}
+		})
 	}
 }

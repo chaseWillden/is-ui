@@ -16,6 +16,14 @@
 	text-decoration: none;
 }
 
+.btn.block{
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: block;
+	margin: 3px 0;
+}
+
 .btn:focus{
 	outline: none;
 }

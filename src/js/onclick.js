@@ -26,6 +26,7 @@ function touchClick(e){
 	lightboxInit(target);
 	mobileClickInit(target);
 	collapseInit(target);
+	tableCheckboxInit(target);
 	if (right.length > 0){
 		right.each(function(){
 			if ($(this).hasClass('show')){

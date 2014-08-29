@@ -5,10 +5,11 @@
 
 .table{
 	width: 100%;
+	text-align: left;
 }
 
 .table td, .table th{
-	padding: 5px 10px;
+	padding: 7px 10px;
 }
 
 .table tr.head td, .table tr.head th{
@@ -31,5 +32,5 @@
 }
 
 .table.highlight tr:nth-child(even){
-	background-color: #F0F0F0;
+	background-color: #f9f9f9;
 }

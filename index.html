@@ -50,7 +50,7 @@
 								<a href='https://github.com/chaseWillden/is-ui' target="_blank">GitHub</a>
 							</li>
 							<li>
-								<a href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.2.1.zip'>Download v0.2.1 (beta)</a>
+								<a href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.2.2.zip'>Download v0.2.2 (beta)</a>
 							</li>
 						</ul>
 					</li>
@@ -59,7 +59,9 @@
 		</ul>
 	</nav>
 	<div class="container">
-		<div class="row row-1"></div>
+		<div class="row row-1">
+			<hr class="empty">
+		</div>
 		<div class="row">
 			<div class="col-12 pit md">
 				<h1 class="center">IS-UI</h1>
@@ -67,7 +69,7 @@
 				<div class="row">
 					<div class="col-12 center">
 						<a href='https://github.com/chaseWillden/is-ui' target="_blank" class="btn btn-xl blue">Fork on GitHub</a>
-						<a class="btn btn-xl green screen-only" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.2.1.zip'>Download v0.2.1 (beta)</a>
+						<a class="btn btn-xl green screen-only" href='https://github.com/chaseWillden/is-ui/raw/master/dist/is-ui.0.2.2.zip'>Download v0.2.2 (beta)</a>
 					</div>
 				</div>
 			</div>
@@ -576,26 +578,32 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="offset-2 col-1">
-						<button class="btn btn-lg red" onclick='sendAlert()'>Alert</button>
+					<div class="offset-2 col-2">
+						<button class="btn btn-lg red" onclick='genAlert(true)'>Alert Default</button>
+						<button class="btn btn-lg red" onclick='genAlert()' id="a1">Alert Bottom</button>
 						<div class="alert hidden" id="alertCode_base">
 	<div class="title">Example</div>
 	<div class="close" id="alert"></div>
 	This is an example alert This is an example alert This is an example
 </div>
-						<script>
-							var alertPos = 1;
-							function sendAlert(){
-								document.body.innerHTML += '<div class="alert"><div class="title">Example ' + alertPos + '</div><div class="close"></div>This is an example alert This is an example alert This is an example alert</div>';
-								setTimeout(function(){
-									$('#alert').click();
-								}, 2000);
-							}
-						</script>
+<div class="alert bottom hidden" id="alertCode_base">
+	<div class="title">Example</div>
+	<div class="close" id="alert"></div>
+	This is an example alert This is an example alert This is an example
+</div>
 					</div>
-					<div class="col-7" id="alertCode"></div>
+					<div class="col-6" id="alertCode"></div>
 					<script>
 						createCode('alertCode');
+
+						function genAlert(one){
+							if (one){
+								$('#a1').next().clone().appendTo(document.body).removeClass('hidden');
+							}
+							else{
+								$('#a1').next().next().clone().appendTo(document.body).removeClass('hidden');
+							}
+						}
 					</script>
 				</div>
 			</div>

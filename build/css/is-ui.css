@@ -484,10 +484,11 @@ body {
 
 .table{
 	width: 100%;
+	text-align: left;
 }
 
 .table td, .table th{
-	padding: 5px 10px;
+	padding: 7px 10px;
 }
 
 .table tr.head td, .table tr.head th{
@@ -510,7 +511,7 @@ body {
 }
 
 .table.highlight tr:nth-child(even){
-	background-color: #F0F0F0;
+	background-color: #f9f9f9;
 }
 /*
 	Bulge
@@ -770,6 +771,14 @@ body {
 	text-indent: 0;
 	font-style: normal;
 	text-decoration: none;
+}
+
+.btn.block{
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: block;
+	margin: 3px 0;
 }
 
 .btn:focus{
@@ -1187,6 +1196,26 @@ body {
 	color: black;
 }
 /*
+	Table Colors
+	Author: Chase Willden;
+*/
+
+.table.white{
+	background-color: white;
+}
+/*
+	Typography Coloring
+	Author: Chase Willden;
+*/
+
+a, .link{
+	color: rgb(21, 129, 232);
+}
+
+a:active, .link:active{
+	color: rgb(56, 125, 191);
+}
+/*
 	Animations
 	Author: Chase Willden;
 */
@@ -1360,7 +1389,7 @@ iframe{
 	Author: Chase Willden;
 */
 
-.hover{
+.hover:not(.table){
 	visibility: hidden;
 	opacity: 0;
 }
@@ -1628,9 +1657,9 @@ iframe{
 	background-color: white;
 	color: black;
 	border: solid 1px rgb(168, 168, 168);
-	-moz-box-shadow: 0 0 3px rgba(0,0,0,.3), inset 0 2px 4px -1px rgba(0, 0, 0, 0.21);
-	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.3), inset 0 2px 4px -1px rgba(0, 0, 0, 0.21);
-	box-shadow: 0 0 3px rgba(0,0,0,.3), inset 0 2px 4px -1px rgba(0, 0, 0, 0.21);
+	-moz-box-shadow: 0 0 3px rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.3);
+	box-shadow: 0 0 3px rgba(0,0,0,.3);
 	font-family: sans-serif;
 	min-width: 98%;
 	position: relative;
@@ -1647,13 +1676,40 @@ iframe{
 }
 
 input[type=checkbox].form-comp{
-	border: none;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-	min-width: 13px;
-	max-width: 15px;
-	display: inline;
+	background: #fff;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 0;
+	height: 16px;
+	outline: 0;
+	text-align: center;
+	width: 16px;
+	min-width: 16px;
+	vertical-align: middle;
+	-webkit-appearance: none;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.13);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.13);
+}
+
+input[type=checkbox].form-comp:checked:before{
+	content: '';
+	background: rgb(97, 97, 97);
+	cursor: pointer;
+	display: inline-block;
+	line-height: 0;
+	height: 10px;
+	outline: 0;
+	text-align: center;
+	width: 10px;
+	vertical-align: middle;
+	min-width: 10px;
+	margin: 2px 2px 8px 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	-webkit-appearance: none;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.13);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.13);
 }
 
 .form-comp:after{
@@ -1705,6 +1761,22 @@ fieldset{
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
 	padding: 10px;
+}
+
+::-webkit-input-placeholder {
+   color: #9E9C9C;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #9E9C9C;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #9E9C9C;  
+}
+
+:-ms-input-placeholder {  
+   color: #9E9C9C;  
 }
 /*
     Form Components
@@ -2204,7 +2276,7 @@ textarea.xl{
 	display: block;
 	border-left: solid 5px rgb(255, 204, 0);
 	box-shadow: 0 0 11px rgba(0,0,0,.15);
-	z-index: 10000;
+	z-index: 99999;
 	font-size: 15px;
 	-webkit-transition: right .5s ease;
 	-moz-transition: right .5s ease;
@@ -2214,6 +2286,7 @@ textarea.xl{
 
 	/* Inherently mobile Version */
 	min-height: 44px;
+	max-height: 100px;
 	min-width: 200px;
 	max-width: 250px;
 	top: 10px;
@@ -2242,9 +2315,41 @@ textarea.xl{
 		min-height: 44px;
 		min-width: 200px;
 		max-width: 250px;
-		top: 10px;
+		bottom: 10px;
 		right: 10px;
 	}
+}
+
+.alert.bottom{
+	top: auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	min-height: 40px;
+	max-height: 70px;
+	min-width: 100%;
+	max-width: 100%;
+	-webkit-transition: bottom .5s ease;
+	-moz-transition: bottom .5s ease;
+	-o-transition: bottom .5s ease;
+	-ms-transition: bottom .5s ease;
+	transition: bottom .5s ease;
+	background-color: black;
+	color: white;
+	border: none;
+	display: inline-block;
+}
+
+.alert.bottom .title{
+	float: left;
+	border-right: solid 1px #ccc;
+	border-bottom: none;
+	padding-right: 10px;
+	margin-right: 10px;
+}
+
+.alert.bottom.off{
+	bottom: -100%;
 }
 /*
 	HR Styling
@@ -2724,7 +2829,10 @@ nav.nav-right{
 	Author: Chase Willden;
 */
 
-[class*='bar-left']{
+.bar-left{
+	background-color: white;
+	color: black;
+	border: none;
 	padding-left: 10px;
 }
 
@@ -2810,6 +2918,10 @@ a:active{
 .dim:hover{
 	opacity: 1;
 }
+.link{
+	text-decoration: underline;
+	cursor: pointer;
+}
 /*
 	Font Sizing and text sizing
 	Author: Chase Willden;
@@ -2833,4 +2945,8 @@ a:active{
 
 .font-xl{
 	font-size: 26px;
+}
+
+a{
+	font-size: 15px;
 }

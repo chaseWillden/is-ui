@@ -3,7 +3,7 @@
 	Author: Chase Willden;
 */
 
-.hover{
+.hover:not(.table){
 	visibility: hidden;
 	opacity: 0;
 }
