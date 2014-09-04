@@ -1,0 +1,129 @@
+@big: 		~"only screen and (min-width: 1200px)";
+@desktop:   ~"only screen and (min-width: 993px) and (max-width: 1199px)";
+@tablet:    ~"only screen and (min-width: 768px) and (max-width: 992px)";
+@phone: 	~"only screen and (max-width: 768px)";
+
+.box-shadow (@string: 0 0 3px rgba(0, 0, 0, 0.25)) {
+	-webkit-box-shadow: @string;
+	-moz-box-shadow:    @string;
+	box-shadow:         @string;
+}
+
+.box-shadow-inset (@string: 0 0 3px rgba(0, 0, 0, 0.25)) {
+	-webkit-box-shadow: inset @string;
+	-moz-box-shadow:    inset @string;
+	box-shadow:         inset @string;
+}
+
+.round(@string: 20px){
+	-webkit-border-radius: @string;
+	-moz-border-radius: @string;
+	border-radius: @string;
+}
+
+@lightGrey: #E8E8E8;
+@blue: #4285f4;
+@grey: #ccc;
+@green: #d14836;
+@orange: #f6921e;
+@pink: #C71350;
+@peach: #D14836;
+@white: white;
+
+.color-loop(@bg: true, @border: true, @txt: true){
+	&.light-grey{
+		& when (@bg = true){
+			background-color: @lightGrey;
+		}
+		& when (@border = true){
+			border-color: darken(@lightGrey, 10%);
+		}
+		& when (@txt = true){
+			color: black;
+		}
+	}
+
+	&.blue{
+		& when(@bg = true){
+			background-color: @blue;
+		}
+		& when(@border = true){
+			border-color: darken(@blue, 10%);
+		}
+		& when(@txt = true){
+			color: white;
+		}
+	}
+
+	&.grey{
+		& when(@bg = true){
+			background-color: @grey;
+		}
+		& when(@border = true){
+			border-color: darken(@grey, 10%);
+		}
+		& when(@txt = true){
+			color: black;
+		}
+	}
+
+	&.green{
+		& when(@bg = true){
+			background-color: @green;
+		}
+		& when(@border = true){
+			border-color: darken(@green, 10%);
+		}
+		& when(@txt = true){
+			color: white;
+		}
+	}
+
+	&.orange{
+		& when(@bg = true){
+			background-color: @orange;
+		}
+		& when(@border = true){
+			border-color: darken(@orange, 10%);
+		}
+		& when(@txt = true){
+			color: white;
+		}
+	}
+
+	&.pink{
+		& when(@bg = true){
+			background-color: @pink;
+		}
+		& when(@border = true){
+			border-color: darken(@pink, 10%);
+		}
+		& when(@txt = true){
+			color: white;
+		}
+	}
+
+	&.peach{
+		& when(@bg = true){
+			background-color: @peach;
+		}
+		& when(@border = true){
+			border-color: darken(@peach, 10%);
+		}
+		& when(@txt = true){
+			color: white;
+		}
+	}
+
+	&.white{
+		& when(@bg = true){
+			background-color: @white;
+		}
+		& when(@border = true){
+			border-color: darken(@white, 10%);
+		}
+		& when(@txt = true){
+			color: black;
+		}
+	}
+}

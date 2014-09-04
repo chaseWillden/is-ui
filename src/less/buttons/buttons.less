@@ -1,7 +1,10 @@
+@btn-padding-top: 2px;
+@btn-padding-sides: 5px;
+
 .btn{
-	border: solid 1px rgba(210, 210, 210, 0.69);
+	border: solid 1px darken(@lightGrey, 10%);
 	color: black;
-	background-color: #E8E8E8;
+	background-color: @lightGrey;
 	font-family: Verdana, sans-serif;
 	cursor: pointer;
 	margin: 2px;
@@ -9,6 +12,7 @@
 	text-indent: 0;
 	font-style: normal;
 	text-decoration: none;
+	padding: (@btn-padding-top * 3) (@btn-padding-sides * 3);
 
 	&.block{
 		width: 100%;
@@ -28,9 +32,48 @@
 	}
 
 	&:hover{
-		-moz-box-shadow: 0 2px 3px -2px #898989;
-		-webkit-box-shadow: 0 2px 3px -2px #898989;
-		box-shadow: 0 2px 3px -2px #898989;
-		border-color: rgba(168, 168, 168, 0.69);
+		.box-shadow(0 2px 3px -2px darken(@lightGrey, 10%));
+		border-color: darken(@lightGrey, 20%);
+	}
+
+	&:active{
+		.box-shadow(0 0 0 0 transparent);
+	}
+
+	.color-loop(true, true, true);
+
+	&.inverse{
+		background-color: white;
+		color: black;
+		&:hover{
+			.box-shadow(0 0 0 0 transparent);
+			border-color: darken(@lightGrey, 30%);
+		}
+
+		&:active{
+			.box-shadow-inset(0 2px 4px -2px darken(@lightGrey, 10%));
+		}
+
+		.color-loop(false, true, false);
+	}
+
+	&.sm{
+		padding: @btn-padding-top (@btn-padding-sides * 2);
+	}
+
+	&.md{
+		padding: (@btn-padding-top * 2) (@btn-padding-sides * 2);
+	}
+
+	&.lg{
+		padding: (@btn-padding-top * 5) (@btn-padding-sides * 5);
+	}
+
+	&.xl{
+		padding: (@btn-padding-top * 6) (@btn-padding-sides * 6);
+	}
+
+	&.round{
+		.round();
 	}
 }

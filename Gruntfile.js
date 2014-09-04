@@ -18,6 +18,10 @@ module.exports = function(grunt) {
       js: {
         src: ['src/js/**.js'],
         dest: 'build/js/is-ui.js'
+      },
+      less: {
+        src: ['src/less/var.less', 'src/less/**/*.less'],
+        dest: 'build/less/is-ui.css'
       }
     },
     uglify: {
@@ -44,7 +48,7 @@ module.exports = function(grunt) {
       },
       less: {
         files: 'src/less/**/**.less',
-        tasks: ['less'],
+        tasks: ['concat:less', 'less'],
         options: {
           livereload: 5050
         }
@@ -99,7 +103,7 @@ module.exports = function(grunt) {
     less: {
       development: {
         files: {
-          "build/less/is-ui.css": "src/less/**/*.less"
+          "build/less/is-ui.css": "build/less/is-ui.css"
         }
       },
       production: {
@@ -112,7 +116,7 @@ module.exports = function(grunt) {
           // }
         },
         files: {
-          "build/less/is-ui.css": "src/less/**/*.less"
+          "build/less/is-ui.css": "build/less/is-ui.css"
         }
       }
     }
@@ -136,5 +140,5 @@ module.exports = function(grunt) {
   grunt.registerTask('major', ['cssmin', 'uglify', 'concat', 'bump:major']);
   grunt.registerTask('build', ['compress']);
   grunt.registerTask('lint', ['csslint']);
-  grunt.registerTask('l', ['less', 'watch:less']);
+  grunt.registerTask('l', ['concat:less', 'less', 'watch:less']);
 };
