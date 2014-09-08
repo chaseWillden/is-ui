@@ -1,0 +1,105 @@
+.dropdown{
+	display: none;
+	margin: 0;
+	padding: 0;	
+	list-style: none;
+	min-width: 200px;
+	width: auto;
+	background-color: @white;
+	.box-shadow(0 3px 10px rgba(0,0,0,.4));
+	position: absolute;
+	z-index: 10000;
+	text-align: left;
+
+	& li{
+		color: black;
+		display: block;
+		position: relative;
+
+		& a{
+			text-decoration: none;
+			color: black;
+			font-size: 16px;
+			padding: 5px 15px;
+			display: block;
+			position: relative;
+
+			&:hover{
+				background-color: #F0F0F0;
+			}
+
+			& .pull-right{
+				text-align: right;
+				display: inline-block;
+				margin-left: 25px;
+				float: right;
+			}
+		}
+
+		& div{
+			display: inline;
+		}
+
+		& ul{
+			display: none;
+			position: absolute;
+			top: 0;
+			z-index: 10001;
+		}
+
+		&:hover > ul{
+			display: block;
+		}
+	}
+
+	& > .divider{
+		border-bottom: solid 1px #F0F0F0;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+
+	& .drop-right{
+		left: 98%;
+	}
+
+	& .drop-left{
+		right: 98%;
+	}
+
+	&.right-click{
+		display: none;
+		position: fixed;
+		margin-left: 0 !important;
+	}
+}
+
+@media @phone{
+	nav .dropdown{
+		background-color: #2E2E2E;
+
+		& li{
+			
+			& a{
+				border-top: solid 1px #464646;
+				border-bottom: solid 1px #464646; 
+				color: white;
+			}
+
+			& ul{
+				&[class*=drop-]{
+					top: 100%;
+					left: 0;
+					right: 0;
+				}
+			}
+
+			&:hover{
+				background-color: transparent;
+
+				& > ul{
+					display: none;
+				}
+			}
+		}
+	}
+}

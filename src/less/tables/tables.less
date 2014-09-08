@@ -1,0 +1,38 @@
+.table{
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+
+	& th, & td{
+		padding: 7px 10px;
+	}
+
+	& tr{
+		&.head{
+			background-color: #F0F0F0;
+			& td, & th{
+				font-weight: bold;
+				text-align: left;
+				font-size: 17px;
+			}
+		}
+
+		&:first-child{
+			border-bottom: solid 2px #ccc;
+		}
+	}
+
+	&.bottom-line{
+		& td{
+			border-bottom: solid 1px #8F8F8F;
+		}
+	}
+
+	&.hover tr:hover{
+		background-color: #E9EAEB;
+	}
+
+	&highlight tr:nth-child(even){
+		background-color: #f9f9f9;
+	}
+}

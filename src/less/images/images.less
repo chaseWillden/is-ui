@@ -1,0 +1,127 @@
+.collage{
+	display: inline-block;
+	border: solid 1px #ACACAC;
+	.round(4px);
+	.animate(ease border-color .2s);
+
+	&:hover{
+		border-color: #808080;
+	}
+
+	& img{
+		.round(4px);
+		overflow: hidden;
+		width: 50%;
+		height: 100%;
+		max-height: 100%;
+		border: solid 3px white;
+	}
+
+	&.four img{
+		&:first-child, &:nth-child(3){
+			float: left;
+		}
+
+		&:nth-child(2), &:nth-child(4){
+			float: right;
+		}
+	}
+}
+
+.img{
+	width: 100%;
+}
+
+.thumbnail{
+	width: 100%;
+	padding: 3px;
+	border: solid 1px #ACACAC;
+	display: block;
+	margin-bottom: 10px;
+	.animate(ease border-color .2s);
+	.round(4px);
+	text-decoration: none;
+
+	&:hover{
+		border-color: #808080;
+	}
+
+	& img{
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	& .description{
+		color: black;
+		text-decoration: none;
+		cursor: default;
+		font-size: 14px;
+		padding: 15px 6px 6px 6px;
+	}
+}
+
+/*
+	Lightbox
+	Author: Chase Willden;
+*/
+
+#lightbox-bg{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.75);
+	z-index: 1000;
+	display: none;
+}
+
+.lightbox-mode{
+	width: 27% !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+	margin-top: 5% !important;
+	background-color: white !important;
+}
+
+@media @phone{
+	.lightbox-mode{
+		width: 50% !important;
+	}
+}
+
+.lightbox-right:before, .lightbox-left:before{
+	color: rgb(186, 186, 186);
+	font-size: 33px;
+	font-weight: 100;
+	padding-left: 8px;
+}
+
+.lightbox-right:before{
+	content: '>';
+}
+
+.lightbox-left:before{
+	content: '<';
+}
+
+.lightbox-right, .lightbox-left{
+	position: absolute;
+	top: 40%;
+	width: 33px;
+	height: 40px;
+	background-color: rgba(41, 40, 40, 0.78);
+}
+
+.lightbox-left{
+	left: 3px;
+}
+
+.lightbox-right{
+	right: 3px;
+}
+
+.lightbox-left:hover, .lightbox-right:hover{
+	background-color: rgba(41, 40, 40, 1);
+}

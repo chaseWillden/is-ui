@@ -1,0 +1,30 @@
+.panel{
+	border: solid 1px rgb(187, 187, 187);
+	.round(4px);
+
+	& *{
+		width: 100%;
+		min-height: 15px;
+	}
+
+	& .head{
+		background-color: #F0EFEF;
+		border-bottom: solid 1px #CECECE;
+		font-size: 17px;
+		padding: 5px 15px;
+
+		&.collapse{
+			cursor: pointer;
+		}
+
+		.color-loop(true, false, true);
+	}
+
+	& .body{
+		min-height: 15px;
+		padding: 15px;
+		.round(4px);
+	}
+
+	.color-loop(false, true, false);
+}

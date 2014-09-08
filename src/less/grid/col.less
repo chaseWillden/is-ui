@@ -14,13 +14,17 @@
 		margin-left: auto;
 		margin-right: auto;
 	}
+
+	.color-loop(true, true, true);
 }
 
 .row{
 	width: 100%;
 	min-height: 10px;
 	display: inline-block;
-	position: relative;	
+	position: relative;
+
+	.color-loop(true, true, true);	
 }
 
 .col-half{
@@ -60,7 +64,7 @@
   	[class*='col-']{
   		&.sm:not([class*='mobile-off']){
   			display: inline-block;
-		width: 100%;
+			width: 100%;
   		}
   	}
 	[class*='offset-']{
@@ -114,13 +118,6 @@
 	[class*='col-']{
 		&.lg:not([class*='mobile-off']){
 			display: inline-block;
-			width: 100%;
-		}
-	}
-
-	[class*='offset-']{
-		&.lg:not([class*='mobile-off']){
-			margin-left: 0;
 		}
 	}
 }

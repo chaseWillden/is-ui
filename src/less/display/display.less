@@ -1,0 +1,95 @@
+/*
+	Display
+	Author: Chase Willden;
+*/
+
+*, :after, :before{
+	.box;
+    position: relative;
+}
+
+.container{
+	position: absolute;
+	width: 100%;
+	height: auto;	
+	padding: 15px;
+	z-index: 1;
+}
+
+.close{
+	position: absolute;
+	top: -3px;
+	right: -10px;
+	padding: 3px 10px;
+	cursor: pointer;
+
+	&:before{
+		content: '×';
+		color: #ccc;
+
+		&:hover{
+			color: black;
+		}
+	}
+}
+
+.hidden{
+	display: none !important;
+}
+
+.stretch{
+	width: 100%;
+}
+
+.fill{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+.show, .stay-open{
+	display: block !important;
+}
+
+.fixed{
+	position: fixed !important;
+}
+
+.absolute{
+	position: absolute;
+}
+
+@media (min-width: 1000px) {
+	.mobile-only{
+		display: none !important;
+	}
+}
+
+@media (max-width: 1000px) {
+	.screen-only{
+	    display: none !important;
+	}
+}
+
+iframe{
+	width: 100%;
+	border: none;
+}
+
+.footer{
+	width: 100%;
+	height: 200px;
+}
+
+html{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html{
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}

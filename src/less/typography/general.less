@@ -1,0 +1,89 @@
+a{
+	color: rgb(21, 129, 232);
+	font-size: 15px;
+
+	&:active{
+		color: rgb(56, 125, 191);
+	}
+}
+
+@font-face {
+    font-family: is-ui;
+    src: url(../fonts/is-ui.woff);
+}
+
+[class*='icon-']{
+	font-family: is-ui;
+}
+
+.icon-notification:before{
+	content: "\e600";
+}
+
+.icon-return:before{
+	content: "\e601";
+}
+
+.icon-profile:before{
+	content: '\e602';
+}
+
+.icon-dots:before{
+	content: '\e604'
+}
+
+.icon-add:before{
+	content: '\e606';
+}
+
+.link{
+	text-decoration: underline;
+	cursor: pointer;
+	color: @blue;
+}
+
+.thin{
+	font-weight: 100;
+}
+
+.font-sm{
+	font-size: 12px;
+}
+
+.font-md{
+	font-size: 16px;
+}
+
+.font-lg{
+	font-size: 20px;
+}
+
+.font-xl{
+	font-size: 26px;
+}
+
+.arrow-up:before{
+	content: '\25b2';
+}
+
+.arrow-down:before{
+	content: '\25bc';
+}
+
+.arrow-left:before{
+	content: '\25C0';
+}
+
+.arrow-right:before{
+	content: '\25b6';
+}
+
+.slider{
+	position: relative;
+	width: 100%;
+	background-color: black;	
+}
+
+.center{
+	text-align: center;
+}

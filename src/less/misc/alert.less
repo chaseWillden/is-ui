@@ -1,0 +1,77 @@
+/*
+	Alert
+	Author: Chase Willden;
+*/
+
+.alert{
+	padding: 10px 20px;
+	position: fixed;
+	background-color: #FAFAFA;
+	display: block;
+	border-left: solid 5px rgb(255, 204, 0);
+	.box-shadow(0 0 11px rgba(0,0,0,.15));
+	z-index: 99999;
+	font-size: 15px;
+	.animate(right .5s ease);
+	min-height: 44px;
+	max-height: 100px;
+	min-width: 200px;
+	max-width: 250px;
+	top: 10px;
+	right: 10px;
+
+	&.off{
+		right: -320px;
+	}
+
+	& .title{
+		font-size: 20px;
+		font-weight: bold;
+		border-bottom: solid 1px #ccc;
+		padding-bottom: 4px;
+		margin-bottom: 4px;
+	}
+
+	& .close:hover{
+		color: black;
+	}
+
+	&.bottom{
+		top: auto;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		min-height: 40px;
+		max-height: 70px;
+		min-width: 100%;
+		max-width: 100%;
+		.animate(bottom .5s ease);
+		background-color: black;
+		color: white;
+		border: none;
+		display: inline-block;
+
+		& .title{
+			float: left;
+			border-right: solid 1px #ccc;
+			border-bottom: none;
+			padding-right: 10px;
+			margin-right: 10px;
+		}
+
+		&.off{
+			bottom: -100%;
+		}
+	}
+}
+
+@media only screen and (min-device-width: 480px){
+	/* Bigger than mobile */
+	.alert{
+		min-height: 44px;
+		min-width: 200px;
+		max-width: 250px;
+		bottom: 10px;
+		right: 10px;
+	}
+}

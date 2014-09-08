@@ -1,0 +1,10 @@
+.generate-dim(9);
+
+.generate-dim(@n, @i: 1) when (@i =< @n) {
+
+  .dim-@{i}, *:hover .hover.dim-@{i} {
+    opacity: (@i / 10);
+  }
+
+  .generate-dim(@n, (@i + 1));
+}

@@ -15,20 +15,45 @@
 	box-shadow:         inset @string;
 }
 
+.animate (@string: ease opacity .35s){
+	-webkit-transition: @string;
+	-moz-transition: @string;
+	-ms-transition: @string;
+	-o-transition: @string;
+	transition: @string;
+}
+
 .round(@string: 20px){
 	-webkit-border-radius: @string;
 	-moz-border-radius: @string;
 	border-radius: @string;
 }
 
+.box{
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.sel (@string: all){
+	-webkit-touch-callout: @string;
+	-webkit-user-select: @string;
+	-khtml-user-select: @string;
+	-moz-user-select: @string;
+	-ms-user-select: @string;
+	user-select: @string;
+}
+
 @lightGrey: #E8E8E8;
 @blue: #4285f4;
 @grey: #ccc;
-@green: #d14836;
+@green: #0f9d58;
+@red: #d14836;
 @orange: #f6921e;
 @pink: #C71350;
 @peach: #D14836;
 @white: white;
+@black: #262626;
 
 .color-loop(@bg: true, @border: true, @txt: true){
 	&.light-grey{
@@ -64,6 +89,18 @@
 		}
 		& when(@txt = true){
 			color: black;
+		}
+	}
+
+	&.red{
+		& when(@bg = true){
+			background-color: @red;
+		}
+		& when(@border = true){
+			border-color: darken(@red, 10%);
+		}
+		& when(@txt = true){
+			color: white;
 		}
 	}
 
@@ -124,6 +161,18 @@
 		}
 		& when(@txt = true){
 			color: black;
+		}
+	}
+
+	&.black{
+		& when(@bg = true){
+			background-color: @black;
+		}
+		& when(@border = true){
+			border-color: darken(@black, 10%);
+		}
+		& when(@txt = true){
+			color: white;
 		}
 	}
 }
