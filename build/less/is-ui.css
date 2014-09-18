@@ -118,9 +118,9 @@
   font-style: normal;
   text-decoration: none;
   padding: 6px 15px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
 }
 .btn.block {
   width: 100%;
@@ -1590,46 +1590,6 @@ nav.nav-right {
 .panel .head.collapse {
   cursor: pointer;
 }
-.panel .head.light-grey {
-  background-color: #e8e8e8;
-  color: black;
-}
-.panel .head.blue {
-  background-color: #4285f4;
-  color: white;
-}
-.panel .head.grey {
-  background-color: #cccccc;
-  color: black;
-}
-.panel .head.red {
-  background-color: #d14836;
-  color: white;
-}
-.panel .head.green {
-  background-color: #0f9d58;
-  color: white;
-}
-.panel .head.orange {
-  background-color: #f6921e;
-  color: white;
-}
-.panel .head.pink {
-  background-color: #c71350;
-  color: white;
-}
-.panel .head.peach {
-  background-color: #d14836;
-  color: white;
-}
-.panel .head.white {
-  background-color: #ffffff;
-  color: black;
-}
-.panel .head.black {
-  background-color: #262626;
-  color: white;
-}
 .panel .body {
   min-height: 15px;
   padding: 15px;
@@ -1666,6 +1626,15 @@ nav.nav-right {
 }
 .panel.black {
   border-color: #0c0c0c;
+}
+.test {
+  color: white;
+}
+.blue {
+  background-color: #4285f4;
+}
+.lightGrey {
+  background-color: #e8e8e8;
 }
 .pit {
   -webkit-box-shadow: inset 0 0 9px rgba(0, 0, 0, 0.3);

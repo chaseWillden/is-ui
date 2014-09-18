@@ -55,6 +55,19 @@
 @white: white;
 @black: #262626;
 
+@color-define: ~"lightGrey" #E8E8E8, ~"blue" #4285f4;
+@color-len: length(@color-define);
+
+.color-test(@i) when (@i > 0){
+	@value: extract(@color-define, @i);
+	@name:  extract(@value, 1);
+	@color: extract(@value, 2);
+	&.@{name} {
+        background-color: @color;
+    }
+    .color-test(@i - 1);
+}
+
 .color-loop(@bg: true, @border: true, @txt: true){
 	&.light-grey{
 		& when (@bg = true){
